@@ -6,9 +6,9 @@ It is our Complex Engineering Problem for CS-251 Data Structures and Algorithms 
 
 ## Watch the 2-minute explainer
 
-[![Download and watch the explainer video](docs/video/cep/thumbnail.jpg)](https://github.com/waqas-ali-rajput/context-budget-manager/raw/main/docs/video/cep/CEP_video.mp4)
+[![Watch the explainer video](docs/video/cep/thumbnail.jpg)](https://waqas-ali-rajput.github.io/context-budget-manager/)
 
-Click the picture to download the video (MP4, 8.5 MB), then open it in any video player.
+Click the picture to watch it in your browser, or [download the video](https://github.com/waqas-ali-rajput/context-budget-manager/raw/main/docs/video/cep/CEP_video.mp4) (MP4, 8.5 MB).
 
 ## How it works
 
