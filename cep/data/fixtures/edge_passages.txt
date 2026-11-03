@@ -1,0 +1,47 @@
+# query_id|passage_id|source_id|timestamp|token_cost|relevance|reliability|dup_group|evidence_tags|mandatory|supersedes|text
+E02|E02-P1|notices_office|2026-03-01T10:00|20|0.900|A|-|fact:x|0|-|The fact is x.
+E02|E02-P2|faq_portal|2026-03-02T10:00|30|0.500|B|-|-|0|-|Unrelated FAQ.
+E03|E03-P1|handbook|2026-01-01T10:00|300|0.900|A|-|fact:x|0|-|Long handbook chapter stating x.
+E03|E03-P2|handbook|2026-01-02T10:00|400|0.800|A|-|-|0|-|Longer chapter.
+E03|E03-P3|handbook|2026-01-03T10:00|500|0.700|A|-|-|0|-|Longest chapter.
+E04|E04-P1|faq_portal|2026-01-01T10:00|40|0.500|B|-|a:1|0|-|a is 1.
+E04|E04-P2|lab_wiki|2026-01-02T10:00|60|0.600|B|-|b:2|0|-|b is 2.
+E04|E04-P3|handbook|2026-02-01T10:00|900|0.990|A|-|a:1;b:2|0|-|Full handbook: a is 1; b is 2.
+E05|E05-P1|notices_office|2026-03-01T10:00|150|0.600|A|-|rule:new|1|-|Mandatory notice: the rule is new.
+E05|E05-P2|scholarship_office|2026-03-01T11:00|180|0.700|A|-|form:F1|1|-|Mandatory annex: use form F1.
+E05|E05-P3|faq_portal|2026-03-02T10:00|30|0.900|B|-|-|0|-|Short FAQ.
+E06|E06-P3|faq_portal|2026-05-01T10:00|50|0.700|B|-|t:x|0|-|t is x (copy 3).
+E06|E06-P1|faq_portal|2026-05-01T10:00|50|0.700|B|-|t:x|0|-|t is x (copy 1).
+E06|E06-P4|faq_portal|2026-05-01T10:00|50|0.700|B|-|-|0|-|Unrelated, same score.
+E06|E06-P2|faq_portal|2026-05-01T10:00|50|0.700|B|-|-|0|-|Unrelated, same score.
+E07|E07-P1|faq_portal|2026-04-01T10:00|30|0.900|B|E07-G1|a:1|0|-|a is 1.
+E07|E07-P2|student_forum|2026-04-02T10:00|30|0.890|C|E07-G1|a:1|0|-|Repost: a is 1.
+E07|E07-P3|dept_email|2026-04-03T10:00|30|0.880|B|E07-G1|a:1|0|-|Email: a is 1.
+E07|E07-P4|lms_portal|2026-04-04T10:00|30|0.870|B|E07-G1|a:1|0|-|LMS: a is 1.
+E07|E07-P5|student_forum|2026-04-05T10:00|30|0.860|C|E07-G1|a:1|0|-|Forum: a is 1.
+E07|E07-P6|handbook|2026-01-01T10:00|40|0.500|A|-|b:2|0|-|b is 2.
+E08|E08-P1|notices_office|2025-03-01T10:00|80|0.920|A|E08-GO|deadline:27 Feb|0|-|Official notice: the deadline is 27 Feb.
+E08|E08-P2|notices_office|2026-02-01T10:00|60|0.700|A|E08-GN|deadline:6 Mar|0|E08-P1|Revised notice: the deadline is 6 Mar.
+E08|E08-P3|student_forum|2025-04-01T10:00|40|0.880|C|E08-GO|deadline:27 Feb|0|-|Forum repost: the deadline is 27 Feb.
+E09|E09-P1|registrar|2026-01-01T10:00|50|0.600|A|-|a:1|0|-|a is 1.
+E09|E09-P2|lab_wiki|2026-01-02T10:00|50|0.550|B|-|b:2|0|-|b is 2.
+E09|E09-P3|faq_portal|2026-01-03T10:00|50|0.500|B|-|c:3|0|-|c is 3.
+E09|E09-P4|notices_office|2026-09-01T10:00|60|0.700|B|-|n:1|0|-|Unrelated notice n1.
+E09|E09-P5|dept_email|2026-09-02T10:00|50|0.650|B|-|n:2|0|-|Unrelated email n2.
+E10|E10-P1|student_guide|2025-06-01T10:00|230|0.970|A|-|a:1;b:2;c:3|0|-|Overview: a is 1; b is 2; c is 3; background follows.
+E10|E10-P2|registrar|2026-01-01T10:00|60|0.600|A|-|a:1|0|-|a is 1.
+E10|E10-P3|lab_wiki|2026-01-02T10:00|60|0.600|B|-|b:2|0|-|b is 2.
+E10|E10-P4|faq_portal|2026-01-03T10:00|60|0.600|B|-|c:3|0|-|c is 3.
+E10|E10-P5|dept_email|2026-01-04T10:00|30|0.500|B|-|e:5|0|-|e is 5.
+E10|E10-P6|notices_office|2026-09-01T10:00|40|0.900|B|-|d:4|0|-|Unrelated but scored high: d is 4.
+E11|E11-P1|handbook|2025-01-01T10:00|300|0.950|A|-|a:1;b:2|0|-|Chapter: a is 1; b is 2.
+E11|E11-P2|registrar|2026-01-01T10:00|120|0.700|A|-|a:1|0|-|a is 1.
+E11|E11-P3|lab_wiki|2026-02-01T10:00|90|0.650|B|-|b:2|0|-|b is 2.
+E11|E11-P4|faq_portal|2026-03-01T10:00|150|0.600|B|-|c:3|0|-|c is 3.
+E11|E11-P5|dept_email|2026-04-01T10:00|200|0.550|B|-|d:4|0|-|d is 4.
+E11|E11-P6|notices_office|2026-09-01T10:00|80|0.300|B|-|n:1|0|-|Unrelated n1.
+E11|E11-P7|notices_office|2026-09-02T10:00|70|0.250|B|-|n:2|0|-|Unrelated n2.
+E11|E11-P8|student_forum|2026-09-03T10:00|60|0.800|C|-|c:9|0|-|Forum: c is 9 (wrong).
+E12|E12-P1|notices_office|2026-03-01T10:00|50|0.800|A|-|rule:new|1|-|Mandatory notice: the rule is new.
+E13|E13-P1|system|2026-01-01T10:00|0|0.300|A|-|a:1|0|-|Pre-counted header: a is 1.
+E13|E13-P2|handbook|2026-02-01T10:00|100|0.900|A|-|b:2|0|-|b is 2.

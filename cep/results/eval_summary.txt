@@ -1,0 +1,72 @@
+CONTEXT BUDGET MANAGER - EVALUATION SUMMARY
+Dataset: 32 scenarios, 1300 candidate passages, 30 answerable. Budgets: B_total = B_CTX + 800, R_fixed = 300, R_answer = 500. Timing: 1 warm-up + 5 timed runs per configuration.
+
+1. MAIN COMPARISON (coverage averaged over answerable queries; INFEASIBLE runs count as 0 coverage)
+B_CTX policy     infeas viol  mean_tok  %B_CTX  coverage  redund  sources  stale(sel/queries)  median_us [min-max of medians]  mean_cmps  mean_aux_B
+  256 recency         1    0     249.2    97.3     0.231      11     2.61                 0/0      6.40 [3.50-12.70]         188        1904
+  256 relevance       1    0     248.0    96.9     0.544      76     3.23               42/19      6.75 [3.90-14.70]         188        1939
+  256 density         1    0     244.8    95.6     0.631      67     3.55               42/19      7.35 [3.30-16.40]         189        2061
+  256 hybrid          1    0     244.7    95.6     0.792       0     3.65                 0/0     16.30 [3.30-38.40]         160       18149
+  512 recency         1    0     503.5    98.3     0.286      34     3.55                 0/0      6.40 [2.80-14.20]         188        2180
+  512 relevance       1    0     504.5    98.5     0.842      82     3.81               56/19      6.45 [2.70-15.60]         188        2166
+  512 density         1    0     499.6    97.6     0.792     109     5.03               48/19      7.00 [2.20-12.20]         189        2538
+  512 hybrid          1    0     500.8    97.8     0.908       0     4.97                 0/0     15.85 [2.70-18.80]         206       18530
+ 1024 recency         0    0    1014.4    99.1     0.603      84     5.06                 4/2      6.80 [5.00-14.40]         194        2870
+ 1024 relevance       0    0    1017.1    99.3     0.950     119     5.44               60/20      6.90 [4.50-13.00]         194        2820
+ 1024 density         0    0    1006.8    98.3     0.967     152     5.91               57/20      7.40 [5.50-8.90]         195        3286
+ 1024 hybrid          0    0    1011.6    98.8     1.000       0     5.84                 0/0     16.95 [11.30-20.40]         258       19688
+
+2. COVERAGE / STALE SELECTIONS / REDUNDANCY BY CATEGORY (mean coverage; stale = superseded passages selected; redund = selected beyond the first per duplicate group)
+B_CTX category     | recency            | relevance          | density            | hybrid
+  256 policy       | cov=0.450 st= 0 rd= 3 | cov=0.450 st=22 rd=15 | cov=0.550 st=22 rd=17 | cov=0.800 st= 0 rd= 0 |
+  256 multisource  | cov=0.175 st= 0 rd= 4 | cov=0.250 st= 0 rd=40 | cov=0.375 st= 0 rd=27 | cov=0.575 st= 0 rd= 0 |
+  256 memory       | cov=0.067 st= 0 rd= 2 | cov=0.933 st=20 rd=20 | cov=0.967 st=20 rd=20 | cov=1.000 st= 0 rd= 0 |
+  256 unanswerable | cov=  NA  st= 0 rd= 2 | cov=  NA  st= 0 rd= 1 | cov=  NA  st= 0 rd= 3 | cov=  NA  st= 0 rd= 0 |
+  512 policy       | cov=0.450 st= 0 rd=14 | cov=0.700 st=36 rd=33 | cov=0.850 st=28 rd=32 | cov=0.900 st= 0 rd= 0 |
+  512 multisource  | cov=0.275 st= 0 rd=14 | cov=0.825 st= 0 rd=28 | cov=0.525 st= 0 rd=53 | cov=0.825 st= 0 rd= 0 |
+  512 memory       | cov=0.133 st= 0 rd= 4 | cov=1.000 st=20 rd=20 | cov=1.000 st=20 rd=20 | cov=1.000 st= 0 rd= 0 |
+  512 unanswerable | cov=  NA  st= 0 rd= 2 | cov=  NA  st= 0 rd= 1 | cov=  NA  st= 0 rd= 4 | cov=  NA  st= 0 rd= 0 |
+ 1024 policy       | cov=0.650 st= 4 rd=28 | cov=0.950 st=40 rd=47 | cov=1.000 st=37 rd=53 | cov=1.000 st= 0 rd= 0 |
+ 1024 multisource  | cov=0.625 st= 0 rd=43 | cov=0.900 st= 0 rd=49 | cov=0.900 st= 0 rd=71 | cov=1.000 st= 0 rd= 0 |
+ 1024 memory       | cov=0.533 st= 0 rd= 8 | cov=1.000 st=20 rd=20 | cov=1.000 st=20 rd=20 | cov=1.000 st= 0 rd= 0 |
+ 1024 unanswerable | cov=  NA  st= 0 rd= 5 | cov=  NA  st= 0 rd= 3 | cov=  NA  st= 0 rd= 8 | cov=  NA  st= 0 rd= 0 |
+
+3. LONG HIGHLY RELEVANT PASSAGE (multisource queries, cost > 250, >= 3 gold facts): times selected / mean coverage
+B_CTX 256:  recency 0/10 cov=0.175  relevance 0/10 cov=0.250  density 0/10 cov=0.375  hybrid 0/10 cov=0.575
+B_CTX 512:  recency 0/10 cov=0.275  relevance 10/10 cov=0.825  density 0/10 cov=0.525  hybrid 0/10 cov=0.825
+B_CTX 1024:  recency 0/10 cov=0.625  relevance 10/10 cov=0.900  density 0/10 cov=0.900  hybrid 0/10 cov=1.000
+
+4. GREEDY RELEVANCE-PER-TOKEN COUNTEREXAMPLES (density has >= total relevance of the other policy but lower gold coverage)
+-- Q01 (policy) B_CTX=256: density sum_rel=4.114 coverage=1/2 vs hybrid sum_rel=3.157 coverage=2/2
+   gold: drop_deadline:6 Mar 2026  drop_form:Form AC-12  
+[Q01] policy=relevance-per-token  status=OK  B_CTX=256  used=242 (94.5%)  unspent=14  candidates=42  selected=6
+   1. Q01-P027  notices_office  2026-01-07T08:37 rel=0.78 c= 62 key=0.0126 MANDATORY  drop_deadline:6 Mar 2026
+   2. Q01-P002  student_forum   2025-10-13T14:37 rel=0.80 c= 39 key=0.0205  drop_deadline:27 Feb 2026
+   3. Q01-P038  student_forum   2025-12-03T13:17 rel=0.87 c= 44 key=0.0198  drop_deadline:27 Feb 2026
+   4. Q01-P040  dept_email      2024-04-01T09:53 rel=0.52 c= 28 key=0.0184  misc22:M22
+   5. Q01-P012  student_forum   2025-12-02T09:37 rel=0.82 c= 46 key=0.0178  drop_deadline:27 Feb 2026
+   6. Q01-P026  dept_email      2025-06-02T08:00 rel=0.33 c= 23 key=0.0144  misc35:M35
+[Q01] policy=hybrid-fresh-cover  status=OK  B_CTX=256  used=238 (93.0%)  unspent=18  candidates=42  selected=5
+   1. Q01-P027  notices_office  2026-01-07T08:37 rel=0.78 c= 62 key=0.7820 MANDATORY  drop_deadline:6 Mar 2026
+   2. Q01-P040  dept_email      2024-04-01T09:53 rel=0.52 c= 28 key=0.0973  misc22:M22
+   3. Q01-P021  faq_portal      2026-07-13T10:59 rel=0.60 c= 43 key=0.0780  drop_form:Form AC-12
+   4. Q01-P029  lms_portal      2024-07-22T10:28 rel=0.63 c= 51 key=0.0745  misc24:M24
+   5. Q01-P025  registrar       2026-06-03T09:32 rel=0.63 c= 54 key=0.0602  misc27:M27
+-- Q03 (policy) B_CTX=256: density sum_rel=4.179 coverage=1/2 vs hybrid sum_rel=3.231 coverage=2/2
+   gold: fee_deadline:29 Aug 2026  fee_late_charge:PKR 500 per day  
+[Q03] policy=relevance-per-token  status=OK  B_CTX=256  used=244 (95.3%)  unspent=12  candidates=42  selected=7
+   1. Q03-P025  notices_office  2026-05-24T16:31 rel=0.69 c= 60 key=0.0114 MANDATORY  fee_deadline:29 Aug 2026
+   2. Q03-P017  student_forum   2025-12-08T15:48 rel=0.79 c= 30 key=0.0263  fee_deadline:15 Aug 2026
+   3. Q03-P009  student_forum   2026-05-04T08:13 rel=0.61 c= 31 key=0.0198  misc19:M19
+   4. Q03-P012  student_forum   2025-11-24T11:13 rel=0.48 c= 25 key=0.0194  misc25:M25
+   5. Q03-P032  dept_email      2025-11-24T11:13 rel=0.41 c= 23 key=0.0180  misc25:M25
+   6. Q03-P024  student_forum   2025-11-15T17:18 rel=0.87 c= 54 key=0.0161  fee_deadline:15 Aug 2026
+   7. Q03-P004  notices_office  2025-06-27T13:36 rel=0.32 c= 21 key=0.0152  misc22:M22
+[Q03] policy=hybrid-fresh-cover  status=OK  B_CTX=256  used=254 (99.2%)  unspent=2  candidates=42  selected=6
+   1. Q03-P025  notices_office  2026-05-24T16:31 rel=0.69 c= 60 key=0.6850 MANDATORY  fee_deadline:29 Aug 2026
+   2. Q03-P009  student_forum   2026-05-04T08:13 rel=0.61 c= 31 key=0.1105  misc19:M19
+   3. Q03-P023  faq_portal      2026-02-04T12:27 rel=0.54 c= 36 key=0.0761  fee_late_charge:PKR 500 per day
+   4. Q03-P031  lms_portal      2025-09-09T12:55 rel=0.39 c= 32 key=0.0691  misc41:M41
+   5. Q03-P012  student_forum   2025-11-24T11:13 rel=0.48 c= 25 key=0.0679  misc25:M25
+   6. Q03-P034  notices_office  2025-03-26T09:13 rel=0.52 c= 70 key=0.0619  misc20:M20
+Total counterexample cases found: 36

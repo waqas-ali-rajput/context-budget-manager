@@ -1,0 +1,113 @@
+Question: What is the last date to drop a course this semester, and which form is needed?
+Context (512/512 tokens, relevance-first):
+[1] (Q01-P027 | notices_office | 2026-01-07T08:37 | A) Revised official notice (replaces the earlier one): the last date to drop a course is 6 Mar 2026.
+[2] (Q01-P032 | notices_office | 2025-02-11T12:41 | A) Official notice: the last date to drop a course is 27 Feb 2026.
+[3] (Q01-P038 | student_forum | 2025-12-03T13:17 | C) Forum repost: the last date to drop a course is 27 Feb 2026.
+[4] (Q01-P012 | student_forum | 2025-12-02T09:37 | C) Forum repost: the last date to drop a course is 27 Feb 2026.
+[5] (Q01-P002 | student_forum | 2025-10-13T14:37 | C) Forum repost: the last date to drop a course is 27 Feb 2026.
+[6] (Q01-P003 | dept_email | 2025-01-27T08:54 | C) Update on the water supply schedule (ref M31).
+[7] (Q01-P011 | registrar | 2026-06-12T17:16 | C) Repost: Update on the seminar on AI ethics (ref M20).
+[8] (Q01-P033 | faq_portal | 2025-04-15T17:44 | C) Update on the road repairs (ref M16).
+Agent (first-mention): drop_deadline = 6 Mar 2026 [Q01-P027, notices_office] (sources disagree); 
+
+[Q01] policy=relevance-first  status=OK  B_CTX=512  used=512 (100.0%)  unspent=0  candidates=42  selected=8
+   1. Q01-P027  notices_office  2026-01-07T08:37 rel=0.78 c= 62 key=0.7820 MANDATORY  drop_deadline:6 Mar 2026
+   2. Q01-P032  notices_office  2025-02-11T12:41 rel=0.91 c=123 key=0.9140  drop_deadline:27 Feb 2026
+   3. Q01-P038  student_forum   2025-12-03T13:17 rel=0.87 c= 44 key=0.8700  drop_deadline:27 Feb 2026
+   4. Q01-P012  student_forum   2025-12-02T09:37 rel=0.82 c= 46 key=0.8170  drop_deadline:27 Feb 2026
+   5. Q01-P002  student_forum   2025-10-13T14:37 rel=0.80 c= 39 key=0.7980  drop_deadline:27 Feb 2026
+   6. Q01-P003  dept_email      2025-01-27T08:54 rel=0.65 c= 75 key=0.6500  misc31:M31
+   7. Q01-P011  registrar       2026-06-12T17:16 rel=0.64 c= 97 key=0.6370  misc20:M20
+   8. Q01-P033  faq_portal      2025-04-15T17:44 rel=0.35 c= 26 key=0.3480  misc16:M16
+  omitted Q01-P007  c=153  insufficient remaining capacity
+  omitted Q01-P025  c= 54  insufficient remaining capacity
+  omitted Q01-P029  c= 51  insufficient remaining capacity
+  omitted Q01-P028  c= 54  insufficient remaining capacity
+  omitted Q01-P021  c= 43  insufficient remaining capacity
+  omitted Q01-P022  c=123  insufficient remaining capacity
+  omitted Q01-P036  c=178  insufficient remaining capacity
+  omitted Q01-P040  c= 28  insufficient remaining capacity
+  omitted Q01-P018  c=140  insufficient remaining capacity
+  omitted Q01-P008  c= 61  insufficient remaining capacity
+  omitted Q01-P014  c= 65  insufficient remaining capacity
+  omitted Q01-P034  c=132  insufficient remaining capacity
+  omitted Q01-P031  c=289  insufficient remaining capacity
+  omitted Q01-P041  c= 59  insufficient remaining capacity
+  omitted Q01-P006  c= 54  insufficient remaining capacity
+  omitted Q01-P039  c= 26  insufficient remaining capacity
+  omitted Q01-P023  c= 96  insufficient remaining capacity
+  omitted Q01-P026  c= 23  insufficient remaining capacity
+  omitted Q01-P035  c= 46  insufficient remaining capacity
+  omitted Q01-P019  c=152  insufficient remaining capacity
+  omitted Q01-P037  c= 37  insufficient remaining capacity
+  omitted Q01-P013  c=140  insufficient remaining capacity
+  omitted Q01-P024  c=127  insufficient remaining capacity
+  omitted Q01-P016  c= 42  insufficient remaining capacity
+  omitted Q01-P004  c=130  insufficient remaining capacity
+  omitted Q01-P030  c=306  insufficient remaining capacity
+  omitted Q01-P009  c= 61  insufficient remaining capacity
+  omitted Q01-P005  c= 55  insufficient remaining capacity
+  omitted Q01-P001  c=128  insufficient remaining capacity
+  omitted Q01-P042  c=173  insufficient remaining capacity
+  omitted Q01-P010  c= 42  insufficient remaining capacity
+  omitted Q01-P020  c= 77  insufficient remaining capacity
+  omitted Q01-P017  c=150  insufficient remaining capacity
+  omitted Q01-P015  c=304  insufficient remaining capacity
+
+Question: What is the last date to drop a course this semester, and which form is needed?
+Context (485/512 tokens, hybrid-fresh-cover):
+[1] (Q01-P027 | notices_office | 2026-01-07T08:37 | A) Revised official notice (replaces the earlier one): the last date to drop a course is 6 Mar 2026.
+[2] (Q01-P040 | dept_email | 2024-04-01T09:53 | A) Update on the robotics club meeting (ref M22).
+[3] (Q01-P021 | faq_portal | 2026-07-13T10:59 | B) FAQ: course drops are submitted on Form AC-12.
+[4] (Q01-P029 | lms_portal | 2024-07-22T10:28 | B) Update on the vaccination drive (ref M24).
+[5] (Q01-P025 | registrar | 2026-06-03T09:32 | C) Update on the cricket trials (ref M27).
+[6] (Q01-P003 | dept_email | 2025-01-27T08:54 | C) Update on the water supply schedule (ref M31).
+[7] (Q01-P022 | notices_office | 2024-07-11T08:07 | A) Update on the canteen menu (ref M30).
+[8] (Q01-P026 | dept_email | 2025-06-02T08:00 | C) Update on the water supply schedule (ref M35).
+[9] (Q01-P033 | faq_portal | 2025-04-15T17:44 | C) Update on the road repairs (ref M16).
+Agent (first-mention): drop_deadline = 6 Mar 2026 [Q01-P027, notices_office]; drop_form = Form AC-12 [Q01-P021, faq_portal]; 
+
+[Q01] policy=hybrid-fresh-cover  status=OK  B_CTX=512  used=485 (94.7%)  unspent=27  candidates=42  selected=9
+   1. Q01-P027  notices_office  2026-01-07T08:37 rel=0.78 c= 62 key=0.7820 MANDATORY  drop_deadline:6 Mar 2026
+   2. Q01-P040  dept_email      2024-04-01T09:53 rel=0.52 c= 28 key=0.0973  misc22:M22
+   3. Q01-P021  faq_portal      2026-07-13T10:59 rel=0.60 c= 43 key=0.0780  drop_form:Form AC-12
+   4. Q01-P029  lms_portal      2024-07-22T10:28 rel=0.63 c= 51 key=0.0745  misc24:M24
+   5. Q01-P025  registrar       2026-06-03T09:32 rel=0.63 c= 54 key=0.0602  misc27:M27
+   6. Q01-P003  dept_email      2025-01-27T08:54 rel=0.65 c= 75 key=0.0525  misc31:M31
+   7. Q01-P022  notices_office  2024-07-11T08:07 rel=0.57 c=123 key=0.0513  misc30:M30
+   8. Q01-P026  dept_email      2025-06-02T08:00 rel=0.33 c= 23 key=0.0485  misc35:M35
+   9. Q01-P033  faq_portal      2025-04-15T17:44 rel=0.35 c= 26 key=0.0478  misc16:M16
+  omitted Q01-P002  c= 39  superseded by a newer candidate (Q01-P027)
+  omitted Q01-P012  c= 46  superseded by a newer candidate (Q01-P027)
+  omitted Q01-P032  c=123  superseded by a newer candidate (Q01-P027)
+  omitted Q01-P038  c= 44  superseded by a newer candidate (Q01-P027)
+  omitted Q01-P039  c= 26  duplicate group already covered, no new evidence
+  omitted Q01-P008  c= 61  insufficient remaining capacity
+  omitted Q01-P011  c= 97  insufficient remaining capacity
+  omitted Q01-P007  c=153  insufficient remaining capacity
+  omitted Q01-P035  c= 46  insufficient remaining capacity
+  omitted Q01-P037  c= 37  insufficient remaining capacity
+  omitted Q01-P041  c= 59  insufficient remaining capacity
+  omitted Q01-P014  c= 65  insufficient remaining capacity
+  omitted Q01-P036  c=178  insufficient remaining capacity
+  omitted Q01-P006  c= 54  insufficient remaining capacity
+  omitted Q01-P009  c= 61  insufficient remaining capacity
+  omitted Q01-P034  c=132  insufficient remaining capacity
+  omitted Q01-P016  c= 42  insufficient remaining capacity
+  omitted Q01-P010  c= 42  insufficient remaining capacity
+  omitted Q01-P018  c=140  insufficient remaining capacity
+  omitted Q01-P019  c=152  insufficient remaining capacity
+  omitted Q01-P023  c= 96  insufficient remaining capacity
+  omitted Q01-P005  c= 55  insufficient remaining capacity
+  omitted Q01-P024  c=127  insufficient remaining capacity
+  omitted Q01-P031  c=289  insufficient remaining capacity
+  omitted Q01-P004  c=130  insufficient remaining capacity
+  omitted Q01-P013  c=140  insufficient remaining capacity
+  omitted Q01-P042  c=173  insufficient remaining capacity
+  omitted Q01-P001  c=128  insufficient remaining capacity
+  omitted Q01-P020  c= 77  insufficient remaining capacity
+  omitted Q01-P030  c=306  insufficient remaining capacity
+  omitted Q01-P017  c=150  insufficient remaining capacity
+  omitted Q01-P028  c= 54  insufficient remaining capacity
+  omitted Q01-P015  c=304  insufficient remaining capacity
+

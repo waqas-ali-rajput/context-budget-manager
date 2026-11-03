@@ -1,0 +1,22 @@
+# MUET document set (data/passages.txt of the PBL project) as CEP questions; made by scripts/muet_dataset.py
+# query_id|category|question|ask_keys|gold_evidence_tags
+M01|lookup|food and drinks in the computer laboratory|lab_food_drinks|lab_food_drinks:strictly prohibited
+M02|lookup|mobile phones in the examination hall|exam_phones|exam_phones:not permitted
+M03|lookup|late fee fine after due date|late_fee_fine|late_fee_fine:100 rupees per day
+M04|lookup|merit scholarship GPA requirement|merit_scholarship_gpa|merit_scholarship_gpa:3.5 or higher
+M05|lookup|CS-251 course contents hash tables heaps|cs251_contents|cs251_contents:arrays, linked lists, stacks, queues, hash tables, heaps, trees, graphs
+M06|lookup|can I eat lunch in the computer room|lab_food_drinks|lab_food_drinks:strictly prohibited
+M07|lookup|what happens if I am caught cheating in a paper|unfair_means_penalty;repeated_cheating|unfair_means_penalty:zero marks in that paper;repeated_cheating:expulsion from the university
+M08|lookup|how long can I keep a borrowed library book|library_loan|library_loan:up to three books for fourteen days
+M09|policy|minimum attendance required for the final examination|attendance_min;attendance_shortfall|attendance_min:75 percent;attendance_shortfall:detained and must repeat the course
+M10|policy|CS-251 final examination date|cs251_final_date|cs251_final_date:22 December 2026 at 10 am
+M11|multisource|final examination marks|cs251_final_marks;cs252_final_marks|cs251_final_marks:final examination worth 50 marks;cs252_final_marks:final examination of CS-252 carries 50 marks
+M12|multisource|late submission penalty|assignment_late_penalty;lab_report_late_penalty|assignment_late_penalty:10 percent per day;lab_report_late_penalty:20 percent of the marks
+M13|unanswerable|parking permit for student cars|parking_permit|-
+M14|unanswerable|cafeteria menu prices|cafeteria_prices|-
+M15|lookup|summer internship duration|internship_duration|internship_duration:at least six weeks
+M16|lookup|DSA lab timings for batch 25CS|dsa_lab_timing|dsa_lab_timing:Mondays and Wednesdays from 2 pm to 5 pm
+M17|lookup|how many students can work together on a final year project|fyp_group_size|fyp_group_size:groups of three to four students
+M18|policy|last date for course registration fall 2026|registration_close|registration_close:17 September 2026
+M19|lookup|what is asked in the viva|viva_individual;viva_topics|viva_individual:individual questions about their own contribution;viva_topics:time complexity, data structure choices and test results
+M20|unanswerable|MUET transport bus routes|bus_routes|-

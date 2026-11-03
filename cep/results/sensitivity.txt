@@ -1,0 +1,25 @@
+HYBRID SENSITIVITY (all 32 queries; coverage over 30 answerable; FM = first-mention agent facts correct)
+default a=0.5 lambda=0.2 dup=0.3 exclude-stale
+  B_CTX  256: coverage=0.792 multisource=0.575 long_taken=0/10 stale=0 redundancy=0 %B_CTX=95.6 FM=68/90
+  B_CTX  512: coverage=0.908 multisource=0.825 long_taken=0/10 stale=0 redundancy=0 %B_CTX=97.8 FM=75/90
+  B_CTX 1024: coverage=1.000 multisource=1.000 long_taken=0/10 stale=0 redundancy=0 %B_CTX=98.8 FM=84/90
+alpha=0 (no cost normalisation)
+  B_CTX  256: coverage=0.683 multisource=0.450 long_taken=0/10 stale=0 redundancy=0 %B_CTX=96.7 FM=50/90
+  B_CTX  512: coverage=0.892 multisource=0.875 long_taken=10/10 stale=0 redundancy=0 %B_CTX=98.6 FM=71/90
+  B_CTX 1024: coverage=0.975 multisource=0.925 long_taken=10/10 stale=0 redundancy=0 %B_CTX=99.3 FM=77/90
+alpha=1 (full per-token density)
+  B_CTX  256: coverage=0.750 multisource=0.550 long_taken=0/10 stale=0 redundancy=0 %B_CTX=95.1 FM=65/90
+  B_CTX  512: coverage=0.900 multisource=0.800 long_taken=0/10 stale=0 redundancy=0 %B_CTX=97.0 FM=74/90
+  B_CTX 1024: coverage=1.000 multisource=1.000 long_taken=0/10 stale=0 redundancy=0 %B_CTX=97.5 FM=84/90
+stale penalty x0.25 instead of exclusion
+  B_CTX  256: coverage=0.792 multisource=0.575 long_taken=0/10 stale=0 redundancy=0 %B_CTX=95.6 FM=68/90
+  B_CTX  512: coverage=0.908 multisource=0.825 long_taken=0/10 stale=0 redundancy=0 %B_CTX=97.8 FM=75/90
+  B_CTX 1024: coverage=1.000 multisource=1.000 long_taken=0/10 stale=2 redundancy=0 %B_CTX=98.8 FM=84/90
+keep redundant copies (dropRedundant=false)
+  B_CTX  256: coverage=0.792 multisource=0.575 long_taken=0/10 stale=0 redundancy=0 %B_CTX=95.6 FM=68/90
+  B_CTX  512: coverage=0.908 multisource=0.825 long_taken=0/10 stale=0 redundancy=3 %B_CTX=98.4 FM=75/90
+  B_CTX 1024: coverage=1.000 multisource=1.000 long_taken=0/10 stale=0 redundancy=5 %B_CTX=99.3 FM=84/90
+no coverage/redundancy terms (lambda=1, dup=1)
+  B_CTX  256: coverage=0.717 multisource=0.400 long_taken=0/10 stale=0 redundancy=51 %B_CTX=96.1 FM=61/90
+  B_CTX  512: coverage=0.825 multisource=0.575 long_taken=0/10 stale=0 redundancy=79 %B_CTX=98.0 FM=70/90
+  B_CTX 1024: coverage=0.983 multisource=0.950 long_taken=0/10 stale=0 redundancy=114 %B_CTX=98.7 FM=82/90

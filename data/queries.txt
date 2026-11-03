@@ -1,0 +1,25 @@
+# Evaluation questions with manually labelled gold passages.
+# Format: query_id|type|question|gold passage ids (comma separated, "-" = none)|labelling note
+# Types: keyword (8), paraphrase (4), ambiguous/version (5), unanswerable (3) = 20 questions.
+# Q15-Q20 cover the MUET CSE documents D24-D31.
+# Gold sets contain only CURRENT passages; superseded versions are deliberately NOT gold.
+Q01|keyword|food and drinks in the computer laboratory|D02-P1,D23-P1|D23-P1 is an exact repost of D02-P1
+Q02|keyword|mobile phones in the examination hall|D03-P2|
+Q03|keyword|late fee fine after due date|D10-P2|
+Q04|keyword|merit scholarship GPA requirement|D10-P3|
+Q05|keyword|CS-251 course contents hash tables heaps|D01-P2|
+Q06|paraphrase|can I eat lunch in the computer room|D02-P1,D23-P1|no shared keyword except "computer"
+Q07|paraphrase|what happens if I am caught cheating in a paper|D08-P2,D08-P3|"cheating" vs "unfair means"
+Q08|paraphrase|how long can I keep a borrowed library book|D14-P2|"keep/borrowed" vs "borrow ... for fourteen days"
+Q09|version|minimum attendance required for the final examination|D09-P1,D09-P3|D04 (70 percent, 2025) is superseded and must not be presented as current
+Q10|version|CS-251 final examination date|D20-P2|D19-P2 is the superseded original date sheet
+Q11|ambiguous|final examination marks|D01-P3,D06-P4|ambiguous: which course? both course outlines are relevant
+Q12|ambiguous|late submission penalty|D01-P4,D12-P3|ambiguous: assignment vs lab report penalty
+Q13|unanswerable|parking permit for student cars|-|no parking information in the corpus
+Q14|unanswerable|cafeteria menu prices|-|no cafeteria information in the corpus
+Q15|keyword|summer internship duration|D27-P1|
+Q16|keyword|DSA lab timings for batch 25CS|D25-P1|"DSA" is not in the passage; "lab", "batch" and "25CS" are
+Q17|paraphrase|how many students can work together on a final year project|D26-P1|"work together" vs "groups of three to four"
+Q18|version|last date for course registration fall 2026|D29-P1|D28-P1 is the superseded original notice (10 Sept vs 17 Sept)
+Q19|keyword|what is asked in the viva|D31-P1,D31-P4|
+Q20|unanswerable|MUET transport bus routes|-|no transport information in the corpus

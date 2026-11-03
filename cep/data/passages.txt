@@ -1,0 +1,1301 @@
+# query_id|passage_id|source_id|timestamp|token_cost|relevance|reliability|dup_group|evidence_tags|mandatory|supersedes|text   (generated, seed 2026; token_cost includes 6 label/separator tokens)
+Q01|Q01-P001|faq_portal|2026-03-01T16:34|128|0.212|B|Q01-G10|misc39:M39|0|-|Repost: Update on the library book fair (ref M39).
+Q01|Q01-P002|student_forum|2025-10-13T14:37|39|0.798|C|Q01-G0|drop_deadline:27 Feb 2026|0|-|Forum repost: the last date to drop a course is 27 Feb 2026.
+Q01|Q01-P003|dept_email|2025-01-27T08:54|75|0.650|C|-|misc31:M31|0|-|Update on the water supply schedule (ref M31).
+Q01|Q01-P004|dept_email|2026-07-04T15:00|130|0.264|B|Q01-G7|misc25:M25|0|-|Repost: Update on the alumni talk (ref M25).
+Q01|Q01-P005|registrar|2024-11-02T08:46|55|0.216|C|Q01-G9|misc36:M36|0|-|Repost: Update on the alumni talk (ref M36).
+Q01|Q01-P006|dept_email|2024-11-02T08:46|54|0.341|C|Q01-G9|misc36:M36|0|-|Update on the alumni talk (ref M36).
+Q01|Q01-P007|registrar|2026-07-10T12:52|153|0.633|B|-|misc29:M29|0|-|Update on the canteen menu (ref M29).
+Q01|Q01-P008|faq_portal|2026-03-14T12:27|61|0.428|B|Q01-G4|misc17:M17|0|-|Update on the debate competition (ref M17).
+Q01|Q01-P009|handbook|2024-08-06T10:20|61|0.235|A|-|misc41:M41|0|-|Update on the canteen menu (ref M41).
+Q01|Q01-P010|dept_email|2026-10-06T14:19|42|0.204|B|-|misc14:M14|0|-|Update on the blood donation camp (ref M14).
+Q01|Q01-P011|registrar|2026-06-12T17:16|97|0.637|C|Q01-G5|misc20:M20|0|-|Repost: Update on the seminar on AI ethics (ref M20).
+Q01|Q01-P012|student_forum|2025-12-02T09:37|46|0.817|C|Q01-G0|drop_deadline:27 Feb 2026|0|-|Forum repost: the last date to drop a course is 27 Feb 2026.
+Q01|Q01-P013|dept_email|2026-05-23T08:57|140|0.284|C|Q01-G8|misc32:M32|0|-|Repost: Update on the vaccination drive (ref M32).
+Q01|Q01-P014|lms_portal|2024-07-09T14:11|65|0.412|C|-|misc28:M28|0|-|Update on the art exhibition (ref M28).
+Q01|Q01-P015|lms_portal|2026-10-17T17:17|304|0.078|C|Q01-G2|misc9:M9|0|-|Update on the Wi-Fi outage (ref M9).
+Q01|Q01-P016|registrar|2026-09-10T08:19|42|0.265|C|-|misc8:M8|0|-|Update on the hostel maintenance work (ref M8).
+Q01|Q01-P017|lms_portal|2026-09-11T08:22|150|0.098|A|Q01-G3|misc12:M12|0|-|Repost: Update on the cricket trials (ref M12).
+Q01|Q01-P018|student_forum|2026-05-23T08:57|140|0.430|C|Q01-G8|misc32:M32|0|-|Update on the vaccination drive (ref M32).
+Q01|Q01-P019|student_forum|2026-09-11T08:22|152|0.298|A|Q01-G3|misc12:M12|0|-|Update on the cricket trials (ref M12).
+Q01|Q01-P020|handbook|2026-09-23T11:36|77|0.126|B|-|misc11:M11|0|-|Update on the seminar on AI ethics (ref M11).
+Q01|Q01-P021|faq_portal|2026-07-13T10:59|43|0.602|B|-|drop_form:Form AC-12|0|-|FAQ: course drops are submitted on Form AC-12.
+Q01|Q01-P022|notices_office|2024-07-11T08:07|123|0.569|A|-|misc30:M30|0|-|Update on the canteen menu (ref M30).
+Q01|Q01-P023|notices_office|2026-06-12T17:16|96|0.333|C|Q01-G5|misc20:M20|0|-|Update on the seminar on AI ethics (ref M20).
+Q01|Q01-P024|faq_portal|2026-03-01T16:34|127|0.267|B|Q01-G10|misc39:M39|0|-|Update on the library book fair (ref M39).
+Q01|Q01-P025|registrar|2026-06-03T09:32|54|0.632|C|-|misc27:M27|0|-|Update on the cricket trials (ref M27).
+Q01|Q01-P026|dept_email|2025-06-02T08:00|23|0.332|C|-|misc35:M35|0|-|Update on the water supply schedule (ref M35).
+Q01|Q01-P027|notices_office|2026-01-07T08:37|62|0.782|A|Q01-G1|drop_deadline:6 Mar 2026|1|Q01-P032|Revised official notice (replaces the earlier one): the last date to drop a course is 6 Mar 2026.
+Q01|Q01-P028|dept_email|2026-01-08T08:37|54|0.619|B|Q01-G1|drop_deadline:6 Mar 2026|0|-|Department email: please note the last date to drop a course is 6 Mar 2026.
+Q01|Q01-P029|lms_portal|2024-07-22T10:28|51|0.626|B|-|misc24:M24|0|-|Update on the vaccination drive (ref M24).
+Q01|Q01-P030|student_forum|2026-10-17T17:17|306|0.252|C|Q01-G2|misc9:M9|0|-|Repost: Update on the Wi-Fi outage (ref M9).
+Q01|Q01-P031|registrar|2025-11-23T15:54|289|0.394|B|-|misc38:M38|0|-|Update on the career fair (ref M38).
+Q01|Q01-P032|notices_office|2025-02-11T12:41|123|0.914|A|Q01-G0|drop_deadline:27 Feb 2026|0|-|Official notice: the last date to drop a course is 27 Feb 2026.
+Q01|Q01-P033|faq_portal|2025-04-15T17:44|26|0.348|C|-|misc16:M16|0|-|Update on the road repairs (ref M16).
+Q01|Q01-P034|registrar|2026-07-04T15:00|132|0.402|B|Q01-G7|misc25:M25|0|-|Update on the alumni talk (ref M25).
+Q01|Q01-P035|handbook|2026-09-09T17:19|46|0.328|B|-|misc7:M7|0|-|Update on the Wi-Fi outage (ref M7).
+Q01|Q01-P036|lms_portal|2025-03-01T15:36|178|0.543|B|-|misc19:M19|0|-|Update on the art exhibition (ref M19).
+Q01|Q01-P037|dept_email|2025-08-19T14:02|37|0.289|B|-|misc34:M34|0|-|Update on the sports gala schedule (ref M34).
+Q01|Q01-P038|student_forum|2025-12-03T13:17|44|0.870|C|Q01-G0|drop_deadline:27 Feb 2026|0|-|Forum repost: the last date to drop a course is 27 Feb 2026.
+Q01|Q01-P039|handbook|2024-04-01T09:53|26|0.334|A|Q01-G6|misc22:M22|0|-|Repost: Update on the robotics club meeting (ref M22).
+Q01|Q01-P040|dept_email|2024-04-01T09:53|28|0.515|A|Q01-G6|misc22:M22|0|-|Update on the robotics club meeting (ref M22).
+Q01|Q01-P041|faq_portal|2026-03-14T12:27|59|0.351|B|Q01-G4|misc17:M17|0|-|Repost: Update on the debate competition (ref M17).
+Q01|Q01-P042|registrar|2025-03-17T15:36|173|0.211|A|-|misc15:M15|0|-|Update on the sports gala schedule (ref M15).
+Q02|Q02-P001|notices_office|2025-09-24T10:48|126|0.846|A|Q02-G0|lab_attendance_min:75 percent|0|-|Official notice: the minimum lab attendance is 75 percent.
+Q02|Q02-P002|dept_email|2026-03-24T15:33|30|0.629|B|-|misc18:M18|0|-|Update on the seminar on AI ethics (ref M18).
+Q02|Q02-P003|lms_portal|2026-02-10T13:12|50|0.561|C|-|misc32:M32|0|-|Update on the cricket trials (ref M32).
+Q02|Q02-P004|student_forum|2025-12-08T08:22|57|0.847|C|Q02-G0|lab_attendance_min:75 percent|0|-|Forum repost: the minimum lab attendance is 75 percent.
+Q02|Q02-P005|notices_office|2026-02-16T08:10|48|0.639|A|Q02-G1|lab_attendance_min:80 percent|1|Q02-P001|Revised official notice (replaces the earlier one): the minimum lab attendance is 80 percent.
+Q02|Q02-P006|dept_email|2026-02-17T08:10|54|0.678|B|Q02-G1|lab_attendance_min:80 percent|0|-|Department email: please note the minimum lab attendance is 80 percent.
+Q02|Q02-P007|faq_portal|2026-06-17T13:36|38|0.475|B|-|misc15:M15|0|-|Update on the alumni talk (ref M15).
+Q02|Q02-P008|handbook|2024-07-08T16:15|205|0.614|B|Q02-G5|misc25:M25|0|-|Update on the debate competition (ref M25).
+Q02|Q02-P009|dept_email|2026-08-14T15:17|47|0.342|C|-|misc17:M17|0|-|Update on the blood donation camp (ref M17).
+Q02|Q02-P010|lms_portal|2026-03-02T08:57|137|0.593|C|Q02-G4|misc23:M23|0|-|Update on the seminar on AI ethics (ref M23).
+Q02|Q02-P011|dept_email|2026-09-10T16:22|28|0.332|B|-|misc13:M13|0|-|Update on the alumni talk (ref M13).
+Q02|Q02-P012|registrar|2025-07-18T08:15|61|0.202|B|-|misc20:M20|0|-|Update on the bus route change (ref M20).
+Q02|Q02-P013|faq_portal|2024-07-08T16:15|202|0.557|B|Q02-G5|misc25:M25|0|-|Repost: Update on the debate competition (ref M25).
+Q02|Q02-P014|dept_email|2026-09-17T09:00|29|0.193|B|Q02-G2|misc9:M9|0|-|Update on the seminar on AI ethics (ref M9).
+Q02|Q02-P015|lms_portal|2024-06-25T12:06|58|0.211|A|Q02-G9|misc40:M40|0|-|Repost: Update on the hostel maintenance work (ref M40).
+Q02|Q02-P016|faq_portal|2026-02-08T16:52|60|0.602|B|-|attendance_appeal:the Lab Coordinator Office|0|-|FAQ: attendance appeals go to the Lab Coordinator Office.
+Q02|Q02-P017|faq_portal|2026-05-06T16:12|33|0.332|C|Q02-G6|misc28:M28|0|-|Repost: Update on the debate competition (ref M28).
+Q02|Q02-P018|handbook|2024-06-16T14:17|200|0.488|A|-|misc30:M30|0|-|Update on the art exhibition (ref M30).
+Q02|Q02-P019|notices_office|2026-05-06T16:12|37|0.565|C|Q02-G6|misc28:M28|0|-|Update on the debate competition (ref M28).
+Q02|Q02-P020|handbook|2025-10-12T10:01|79|0.453|B|-|misc34:M34|0|-|Update on the coding contest (ref M34).
+Q02|Q02-P021|notices_office|2026-03-02T08:57|134|0.210|C|Q02-G4|misc23:M23|0|-|Repost: Update on the seminar on AI ethics (ref M23).
+Q02|Q02-P022|registrar|2026-10-03T13:59|95|0.199|C|Q02-G3|misc11:M11|0|-|Update on the convocation dress code (ref M11).
+Q02|Q02-P023|registrar|2024-08-27T10:30|35|0.393|B|-|misc27:M27|0|-|Update on the sports gala schedule (ref M27).
+Q02|Q02-P024|lms_portal|2024-04-10T16:03|42|0.444|C|-|misc19:M19|0|-|Update on the coding contest (ref M19).
+Q02|Q02-P025|notices_office|2025-01-16T08:16|60|0.377|B|-|misc21:M21|0|-|Update on the cricket trials (ref M21).
+Q02|Q02-P026|student_forum|2025-10-06T09:35|40|0.856|C|Q02-G0|lab_attendance_min:75 percent|0|-|Forum repost: the minimum lab attendance is 75 percent.
+Q02|Q02-P027|handbook|2026-07-01T16:19|41|0.589|A|-|misc31:M31|0|-|Update on the seminar on AI ethics (ref M31).
+Q02|Q02-P028|faq_portal|2024-06-25T12:06|62|0.387|A|Q02-G9|misc40:M40|0|-|Update on the hostel maintenance work (ref M40).
+Q02|Q02-P029|handbook|2024-04-28T09:05|37|0.396|A|-|misc37:M37|0|-|Update on the coding contest (ref M37).
+Q02|Q02-P030|registrar|2026-10-23T13:03|101|0.308|B|-|misc7:M7|0|-|Update on the vaccination drive (ref M7).
+Q02|Q02-P031|handbook|2026-10-28T13:12|79|0.127|C|-|misc14:M14|0|-|Update on the coding contest (ref M14).
+Q02|Q02-P032|dept_email|2026-01-14T14:03|91|0.375|A|-|misc22:M22|0|-|Update on the photography contest (ref M22).
+Q02|Q02-P033|faq_portal|2024-04-08T13:09|35|0.591|A|Q02-G7|misc35:M35|0|-|Update on the debate competition (ref M35).
+Q02|Q02-P034|registrar|2026-10-03T13:59|97|0.222|C|Q02-G3|misc11:M11|0|-|Repost: Update on the convocation dress code (ref M11).
+Q02|Q02-P035|registrar|2025-07-16T09:28|56|0.316|B|Q02-G8|misc38:M38|0|-|Update on the vaccination drive (ref M38).
+Q02|Q02-P036|faq_portal|2026-09-17T09:00|25|0.258|B|Q02-G2|misc9:M9|0|-|Repost: Update on the seminar on AI ethics (ref M9).
+Q02|Q02-P037|handbook|2024-07-06T12:51|37|0.531|A|-|misc16:M16|0|-|Update on the career fair (ref M16).
+Q02|Q02-P038|notices_office|2024-02-04T13:42|28|0.636|A|-|misc33:M33|0|-|Update on the bus route change (ref M33).
+Q02|Q02-P039|handbook|2024-04-08T13:09|34|0.377|A|Q02-G7|misc35:M35|0|-|Repost: Update on the debate competition (ref M35).
+Q02|Q02-P040|student_forum|2025-10-28T17:46|47|0.872|C|Q02-G0|lab_attendance_min:75 percent|0|-|Forum repost: the minimum lab attendance is 75 percent.
+Q02|Q02-P041|lms_portal|2026-09-19T16:00|213|0.347|C|-|misc8:M8|0|-|Update on the vaccination drive (ref M8).
+Q02|Q02-P042|handbook|2025-07-16T09:28|54|0.457|B|Q02-G8|misc38:M38|0|-|Repost: Update on the vaccination drive (ref M38).
+Q03|Q03-P001|student_forum|2026-02-24T13:12|82|0.439|A|-|misc29:M29|0|-|Update on the vaccination drive (ref M29).
+Q03|Q03-P002|lms_portal|2025-06-07T16:54|84|0.215|A|Q03-G6|misc35:M35|0|-|Repost: Update on the Wi-Fi outage (ref M35).
+Q03|Q03-P003|dept_email|2026-05-25T16:31|38|0.562|B|Q03-G1|fee_deadline:29 Aug 2026|0|-|Department email: please note the semester fee deadline is 29 Aug 2026.
+Q03|Q03-P004|notices_office|2025-06-27T13:36|21|0.319|C|-|misc22:M22|0|-|Update on the robotics club meeting (ref M22).
+Q03|Q03-P005|registrar|2026-09-19T17:03|60|0.267|A|Q03-G2|misc10:M10|0|-|Update on the seminar on AI ethics (ref M10).
+Q03|Q03-P006|lms_portal|2025-02-17T09:13|122|0.638|C|-|misc37:M37|0|-|Update on the debate competition (ref M37).
+Q03|Q03-P007|handbook|2024-01-04T14:28|66|0.439|C|-|misc24:M24|0|-|Update on the sports gala schedule (ref M24).
+Q03|Q03-P008|faq_portal|2024-03-01T12:00|103|0.541|C|Q03-G4|misc27:M27|0|-|Repost: Update on the coding contest (ref M27).
+Q03|Q03-P009|student_forum|2026-05-04T08:13|31|0.615|A|-|misc19:M19|0|-|Update on the debate competition (ref M19).
+Q03|Q03-P010|student_forum|2025-11-14T16:30|58|0.897|C|Q03-G0|fee_deadline:15 Aug 2026|0|-|Forum repost: the semester fee deadline is 15 Aug 2026.
+Q03|Q03-P011|faq_portal|2026-09-15T11:28|130|0.273|B|-|misc8:M8|0|-|Update on the convocation dress code (ref M8).
+Q03|Q03-P012|student_forum|2025-11-24T11:13|25|0.485|C|Q03-G3|misc25:M25|0|-|Repost: Update on the art exhibition (ref M25).
+Q03|Q03-P013|notices_office|2025-04-01T12:37|120|0.926|A|Q03-G0|fee_deadline:15 Aug 2026|0|-|Official notice: the semester fee deadline is 15 Aug 2026.
+Q03|Q03-P014|faq_portal|2024-02-25T08:24|59|0.463|B|-|misc34:M34|0|-|Update on the debate competition (ref M34).
+Q03|Q03-P015|dept_email|2025-06-07T16:54|84|0.580|A|Q03-G6|misc35:M35|0|-|Update on the Wi-Fi outage (ref M35).
+Q03|Q03-P016|notices_office|2026-05-24T15:52|84|0.570|A|-|misc17:M17|0|-|Update on the canteen menu (ref M17).
+Q03|Q03-P017|student_forum|2025-12-08T15:48|30|0.790|C|Q03-G0|fee_deadline:15 Aug 2026|0|-|Forum repost: the semester fee deadline is 15 Aug 2026.
+Q03|Q03-P018|student_forum|2026-03-21T12:59|52|0.260|B|-|misc39:M39|0|-|Update on the road repairs (ref M39).
+Q03|Q03-P019|faq_portal|2026-10-14T14:08|28|0.283|C|-|misc14:M14|0|-|Update on the robotics club meeting (ref M14).
+Q03|Q03-P020|lms_portal|2025-04-23T10:44|160|0.321|C|-|misc15:M15|0|-|Update on the cricket trials (ref M15).
+Q03|Q03-P021|lms_portal|2025-03-22T09:39|88|0.235|C|-|misc38:M38|0|-|Update on the art exhibition (ref M38).
+Q03|Q03-P022|registrar|2026-09-10T09:34|121|0.125|C|-|misc7:M7|0|-|Update on the blood donation camp (ref M7).
+Q03|Q03-P023|faq_portal|2026-02-04T12:27|36|0.537|B|-|fee_late_charge:PKR 500 per day|0|-|FAQ: the late payment charge is PKR 500 per day.
+Q03|Q03-P024|student_forum|2025-11-15T17:18|54|0.872|C|Q03-G0|fee_deadline:15 Aug 2026|0|-|Forum repost: the semester fee deadline is 15 Aug 2026.
+Q03|Q03-P025|notices_office|2026-05-24T16:31|60|0.685|A|Q03-G1|fee_deadline:29 Aug 2026|1|Q03-P013|Revised official notice (replaces the earlier one): the semester fee deadline is 29 Aug 2026.
+Q03|Q03-P026|lms_portal|2026-03-23T09:06|140|0.381|A|Q03-G5|misc30:M30|0|-|Update on the road repairs (ref M30).
+Q03|Q03-P027|faq_portal|2024-06-26T10:46|45|0.292|A|-|misc18:M18|0|-|Update on the photography contest (ref M18).
+Q03|Q03-P028|notices_office|2026-03-08T12:12|250|0.460|A|-|misc23:M23|0|-|Update on the alumni talk (ref M23).
+Q03|Q03-P029|student_forum|2026-10-04T14:09|177|0.169|B|-|misc13:M13|0|-|Update on the cricket trials (ref M13).
+Q03|Q03-P030|notices_office|2024-11-25T11:31|92|0.547|C|-|misc33:M33|0|-|Update on the water supply schedule (ref M33).
+Q03|Q03-P031|lms_portal|2025-09-09T12:55|32|0.391|A|-|misc41:M41|0|-|Update on the blood donation camp (ref M41).
+Q03|Q03-P032|dept_email|2025-11-24T11:13|23|0.413|C|Q03-G3|misc25:M25|0|-|Update on the art exhibition (ref M25).
+Q03|Q03-P033|registrar|2024-12-11T10:20|46|0.258|B|-|misc32:M32|0|-|Update on the photography contest (ref M32).
+Q03|Q03-P034|notices_office|2025-03-26T09:13|70|0.518|A|-|misc20:M20|0|-|Update on the sports gala schedule (ref M20).
+Q03|Q03-P035|registrar|2026-07-22T15:57|86|0.389|A|-|misc21:M21|0|-|Update on the debate competition (ref M21).
+Q03|Q03-P036|student_forum|2026-09-19T17:03|59|0.121|A|Q03-G2|misc10:M10|0|-|Repost: Update on the seminar on AI ethics (ref M10).
+Q03|Q03-P037|dept_email|2026-04-17T15:14|82|0.398|A|-|misc40:M40|0|-|Update on the sports gala schedule (ref M40).
+Q03|Q03-P038|handbook|2026-09-02T11:03|37|0.253|C|-|misc12:M12|0|-|Update on the library book fair (ref M12).
+Q03|Q03-P039|handbook|2024-03-01T12:00|107|0.236|C|Q03-G4|misc27:M27|0|-|Update on the coding contest (ref M27).
+Q03|Q03-P040|notices_office|2026-10-10T09:12|58|0.088|B|-|misc9:M9|0|-|Update on the canteen menu (ref M9).
+Q03|Q03-P041|dept_email|2026-03-23T09:06|141|0.368|A|Q03-G5|misc30:M30|0|-|Repost: Update on the road repairs (ref M30).
+Q03|Q03-P042|handbook|2024-09-10T10:14|81|0.630|B|-|misc16:M16|0|-|Update on the convocation dress code (ref M16).
+Q04|Q04-P001|student_forum|2026-03-18T08:43|84|0.604|B|Q04-G9|misc32:M32|0|-|Update on the road repairs (ref M32).
+Q04|Q04-P002|dept_email|2026-01-06T10:59|33|0.633|B|Q04-G1|resit_fee:PKR 3000|0|-|Department email: please note the re-sit examination fee is PKR 3000.
+Q04|Q04-P003|student_forum|2025-10-19T09:38|46|0.890|C|Q04-G0|resit_fee:PKR 2000|0|-|Forum repost: the re-sit examination fee is PKR 2000.
+Q04|Q04-P004|registrar|2025-10-06T14:46|163|0.363|C|-|misc19:M19|0|-|Update on the Wi-Fi outage (ref M19).
+Q04|Q04-P005|student_forum|2025-10-23T10:21|59|0.863|C|Q04-G0|resit_fee:PKR 2000|0|-|Forum repost: the re-sit examination fee is PKR 2000.
+Q04|Q04-P006|lms_portal|2026-04-11T08:32|21|0.553|B|-|misc35:M35|0|-|Update on the cricket trials (ref M35).
+Q04|Q04-P007|lms_portal|2024-09-25T09:17|107|0.311|B|Q04-G7|misc25:M25|0|-|Repost: Update on the blood donation camp (ref M25).
+Q04|Q04-P008|notices_office|2026-06-28T11:55|27|0.553|C|-|misc29:M29|0|-|Update on the canteen menu (ref M29).
+Q04|Q04-P009|handbook|2024-02-07T13:14|149|0.291|C|-|misc39:M39|0|-|Update on the sports gala schedule (ref M39).
+Q04|Q04-P010|dept_email|2025-02-22T15:15|151|0.300|B|Q04-G4|misc17:M17|0|-|Update on the road repairs (ref M17).
+Q04|Q04-P011|faq_portal|2026-08-20T13:46|62|0.524|C|-|misc36:M36|0|-|Update on the Wi-Fi outage (ref M36).
+Q04|Q04-P012|student_forum|2025-08-06T14:58|83|0.591|B|Q04-G10|misc37:M37|0|-|Update on the bus route change (ref M37).
+Q04|Q04-P013|student_forum|2024-09-25T09:17|104|0.204|B|Q04-G7|misc25:M25|0|-|Update on the blood donation camp (ref M25).
+Q04|Q04-P014|registrar|2025-07-18T11:49|59|0.524|A|Q04-G11|misc40:M40|0|-|Repost: Update on the convocation dress code (ref M40).
+Q04|Q04-P015|notices_office|2026-01-05T10:59|52|0.741|A|Q04-G1|resit_fee:PKR 3000|1|Q04-P041|Revised official notice (replaces the earlier one): the re-sit examination fee is PKR 3000.
+Q04|Q04-P016|notices_office|2024-03-23T08:04|177|0.608|B|Q04-G5|misc21:M21|0|-|Update on the alumni talk (ref M21).
+Q04|Q04-P017|faq_portal|2026-10-28T13:36|167|0.102|B|Q04-G3|misc9:M9|0|-|Update on the blood donation camp (ref M9).
+Q04|Q04-P018|faq_portal|2024-09-20T13:22|82|0.522|B|-|misc16:M16|0|-|Update on the canteen menu (ref M16).
+Q04|Q04-P019|lms_portal|2026-09-08T11:06|49|0.183|A|-|misc14:M14|0|-|Update on the art exhibition (ref M14).
+Q04|Q04-P020|student_forum|2025-10-24T08:59|53|0.853|C|Q04-G0|resit_fee:PKR 2000|0|-|Forum repost: the re-sit examination fee is PKR 2000.
+Q04|Q04-P021|lms_portal|2026-05-06T12:16|304|0.529|C|-|misc27:M27|0|-|Update on the bus route change (ref M27).
+Q04|Q04-P022|student_forum|2024-03-23T08:04|174|0.611|B|Q04-G5|misc21:M21|0|-|Repost: Update on the alumni talk (ref M21).
+Q04|Q04-P023|dept_email|2024-01-03T17:59|184|0.251|A|-|misc15:M15|0|-|Update on the water supply schedule (ref M15).
+Q04|Q04-P024|registrar|2026-09-09T13:06|39|0.166|A|Q04-G2|misc7:M7|0|-|Repost: Update on the career fair (ref M7).
+Q04|Q04-P025|faq_portal|2026-02-01T17:34|58|0.579|B|-|resit_form:Form EX-7|0|-|FAQ: re-sit requests use Form EX-7.
+Q04|Q04-P026|dept_email|2025-04-03T12:12|49|0.237|A|Q04-G6|misc23:M23|0|-|Update on the convocation dress code (ref M23).
+Q04|Q04-P027|handbook|2025-07-18T11:49|60|0.481|A|Q04-G11|misc40:M40|0|-|Update on the convocation dress code (ref M40).
+Q04|Q04-P028|lms_portal|2024-03-05T10:08|63|0.548|B|-|misc28:M28|0|-|Update on the photography contest (ref M28).
+Q04|Q04-P029|handbook|2026-10-28T13:36|166|0.081|B|Q04-G3|misc9:M9|0|-|Repost: Update on the blood donation camp (ref M9).
+Q04|Q04-P030|dept_email|2026-09-03T08:11|129|0.345|B|-|misc11:M11|0|-|Update on the hostel maintenance work (ref M11).
+Q04|Q04-P031|student_forum|2025-07-16T16:45|33|0.223|C|Q04-G8|misc30:M30|0|-|Update on the robotics club meeting (ref M30).
+Q04|Q04-P032|lms_portal|2026-10-19T11:09|274|0.201|B|-|misc13:M13|0|-|Update on the bus route change (ref M13).
+Q04|Q04-P033|dept_email|2025-07-16T16:45|32|0.284|C|Q04-G8|misc30:M30|0|-|Repost: Update on the robotics club meeting (ref M30).
+Q04|Q04-P034|dept_email|2024-03-15T11:45|81|0.317|B|-|misc20:M20|0|-|Update on the bus route change (ref M20).
+Q04|Q04-P035|student_forum|2026-03-18T08:43|87|0.629|B|Q04-G9|misc32:M32|0|-|Repost: Update on the road repairs (ref M32).
+Q04|Q04-P036|registrar|2025-04-03T12:12|45|0.586|A|Q04-G6|misc23:M23|0|-|Repost: Update on the convocation dress code (ref M23).
+Q04|Q04-P037|lms_portal|2024-10-01T10:35|26|0.461|C|-|misc34:M34|0|-|Update on the career fair (ref M34).
+Q04|Q04-P038|notices_office|2026-09-09T13:06|36|0.054|A|Q04-G2|misc7:M7|0|-|Update on the career fair (ref M7).
+Q04|Q04-P039|handbook|2026-09-21T14:54|124|0.266|C|-|misc12:M12|0|-|Update on the hostel maintenance work (ref M12).
+Q04|Q04-P040|lms_portal|2025-08-06T14:58|85|0.531|B|Q04-G10|misc37:M37|0|-|Repost: Update on the bus route change (ref M37).
+Q04|Q04-P041|notices_office|2025-06-05T11:07|134|0.822|A|Q04-G0|resit_fee:PKR 2000|0|-|Official notice: the re-sit examination fee is PKR 2000.
+Q04|Q04-P042|handbook|2025-02-22T15:15|149|0.465|B|Q04-G4|misc17:M17|0|-|Repost: Update on the road repairs (ref M17).
+Q05|Q05-P001|notices_office|2026-01-18T13:20|117|0.449|B|Q05-G5|misc33:M33|0|-|Repost: Update on the water supply schedule (ref M33).
+Q05|Q05-P002|notices_office|2025-04-03T10:36|127|0.888|A|Q05-G0|library_hours:8am to 8pm|0|-|Official notice: exam-period library hours are 8am to 8pm.
+Q05|Q05-P003|student_forum|2026-06-06T17:50|48|0.295|C|-|misc39:M39|0|-|Update on the alumni talk (ref M39).
+Q05|Q05-P004|student_forum|2026-01-18T13:20|121|0.431|B|Q05-G5|misc33:M33|0|-|Update on the water supply schedule (ref M33).
+Q05|Q05-P005|student_forum|2024-12-12T16:43|234|0.611|B|-|misc36:M36|0|-|Update on the convocation dress code (ref M36).
+Q05|Q05-P006|student_forum|2025-10-25T09:05|48|0.827|C|Q05-G0|library_hours:8am to 8pm|0|-|Forum repost: exam-period library hours are 8am to 8pm.
+Q05|Q05-P007|student_forum|2025-12-11T12:04|41|0.851|C|Q05-G0|library_hours:8am to 8pm|0|-|Forum repost: exam-period library hours are 8am to 8pm.
+Q05|Q05-P008|dept_email|2026-04-11T16:12|145|0.583|C|Q05-G2|misc18:M18|0|-|Repost: Update on the art exhibition (ref M18).
+Q05|Q05-P009|registrar|2024-09-14T16:44|40|0.508|A|-|misc30:M30|0|-|Update on the library book fair (ref M30).
+Q05|Q05-P010|registrar|2025-12-12T11:25|140|0.318|B|-|misc25:M25|0|-|Update on the art exhibition (ref M25).
+Q05|Q05-P011|faq_portal|2026-04-03T08:21|47|0.560|B|-|library_entry:a valid student ID card|0|-|FAQ: library entry requires a valid student ID card.
+Q05|Q05-P012|lms_portal|2026-10-26T11:17|129|0.273|A|-|misc9:M9|0|-|Update on the debate competition (ref M9).
+Q05|Q05-P013|lms_portal|2026-10-12T08:59|22|0.296|B|-|misc11:M11|0|-|Update on the vaccination drive (ref M11).
+Q05|Q05-P014|student_forum|2026-09-17T16:34|38|0.235|B|-|misc7:M7|0|-|Update on the debate competition (ref M7).
+Q05|Q05-P015|handbook|2024-10-11T16:53|107|0.494|B|-|misc15:M15|0|-|Update on the sports gala schedule (ref M15).
+Q05|Q05-P016|registrar|2025-06-02T10:56|144|0.250|A|Q05-G3|misc21:M21|0|-|Repost: Update on the bus route change (ref M21).
+Q05|Q05-P017|handbook|2026-04-25T14:36|80|0.465|B|Q05-G4|misc27:M27|0|-|Update on the Wi-Fi outage (ref M27).
+Q05|Q05-P018|student_forum|2026-09-20T15:08|71|0.087|C|-|misc14:M14|0|-|Update on the vaccination drive (ref M14).
+Q05|Q05-P019|handbook|2025-04-08T12:00|45|0.487|A|-|misc29:M29|0|-|Update on the photography contest (ref M29).
+Q05|Q05-P020|notices_office|2025-06-03T15:26|30|0.393|A|-|misc23:M23|0|-|Update on the hostel maintenance work (ref M23).
+Q05|Q05-P021|handbook|2026-10-01T17:24|156|0.340|C|-|misc8:M8|0|-|Update on the alumni talk (ref M8).
+Q05|Q05-P022|lms_portal|2025-06-02T10:56|146|0.483|A|Q05-G3|misc21:M21|0|-|Update on the bus route change (ref M21).
+Q05|Q05-P023|lms_portal|2025-07-18T09:50|286|0.431|A|-|misc20:M20|0|-|Update on the coding contest (ref M20).
+Q05|Q05-P024|dept_email|2024-02-04T11:26|63|0.554|C|Q05-G6|misc37:M37|0|-|Repost: Update on the water supply schedule (ref M37).
+Q05|Q05-P025|handbook|2024-02-04T11:26|63|0.649|C|Q05-G6|misc37:M37|0|-|Update on the water supply schedule (ref M37).
+Q05|Q05-P026|faq_portal|2026-09-26T16:15|26|0.334|C|-|misc13:M13|0|-|Update on the hostel maintenance work (ref M13).
+Q05|Q05-P027|registrar|2024-01-16T15:56|75|0.379|A|-|misc24:M24|0|-|Update on the coding contest (ref M24).
+Q05|Q05-P028|student_forum|2025-12-02T11:20|48|0.782|C|Q05-G0|library_hours:8am to 8pm|0|-|Forum repost: exam-period library hours are 8am to 8pm.
+Q05|Q05-P029|registrar|2024-06-27T17:50|168|0.263|C|-|misc35:M35|0|-|Update on the convocation dress code (ref M35).
+Q05|Q05-P030|faq_portal|2026-04-11T16:12|142|0.606|C|Q05-G2|misc18:M18|0|-|Update on the art exhibition (ref M18).
+Q05|Q05-P031|handbook|2024-12-27T12:34|73|0.280|C|-|misc26:M26|0|-|Update on the library book fair (ref M26).
+Q05|Q05-P032|faq_portal|2024-08-14T14:59|33|0.422|B|-|misc31:M31|0|-|Update on the bus route change (ref M31).
+Q05|Q05-P033|notices_office|2026-04-20T17:17|86|0.630|A|Q05-G1|library_hours:8am to 10pm|1|Q05-P002|Revised official notice (replaces the earlier one): exam-period library hours are 8am to 10pm.
+Q05|Q05-P034|notices_office|2026-09-15T16:14|64|0.226|C|-|misc12:M12|0|-|Update on the seminar on AI ethics (ref M12).
+Q05|Q05-P035|registrar|2024-04-02T13:00|79|0.463|A|Q05-G7|misc40:M40|0|-|Repost: Update on the road repairs (ref M40).
+Q05|Q05-P036|student_forum|2026-07-12T08:24|26|0.272|C|-|misc32:M32|0|-|Update on the road repairs (ref M32).
+Q05|Q05-P037|notices_office|2026-10-12T08:01|133|0.208|B|-|misc10:M10|0|-|Update on the library book fair (ref M10).
+Q05|Q05-P038|dept_email|2026-04-21T17:17|31|0.630|B|Q05-G1|library_hours:8am to 10pm|0|-|Department email: please note exam-period library hours are 8am to 10pm.
+Q05|Q05-P039|dept_email|2024-12-06T14:41|56|0.415|B|-|misc16:M16|0|-|Update on the convocation dress code (ref M16).
+Q05|Q05-P040|lms_portal|2026-04-25T14:36|82|0.256|B|Q05-G4|misc27:M27|0|-|Repost: Update on the Wi-Fi outage (ref M27).
+Q05|Q05-P041|lms_portal|2026-04-20T13:29|59|0.340|B|-|misc17:M17|0|-|Update on the library book fair (ref M17).
+Q05|Q05-P042|faq_portal|2024-04-02T13:00|76|0.529|A|Q05-G7|misc40:M40|0|-|Update on the road repairs (ref M40).
+Q06|Q06-P001|faq_portal|2026-10-18T17:08|84|0.180|C|-|misc10:M10|0|-|Update on the bus route change (ref M10).
+Q06|Q06-P002|dept_email|2026-09-26T12:34|20|0.162|C|-|misc9:M9|0|-|Update on the blood donation camp (ref M9).
+Q06|Q06-P003|faq_portal|2024-11-17T09:54|75|0.350|C|-|misc34:M34|0|-|Update on the alumni talk (ref M34).
+Q06|Q06-P004|faq_portal|2024-06-07T14:55|51|0.530|B|-|misc15:M15|0|-|Update on the canteen menu (ref M15).
+Q06|Q06-P005|student_forum|2025-12-08T10:36|46|0.785|C|Q06-G0|plagiarism_limit:20 percent|0|-|Forum repost: the similarity limit for reports is 20 percent.
+Q06|Q06-P006|dept_email|2026-07-14T08:53|45|0.406|B|-|misc33:M33|0|-|Update on the photography contest (ref M33).
+Q06|Q06-P007|faq_portal|2026-06-20T15:01|34|0.687|B|-|plagiarism_tool:a Turnitin report|0|-|FAQ: the accepted similarity report is a Turnitin report.
+Q06|Q06-P008|lms_portal|2024-03-01T12:52|62|0.262|A|-|misc21:M21|0|-|Update on the convocation dress code (ref M21).
+Q06|Q06-P009|student_forum|2025-12-15T08:33|45|0.885|C|Q06-G0|plagiarism_limit:20 percent|0|-|Forum repost: the similarity limit for reports is 20 percent.
+Q06|Q06-P010|lms_portal|2026-09-23T08:25|86|0.098|C|Q06-G2|misc11:M11|0|-|Update on the alumni talk (ref M11).
+Q06|Q06-P011|faq_portal|2025-10-16T11:37|108|0.335|A|Q06-G5|misc22:M22|0|-|Update on the robotics club meeting (ref M22).
+Q06|Q06-P012|student_forum|2025-07-04T10:32|35|0.490|B|-|misc40:M40|0|-|Update on the bus route change (ref M40).
+Q06|Q06-P013|handbook|2024-06-24T16:02|53|0.473|C|Q06-G6|misc27:M27|0|-|Update on the convocation dress code (ref M27).
+Q06|Q06-P014|notices_office|2026-06-25T10:25|60|0.679|A|Q06-G1|plagiarism_limit:15 percent|1|Q06-P030|Revised official notice (replaces the earlier one): the similarity limit for reports is 15 percent.
+Q06|Q06-P015|student_forum|2026-09-24T12:19|60|0.209|B|Q06-G3|misc13:M13|0|-|Update on the career fair (ref M13).
+Q06|Q06-P016|faq_portal|2024-05-18T15:13|58|0.445|C|-|misc20:M20|0|-|Update on the bus route change (ref M20).
+Q06|Q06-P017|lms_portal|2024-11-27T15:39|94|0.289|B|-|misc35:M35|0|-|Update on the career fair (ref M35).
+Q06|Q06-P018|dept_email|2026-06-26T10:25|45|0.666|B|Q06-G1|plagiarism_limit:15 percent|0|-|Department email: please note the similarity limit for reports is 15 percent.
+Q06|Q06-P019|faq_portal|2024-06-24T16:02|56|0.499|C|Q06-G6|misc27:M27|0|-|Repost: Update on the convocation dress code (ref M27).
+Q06|Q06-P020|registrar|2026-09-23T08:25|90|0.127|C|Q06-G2|misc11:M11|0|-|Repost: Update on the alumni talk (ref M11).
+Q06|Q06-P021|registrar|2024-07-26T15:01|73|0.355|C|-|misc19:M19|0|-|Update on the career fair (ref M19).
+Q06|Q06-P022|handbook|2026-06-27T12:28|82|0.514|A|Q06-G9|misc38:M38|0|-|Update on the alumni talk (ref M38).
+Q06|Q06-P023|handbook|2026-07-10T10:11|68|0.263|B|Q06-G7|misc29:M29|0|-|Repost: Update on the career fair (ref M29).
+Q06|Q06-P024|dept_email|2025-06-25T17:57|135|0.431|A|-|misc18:M18|0|-|Update on the canteen menu (ref M18).
+Q06|Q06-P025|registrar|2026-01-09T13:41|94|0.486|A|Q06-G8|misc31:M31|0|-|Update on the vaccination drive (ref M31).
+Q06|Q06-P026|dept_email|2026-07-10T10:11|70|0.213|B|Q06-G7|misc29:M29|0|-|Update on the career fair (ref M29).
+Q06|Q06-P027|faq_portal|2026-09-26T10:41|82|0.323|B|-|misc7:M7|0|-|Update on the photography contest (ref M7).
+Q06|Q06-P028|faq_portal|2026-10-18T13:46|93|0.220|A|-|misc8:M8|0|-|Update on the library book fair (ref M8).
+Q06|Q06-P029|registrar|2025-09-17T12:48|40|0.524|B|-|misc26:M26|0|-|Update on the cricket trials (ref M26).
+Q06|Q06-P030|notices_office|2025-04-03T10:43|123|0.857|A|Q06-G0|plagiarism_limit:20 percent|0|-|Official notice: the similarity limit for reports is 20 percent.
+Q06|Q06-P031|student_forum|2026-01-09T13:41|98|0.483|A|Q06-G8|misc31:M31|0|-|Repost: Update on the vaccination drive (ref M31).
+Q06|Q06-P032|handbook|2025-10-16T11:37|104|0.285|A|Q06-G5|misc22:M22|0|-|Repost: Update on the robotics club meeting (ref M22).
+Q06|Q06-P033|student_forum|2026-02-20T16:35|254|0.579|A|Q06-G4|misc16:M16|0|-|Repost: Update on the hostel maintenance work (ref M16).
+Q06|Q06-P034|notices_office|2026-09-24T12:19|56|0.066|B|Q06-G3|misc13:M13|0|-|Repost: Update on the career fair (ref M13).
+Q06|Q06-P035|notices_office|2026-06-27T12:28|83|0.230|A|Q06-G9|misc38:M38|0|-|Repost: Update on the alumni talk (ref M38).
+Q06|Q06-P036|student_forum|2025-11-04T10:46|36|0.843|C|Q06-G0|plagiarism_limit:20 percent|0|-|Forum repost: the similarity limit for reports is 20 percent.
+Q06|Q06-P037|registrar|2024-12-02T17:22|84|0.536|C|-|misc25:M25|0|-|Update on the debate competition (ref M25).
+Q06|Q06-P038|notices_office|2026-02-20T16:35|258|0.631|A|Q06-G4|misc16:M16|0|-|Update on the hostel maintenance work (ref M16).
+Q06|Q06-P039|dept_email|2026-07-05T10:59|178|0.227|B|-|misc41:M41|0|-|Update on the debate competition (ref M41).
+Q06|Q06-P040|dept_email|2026-07-03T11:20|23|0.476|A|-|misc37:M37|0|-|Update on the water supply schedule (ref M37).
+Q06|Q06-P041|dept_email|2025-03-02T08:26|35|0.436|A|-|misc24:M24|0|-|Update on the canteen menu (ref M24).
+Q06|Q06-P042|dept_email|2024-05-26T16:58|62|0.223|B|-|misc36:M36|0|-|Update on the coding contest (ref M36).
+Q07|Q07-P001|registrar|2024-11-03T13:09|168|0.391|C|Q07-G7|misc19:M19|0|-|Update on the bus route change (ref M19).
+Q07|Q07-P002|student_forum|2026-05-08T15:57|68|0.393|C|-|misc32:M32|0|-|Update on the road repairs (ref M32).
+Q07|Q07-P003|faq_portal|2026-10-05T11:15|32|0.343|B|Q07-G3|misc9:M9|0|-|Update on the sports gala schedule (ref M9).
+Q07|Q07-P004|student_forum|2025-10-11T14:36|54|0.895|C|Q07-G0|project_portal:LMS v1|0|-|Forum repost: FYP reports are submitted on LMS v1.
+Q07|Q07-P005|faq_portal|2024-07-14T14:11|36|0.342|B|-|misc26:M26|0|-|Update on the Wi-Fi outage (ref M26).
+Q07|Q07-P006|faq_portal|2024-05-28T15:19|44|0.579|B|-|misc33:M33|0|-|Update on the blood donation camp (ref M33).
+Q07|Q07-P007|student_forum|2026-05-16T12:25|96|0.575|C|-|misc39:M39|0|-|Update on the debate competition (ref M39).
+Q07|Q07-P008|dept_email|2024-12-27T09:46|314|0.393|A|Q07-G9|misc24:M24|0|-|Repost: Update on the canteen menu (ref M24).
+Q07|Q07-P009|registrar|2024-02-12T12:32|153|0.294|A|-|misc41:M41|0|-|Update on the career fair (ref M41).
+Q07|Q07-P010|lms_portal|2024-11-12T09:01|222|0.394|A|-|misc38:M38|0|-|Update on the road repairs (ref M38).
+Q07|Q07-P011|notices_office|2025-08-16T13:48|27|0.443|B|Q07-G6|misc15:M15|0|-|Repost: Update on the blood donation camp (ref M15).
+Q07|Q07-P012|notices_office|2026-04-20T12:45|88|0.284|B|-|misc37:M37|0|-|Update on the vaccination drive (ref M37).
+Q07|Q07-P013|student_forum|2025-11-19T09:57|50|0.805|C|Q07-G0|project_portal:LMS v1|0|-|Forum repost: FYP reports are submitted on LMS v1.
+Q07|Q07-P014|student_forum|2024-01-25T15:57|158|0.593|B|-|misc17:M17|0|-|Update on the sports gala schedule (ref M17).
+Q07|Q07-P015|dept_email|2026-10-01T12:54|44|0.317|A|Q07-G2|misc7:M7|0|-|Update on the vaccination drive (ref M7).
+Q07|Q07-P016|lms_portal|2026-10-20T12:42|86|0.137|B|Q07-G5|misc13:M13|0|-|Update on the convocation dress code (ref M13).
+Q07|Q07-P017|handbook|2026-10-14T14:30|40|0.204|A|Q07-G4|misc11:M11|0|-|Update on the blood donation camp (ref M11).
+Q07|Q07-P018|dept_email|2025-02-01T15:46|177|0.418|A|-|misc31:M31|0|-|Update on the career fair (ref M31).
+Q07|Q07-P019|handbook|2025-08-28T08:19|78|0.352|A|Q07-G11|misc35:M35|0|-|Repost: Update on the cricket trials (ref M35).
+Q07|Q07-P020|lms_portal|2024-11-03T13:09|169|0.296|C|Q07-G7|misc19:M19|0|-|Repost: Update on the bus route change (ref M19).
+Q07|Q07-P021|faq_portal|2024-04-23T13:54|94|0.273|C|-|misc34:M34|0|-|Update on the coding contest (ref M34).
+Q07|Q07-P022|registrar|2025-08-28T08:19|80|0.303|A|Q07-G11|misc35:M35|0|-|Update on the cricket trials (ref M35).
+Q07|Q07-P023|registrar|2024-05-21T11:30|93|0.402|B|-|misc30:M30|0|-|Update on the convocation dress code (ref M30).
+Q07|Q07-P024|notices_office|2025-05-01T09:42|74|0.902|A|Q07-G0|project_portal:LMS v1|0|-|Official notice: FYP reports are submitted on LMS v1.
+Q07|Q07-P025|notices_office|2025-06-04T08:18|108|0.531|B|Q07-G8|misc21:M21|0|-|Repost: Update on the vaccination drive (ref M21).
+Q07|Q07-P026|registrar|2025-07-21T10:03|182|0.326|B|-|misc18:M18|0|-|Update on the bus route change (ref M18).
+Q07|Q07-P027|dept_email|2026-10-20T12:42|86|0.276|B|Q07-G5|misc13:M13|0|-|Repost: Update on the convocation dress code (ref M13).
+Q07|Q07-P028|dept_email|2024-02-28T11:35|60|0.373|C|-|misc23:M23|0|-|Update on the hostel maintenance work (ref M23).
+Q07|Q07-P029|handbook|2025-08-16T13:48|31|0.509|B|Q07-G6|misc15:M15|0|-|Update on the blood donation camp (ref M15).
+Q07|Q07-P030|student_forum|2024-02-04T13:08|36|0.321|B|-|misc40:M40|0|-|Update on the bus route change (ref M40).
+Q07|Q07-P031|lms_portal|2024-12-27T09:46|316|0.480|A|Q07-G9|misc24:M24|0|-|Update on the canteen menu (ref M24).
+Q07|Q07-P032|dept_email|2026-06-24T13:16|49|0.573|B|Q07-G1|project_portal:the LMS v2 portal|0|-|Department email: please note FYP reports are submitted on the LMS v2 portal.
+Q07|Q07-P033|handbook|2025-06-04T08:18|109|0.221|B|Q07-G8|misc21:M21|0|-|Update on the vaccination drive (ref M21).
+Q07|Q07-P034|faq_portal|2026-10-05T11:15|28|0.140|B|Q07-G3|misc9:M9|0|-|Repost: Update on the sports gala schedule (ref M9).
+Q07|Q07-P035|notices_office|2026-06-23T13:16|43|0.770|A|Q07-G1|project_portal:the LMS v2 portal|1|Q07-P024|Revised official notice (replaces the earlier one): FYP reports are submitted on the LMS v2 portal.
+Q07|Q07-P036|notices_office|2026-10-14T14:30|37|0.133|A|Q07-G4|misc11:M11|0|-|Repost: Update on the blood donation camp (ref M11).
+Q07|Q07-P037|handbook|2024-06-06T09:07|60|0.346|C|Q07-G10|misc27:M27|0|-|Repost: Update on the alumni talk (ref M27).
+Q07|Q07-P038|registrar|2024-06-06T09:07|60|0.206|C|Q07-G10|misc27:M27|0|-|Update on the alumni talk (ref M27).
+Q07|Q07-P039|student_forum|2025-01-02T13:41|50|0.402|A|-|misc29:M29|0|-|Update on the alumni talk (ref M29).
+Q07|Q07-P040|student_forum|2025-12-09T08:34|35|0.885|C|Q07-G0|project_portal:LMS v1|0|-|Forum repost: FYP reports are submitted on LMS v1.
+Q07|Q07-P041|faq_portal|2026-05-10T11:23|42|0.638|B|-|project_format:a single PDF file|0|-|FAQ: the required report format is a single PDF file.
+Q07|Q07-P042|notices_office|2026-10-01T12:54|47|0.196|A|Q07-G2|misc7:M7|0|-|Repost: Update on the vaccination drive (ref M7).
+Q08|Q08-P001|dept_email|2026-10-19T16:55|90|0.201|A|Q08-G4|misc11:M11|0|-|Update on the seminar on AI ethics (ref M11).
+Q08|Q08-P002|notices_office|2024-06-11T16:41|61|0.244|B|Q08-G6|misc22:M22|0|-|Update on the cricket trials (ref M22).
+Q08|Q08-P003|faq_portal|2024-06-13T09:49|116|0.259|B|-|misc17:M17|0|-|Update on the vaccination drive (ref M17).
+Q08|Q08-P004|handbook|2025-12-10T14:46|33|0.492|B|Q08-G10|misc37:M37|0|-|Update on the library book fair (ref M37).
+Q08|Q08-P005|dept_email|2026-09-09T11:36|168|0.106|C|Q08-G3|misc9:M9|0|-|Update on the cricket trials (ref M9).
+Q08|Q08-P006|notices_office|2024-03-18T11:00|85|0.408|A|-|misc26:M26|0|-|Update on the hostel maintenance work (ref M26).
+Q08|Q08-P007|lms_portal|2026-05-17T17:21|38|0.289|A|-|misc24:M24|0|-|Update on the road repairs (ref M24).
+Q08|Q08-P008|faq_portal|2026-04-25T16:26|27|0.238|C|Q08-G7|misc30:M30|0|-|Repost: Update on the library book fair (ref M30).
+Q08|Q08-P009|student_forum|2026-09-03T09:31|170|0.321|B|-|misc14:M14|0|-|Update on the seminar on AI ethics (ref M14).
+Q08|Q08-P010|notices_office|2026-03-12T12:54|50|0.649|A|Q08-G1|hostel_curfew:11pm|1|Q08-P024|Revised official notice (replaces the earlier one): the hostel curfew is 11pm.
+Q08|Q08-P011|dept_email|2024-06-11T16:41|63|0.453|B|Q08-G6|misc22:M22|0|-|Repost: Update on the cricket trials (ref M22).
+Q08|Q08-P012|handbook|2025-09-05T14:31|50|0.401|A|-|misc36:M36|0|-|Update on the sports gala schedule (ref M36).
+Q08|Q08-P013|student_forum|2026-09-09T11:36|171|0.062|C|Q08-G3|misc9:M9|0|-|Repost: Update on the cricket trials (ref M9).
+Q08|Q08-P014|faq_portal|2025-12-17T14:06|91|0.313|C|Q08-G8|misc32:M32|0|-|Update on the blood donation camp (ref M32).
+Q08|Q08-P015|lms_portal|2025-11-22T14:55|166|0.563|C|Q08-G5|misc20:M20|0|-|Repost: Update on the bus route change (ref M20).
+Q08|Q08-P016|faq_portal|2025-01-16T17:30|87|0.265|C|-|misc28:M28|0|-|Update on the canteen menu (ref M28).
+Q08|Q08-P017|registrar|2026-01-10T13:46|27|0.271|A|-|misc16:M16|0|-|Update on the seminar on AI ethics (ref M16).
+Q08|Q08-P018|lms_portal|2026-02-09T16:30|126|0.239|C|-|misc41:M41|0|-|Update on the career fair (ref M41).
+Q08|Q08-P019|student_forum|2025-10-26T13:12|228|0.351|B|-|misc29:M29|0|-|Update on the cricket trials (ref M29).
+Q08|Q08-P020|registrar|2025-11-22T14:55|168|0.555|C|Q08-G5|misc20:M20|0|-|Update on the bus route change (ref M20).
+Q08|Q08-P021|student_forum|2025-10-12T09:09|33|0.806|C|Q08-G0|hostel_curfew:10pm|0|-|Forum repost: the hostel curfew is 10pm.
+Q08|Q08-P022|lms_portal|2024-05-11T14:07|50|0.514|B|-|misc27:M27|0|-|Update on the blood donation camp (ref M27).
+Q08|Q08-P023|dept_email|2026-10-11T12:14|212|0.149|B|-|misc13:M13|0|-|Update on the canteen menu (ref M13).
+Q08|Q08-P024|notices_office|2025-06-27T14:48|137|0.897|A|Q08-G0|hostel_curfew:10pm|0|-|Official notice: the hostel curfew is 10pm.
+Q08|Q08-P025|dept_email|2026-04-25T16:26|24|0.386|C|Q08-G7|misc30:M30|0|-|Update on the library book fair (ref M30).
+Q08|Q08-P026|student_forum|2025-11-11T14:02|30|0.865|C|Q08-G0|hostel_curfew:10pm|0|-|Forum repost: the hostel curfew is 10pm.
+Q08|Q08-P027|registrar|2025-12-17T14:06|88|0.374|C|Q08-G8|misc32:M32|0|-|Repost: Update on the blood donation camp (ref M32).
+Q08|Q08-P028|faq_portal|2026-05-16T15:40|39|0.629|B|-|hostel_guests:7pm|0|-|FAQ: hostel guests are allowed until 7pm.
+Q08|Q08-P029|student_forum|2026-10-01T09:44|56|0.113|A|Q08-G2|misc7:M7|0|-|Update on the bus route change (ref M7).
+Q08|Q08-P030|notices_office|2026-03-27T08:28|148|0.588|B|Q08-G9|misc34:M34|0|-|Repost: Update on the coding contest (ref M34).
+Q08|Q08-P031|dept_email|2026-03-27T08:28|150|0.638|B|Q08-G9|misc34:M34|0|-|Update on the coding contest (ref M34).
+Q08|Q08-P032|student_forum|2025-11-20T12:33|51|0.886|C|Q08-G0|hostel_curfew:10pm|0|-|Forum repost: the hostel curfew is 10pm.
+Q08|Q08-P033|handbook|2026-07-16T13:36|26|0.386|A|-|misc18:M18|0|-|Update on the career fair (ref M18).
+Q08|Q08-P034|handbook|2026-08-26T17:12|38|0.387|B|-|misc19:M19|0|-|Update on the robotics club meeting (ref M19).
+Q08|Q08-P035|registrar|2025-12-10T14:46|30|0.230|B|Q08-G10|misc37:M37|0|-|Repost: Update on the library book fair (ref M37).
+Q08|Q08-P036|student_forum|2025-06-06T14:54|54|0.515|B|-|misc25:M25|0|-|Update on the canteen menu (ref M25).
+Q08|Q08-P037|lms_portal|2026-10-01T09:44|59|0.155|A|Q08-G2|misc7:M7|0|-|Repost: Update on the bus route change (ref M7).
+Q08|Q08-P038|notices_office|2026-10-19T16:55|91|0.060|A|Q08-G4|misc11:M11|0|-|Repost: Update on the seminar on AI ethics (ref M11).
+Q08|Q08-P039|handbook|2024-01-07T14:57|24|0.502|C|-|misc39:M39|0|-|Update on the hostel maintenance work (ref M39).
+Q08|Q08-P040|registrar|2025-01-25T16:05|193|0.438|B|-|misc40:M40|0|-|Update on the cricket trials (ref M40).
+Q08|Q08-P041|handbook|2025-01-14T08:44|33|0.411|A|-|misc15:M15|0|-|Update on the cricket trials (ref M15).
+Q08|Q08-P042|dept_email|2026-03-13T12:54|45|0.683|B|Q08-G1|hostel_curfew:11pm|0|-|Department email: please note the hostel curfew is 11pm.
+Q09|Q09-P001|dept_email|2026-01-12T15:24|34|0.587|C|-|misc38:M38|0|-|Update on the vaccination drive (ref M38).
+Q09|Q09-P002|handbook|2026-10-19T08:36|19|0.286|B|Q09-G2|misc7:M7|0|-|Repost: Update on the Wi-Fi outage (ref M7).
+Q09|Q09-P003|registrar|2026-02-09T16:34|44|0.634|B|Q09-G8|misc31:M31|0|-|Repost: Update on the library book fair (ref M31).
+Q09|Q09-P004|student_forum|2025-12-17T10:33|58|0.780|C|Q09-G0|appeal_window:7 days|0|-|Forum repost: the grade appeal window is 7 days.
+Q09|Q09-P005|dept_email|2024-10-06T09:06|68|0.608|C|Q09-G9|misc35:M35|0|-|Update on the photography contest (ref M35).
+Q09|Q09-P006|registrar|2024-10-16T15:15|48|0.386|B|-|misc28:M28|0|-|Update on the career fair (ref M28).
+Q09|Q09-P007|faq_portal|2025-09-26T16:09|75|0.557|C|-|misc20:M20|0|-|Update on the cricket trials (ref M20).
+Q09|Q09-P008|lms_portal|2025-07-19T15:18|93|0.260|C|Q09-G10|misc39:M39|0|-|Repost: Update on the road repairs (ref M39).
+Q09|Q09-P009|lms_portal|2024-07-07T16:54|148|0.372|A|Q09-G5|misc22:M22|0|-|Update on the sports gala schedule (ref M22).
+Q09|Q09-P010|handbook|2026-02-09T16:34|48|0.312|B|Q09-G8|misc31:M31|0|-|Update on the library book fair (ref M31).
+Q09|Q09-P011|faq_portal|2024-03-01T14:42|65|0.497|A|Q09-G6|misc24:M24|0|-|Update on the road repairs (ref M24).
+Q09|Q09-P012|notices_office|2026-05-12T08:49|88|0.686|A|Q09-G1|appeal_window:10 days|1|Q09-P030|Revised official notice (replaces the earlier one): the grade appeal window is 10 days.
+Q09|Q09-P013|dept_email|2025-10-15T14:24|50|0.441|A|-|misc19:M19|0|-|Update on the bus route change (ref M19).
+Q09|Q09-P014|faq_portal|2026-01-23T16:18|65|0.551|C|Q09-G7|misc29:M29|0|-|Update on the Wi-Fi outage (ref M29).
+Q09|Q09-P015|notices_office|2024-10-06T09:06|66|0.499|C|Q09-G9|misc35:M35|0|-|Repost: Update on the photography contest (ref M35).
+Q09|Q09-P016|dept_email|2024-08-03T12:16|21|0.311|A|-|misc34:M34|0|-|Update on the cricket trials (ref M34).
+Q09|Q09-P017|notices_office|2025-11-11T16:53|51|0.423|B|-|misc37:M37|0|-|Update on the vaccination drive (ref M37).
+Q09|Q09-P018|handbook|2026-05-08T14:38|48|0.567|B|-|misc18:M18|0|-|Update on the career fair (ref M18).
+Q09|Q09-P019|faq_portal|2025-01-06T15:18|106|0.523|A|-|misc21:M21|0|-|Update on the photography contest (ref M21).
+Q09|Q09-P020|student_forum|2025-10-23T14:46|53|0.874|C|Q09-G0|appeal_window:7 days|0|-|Forum repost: the grade appeal window is 7 days.
+Q09|Q09-P021|registrar|2026-10-13T13:01|35|0.289|C|Q09-G3|misc9:M9|0|-|Update on the Wi-Fi outage (ref M9).
+Q09|Q09-P022|handbook|2026-10-09T16:19|94|0.263|C|-|misc13:M13|0|-|Update on the bus route change (ref M13).
+Q09|Q09-P023|registrar|2026-04-12T09:01|83|0.539|A|-|misc16:M16|0|-|Update on the coding contest (ref M16).
+Q09|Q09-P024|lms_portal|2026-05-14T14:03|84|0.497|A|-|misc26:M26|0|-|Update on the photography contest (ref M26).
+Q09|Q09-P025|lms_portal|2026-06-08T11:24|90|0.264|C|-|misc15:M15|0|-|Update on the bus route change (ref M15).
+Q09|Q09-P026|student_forum|2026-09-27T14:43|93|0.102|B|Q09-G4|misc11:M11|0|-|Update on the alumni talk (ref M11).
+Q09|Q09-P027|handbook|2026-09-27T14:43|90|0.135|B|Q09-G4|misc11:M11|0|-|Repost: Update on the alumni talk (ref M11).
+Q09|Q09-P028|handbook|2024-03-01T14:42|61|0.442|A|Q09-G6|misc24:M24|0|-|Repost: Update on the road repairs (ref M24).
+Q09|Q09-P029|lms_portal|2024-07-07T16:54|149|0.267|A|Q09-G5|misc22:M22|0|-|Repost: Update on the sports gala schedule (ref M22).
+Q09|Q09-P030|notices_office|2025-07-01T15:37|96|0.921|A|Q09-G0|appeal_window:7 days|0|-|Official notice: the grade appeal window is 7 days.
+Q09|Q09-P031|registrar|2025-10-20T13:39|30|0.376|B|-|misc17:M17|0|-|Update on the Wi-Fi outage (ref M17).
+Q09|Q09-P032|faq_portal|2024-02-27T17:02|43|0.423|A|-|misc27:M27|0|-|Update on the blood donation camp (ref M27).
+Q09|Q09-P033|faq_portal|2025-10-14T16:09|27|0.572|A|-|misc41:M41|0|-|Update on the bus route change (ref M41).
+Q09|Q09-P034|handbook|2024-10-25T09:03|31|0.275|C|-|misc33:M33|0|-|Update on the alumni talk (ref M33).
+Q09|Q09-P035|faq_portal|2026-03-28T08:14|47|0.586|B|-|appeal_fee:PKR 1000|0|-|FAQ: the grade appeal fee is PKR 1000.
+Q09|Q09-P036|notices_office|2025-07-19T15:18|92|0.322|C|Q09-G10|misc39:M39|0|-|Update on the road repairs (ref M39).
+Q09|Q09-P037|student_forum|2026-10-27T08:41|86|0.318|A|-|misc14:M14|0|-|Update on the library book fair (ref M14).
+Q09|Q09-P038|student_forum|2025-10-14T13:48|43|0.833|C|Q09-G0|appeal_window:7 days|0|-|Forum repost: the grade appeal window is 7 days.
+Q09|Q09-P039|notices_office|2026-01-23T16:18|66|0.515|C|Q09-G7|misc29:M29|0|-|Repost: Update on the Wi-Fi outage (ref M29).
+Q09|Q09-P040|registrar|2026-10-19T08:36|20|0.118|B|Q09-G2|misc7:M7|0|-|Update on the Wi-Fi outage (ref M7).
+Q09|Q09-P041|dept_email|2026-05-13T08:49|42|0.637|B|Q09-G1|appeal_window:10 days|0|-|Department email: please note the grade appeal window is 10 days.
+Q09|Q09-P042|dept_email|2026-10-13T13:01|34|0.236|C|Q09-G3|misc9:M9|0|-|Repost: Update on the Wi-Fi outage (ref M9).
+Q10|Q10-P001|faq_portal|2025-06-21T10:29|36|0.425|C|Q10-G8|misc37:M37|0|-|Update on the water supply schedule (ref M37).
+Q10|Q10-P002|lms_portal|2026-04-16T12:37|82|0.426|B|-|misc21:M21|0|-|Update on the library book fair (ref M21).
+Q10|Q10-P003|dept_email|2025-06-21T10:29|35|0.266|C|Q10-G8|misc37:M37|0|-|Repost: Update on the water supply schedule (ref M37).
+Q10|Q10-P004|lms_portal|2025-04-13T10:44|25|0.403|C|-|misc41:M41|0|-|Update on the photography contest (ref M41).
+Q10|Q10-P005|registrar|2026-04-11T14:34|64|0.232|C|Q10-G4|misc25:M25|0|-|Repost: Update on the bus route change (ref M25).
+Q10|Q10-P006|handbook|2024-08-16T17:22|160|0.563|C|Q10-G5|misc27:M27|0|-|Repost: Update on the debate competition (ref M27).
+Q10|Q10-P007|student_forum|2025-11-28T13:32|51|0.788|C|Q10-G0|scholarship_cgpa:3.3 CGPA|0|-|Forum repost: the merit scholarship cut-off is 3.3 CGPA.
+Q10|Q10-P008|dept_email|2025-03-02T13:05|81|0.303|B|-|misc18:M18|0|-|Update on the seminar on AI ethics (ref M18).
+Q10|Q10-P009|notices_office|2025-05-17T08:27|112|0.834|A|Q10-G0|scholarship_cgpa:3.3 CGPA|0|-|Official notice: the merit scholarship cut-off is 3.3 CGPA.
+Q10|Q10-P010|dept_email|2026-10-27T13:34|43|0.173|A|-|misc8:M8|0|-|Update on the canteen menu (ref M8).
+Q10|Q10-P011|student_forum|2026-10-15T08:51|53|0.136|A|-|misc9:M9|0|-|Update on the career fair (ref M9).
+Q10|Q10-P012|scholarship_office|2026-04-23T13:11|330|0.664|A|-|scholarship_docs:an income certificate|1|-|Scholarship annex (mandatory reading): scholarship applicants must attach an income certificate.
+Q10|Q10-P013|faq_portal|2026-02-17T12:16|132|0.629|B|Q10-G7|misc35:M35|0|-|Update on the library book fair (ref M35).
+Q10|Q10-P014|notices_office|2026-01-08T09:30|94|0.575|C|-|misc31:M31|0|-|Update on the convocation dress code (ref M31).
+Q10|Q10-P015|registrar|2026-09-10T14:59|118|0.079|A|-|misc10:M10|0|-|Update on the convocation dress code (ref M10).
+Q10|Q10-P016|student_forum|2026-06-13T16:45|83|0.429|B|-|misc39:M39|0|-|Update on the robotics club meeting (ref M39).
+Q10|Q10-P017|notices_office|2026-03-12T13:37|290|0.673|A|Q10-G1|scholarship_cgpa:3.5 CGPA|1|Q10-P009|Revised official notice (replaces the earlier one): the merit scholarship cut-off is 3.5 CGPA.
+Q10|Q10-P018|student_forum|2025-12-27T16:44|40|0.896|C|Q10-G0|scholarship_cgpa:3.3 CGPA|0|-|Forum repost: the merit scholarship cut-off is 3.3 CGPA.
+Q10|Q10-P019|lms_portal|2026-09-18T08:57|174|0.335|A|Q10-G2|misc12:M12|0|-|Repost: Update on the hostel maintenance work (ref M12).
+Q10|Q10-P020|lms_portal|2026-04-07T10:48|61|0.473|B|Q10-G3|misc22:M22|0|-|Repost: Update on the sports gala schedule (ref M22).
+Q10|Q10-P021|registrar|2025-07-27T08:41|69|0.324|C|-|misc32:M32|0|-|Update on the blood donation camp (ref M32).
+Q10|Q10-P022|faq_portal|2026-09-17T14:23|35|0.206|A|-|misc7:M7|0|-|Update on the art exhibition (ref M7).
+Q10|Q10-P023|registrar|2025-09-05T14:52|54|0.574|C|-|misc20:M20|0|-|Update on the hostel maintenance work (ref M20).
+Q10|Q10-P024|lms_portal|2026-02-17T12:16|132|0.445|B|Q10-G7|misc35:M35|0|-|Repost: Update on the library book fair (ref M35).
+Q10|Q10-P025|notices_office|2024-08-16T17:22|163|0.408|C|Q10-G5|misc27:M27|0|-|Update on the debate competition (ref M27).
+Q10|Q10-P026|student_forum|2026-04-07T10:48|62|0.549|B|Q10-G3|misc22:M22|0|-|Update on the sports gala schedule (ref M22).
+Q10|Q10-P027|faq_portal|2025-03-03T08:15|170|0.276|A|-|misc24:M24|0|-|Update on the canteen menu (ref M24).
+Q10|Q10-P028|student_forum|2025-06-09T08:40|149|0.425|B|-|misc16:M16|0|-|Update on the canteen menu (ref M16).
+Q10|Q10-P029|handbook|2026-08-02T10:56|52|0.404|C|-|misc33:M33|0|-|Update on the sports gala schedule (ref M33).
+Q10|Q10-P030|dept_email|2025-08-10T08:47|90|0.605|B|-|misc15:M15|0|-|Update on the photography contest (ref M15).
+Q10|Q10-P031|lms_portal|2026-09-05T14:05|60|0.295|C|-|misc11:M11|0|-|Update on the seminar on AI ethics (ref M11).
+Q10|Q10-P032|lms_portal|2026-03-12T10:46|153|0.604|B|Q10-G6|misc29:M29|0|-|Repost: Update on the hostel maintenance work (ref M29).
+Q10|Q10-P033|faq_portal|2024-05-25T16:49|90|0.505|C|-|misc40:M40|0|-|Update on the Wi-Fi outage (ref M40).
+Q10|Q10-P034|faq_portal|2026-10-15T13:05|51|0.238|B|-|misc14:M14|0|-|Update on the canteen menu (ref M14).
+Q10|Q10-P035|lms_portal|2024-04-06T09:43|29|0.317|B|-|misc17:M17|0|-|Update on the art exhibition (ref M17).
+Q10|Q10-P036|dept_email|2026-08-24T13:28|40|0.605|A|-|misc19:M19|0|-|Update on the alumni talk (ref M19).
+Q10|Q10-P037|student_forum|2025-12-28T09:12|35|0.808|C|Q10-G0|scholarship_cgpa:3.3 CGPA|0|-|Forum repost: the merit scholarship cut-off is 3.3 CGPA.
+Q10|Q10-P038|faq_portal|2026-09-18T08:57|175|0.280|A|Q10-G2|misc12:M12|0|-|Update on the hostel maintenance work (ref M12).
+Q10|Q10-P039|notices_office|2026-03-12T10:46|151|0.575|B|Q10-G6|misc29:M29|0|-|Update on the hostel maintenance work (ref M29).
+Q10|Q10-P040|student_forum|2025-03-11T09:30|86|0.286|C|-|misc34:M34|0|-|Update on the cricket trials (ref M34).
+Q10|Q10-P041|student_forum|2026-04-11T14:34|64|0.283|C|Q10-G4|misc25:M25|0|-|Update on the bus route change (ref M25).
+Q10|Q10-P042|dept_email|2026-03-13T13:37|41|0.695|B|Q10-G1|scholarship_cgpa:3.5 CGPA|0|-|Department email: please note the merit scholarship cut-off is 3.5 CGPA.
+Q11|Q11-P001|lms_portal|2024-08-09T15:21|36|0.467|A|Q11-G3|misc18:M18|0|-|Repost: Update on the photography contest (ref M18).
+Q11|Q11-P002|registrar|2025-09-27T09:06|60|0.601|A|Q11-G8|misc32:M32|0|-|Repost: Update on the vaccination drive (ref M32).
+Q11|Q11-P003|lms_portal|2026-01-03T08:33|86|0.346|C|Q11-G4|misc20:M20|0|-|Repost: Update on the alumni talk (ref M20).
+Q11|Q11-P004|notices_office|2026-04-27T14:39|147|0.497|A|-|misc27:M27|0|-|Update on the water supply schedule (ref M27).
+Q11|Q11-P005|handbook|2024-09-19T13:32|51|0.338|C|Q11-G7|misc30:M30|0|-|Update on the library book fair (ref M30).
+Q11|Q11-P006|dept_email|2024-10-01T17:24|47|0.463|B|-|misc40:M40|0|-|Update on the seminar on AI ethics (ref M40).
+Q11|Q11-P007|student_forum|2025-01-26T14:37|42|0.335|A|-|misc23:M23|0|-|Update on the art exhibition (ref M23).
+Q11|Q11-P008|handbook|2026-09-12T13:33|149|0.478|B|Q11-G9|misc34:M34|0|-|Repost: Update on the coding contest (ref M34).
+Q11|Q11-P009|handbook|2024-10-24T10:31|39|0.234|A|Q11-G5|misc25:M25|0|-|Repost: Update on the hostel maintenance work (ref M25).
+Q11|Q11-P010|dept_email|2024-08-09T15:21|34|0.365|A|Q11-G3|misc18:M18|0|-|Update on the photography contest (ref M18).
+Q11|Q11-P011|student_forum|2026-10-24T13:41|41|0.712|C|-|fyp_proposal_due:week 6|0|-|Forum post (unverified): I heard FYP proposals are due in week 6.
+Q11|Q11-P012|faq_portal|2024-12-17T09:18|139|0.417|B|-|misc36:M36|0|-|Update on the vaccination drive (ref M36).
+Q11|Q11-P013|lms_portal|2025-12-21T10:59|60|0.690|B|-|fyp_proposal_due:week 4|0|-|FYP proposals are due in week 4.
+Q11|Q11-P014|notices_office|2024-06-04T15:00|22|0.237|A|Q11-G10|misc37:M37|0|-|Update on the alumni talk (ref M37).
+Q11|Q11-P015|faq_portal|2024-10-24T10:31|39|0.655|A|Q11-G5|misc25:M25|0|-|Update on the hostel maintenance work (ref M25).
+Q11|Q11-P016|exam_office|2026-01-24T15:26|72|0.689|A|-|fyp_marks_split:40 internal and 60 external|0|-|FYP marks are split as 40 internal and 60 external.
+Q11|Q11-P017|handbook|2025-06-08T12:54|180|0.689|B|Q11-G2|misc16:M16|0|-|Repost: Update on the blood donation camp (ref M16).
+Q11|Q11-P018|lms_portal|2026-01-11T17:28|29|0.486|C|Q11-G1|misc12:M12|0|-|Repost: Update on the library book fair (ref M12).
+Q11|Q11-P019|faq_portal|2026-01-11T17:28|33|0.655|C|Q11-G1|misc12:M12|0|-|Update on the library book fair (ref M12).
+Q11|Q11-P020|faq_portal|2024-06-12T12:15|27|0.642|A|Q11-G6|misc28:M28|0|-|Repost: Update on the coding contest (ref M28).
+Q11|Q11-P021|student_forum|2025-10-19T12:04|45|0.888|C|Q11-G0|fyp_group_size:3 to 4 students|0|-|Reminder: FYP groups must have 3 to 4 students.
+Q11|Q11-P022|faq_portal|2024-12-21T15:51|41|0.379|C|-|misc14:M14|0|-|Update on the coding contest (ref M14).
+Q11|Q11-P023|student_guide|2025-01-01T08:18|297|0.964|A|-|fyp_group_size:3 to 4 students;fyp_form:Form FYP-1;fyp_proposal_due:week 4;fyp_marks_split:40 internal and 60 external|0|-|Student guide overview: FYP groups must have 3 to 4 students; the supervisor consent form is Form FYP-1; FYP proposals are due in week 4; FYP marks are split as 40 internal and 60 external; further background and examples follow.
+Q11|Q11-P024|student_forum|2025-11-16T10:13|46|0.875|C|Q11-G0|fyp_group_size:3 to 4 students|0|-|Reminder: FYP groups must have 3 to 4 students.
+Q11|Q11-P025|faq_portal|2025-02-16T10:53|122|0.357|B|-|misc15:M15|0|-|Update on the coding contest (ref M15).
+Q11|Q11-P026|registrar|2025-04-13T12:55|25|0.257|C|-|misc22:M22|0|-|Update on the road repairs (ref M22).
+Q11|Q11-P027|handbook|2024-06-12T12:15|30|0.242|A|Q11-G6|misc28:M28|0|-|Update on the coding contest (ref M28).
+Q11|Q11-P028|handbook|2025-06-08T12:54|184|0.227|B|Q11-G2|misc16:M16|0|-|Update on the blood donation camp (ref M16).
+Q11|Q11-P029|dept_email|2026-09-12T13:33|150|0.260|B|Q11-G9|misc34:M34|0|-|Update on the coding contest (ref M34).
+Q11|Q11-P030|handbook|2025-12-06T09:39|60|0.633|A|Q11-G0|fyp_group_size:3 to 4 students|0|-|FYP groups must have 3 to 4 students.
+Q11|Q11-P031|faq_portal|2026-02-20T08:55|45|0.848|B|Q11-G0|fyp_group_size:3 to 4 students|0|-|Reminder: FYP groups must have 3 to 4 students.
+Q11|Q11-P032|lms_portal|2024-08-14T09:51|61|0.699|C|-|misc11:M11|0|-|Update on the photography contest (ref M11).
+Q11|Q11-P033|dept_email|2025-09-01T11:46|63|0.685|A|-|misc39:M39|0|-|Update on the career fair (ref M39).
+Q11|Q11-P034|dept_email|2026-04-01T13:52|45|0.803|B|Q11-G0|fyp_group_size:3 to 4 students|0|-|Reminder: FYP groups must have 3 to 4 students.
+Q11|Q11-P035|dept_email|2025-09-27T09:06|58|0.385|A|Q11-G8|misc32:M32|0|-|Update on the vaccination drive (ref M32).
+Q11|Q11-P036|student_forum|2024-09-15T11:41|41|0.366|B|-|misc24:M24|0|-|Update on the coding contest (ref M24).
+Q11|Q11-P037|dept_office|2025-07-02T12:35|60|0.530|B|-|fyp_form:Form FYP-1|0|-|the supervisor consent form is Form FYP-1.
+Q11|Q11-P038|faq_portal|2024-06-04T15:00|18|0.288|A|Q11-G10|misc37:M37|0|-|Repost: Update on the alumni talk (ref M37).
+Q11|Q11-P039|lms_portal|2025-06-27T08:35|47|0.808|B|Q11-G0|fyp_group_size:3 to 4 students|0|-|Reminder: FYP groups must have 3 to 4 students.
+Q11|Q11-P040|student_forum|2026-01-03T08:33|82|0.503|C|Q11-G4|misc20:M20|0|-|Update on the alumni talk (ref M20).
+Q11|Q11-P041|handbook|2024-09-19T13:32|48|0.512|C|Q11-G7|misc30:M30|0|-|Repost: Update on the library book fair (ref M30).
+Q12|Q12-P001|faq_portal|2024-12-06T15:35|21|0.429|C|-|misc35:M35|0|-|Update on the bus route change (ref M35).
+Q12|Q12-P002|faq_portal|2026-01-09T14:31|54|0.664|A|Q12-G5|misc36:M36|0|-|Repost: Update on the coding contest (ref M36).
+Q12|Q12-P003|student_forum|2024-11-28T17:25|293|0.340|A|-|misc25:M25|0|-|Update on the library book fair (ref M25).
+Q12|Q12-P004|lms_portal|2025-11-16T12:26|118|0.434|A|-|misc18:M18|0|-|Update on the coding contest (ref M18).
+Q12|Q12-P005|student_forum|2026-10-26T08:28|30|0.726|C|-|loan_period:30 days|0|-|Forum post (unverified): I heard the maximum loan period is 30 days.
+Q12|Q12-P006|dept_email|2024-08-27T16:37|67|0.528|A|-|misc23:M23|0|-|Update on the library book fair (ref M23).
+Q12|Q12-P007|lms_portal|2025-08-03T08:20|96|0.428|B|-|misc22:M22|0|-|Update on the bus route change (ref M22).
+Q12|Q12-P008|faq_portal|2025-05-10T11:40|89|0.408|A|-|misc24:M24|0|-|Update on the water supply schedule (ref M24).
+Q12|Q12-P009|student_forum|2025-08-08T15:14|30|0.313|C|Q12-G2|misc20:M20|0|-|Update on the canteen menu (ref M20).
+Q12|Q12-P010|registrar|2026-10-23T17:55|90|0.348|C|-|misc11:M11|0|-|Update on the vaccination drive (ref M11).
+Q12|Q12-P011|notices_office|2025-08-26T15:16|155|0.238|A|-|misc31:M31|0|-|Update on the robotics club meeting (ref M31).
+Q12|Q12-P012|student_forum|2026-06-26T13:40|59|0.877|C|Q12-G0|loan_form:Form LB-3|0|-|Reminder: equipment loans use Form LB-3.
+Q12|Q12-P013|student_forum|2025-08-08T15:14|32|0.433|C|Q12-G2|misc20:M20|0|-|Repost: Update on the canteen menu (ref M20).
+Q12|Q12-P014|dept_email|2025-05-27T14:16|24|0.222|B|-|misc12:M12|0|-|Update on the road repairs (ref M12).
+Q12|Q12-P015|store_office|2025-10-27T11:20|41|0.659|B|-|loan_deposit:PKR 1500|0|-|the loan deposit is PKR 1500.
+Q12|Q12-P016|faq_portal|2026-08-13T12:19|52|0.261|C|-|misc32:M32|0|-|Update on the Wi-Fi outage (ref M32).
+Q12|Q12-P017|dept_email|2026-02-16T16:34|142|0.651|A|-|misc29:M29|0|-|Update on the robotics club meeting (ref M29).
+Q12|Q12-P018|handbook|2026-01-07T10:39|48|0.525|A|Q12-G3|misc27:M27|0|-|Repost: Update on the art exhibition (ref M27).
+Q12|Q12-P019|registrar|2025-07-11T10:16|68|0.477|B|-|misc13:M13|0|-|Update on the career fair (ref M13).
+Q12|Q12-P020|lms_portal|2024-10-27T17:35|68|0.507|B|-|misc17:M17|0|-|Update on the hostel maintenance work (ref M17).
+Q12|Q12-P021|notices_office|2025-11-23T10:51|254|0.410|A|Q12-G6|misc39:M39|0|-|Update on the vaccination drive (ref M39).
+Q12|Q12-P022|notices_office|2025-12-26T13:18|43|0.576|C|-|misc30:M30|0|-|Update on the Wi-Fi outage (ref M30).
+Q12|Q12-P023|faq_portal|2025-03-13T13:31|129|0.472|A|Q12-G4|misc33:M33|0|-|Update on the road repairs (ref M33).
+Q12|Q12-P024|dept_email|2025-10-21T13:34|65|0.699|B|Q12-G1|misc15:M15|0|-|Repost: Update on the coding contest (ref M15).
+Q12|Q12-P025|student_forum|2025-06-26T08:17|46|0.884|C|Q12-G0|loan_form:Form LB-3|0|-|Reminder: equipment loans use Form LB-3.
+Q12|Q12-P026|registrar|2026-01-27T14:29|126|0.503|C|-|misc26:M26|0|-|Update on the debate competition (ref M26).
+Q12|Q12-P027|faq_portal|2026-02-28T13:28|38|0.803|B|Q12-G0|loan_form:Form LB-3|0|-|Reminder: equipment loans use Form LB-3.
+Q12|Q12-P028|handbook|2026-06-11T14:18|69|0.558|A|-|loan_period:14 days|0|-|the maximum loan period is 14 days.
+Q12|Q12-P029|lab_wiki|2026-03-03T09:09|73|0.529|B|Q12-G0|loan_form:Form LB-3|0|-|equipment loans use Form LB-3.
+Q12|Q12-P030|notices_office|2026-01-07T10:39|49|0.568|A|Q12-G3|misc27:M27|0|-|Update on the art exhibition (ref M27).
+Q12|Q12-P031|dept_email|2025-10-21T15:33|53|0.841|B|Q12-G0|loan_form:Form LB-3|0|-|Reminder: equipment loans use Form LB-3.
+Q12|Q12-P032|lms_portal|2025-09-08T08:15|43|0.824|B|Q12-G0|loan_form:Form LB-3|0|-|Reminder: equipment loans use Form LB-3.
+Q12|Q12-P033|student_forum|2026-07-06T09:38|90|0.571|A|-|misc14:M14|0|-|Update on the convocation dress code (ref M14).
+Q12|Q12-P034|handbook|2025-11-23T10:51|255|0.505|A|Q12-G6|misc39:M39|0|-|Repost: Update on the vaccination drive (ref M39).
+Q12|Q12-P035|dept_email|2026-02-08T13:40|79|0.526|B|-|loan_signoff:the lab engineer|0|-|loans are signed off by the lab engineer.
+Q12|Q12-P036|student_forum|2025-10-21T13:34|61|0.673|B|Q12-G1|misc15:M15|0|-|Update on the coding contest (ref M15).
+Q12|Q12-P037|dept_email|2024-07-01T11:34|161|0.349|B|-|misc19:M19|0|-|Update on the road repairs (ref M19).
+Q12|Q12-P038|student_forum|2025-03-13T13:31|125|0.418|A|Q12-G4|misc33:M33|0|-|Repost: Update on the road repairs (ref M33).
+Q12|Q12-P039|dept_email|2026-09-23T12:01|104|0.306|A|-|misc38:M38|0|-|Update on the blood donation camp (ref M38).
+Q12|Q12-P040|student_guide|2025-11-14T08:27|272|0.968|A|-|loan_form:Form LB-3;loan_deposit:PKR 1500;loan_period:14 days|0|-|Student guide overview: equipment loans use Form LB-3; the loan deposit is PKR 1500; the maximum loan period is 14 days; further background and examples follow.
+Q12|Q12-P041|faq_portal|2026-01-09T14:31|51|0.501|A|Q12-G5|misc36:M36|0|-|Update on the coding contest (ref M36).
+Q13|Q13-P001|faq_portal|2026-08-23T11:45|140|0.504|A|-|misc13:M13|0|-|Update on the road repairs (ref M13).
+Q13|Q13-P002|faq_portal|2025-11-12T11:04|38|0.809|B|Q13-G0|intern_weeks:6 weeks|0|-|Reminder: the minimum internship length is 6 weeks.
+Q13|Q13-P003|faq_portal|2026-02-24T09:40|225|0.545|C|-|misc19:M19|0|-|Update on the photography contest (ref M19).
+Q13|Q13-P004|dept_email|2024-08-13T14:02|113|0.356|A|Q13-G8|misc30:M30|0|-|Repost: Update on the photography contest (ref M30).
+Q13|Q13-P005|dept_email|2025-11-11T09:39|71|0.487|C|Q13-G1|misc11:M11|0|-|Repost: Update on the robotics club meeting (ref M11).
+Q13|Q13-P006|faq_portal|2025-12-11T11:42|47|0.454|A|Q13-G10|misc38:M38|0|-|Update on the hostel maintenance work (ref M38).
+Q13|Q13-P007|dept_email|2024-08-13T14:02|115|0.552|A|Q13-G8|misc30:M30|0|-|Update on the photography contest (ref M30).
+Q13|Q13-P008|student_forum|2026-02-18T10:23|60|0.838|C|Q13-G0|intern_weeks:6 weeks|0|-|Reminder: the minimum internship length is 6 weeks.
+Q13|Q13-P009|handbook|2025-11-11T09:39|72|0.283|C|Q13-G1|misc11:M11|0|-|Update on the robotics club meeting (ref M11).
+Q13|Q13-P010|handbook|2026-09-04T16:49|74|0.547|C|-|misc32:M32|0|-|Update on the convocation dress code (ref M32).
+Q13|Q13-P011|lms_portal|2025-10-22T15:00|136|0.247|C|Q13-G9|misc36:M36|0|-|Update on the convocation dress code (ref M36).
+Q13|Q13-P012|registrar|2024-08-20T09:09|49|0.359|B|Q13-G2|misc14:M14|0|-|Update on the canteen menu (ref M14).
+Q13|Q13-P013|notices_office|2026-05-01T12:52|50|0.261|A|Q13-G4|misc21:M21|0|-|Update on the library book fair (ref M21).
+Q13|Q13-P014|student_forum|2026-10-25T15:54|35|0.681|C|-|intern_credits:1 credit hour|0|-|Forum post (unverified): I heard an internship is worth 1 credit hour.
+Q13|Q13-P015|exam_office|2026-03-28T11:01|50|0.700|A|-|intern_credits:3 credit hours|0|-|an internship is worth 3 credit hours.
+Q13|Q13-P016|lms_portal|2026-04-12T13:42|105|0.430|B|Q13-G3|misc16:M16|0|-|Repost: Update on the road repairs (ref M16).
+Q13|Q13-P017|handbook|2024-06-10T15:34|37|0.605|A|-|misc40:M40|0|-|Update on the career fair (ref M40).
+Q13|Q13-P018|student_forum|2024-10-11T08:56|122|0.500|A|Q13-G6|misc25:M25|0|-|Repost: Update on the water supply schedule (ref M25).
+Q13|Q13-P019|lms_portal|2024-10-05T10:35|63|0.325|C|-|misc20:M20|0|-|Update on the convocation dress code (ref M20).
+Q13|Q13-P020|lms_portal|2025-08-09T14:29|68|0.658|B|-|intern_report:a 10-page report|0|-|students must upload a 10-page report.
+Q13|Q13-P021|dept_email|2026-08-05T11:23|52|0.880|B|Q13-G0|intern_weeks:6 weeks|0|-|Reminder: the minimum internship length is 6 weeks.
+Q13|Q13-P022|handbook|2026-01-21T14:11|37|0.425|A|Q13-G5|misc23:M23|0|-|Update on the alumni talk (ref M23).
+Q13|Q13-P023|student_forum|2026-01-21T14:11|33|0.600|A|Q13-G5|misc23:M23|0|-|Repost: Update on the alumni talk (ref M23).
+Q13|Q13-P024|lms_portal|2024-08-20T09:09|50|0.363|B|Q13-G2|misc14:M14|0|-|Repost: Update on the canteen menu (ref M14).
+Q13|Q13-P025|notices_office|2024-10-11T08:56|118|0.633|A|Q13-G6|misc25:M25|0|-|Update on the water supply schedule (ref M25).
+Q13|Q13-P026|faq_portal|2025-08-10T10:08|54|0.440|A|-|misc34:M34|0|-|Update on the photography contest (ref M34).
+Q13|Q13-P027|lms_portal|2025-03-16T10:24|44|0.612|A|-|misc35:M35|0|-|Update on the coding contest (ref M35).
+Q13|Q13-P028|student_guide|2025-05-18T17:13|297|0.977|A|-|intern_weeks:6 weeks;intern_letter:an offer letter;intern_credits:3 credit hours|0|-|Student guide overview: the minimum internship length is 6 weeks; registration requires an offer letter; an internship is worth 3 credit hours; further background and examples follow.
+Q13|Q13-P029|dept_email|2025-04-04T12:23|179|0.232|B|-|misc18:M18|0|-|Update on the Wi-Fi outage (ref M18).
+Q13|Q13-P030|lms_portal|2025-09-20T10:38|57|0.807|B|Q13-G0|intern_weeks:6 weeks|0|-|Reminder: the minimum internship length is 6 weeks.
+Q13|Q13-P031|notices_office|2026-04-12T13:42|108|0.337|B|Q13-G3|misc16:M16|0|-|Update on the road repairs (ref M16).
+Q13|Q13-P032|registrar|2026-01-27T16:33|49|0.649|C|Q13-G7|misc27:M27|0|-|Repost: Update on the sports gala schedule (ref M27).
+Q13|Q13-P033|notices_office|2026-01-27T16:33|46|0.604|C|Q13-G7|misc27:M27|0|-|Update on the sports gala schedule (ref M27).
+Q13|Q13-P034|industry_cell|2026-02-09T09:10|52|0.606|B|-|intern_letter:an offer letter|0|-|registration requires an offer letter.
+Q13|Q13-P035|handbook|2026-07-10T08:47|35|0.581|A|Q13-G0|intern_weeks:6 weeks|0|-|the minimum internship length is 6 weeks.
+Q13|Q13-P036|notices_office|2026-05-01T12:52|52|0.669|A|Q13-G4|misc21:M21|0|-|Repost: Update on the library book fair (ref M21).
+Q13|Q13-P037|student_forum|2026-06-11T14:46|45|0.880|C|Q13-G0|intern_weeks:6 weeks|0|-|Reminder: the minimum internship length is 6 weeks.
+Q13|Q13-P038|lms_portal|2025-12-11T11:42|48|0.457|A|Q13-G10|misc38:M38|0|-|Repost: Update on the hostel maintenance work (ref M38).
+Q13|Q13-P039|dept_email|2025-10-22T15:00|139|0.557|C|Q13-G9|misc36:M36|0|-|Repost: Update on the convocation dress code (ref M36).
+Q13|Q13-P040|student_forum|2026-07-27T14:12|25|0.382|A|-|misc29:M29|0|-|Update on the robotics club meeting (ref M29).
+Q13|Q13-P041|handbook|2024-06-12T08:37|158|0.616|A|-|misc33:M33|0|-|Update on the sports gala schedule (ref M33).
+Q14|Q14-P001|dept_email|2024-07-26T08:44|180|0.412|C|Q14-G1|misc12:M12|0|-|Repost: Update on the Wi-Fi outage (ref M12).
+Q14|Q14-P002|registrar|2026-07-20T16:56|79|0.551|A|Q14-G8|misc36:M36|0|-|Update on the hostel maintenance work (ref M36).
+Q14|Q14-P003|handbook|2024-09-27T14:45|87|0.353|B|-|misc29:M29|0|-|Update on the blood donation camp (ref M29).
+Q14|Q14-P004|dept_email|2025-07-12T08:51|77|0.550|B|-|transcript_pickup:the Registrar counter|0|-|transcripts are collected from the Registrar counter.
+Q14|Q14-P005|notices_office|2025-10-22T08:37|102|0.667|A|Q14-G7|misc32:M32|0|-|Update on the art exhibition (ref M32).
+Q14|Q14-P006|lms_portal|2026-07-24T12:47|61|0.524|A|-|misc24:M24|0|-|Update on the Wi-Fi outage (ref M24).
+Q14|Q14-P007|registrar|2026-04-10T12:14|184|0.684|C|-|misc20:M20|0|-|Update on the sports gala schedule (ref M20).
+Q14|Q14-P008|notices_office|2026-08-05T08:47|165|0.270|C|-|misc35:M35|0|-|Update on the vaccination drive (ref M35).
+Q14|Q14-P009|lms_portal|2024-06-27T15:39|179|0.571|A|Q14-G9|misc39:M39|0|-|Repost: Update on the road repairs (ref M39).
+Q14|Q14-P010|faq_portal|2025-04-10T17:00|100|0.467|C|-|misc14:M14|0|-|Update on the alumni talk (ref M14).
+Q14|Q14-P011|student_forum|2026-04-10T09:18|45|0.825|C|Q14-G0|transcript_fee:PKR 800|0|-|Reminder: the transcript fee is PKR 800.
+Q14|Q14-P012|faq_portal|2024-06-24T10:41|150|0.321|C|-|misc38:M38|0|-|Update on the road repairs (ref M38).
+Q14|Q14-P013|student_forum|2024-07-26T08:44|183|0.385|C|Q14-G1|misc12:M12|0|-|Update on the Wi-Fi outage (ref M12).
+Q14|Q14-P014|registrar|2026-02-05T13:02|78|0.407|A|Q14-G4|misc25:M25|0|-|Repost: Update on the art exhibition (ref M25).
+Q14|Q14-P015|lms_portal|2025-04-01T12:09|20|0.243|A|-|misc34:M34|0|-|Update on the library book fair (ref M34).
+Q14|Q14-P016|dept_email|2025-04-11T14:17|76|0.201|B|-|misc16:M16|0|-|Update on the vaccination drive (ref M16).
+Q14|Q14-P017|lms_portal|2026-05-05T15:21|34|0.824|B|Q14-G0|transcript_fee:PKR 800|0|-|Reminder: the transcript fee is PKR 800.
+Q14|Q14-P018|dept_email|2024-06-27T15:39|177|0.586|A|Q14-G9|misc39:M39|0|-|Update on the road repairs (ref M39).
+Q14|Q14-P019|student_forum|2026-06-06T09:39|57|0.872|C|Q14-G0|transcript_fee:PKR 800|0|-|Reminder: the transcript fee is PKR 800.
+Q14|Q14-P020|lms_portal|2025-10-22T08:37|100|0.582|A|Q14-G7|misc32:M32|0|-|Repost: Update on the art exhibition (ref M32).
+Q14|Q14-P021|handbook|2026-09-17T15:48|92|0.482|A|-|misc15:M15|0|-|Update on the hostel maintenance work (ref M15).
+Q14|Q14-P022|notices_office|2025-02-10T12:21|137|0.460|B|-|misc23:M23|0|-|Update on the canteen menu (ref M23).
+Q14|Q14-P023|faq_portal|2026-08-05T11:35|37|0.894|B|Q14-G0|transcript_fee:PKR 800|0|-|Reminder: the transcript fee is PKR 800.
+Q14|Q14-P024|notices_office|2026-01-23T10:02|210|0.499|B|Q14-G6|misc30:M30|0|-|Update on the photography contest (ref M30).
+Q14|Q14-P025|student_forum|2026-06-15T15:25|74|0.326|A|Q14-G3|misc21:M21|0|-|Repost: Update on the career fair (ref M21).
+Q14|Q14-P026|faq_portal|2025-03-01T10:16|48|0.237|B|Q14-G5|misc27:M27|0|-|Update on the vaccination drive (ref M27).
+Q14|Q14-P027|dept_email|2026-07-20T16:56|79|0.373|A|Q14-G8|misc36:M36|0|-|Repost: Update on the hostel maintenance work (ref M36).
+Q14|Q14-P028|lms_portal|2026-02-05T13:02|77|0.385|A|Q14-G4|misc25:M25|0|-|Update on the art exhibition (ref M25).
+Q14|Q14-P029|student_guide|2025-09-18T14:47|351|0.949|A|-|transcript_fee:PKR 800;transcript_days:5 working days;transcript_form:Form RG-2;transcript_pickup:the Registrar counter|0|-|Student guide overview: the transcript fee is PKR 800; transcripts are issued in 5 working days; transcript requests use Form RG-2; transcripts are collected from the Registrar counter; further background and examples follow.
+Q14|Q14-P030|lms_portal|2024-07-25T10:08|83|0.238|C|-|misc11:M11|0|-|Update on the cricket trials (ref M11).
+Q14|Q14-P031|faq_portal|2025-03-01T10:16|48|0.343|B|Q14-G5|misc27:M27|0|-|Repost: Update on the vaccination drive (ref M27).
+Q14|Q14-P032|handbook|2026-04-07T17:25|52|0.672|A|-|transcript_form:Form RG-2|0|-|transcript requests use Form RG-2.
+Q14|Q14-P033|registrar|2026-07-15T13:02|48|0.584|A|Q14-G0|transcript_fee:PKR 800|0|-|the transcript fee is PKR 800.
+Q14|Q14-P034|student_forum|2026-10-02T14:23|42|0.717|C|-|transcript_form:Form RG-9|0|-|Forum post (unverified): I heard transcript requests use Form RG-9.
+Q14|Q14-P035|dept_email|2026-05-18T17:09|56|0.876|B|Q14-G0|transcript_fee:PKR 800|0|-|Reminder: the transcript fee is PKR 800.
+Q14|Q14-P036|registrar|2026-01-23T10:02|207|0.364|B|Q14-G6|misc30:M30|0|-|Repost: Update on the photography contest (ref M30).
+Q14|Q14-P037|faq_portal|2026-05-03T11:28|45|0.604|B|-|transcript_days:5 working days|0|-|transcripts are issued in 5 working days.
+Q14|Q14-P038|dept_email|2026-04-27T14:40|88|0.227|B|Q14-G2|misc18:M18|0|-|Repost: Update on the vaccination drive (ref M18).
+Q14|Q14-P039|handbook|2026-01-06T17:50|114|0.567|A|-|misc17:M17|0|-|Update on the alumni talk (ref M17).
+Q14|Q14-P040|lms_portal|2026-04-27T14:40|87|0.416|B|Q14-G2|misc18:M18|0|-|Update on the vaccination drive (ref M18).
+Q14|Q14-P041|handbook|2026-06-15T15:25|75|0.250|A|Q14-G3|misc21:M21|0|-|Update on the career fair (ref M21).
+Q15|Q15-P001|faq_portal|2025-07-02T16:29|223|0.667|B|Q15-G4|misc25:M25|0|-|Update on the blood donation camp (ref M25).
+Q15|Q15-P002|notices_office|2025-05-06T14:26|29|0.529|C|-|misc21:M21|0|-|Update on the blood donation camp (ref M21).
+Q15|Q15-P003|faq_portal|2025-03-26T16:16|56|0.341|C|-|misc38:M38|0|-|Update on the debate competition (ref M38).
+Q15|Q15-P004|dept_email|2024-09-06T17:37|68|0.639|B|-|misc39:M39|0|-|Update on the canteen menu (ref M39).
+Q15|Q15-P005|dept_email|2026-09-18T15:55|176|0.207|C|Q15-G3|misc19:M19|0|-|Update on the Wi-Fi outage (ref M19).
+Q15|Q15-P006|faq_portal|2026-09-18T15:55|175|0.606|C|Q15-G3|misc19:M19|0|-|Repost: Update on the Wi-Fi outage (ref M19).
+Q15|Q15-P007|student_forum|2024-10-10T10:05|94|0.359|B|Q15-G6|misc30:M30|0|-|Update on the cricket trials (ref M30).
+Q15|Q15-P008|lms_portal|2025-11-25T09:05|69|0.267|C|Q15-G2|misc14:M14|0|-|Update on the art exhibition (ref M14).
+Q15|Q15-P009|faq_portal|2025-09-17T17:51|38|0.384|A|-|misc40:M40|0|-|Update on the career fair (ref M40).
+Q15|Q15-P010|handbook|2024-06-25T08:14|31|0.668|A|Q15-G1|misc12:M12|0|-|Update on the alumni talk (ref M12).
+Q15|Q15-P011|faq_portal|2025-01-16T15:34|61|0.664|A|-|misc32:M32|0|-|Update on the alumni talk (ref M32).
+Q15|Q15-P012|handbook|2024-09-02T17:46|80|0.420|B|-|misc17:M17|0|-|Update on the road repairs (ref M17).
+Q15|Q15-P013|student_guide|2025-08-09T14:32|312|0.930|A|-|hpc_quota:500 GB;hpc_max_job:48 hours;hpc_access:a supervisor request|0|-|Student guide overview: the HPC storage quota is 500 GB; the longest HPC job is 48 hours; HPC accounts need a supervisor request; further background and examples follow.
+Q15|Q15-P014|lab_wiki|2026-05-17T08:26|76|0.545|B|-|hpc_max_job:48 hours|0|-|the longest HPC job is 48 hours.
+Q15|Q15-P015|notices_office|2025-07-02T16:29|219|0.264|B|Q15-G4|misc25:M25|0|-|Repost: Update on the blood donation camp (ref M25).
+Q15|Q15-P016|lms_portal|2024-10-18T13:49|81|0.417|B|-|misc16:M16|0|-|Update on the hostel maintenance work (ref M16).
+Q15|Q15-P017|student_forum|2025-06-14T17:05|58|0.815|C|Q15-G0|hpc_quota:500 GB|0|-|Reminder: the HPC storage quota is 500 GB.
+Q15|Q15-P018|lms_portal|2026-03-27T16:04|50|0.887|B|Q15-G0|hpc_quota:500 GB|0|-|Reminder: the HPC storage quota is 500 GB.
+Q15|Q15-P019|student_forum|2024-10-10T10:05|94|0.224|B|Q15-G6|misc30:M30|0|-|Repost: Update on the cricket trials (ref M30).
+Q15|Q15-P020|handbook|2024-09-11T09:30|72|0.646|C|-|misc18:M18|0|-|Update on the blood donation camp (ref M18).
+Q15|Q15-P021|faq_portal|2025-08-08T12:58|77|0.585|B|-|hpc_support:the HPC help desk|0|-|HPC problems go to the HPC help desk.
+Q15|Q15-P022|dept_email|2026-07-28T13:52|31|0.884|B|Q15-G0|hpc_quota:500 GB|0|-|Reminder: the HPC storage quota is 500 GB.
+Q15|Q15-P023|registrar|2025-01-05T14:40|32|0.591|B|-|misc37:M37|0|-|Update on the debate competition (ref M37).
+Q15|Q15-P024|handbook|2026-05-02T13:22|40|0.745|A|-|hpc_access:a supervisor request|0|-|HPC accounts need a supervisor request.
+Q15|Q15-P025|notices_office|2025-10-19T15:36|53|0.292|C|-|misc29:M29|0|-|Update on the cricket trials (ref M29).
+Q15|Q15-P026|student_forum|2026-09-25T16:29|34|0.720|C|-|hpc_access:a self-registration|0|-|Forum post (unverified): I heard HPC accounts need a self-registration.
+Q15|Q15-P027|faq_portal|2025-06-15T14:34|50|0.879|B|Q15-G0|hpc_quota:500 GB|0|-|Reminder: the HPC storage quota is 500 GB.
+Q15|Q15-P028|student_forum|2026-05-22T15:58|59|0.814|C|Q15-G0|hpc_quota:500 GB|0|-|Reminder: the HPC storage quota is 500 GB.
+Q15|Q15-P029|lms_portal|2025-10-24T09:56|38|0.399|B|-|misc33:M33|0|-|Update on the seminar on AI ethics (ref M33).
+Q15|Q15-P030|student_forum|2026-07-17T13:13|61|0.426|A|-|misc24:M24|0|-|Update on the cricket trials (ref M24).
+Q15|Q15-P031|faq_portal|2026-02-13T10:26|93|0.569|A|-|misc35:M35|0|-|Update on the canteen menu (ref M35).
+Q15|Q15-P032|faq_portal|2025-02-08T14:34|70|0.606|C|-|misc34:M34|0|-|Update on the alumni talk (ref M34).
+Q15|Q15-P033|it_services|2026-08-15T10:31|79|0.716|B|Q15-G0|hpc_quota:500 GB|0|-|the HPC storage quota is 500 GB.
+Q15|Q15-P034|registrar|2026-07-06T08:28|89|0.461|B|-|misc23:M23|0|-|Update on the career fair (ref M23).
+Q15|Q15-P035|handbook|2024-06-25T08:14|32|0.390|A|Q15-G1|misc12:M12|0|-|Repost: Update on the alumni talk (ref M12).
+Q15|Q15-P036|student_forum|2026-04-03T17:22|318|0.491|C|Q15-G5|misc27:M27|0|-|Repost: Update on the blood donation camp (ref M27).
+Q15|Q15-P037|registrar|2025-02-11T14:22|39|0.627|A|-|misc22:M22|0|-|Update on the photography contest (ref M22).
+Q15|Q15-P038|registrar|2026-09-01T11:44|70|0.566|A|-|misc11:M11|0|-|Update on the career fair (ref M11).
+Q15|Q15-P039|faq_portal|2026-04-03T17:22|315|0.476|C|Q15-G5|misc27:M27|0|-|Update on the blood donation camp (ref M27).
+Q15|Q15-P040|student_forum|2025-11-25T09:05|65|0.421|C|Q15-G2|misc14:M14|0|-|Repost: Update on the art exhibition (ref M14).
+Q15|Q15-P041|lms_portal|2024-07-22T15:23|92|0.260|A|-|misc36:M36|0|-|Update on the canteen menu (ref M36).
+Q16|Q16-P001|student_forum|2025-04-05T10:44|54|0.423|A|-|misc25:M25|0|-|Update on the cricket trials (ref M25).
+Q16|Q16-P002|faq_portal|2025-05-03T15:13|51|0.674|B|-|misc18:M18|0|-|Update on the photography contest (ref M18).
+Q16|Q16-P003|student_forum|2026-04-10T09:04|29|0.249|C|-|misc23:M23|0|-|Update on the library book fair (ref M23).
+Q16|Q16-P004|lms_portal|2026-05-09T14:26|28|0.392|B|-|misc39:M39|0|-|Update on the Wi-Fi outage (ref M39).
+Q16|Q16-P005|handbook|2025-03-20T14:54|26|0.663|A|Q16-G6|misc37:M37|0|-|Repost: Update on the sports gala schedule (ref M37).
+Q16|Q16-P006|exam_office|2026-06-20T16:09|63|0.750|A|Q16-G0|clash_deadline:3 days before the exam|0|-|clash requests close 3 days before the exam.
+Q16|Q16-P007|lms_portal|2025-05-18T08:03|47|0.312|B|Q16-G4|misc31:M31|0|-|Repost: Update on the debate competition (ref M31).
+Q16|Q16-P008|notices_office|2025-07-08T08:02|171|0.416|B|-|misc33:M33|0|-|Update on the photography contest (ref M33).
+Q16|Q16-P009|faq_portal|2025-04-09T12:29|47|0.502|C|-|misc15:M15|0|-|Update on the art exhibition (ref M15).
+Q16|Q16-P010|faq_portal|2024-12-06T16:48|80|0.699|B|-|misc24:M24|0|-|Update on the library book fair (ref M24).
+Q16|Q16-P011|student_guide|2025-10-01T11:36|343|0.943|A|-|clash_deadline:3 days before the exam;clash_form:Form EX-3;clash_contact:the batch advisor|0|-|Student guide overview: clash requests close 3 days before the exam; clash requests use Form EX-3; the clash contact is the batch advisor; further background and examples follow.
+Q16|Q16-P012|student_forum|2025-12-22T16:06|47|0.831|C|Q16-G0|clash_deadline:3 days before the exam|0|-|Reminder: clash requests close 3 days before the exam.
+Q16|Q16-P013|handbook|2024-07-16T17:17|211|0.351|B|-|misc17:M17|0|-|Update on the photography contest (ref M17).
+Q16|Q16-P014|dept_email|2026-09-17T14:55|56|0.358|A|-|misc34:M34|0|-|Update on the Wi-Fi outage (ref M34).
+Q16|Q16-P015|dept_email|2025-01-08T08:33|62|0.349|C|-|misc12:M12|0|-|Update on the photography contest (ref M12).
+Q16|Q16-P016|notices_office|2024-07-08T14:11|163|0.322|C|-|misc14:M14|0|-|Update on the art exhibition (ref M14).
+Q16|Q16-P017|lms_portal|2026-09-10T12:55|45|0.818|B|Q16-G0|clash_deadline:3 days before the exam|0|-|Reminder: clash requests close 3 days before the exam.
+Q16|Q16-P018|faq_portal|2026-06-18T15:30|23|0.598|C|Q16-G3|misc29:M29|0|-|Update on the debate competition (ref M29).
+Q16|Q16-P019|dept_office|2026-01-25T15:26|58|0.695|B|-|clash_contact:the batch advisor|0|-|the clash contact is the batch advisor.
+Q16|Q16-P020|lms_portal|2025-08-12T09:32|25|0.261|C|-|misc16:M16|0|-|Update on the cricket trials (ref M16).
+Q16|Q16-P021|notices_office|2025-06-20T14:00|166|0.562|A|-|misc22:M22|0|-|Update on the bus route change (ref M22).
+Q16|Q16-P022|lms_portal|2026-06-18T15:30|19|0.506|C|Q16-G3|misc29:M29|0|-|Repost: Update on the debate competition (ref M29).
+Q16|Q16-P023|faq_portal|2026-03-04T17:08|60|0.811|B|Q16-G0|clash_deadline:3 days before the exam|0|-|Reminder: clash requests close 3 days before the exam.
+Q16|Q16-P024|handbook|2024-09-26T13:20|46|0.266|B|-|misc40:M40|0|-|Update on the cricket trials (ref M40).
+Q16|Q16-P025|notices_office|2025-05-18T08:03|43|0.231|B|Q16-G4|misc31:M31|0|-|Update on the debate competition (ref M31).
+Q16|Q16-P026|registrar|2026-07-25T12:35|74|0.459|A|Q16-G2|misc27:M27|0|-|Update on the Wi-Fi outage (ref M27).
+Q16|Q16-P027|student_forum|2026-04-17T17:44|78|0.250|A|Q16-G1|misc20:M20|0|-|Repost: Update on the cricket trials (ref M20).
+Q16|Q16-P028|faq_portal|2025-11-24T13:41|203|0.464|B|Q16-G5|misc35:M35|0|-|Repost: Update on the coding contest (ref M35).
+Q16|Q16-P029|student_forum|2026-09-17T16:50|33|0.712|C|-|clash_contact:the course teacher|0|-|Forum post (unverified): I heard the clash contact is the course teacher.
+Q16|Q16-P030|lms_portal|2025-06-05T12:39|74|0.317|C|-|misc13:M13|0|-|Update on the water supply schedule (ref M13).
+Q16|Q16-P031|notices_office|2025-11-24T13:41|207|0.239|B|Q16-G5|misc35:M35|0|-|Update on the coding contest (ref M35).
+Q16|Q16-P032|registrar|2026-03-10T13:29|44|0.708|A|-|clash_form:Form EX-3|0|-|clash requests use Form EX-3.
+Q16|Q16-P033|lms_portal|2026-04-17T17:44|74|0.631|A|Q16-G1|misc20:M20|0|-|Update on the cricket trials (ref M20).
+Q16|Q16-P034|lms_portal|2026-07-25T12:35|75|0.656|A|Q16-G2|misc27:M27|0|-|Repost: Update on the Wi-Fi outage (ref M27).
+Q16|Q16-P035|handbook|2026-04-19T08:34|30|0.202|B|-|misc19:M19|0|-|Update on the blood donation camp (ref M19).
+Q16|Q16-P036|student_forum|2025-06-27T16:52|39|0.841|C|Q16-G0|clash_deadline:3 days before the exam|0|-|Reminder: clash requests close 3 days before the exam.
+Q16|Q16-P037|student_forum|2026-09-21T14:48|79|0.493|A|-|misc11:M11|0|-|Update on the photography contest (ref M11).
+Q16|Q16-P038|student_forum|2025-03-20T14:54|26|0.584|A|Q16-G6|misc37:M37|0|-|Update on the sports gala schedule (ref M37).
+Q16|Q16-P039|dept_email|2026-08-14T13:10|56|0.885|B|Q16-G0|clash_deadline:3 days before the exam|0|-|Reminder: clash requests close 3 days before the exam.
+Q16|Q16-P040|faq_portal|2025-11-24T12:25|45|0.506|B|-|clash_proof:a printed timetable|0|-|clash requests must include a printed timetable.
+Q16|Q16-P041|student_forum|2026-04-12T10:56|93|0.508|B|-|misc26:M26|0|-|Update on the seminar on AI ethics (ref M26).
+Q17|Q17-P001|student_forum|2025-07-16T11:48|125|0.655|B|Q17-G1|misc11:M11|0|-|Update on the bus route change (ref M11).
+Q17|Q17-P002|faq_portal|2026-04-21T09:03|34|0.893|B|Q17-G0|elective_basis:CGPA order|0|-|Reminder: electives are allotted in CGPA order.
+Q17|Q17-P003|student_forum|2025-08-19T16:37|90|0.526|A|-|misc19:M19|0|-|Update on the art exhibition (ref M19).
+Q17|Q17-P004|registrar|2026-10-22T16:14|59|0.418|A|-|misc22:M22|0|-|Update on the Wi-Fi outage (ref M22).
+Q17|Q17-P005|dept_email|2026-04-06T11:44|266|0.672|B|Q17-G3|misc23:M23|0|-|Repost: Update on the blood donation camp (ref M23).
+Q17|Q17-P006|faq_portal|2026-01-03T09:44|95|0.358|C|-|misc33:M33|0|-|Update on the blood donation camp (ref M33).
+Q17|Q17-P007|lms_portal|2025-01-13T09:19|135|0.246|C|-|misc18:M18|0|-|Update on the convocation dress code (ref M18).
+Q17|Q17-P008|student_forum|2025-07-16T11:48|127|0.463|B|Q17-G1|misc11:M11|0|-|Repost: Update on the bus route change (ref M11).
+Q17|Q17-P009|student_guide|2025-10-02T10:57|319|0.933|A|-|elective_basis:CGPA order;elective_cap:40 students;elective_window:the first week;elective_min:2 electives|0|-|Student guide overview: electives are allotted in CGPA order; each elective is capped at 40 students; elective choices open in the first week; students must take at least 2 electives; further background and examples follow.
+Q17|Q17-P010|registrar|2025-12-02T17:47|55|0.688|A|Q17-G0|elective_basis:CGPA order|0|-|electives are allotted in CGPA order.
+Q17|Q17-P011|handbook|2025-09-23T14:08|46|0.552|A|-|elective_min:2 electives|0|-|students must take at least 2 electives.
+Q17|Q17-P012|lms_portal|2026-05-19T16:32|60|0.651|B|-|elective_window:the first week|0|-|elective choices open in the first week.
+Q17|Q17-P013|lms_portal|2025-10-24T14:03|100|0.696|C|-|misc28:M28|0|-|Update on the career fair (ref M28).
+Q17|Q17-P014|dept_office|2026-03-21T17:25|40|0.602|B|-|elective_cap:40 students|0|-|each elective is capped at 40 students.
+Q17|Q17-P015|faq_portal|2025-10-02T08:03|129|0.684|C|-|misc21:M21|0|-|Update on the career fair (ref M21).
+Q17|Q17-P016|lms_portal|2026-03-21T09:45|58|0.811|B|Q17-G0|elective_basis:CGPA order|0|-|Reminder: electives are allotted in CGPA order.
+Q17|Q17-P017|student_forum|2026-09-02T11:40|34|0.739|C|-|elective_window:the second week|0|-|Forum post (unverified): I heard elective choices open in the second week.
+Q17|Q17-P018|handbook|2026-05-02T11:56|127|0.547|C|-|misc40:M40|0|-|Update on the art exhibition (ref M40).
+Q17|Q17-P019|registrar|2025-08-16T11:36|124|0.662|C|-|misc16:M16|0|-|Update on the hostel maintenance work (ref M16).
+Q17|Q17-P020|student_forum|2025-06-16T13:37|40|0.854|C|Q17-G0|elective_basis:CGPA order|0|-|Reminder: electives are allotted in CGPA order.
+Q17|Q17-P021|faq_portal|2025-12-19T17:34|78|0.331|B|-|misc37:M37|0|-|Update on the art exhibition (ref M37).
+Q17|Q17-P022|student_forum|2026-07-03T12:34|162|0.249|B|Q17-G2|misc13:M13|0|-|Update on the cricket trials (ref M13).
+Q17|Q17-P023|handbook|2026-08-01T09:15|77|0.545|B|-|misc17:M17|0|-|Update on the road repairs (ref M17).
+Q17|Q17-P024|dept_email|2026-06-21T10:28|46|0.841|B|Q17-G0|elective_basis:CGPA order|0|-|Reminder: electives are allotted in CGPA order.
+Q17|Q17-P025|student_forum|2024-09-06T09:59|52|0.330|B|-|misc15:M15|0|-|Update on the career fair (ref M15).
+Q17|Q17-P026|faq_portal|2025-11-02T08:35|131|0.510|B|Q17-G4|misc29:M29|0|-|Repost: Update on the photography contest (ref M29).
+Q17|Q17-P027|student_forum|2025-10-18T08:19|30|0.836|C|Q17-G0|elective_basis:CGPA order|0|-|Reminder: electives are allotted in CGPA order.
+Q17|Q17-P028|registrar|2026-04-06T11:44|266|0.346|B|Q17-G3|misc23:M23|0|-|Update on the blood donation camp (ref M23).
+Q17|Q17-P029|student_forum|2024-11-15T10:41|119|0.588|B|-|misc38:M38|0|-|Update on the Wi-Fi outage (ref M38).
+Q17|Q17-P030|student_forum|2025-08-08T13:48|22|0.634|A|-|misc25:M25|0|-|Update on the hostel maintenance work (ref M25).
+Q17|Q17-P031|dept_email|2026-06-03T09:55|142|0.267|A|-|misc31:M31|0|-|Update on the alumni talk (ref M31).
+Q17|Q17-P032|lms_portal|2026-07-03T12:34|161|0.232|B|Q17-G2|misc13:M13|0|-|Repost: Update on the cricket trials (ref M13).
+Q17|Q17-P033|notices_office|2026-02-09T16:28|77|0.272|B|Q17-G5|misc35:M35|0|-|Repost: Update on the Wi-Fi outage (ref M35).
+Q17|Q17-P034|dept_email|2026-03-23T11:54|268|0.370|C|-|misc32:M32|0|-|Update on the water supply schedule (ref M32).
+Q17|Q17-P035|handbook|2026-01-21T14:53|185|0.544|A|-|misc20:M20|0|-|Update on the art exhibition (ref M20).
+Q17|Q17-P036|notices_office|2026-02-09T16:28|78|0.516|B|Q17-G5|misc35:M35|0|-|Update on the Wi-Fi outage (ref M35).
+Q17|Q17-P037|handbook|2025-12-13T11:44|108|0.511|C|-|misc27:M27|0|-|Update on the photography contest (ref M27).
+Q17|Q17-P038|handbook|2025-11-02T08:35|129|0.269|B|Q17-G4|misc29:M29|0|-|Update on the photography contest (ref M29).
+Q17|Q17-P039|dept_email|2025-05-15T16:19|76|0.389|A|-|misc26:M26|0|-|Update on the debate competition (ref M26).
+Q17|Q17-P040|handbook|2026-02-11T11:48|319|0.455|B|-|misc39:M39|0|-|Update on the debate competition (ref M39).
+Q17|Q17-P041|registrar|2026-08-04T12:36|81|0.678|C|-|misc34:M34|0|-|Update on the cricket trials (ref M34).
+Q18|Q18-P001|notices_office|2026-02-07T14:54|83|0.446|B|-|misc26:M26|0|-|Update on the career fair (ref M26).
+Q18|Q18-P002|dept_email|2025-07-10T09:34|61|0.367|A|Q18-G4|misc24:M24|0|-|Update on the vaccination drive (ref M24).
+Q18|Q18-P003|lms_portal|2025-11-09T14:42|56|0.839|B|Q18-G0|society_members:15 members|0|-|Reminder: a new society needs 15 members.
+Q18|Q18-P004|notices_office|2025-12-06T12:10|139|0.548|C|Q18-G1|misc11:M11|0|-|Repost: Update on the debate competition (ref M11).
+Q18|Q18-P005|student_forum|2025-02-08T17:41|22|0.357|C|-|misc40:M40|0|-|Update on the Wi-Fi outage (ref M40).
+Q18|Q18-P006|notices_office|2024-11-13T10:57|156|0.641|A|-|misc22:M22|0|-|Update on the hostel maintenance work (ref M22).
+Q18|Q18-P007|dept_email|2025-06-11T11:33|74|0.644|B|-|society_form:Form SA-1|0|-|society registration uses Form SA-1.
+Q18|Q18-P008|lms_portal|2026-10-01T13:59|86|0.661|B|Q18-G5|misc29:M29|0|-|Repost: Update on the alumni talk (ref M29).
+Q18|Q18-P009|faq_portal|2025-07-10T09:34|59|0.268|A|Q18-G4|misc24:M24|0|-|Repost: Update on the vaccination drive (ref M24).
+Q18|Q18-P010|dept_email|2025-06-28T16:08|237|0.621|C|Q18-G7|misc34:M34|0|-|Repost: Update on the vaccination drive (ref M34).
+Q18|Q18-P011|student_forum|2025-11-01T15:46|36|0.895|C|Q18-G0|society_members:15 members|0|-|Reminder: a new society needs 15 members.
+Q18|Q18-P012|faq_portal|2026-01-07T14:48|50|0.281|A|-|misc23:M23|0|-|Update on the coding contest (ref M23).
+Q18|Q18-P013|lms_portal|2025-05-09T10:23|107|0.626|B|Q18-G6|misc32:M32|0|-|Repost: Update on the cricket trials (ref M32).
+Q18|Q18-P014|lms_portal|2025-06-28T16:08|240|0.583|C|Q18-G7|misc34:M34|0|-|Update on the vaccination drive (ref M34).
+Q18|Q18-P015|notices_office|2025-01-01T08:52|22|0.562|A|-|misc15:M15|0|-|Update on the library book fair (ref M15).
+Q18|Q18-P016|handbook|2025-10-05T15:35|97|0.426|B|-|misc39:M39|0|-|Update on the coding contest (ref M39).
+Q18|Q18-P017|lms_portal|2026-08-26T09:18|260|0.255|C|Q18-G2|misc18:M18|0|-|Repost: Update on the coding contest (ref M18).
+Q18|Q18-P018|faq_portal|2025-10-08T14:28|57|0.635|C|Q18-G3|misc20:M20|0|-|Repost: Update on the bus route change (ref M20).
+Q18|Q18-P019|lms_portal|2025-12-11T08:35|162|0.408|B|-|misc14:M14|0|-|Update on the bus route change (ref M14).
+Q18|Q18-P020|dept_email|2026-07-01T15:46|49|0.896|B|Q18-G0|society_members:15 members|0|-|Reminder: a new society needs 15 members.
+Q18|Q18-P021|registrar|2026-08-26T09:18|259|0.533|C|Q18-G2|misc18:M18|0|-|Update on the coding contest (ref M18).
+Q18|Q18-P022|student_forum|2025-06-03T17:38|58|0.844|C|Q18-G0|society_members:15 members|0|-|Reminder: a new society needs 15 members.
+Q18|Q18-P023|lms_portal|2026-05-08T13:35|117|0.447|C|-|misc16:M16|0|-|Update on the art exhibition (ref M16).
+Q18|Q18-P024|dept_email|2026-01-25T11:04|82|0.425|C|-|misc17:M17|0|-|Update on the hostel maintenance work (ref M17).
+Q18|Q18-P025|handbook|2025-05-09T10:23|104|0.406|B|Q18-G6|misc32:M32|0|-|Update on the cricket trials (ref M32).
+Q18|Q18-P026|student_forum|2026-10-23T08:21|29|0.681|C|-|society_form:Form SA-4|0|-|Forum post (unverified): I heard society registration uses Form SA-4.
+Q18|Q18-P027|lms_portal|2024-09-07T12:02|75|0.484|A|-|misc31:M31|0|-|Update on the vaccination drive (ref M31).
+Q18|Q18-P028|student_affairs|2025-12-10T08:57|56|0.703|B|Q18-G0|society_members:15 members|0|-|a new society needs 15 members.
+Q18|Q18-P029|registrar|2024-09-01T12:06|87|0.506|C|Q18-G8|misc36:M36|0|-|Repost: Update on the road repairs (ref M36).
+Q18|Q18-P030|notices_office|2025-10-10T12:31|38|0.621|A|-|misc28:M28|0|-|Update on the hostel maintenance work (ref M28).
+Q18|Q18-P031|faq_portal|2026-06-19T11:11|94|0.441|A|-|misc27:M27|0|-|Update on the blood donation camp (ref M27).
+Q18|Q18-P032|faq_portal|2026-01-24T08:41|42|0.858|B|Q18-G0|society_members:15 members|0|-|Reminder: a new society needs 15 members.
+Q18|Q18-P033|lms_portal|2024-09-01T12:06|87|0.634|C|Q18-G8|misc36:M36|0|-|Update on the road repairs (ref M36).
+Q18|Q18-P034|faq_portal|2026-05-06T13:12|69|0.709|B|-|society_budget:PKR 20000|0|-|the first-year society budget is PKR 20000.
+Q18|Q18-P035|handbook|2025-09-12T10:12|53|0.506|A|-|society_advisor:a faculty advisor|0|-|every society must have a faculty advisor.
+Q18|Q18-P036|faq_portal|2026-10-01T13:59|83|0.675|B|Q18-G5|misc29:M29|0|-|Update on the alumni talk (ref M29).
+Q18|Q18-P037|faq_portal|2026-09-20T09:04|20|0.697|A|-|misc13:M13|0|-|Update on the library book fair (ref M13).
+Q18|Q18-P038|student_guide|2025-08-03T10:48|341|0.951|A|-|society_members:15 members;society_advisor:a faculty advisor;society_form:Form SA-1|0|-|Student guide overview: a new society needs 15 members; every society must have a faculty advisor; society registration uses Form SA-1; further background and examples follow.
+Q18|Q18-P039|notices_office|2025-10-08T14:28|60|0.472|C|Q18-G3|misc20:M20|0|-|Update on the bus route change (ref M20).
+Q18|Q18-P040|notices_office|2025-04-16T13:55|79|0.588|A|-|misc38:M38|0|-|Update on the seminar on AI ethics (ref M38).
+Q18|Q18-P041|dept_email|2025-12-06T12:10|140|0.658|C|Q18-G1|misc11:M11|0|-|Update on the debate competition (ref M11).
+Q19|Q19-P001|dept_email|2026-01-04T15:36|68|0.690|A|-|misc15:M15|0|-|Update on the vaccination drive (ref M15).
+Q19|Q19-P002|faq_portal|2026-08-02T08:15|36|0.216|A|-|misc24:M24|0|-|Update on the bus route change (ref M24).
+Q19|Q19-P003|student_forum|2025-08-04T17:02|32|0.330|A|-|misc27:M27|0|-|Update on the photography contest (ref M27).
+Q19|Q19-P004|it_services|2026-08-12T11:04|62|0.547|B|-|room_projector:a separate projector request|0|-|projectors need a separate projector request.
+Q19|Q19-P005|lms_portal|2026-03-08T08:13|80|0.603|B|-|room_system:the room booking page|0|-|bookings are made on the room booking page.
+Q19|Q19-P006|dept_email|2026-03-17T17:47|20|0.525|A|Q19-G4|misc18:M18|0|-|Update on the alumni talk (ref M18).
+Q19|Q19-P007|student_forum|2025-08-11T16:20|75|0.537|C|-|misc25:M25|0|-|Update on the convocation dress code (ref M25).
+Q19|Q19-P008|registrar|2025-03-07T12:42|83|0.268|A|Q19-G7|misc32:M32|0|-|Update on the alumni talk (ref M32).
+Q19|Q19-P009|notices_office|2026-04-28T16:22|34|0.546|B|Q19-G2|misc13:M13|0|-|Repost: Update on the bus route change (ref M13).
+Q19|Q19-P010|dept_email|2025-10-12T17:30|58|0.437|B|Q19-G9|misc37:M37|0|-|Update on the canteen menu (ref M37).
+Q19|Q19-P011|notices_office|2025-07-17T14:35|88|0.445|A|Q19-G1|misc11:M11|0|-|Repost: Update on the water supply schedule (ref M11).
+Q19|Q19-P012|lms_portal|2025-07-17T14:35|88|0.421|A|Q19-G1|misc11:M11|0|-|Update on the water supply schedule (ref M11).
+Q19|Q19-P013|registrar|2026-07-27T08:18|29|0.650|A|Q19-G6|misc29:M29|0|-|Repost: Update on the robotics club meeting (ref M29).
+Q19|Q19-P014|lms_portal|2025-01-02T16:54|196|0.373|C|-|misc20:M20|0|-|Update on the seminar on AI ethics (ref M20).
+Q19|Q19-P015|handbook|2026-03-17T17:47|22|0.408|A|Q19-G4|misc18:M18|0|-|Repost: Update on the alumni talk (ref M18).
+Q19|Q19-P016|registrar|2025-03-10T16:05|43|0.232|B|-|misc36:M36|0|-|Update on the seminar on AI ethics (ref M36).
+Q19|Q19-P017|student_forum|2026-05-17T10:26|53|0.693|B|Q19-G3|misc16:M16|0|-|Repost: Update on the library book fair (ref M16).
+Q19|Q19-P018|handbook|2026-06-28T13:26|35|0.630|A|-|room_hours:9am to 5pm|0|-|seminar rooms are open 9am to 5pm.
+Q19|Q19-P019|notices_office|2025-03-07T12:42|81|0.636|A|Q19-G7|misc32:M32|0|-|Repost: Update on the alumni talk (ref M32).
+Q19|Q19-P020|admin_office|2026-06-04T17:54|78|0.585|B|Q19-G0|room_lead:2 days ahead|0|-|rooms must be booked 2 days ahead.
+Q19|Q19-P021|student_forum|2025-09-09T15:47|47|0.802|C|Q19-G0|room_lead:2 days ahead|0|-|Reminder: rooms must be booked 2 days ahead.
+Q19|Q19-P022|student_forum|2026-07-18T12:45|32|0.851|C|Q19-G0|room_lead:2 days ahead|0|-|Reminder: rooms must be booked 2 days ahead.
+Q19|Q19-P023|handbook|2026-05-17T10:26|51|0.219|B|Q19-G3|misc16:M16|0|-|Update on the library book fair (ref M16).
+Q19|Q19-P024|faq_portal|2026-06-20T08:25|46|0.357|C|Q19-G5|misc22:M22|0|-|Update on the Wi-Fi outage (ref M22).
+Q19|Q19-P025|faq_portal|2025-06-15T17:03|77|0.549|C|Q19-G10|misc39:M39|0|-|Update on the road repairs (ref M39).
+Q19|Q19-P026|faq_portal|2026-01-19T08:47|205|0.294|A|Q19-G8|misc34:M34|0|-|Update on the debate competition (ref M34).
+Q19|Q19-P027|dept_email|2026-01-19T08:47|202|0.224|A|Q19-G8|misc34:M34|0|-|Repost: Update on the debate competition (ref M34).
+Q19|Q19-P028|dept_email|2024-06-15T08:49|186|0.355|B|-|misc26:M26|0|-|Update on the water supply schedule (ref M26).
+Q19|Q19-P029|registrar|2024-09-25T16:10|51|0.541|C|-|misc28:M28|0|-|Update on the bus route change (ref M28).
+Q19|Q19-P030|lms_portal|2026-02-25T10:46|55|0.829|B|Q19-G0|room_lead:2 days ahead|0|-|Reminder: rooms must be booked 2 days ahead.
+Q19|Q19-P031|faq_portal|2026-07-27T08:18|27|0.274|A|Q19-G6|misc29:M29|0|-|Update on the robotics club meeting (ref M29).
+Q19|Q19-P032|registrar|2026-07-14T09:48|152|0.417|C|-|misc31:M31|0|-|Update on the vaccination drive (ref M31).
+Q19|Q19-P033|handbook|2026-06-20T08:25|49|0.540|C|Q19-G5|misc22:M22|0|-|Repost: Update on the Wi-Fi outage (ref M22).
+Q19|Q19-P034|student_forum|2025-08-22T17:30|247|0.465|A|-|misc21:M21|0|-|Update on the alumni talk (ref M21).
+Q19|Q19-P035|student_guide|2025-03-11T13:52|302|0.949|A|-|room_lead:2 days ahead;room_system:the room booking page;room_hours:9am to 5pm|0|-|Student guide overview: rooms must be booked 2 days ahead; bookings are made on the room booking page; seminar rooms are open 9am to 5pm; further background and examples follow.
+Q19|Q19-P036|handbook|2025-06-15T17:03|75|0.494|C|Q19-G10|misc39:M39|0|-|Repost: Update on the road repairs (ref M39).
+Q19|Q19-P037|student_forum|2026-09-14T11:58|42|0.731|C|-|room_hours:8am to 8pm|0|-|Forum post (unverified): I heard seminar rooms are open 8am to 8pm.
+Q19|Q19-P038|faq_portal|2026-01-22T10:03|30|0.844|B|Q19-G0|room_lead:2 days ahead|0|-|Reminder: rooms must be booked 2 days ahead.
+Q19|Q19-P039|registrar|2026-04-28T16:22|30|0.559|B|Q19-G2|misc13:M13|0|-|Update on the bus route change (ref M13).
+Q19|Q19-P040|faq_portal|2025-10-12T17:30|58|0.585|B|Q19-G9|misc37:M37|0|-|Repost: Update on the canteen menu (ref M37).
+Q19|Q19-P041|dept_email|2025-10-15T15:56|39|0.898|B|Q19-G0|room_lead:2 days ahead|0|-|Reminder: rooms must be booked 2 days ahead.
+Q20|Q20-P001|handbook|2025-06-17T09:24|65|0.738|A|-|medleave_max:15 days|0|-|the longest medical leave is 15 days.
+Q20|Q20-P002|handbook|2024-10-05T09:28|28|0.422|C|Q20-G5|misc28:M28|0|-|Repost: Update on the robotics club meeting (ref M28).
+Q20|Q20-P003|lms_portal|2026-07-05T12:16|77|0.443|B|Q20-G4|misc25:M25|0|-|Repost: Update on the robotics club meeting (ref M25).
+Q20|Q20-P004|dept_office|2025-09-24T14:16|60|0.672|B|-|medleave_form:Form ML-1|0|-|medical leave uses Form ML-1.
+Q20|Q20-P005|student_forum|2024-12-05T09:08|61|0.530|B|-|misc38:M38|0|-|Update on the alumni talk (ref M38).
+Q20|Q20-P006|notices_office|2026-04-25T12:46|48|0.632|A|-|misc18:M18|0|-|Update on the cricket trials (ref M18).
+Q20|Q20-P007|dept_email|2025-04-23T15:18|187|0.338|B|Q20-G3|misc22:M22|0|-|Repost: Update on the vaccination drive (ref M22).
+Q20|Q20-P008|lms_portal|2024-10-05T09:28|29|0.442|C|Q20-G5|misc28:M28|0|-|Update on the robotics club meeting (ref M28).
+Q20|Q20-P009|faq_portal|2025-08-10T17:50|162|0.617|A|-|misc14:M14|0|-|Update on the Wi-Fi outage (ref M14).
+Q20|Q20-P010|registrar|2026-08-16T10:36|51|0.329|B|Q20-G1|misc11:M11|0|-|Repost: Update on the Wi-Fi outage (ref M11).
+Q20|Q20-P011|handbook|2025-04-19T09:32|39|0.687|A|-|misc19:M19|0|-|Update on the convocation dress code (ref M19).
+Q20|Q20-P012|student_forum|2026-06-18T10:25|55|0.528|B|-|misc35:M35|0|-|Update on the water supply schedule (ref M35).
+Q20|Q20-P013|student_forum|2026-08-16T10:36|51|0.675|B|Q20-G1|misc11:M11|0|-|Update on the Wi-Fi outage (ref M11).
+Q20|Q20-P014|medical_centre|2026-01-16T13:41|48|0.659|A|Q20-G0|medleave_cert:a medical certificate|0|-|medical leave needs a medical certificate.
+Q20|Q20-P015|registrar|2025-03-20T11:21|86|0.475|C|-|misc32:M32|0|-|Update on the debate competition (ref M32).
+Q20|Q20-P016|student_forum|2025-07-14T11:43|55|0.806|C|Q20-G0|medleave_cert:a medical certificate|0|-|Reminder: medical leave needs a medical certificate.
+Q20|Q20-P017|handbook|2025-04-20T11:50|33|0.690|B|Q20-G2|misc20:M20|0|-|Repost: Update on the blood donation camp (ref M20).
+Q20|Q20-P018|registrar|2025-07-16T15:06|76|0.382|C|Q20-G7|misc33:M33|0|-|Repost: Update on the Wi-Fi outage (ref M33).
+Q20|Q20-P019|lms_portal|2026-03-27T11:25|30|0.897|B|Q20-G0|medleave_cert:a medical certificate|0|-|Reminder: medical leave needs a medical certificate.
+Q20|Q20-P020|registrar|2026-07-03T08:56|44|0.248|C|-|misc13:M13|0|-|Update on the alumni talk (ref M13).
+Q20|Q20-P021|faq_portal|2025-04-23T15:18|183|0.427|B|Q20-G3|misc22:M22|0|-|Update on the vaccination drive (ref M22).
+Q20|Q20-P022|student_forum|2026-10-09T08:43|33|0.681|C|-|medleave_form:Form ML-5|0|-|Forum post (unverified): I heard medical leave uses Form ML-5.
+Q20|Q20-P023|dept_email|2026-07-21T12:20|48|0.442|A|-|misc40:M40|0|-|Update on the debate competition (ref M40).
+Q20|Q20-P024|lms_portal|2024-08-27T16:49|21|0.398|B|-|misc15:M15|0|-|Update on the vaccination drive (ref M15).
+Q20|Q20-P025|dept_email|2026-08-09T10:49|71|0.289|B|-|misc39:M39|0|-|Update on the career fair (ref M39).
+Q20|Q20-P026|lms_portal|2026-06-12T14:18|85|0.370|A|-|misc36:M36|0|-|Update on the Wi-Fi outage (ref M36).
+Q20|Q20-P027|registrar|2025-04-23T10:47|35|0.219|A|-|misc37:M37|0|-|Update on the sports gala schedule (ref M37).
+Q20|Q20-P028|handbook|2026-07-05T12:16|77|0.510|B|Q20-G4|misc25:M25|0|-|Update on the robotics club meeting (ref M25).
+Q20|Q20-P029|notices_office|2025-04-25T17:52|223|0.279|B|-|misc16:M16|0|-|Update on the water supply schedule (ref M16).
+Q20|Q20-P030|registrar|2026-10-07T09:51|66|0.454|C|-|misc17:M17|0|-|Update on the hostel maintenance work (ref M17).
+Q20|Q20-P031|dept_email|2025-07-14T11:34|41|0.874|B|Q20-G0|medleave_cert:a medical certificate|0|-|Reminder: medical leave needs a medical certificate.
+Q20|Q20-P032|registrar|2025-12-06T11:49|49|0.557|A|-|medleave_days:within 7 days|0|-|leave must be filed within 7 days.
+Q20|Q20-P033|handbook|2025-04-20T11:50|32|0.627|B|Q20-G2|misc20:M20|0|-|Update on the blood donation camp (ref M20).
+Q20|Q20-P034|student_guide|2025-04-10T12:13|375|0.956|A|-|medleave_cert:a medical certificate;medleave_days:within 7 days;medleave_form:Form ML-1|0|-|Student guide overview: medical leave needs a medical certificate; leave must be filed within 7 days; medical leave uses Form ML-1; further background and examples follow.
+Q20|Q20-P035|student_forum|2026-08-11T16:34|274|0.450|A|-|misc24:M24|0|-|Update on the road repairs (ref M24).
+Q20|Q20-P036|student_forum|2025-08-06T11:55|94|0.304|B|-|misc27:M27|0|-|Update on the art exhibition (ref M27).
+Q20|Q20-P037|lms_portal|2026-02-21T11:43|164|0.346|B|Q20-G6|misc30:M30|0|-|Repost: Update on the career fair (ref M30).
+Q20|Q20-P038|lms_portal|2026-02-21T11:43|162|0.537|B|Q20-G6|misc30:M30|0|-|Update on the career fair (ref M30).
+Q20|Q20-P039|faq_portal|2025-08-06T08:21|45|0.860|B|Q20-G0|medleave_cert:a medical certificate|0|-|Reminder: medical leave needs a medical certificate.
+Q20|Q20-P040|student_forum|2025-10-08T16:28|30|0.843|C|Q20-G0|medleave_cert:a medical certificate|0|-|Reminder: medical leave needs a medical certificate.
+Q20|Q20-P041|student_forum|2025-07-16T15:06|76|0.300|C|Q20-G7|misc33:M33|0|-|Update on the Wi-Fi outage (ref M33).
+Q21|Q21-P001|chat_assistant|2026-10-01T09:32|19|0.227|C|-|chat7:C7|0|-|Assistant: and sorting? (C7)
+Q21|Q21-P002|chat_assistant|2026-10-01T09:02|35|0.190|C|-|chat12:C12|0|-|Assistant: nice (C12)
+Q21|Q21-P003|chat_user|2026-10-01T10:19|63|0.225|B|-|chat15:C15|0|-|User: nice (C15)
+Q21|Q21-P004|chat_user|2026-10-01T10:21|37|0.238|B|-|chat20:C20|0|-|User: can you explain heaps again (C20)
+Q21|Q21-P005|chat_assistant|2026-10-01T09:38|61|0.197|C|-|chat8:C8|0|-|Assistant: nice (C8)
+Q21|Q21-P006|chat_assistant|2026-10-01T09:24|64|0.184|C|-|chat33:C33|0|-|Assistant: what is a linked list (C33)
+Q21|Q21-P007|chat_assistant|2026-10-01T10:12|24|0.368|C|-|chat38:C38|0|-|Assistant: what about lunch (C38)
+Q21|Q21-P008|chat_user|2026-10-01T10:01|59|0.348|B|-|chat13:C13|0|-|User: thanks (C13)
+Q21|Q21-P009|chat_user|2026-10-01T09:03|48|0.392|B|-|chat11:C11|0|-|User: nice (C11)
+Q21|Q21-P010|chat_assistant|2026-10-01T10:28|46|0.119|C|-|chat25:C25|0|-|Assistant: what is a linked list (C25)
+Q21|Q21-P011|chat_user|2026-10-01T09:07|40|0.119|B|-|chat21:C21|0|-|User: and sorting? (C21)
+Q21|Q21-P012|chat_assistant|2026-10-01T10:33|31|0.697|C|Q21-G1|project_language:C++|0|-|Assistant: updated, your project language is now C++.
+Q21|Q21-P013|chat_assistant|2026-10-01T10:00|57|0.119|C|-|chat17:C17|0|-|Assistant: nice (C17)
+Q21|Q21-P014|chat_user|2026-10-01T09:51|61|0.053|B|-|chat32:C32|0|-|User: ok got it (C32)
+Q21|Q21-P015|chat_assistant|2026-10-01T10:06|30|0.314|C|-|chat10:C10|0|-|Assistant: thanks (C10)
+Q21|Q21-P016|chat_assistant|2026-10-01T09:15|39|0.806|C|Q21-G0|project_language:Python|0|-|Assistant: noted, your project language is Python.
+Q21|Q21-P017|chat_user|2026-10-01T09:47|55|0.197|B|-|chat18:C18|0|-|User: what is a linked list (C18)
+Q21|Q21-P018|chat_assistant|2026-10-01T09:36|66|0.387|C|-|chat16:C16|0|-|Assistant: is the lab open (C16)
+Q21|Q21-P019|chat_user|2026-10-01T09:09|20|0.061|B|-|chat40:C40|0|-|User: what is a linked list (C40)
+Q21|Q21-P020|chat_user|2026-10-01T09:11|17|0.089|B|-|chat26:C26|0|-|User: thanks (C26)
+Q21|Q21-P021|chat_assistant|2026-10-01T10:16|34|0.120|C|-|chat31:C31|0|-|Assistant: nice (C31)
+Q21|Q21-P022|chat_assistant|2026-10-01T09:56|38|0.228|C|-|chat14:C14|0|-|Assistant: is the lab open (C14)
+Q21|Q21-P023|chat_user|2026-10-01T10:11|48|0.355|B|-|chat19:C19|0|-|User: nice (C19)
+Q21|Q21-P024|chat_user|2026-10-01T09:54|33|0.575|B|-|reminder_time:Friday 3pm|0|-|User: remind me on Friday 3pm.
+Q21|Q21-P025|chat_user|2026-10-01T09:12|28|0.900|B|Q21-G0|project_language:Python|0|-|User: my project will be written in Python.
+Q21|Q21-P026|chat_user|2026-10-01T10:19|65|0.288|B|-|chat37:C37|0|-|User: what about lunch (C37)
+Q21|Q21-P027|chat_user|2026-10-01T09:47|46|0.153|B|-|chat28:C28|0|-|User: and sorting? (C28)
+Q21|Q21-P028|chat_user|2026-10-01T09:17|28|0.278|B|-|chat23:C23|0|-|User: nice (C23)
+Q21|Q21-P029|chat_user|2026-10-01T09:11|56|0.329|B|-|chat27:C27|0|-|User: what is a linked list (C27)
+Q21|Q21-P030|chat_user|2026-10-01T10:30|32|0.700|B|Q21-G1|project_language:C++|0|Q21-P025|User: change of plan, I switched the project to C++.
+Q21|Q21-P031|chat_assistant|2026-10-01T10:18|58|0.149|C|-|chat36:C36|0|-|Assistant: can you explain heaps again (C36)
+Q21|Q21-P032|chat_user|2026-10-01T09:43|49|0.274|B|-|chat22:C22|0|-|User: nice (C22)
+Q21|Q21-P033|chat_assistant|2026-10-01T09:18|17|0.241|C|-|chat24:C24|0|-|Assistant: that helps (C24)
+Q21|Q21-P034|chat_assistant|2026-10-01T09:06|47|0.384|C|-|chat9:C9|0|-|Assistant: nice (C9)
+Q21|Q21-P035|chat_user|2026-10-01T09:06|34|0.607|B|-|lab_group:B2|0|-|User: I am in lab group B2.
+Q21|Q21-P036|chat_assistant|2026-10-01T09:06|33|0.083|C|-|chat39:C39|0|-|Assistant: what about lunch (C39)
+Q21|Q21-P037|chat_assistant|2026-10-01T10:04|27|0.397|C|-|chat30:C30|0|-|Assistant: ok got it (C30)
+Q21|Q21-P038|chat_user|2026-10-01T09:55|32|0.156|B|-|chat35:C35|0|-|User: and sorting? (C35)
+Q21|Q21-P039|chat_user|2026-10-01T09:25|61|0.282|B|-|chat34:C34|0|-|User: show me an example (C34)
+Q21|Q21-P040|profile_memory|2026-10-01T09:30|69|0.832|B|-|project_language:Python;lab_group:B2|0|-|Profile summary: language Python, lab group B2.
+Q21|Q21-P041|chat_assistant|2026-10-01T09:34|26|0.126|C|-|chat29:C29|0|-|Assistant: show me an example (C29)
+Q22|Q22-P001|chat_user|2026-10-02T09:06|27|0.594|B|-|lab_group:A1|0|-|User: I am in lab group A1.
+Q22|Q22-P002|chat_user|2026-10-02T09:47|60|0.071|B|-|chat20:C20|0|-|User: show me an example (C20)
+Q22|Q22-P003|chat_assistant|2026-10-02T09:15|32|0.855|C|Q22-G0|project_language:Java|0|-|Assistant: noted, your project language is Java.
+Q22|Q22-P004|chat_user|2026-10-02T10:15|43|0.267|B|-|chat14:C14|0|-|User: show me an example (C14)
+Q22|Q22-P005|chat_assistant|2026-10-02T09:16|49|0.118|C|-|chat26:C26|0|-|Assistant: thanks (C26)
+Q22|Q22-P006|chat_user|2026-10-02T09:33|23|0.385|B|-|chat22:C22|0|-|User: nice (C22)
+Q22|Q22-P007|chat_assistant|2026-10-02T10:18|22|0.055|C|-|chat11:C11|0|-|Assistant: show me an example (C11)
+Q22|Q22-P008|chat_assistant|2026-10-02T10:22|21|0.321|C|-|chat12:C12|0|-|Assistant: can you explain heaps again (C12)
+Q22|Q22-P009|chat_assistant|2026-10-02T10:20|27|0.351|C|-|chat36:C36|0|-|Assistant: is the lab open (C36)
+Q22|Q22-P010|chat_user|2026-10-02T09:54|25|0.539|B|-|reminder_time:Monday 9am|0|-|User: remind me on Monday 9am.
+Q22|Q22-P011|chat_user|2026-10-02T10:23|55|0.209|B|-|chat37:C37|0|-|User: what is a linked list (C37)
+Q22|Q22-P012|chat_assistant|2026-10-02T09:22|43|0.136|C|-|chat32:C32|0|-|Assistant: what is a linked list (C32)
+Q22|Q22-P013|chat_assistant|2026-10-02T10:22|58|0.322|C|-|chat33:C33|0|-|Assistant: is the lab open (C33)
+Q22|Q22-P014|chat_assistant|2026-10-02T10:16|41|0.087|C|-|chat35:C35|0|-|Assistant: and sorting? (C35)
+Q22|Q22-P015|chat_user|2026-10-02T10:39|20|0.244|B|-|chat9:C9|0|-|User: what is a linked list (C9)
+Q22|Q22-P016|chat_user|2026-10-02T09:12|35|0.836|B|Q22-G0|project_language:Java|0|-|User: my project will be written in Java.
+Q22|Q22-P017|chat_assistant|2026-10-02T09:50|63|0.214|C|-|chat21:C21|0|-|Assistant: is the lab open (C21)
+Q22|Q22-P018|chat_assistant|2026-10-02T10:06|23|0.388|C|-|chat30:C30|0|-|Assistant: what is a linked list (C30)
+Q22|Q22-P019|chat_assistant|2026-10-02T09:12|45|0.123|C|-|chat17:C17|0|-|Assistant: thanks (C17)
+Q22|Q22-P020|chat_user|2026-10-02T10:11|27|0.086|B|-|chat16:C16|0|-|User: show me an example (C16)
+Q22|Q22-P021|chat_assistant|2026-10-02T09:44|22|0.173|C|-|chat24:C24|0|-|Assistant: thanks (C24)
+Q22|Q22-P022|chat_user|2026-10-02T10:21|38|0.393|B|-|chat19:C19|0|-|User: thanks (C19)
+Q22|Q22-P023|chat_assistant|2026-10-02T10:33|37|0.692|C|Q22-G1|project_language:Kotlin|0|-|Assistant: updated, your project language is now Kotlin.
+Q22|Q22-P024|chat_user|2026-10-02T10:37|34|0.244|B|-|chat8:C8|0|-|User: can you explain heaps again (C8)
+Q22|Q22-P025|chat_user|2026-10-02T10:07|33|0.204|B|-|chat28:C28|0|-|User: what is a linked list (C28)
+Q22|Q22-P026|chat_user|2026-10-02T10:35|53|0.399|B|-|chat7:C7|0|-|User: nice (C7)
+Q22|Q22-P027|chat_assistant|2026-10-02T09:24|27|0.252|C|-|chat39:C39|0|-|Assistant: show me an example (C39)
+Q22|Q22-P028|chat_user|2026-10-02T09:07|43|0.375|B|-|chat10:C10|0|-|User: can you explain heaps again (C10)
+Q22|Q22-P029|profile_memory|2026-10-02T09:30|53|0.817|B|-|project_language:Java;lab_group:A1|0|-|Profile summary: language Java, lab group A1.
+Q22|Q22-P030|chat_user|2026-10-02T09:25|37|0.079|B|-|chat25:C25|0|-|User: and sorting? (C25)
+Q22|Q22-P031|chat_user|2026-10-02T10:30|21|0.661|B|Q22-G1|project_language:Kotlin|0|Q22-P016|User: change of plan, I switched the project to Kotlin.
+Q22|Q22-P032|chat_user|2026-10-02T09:21|41|0.226|B|-|chat31:C31|0|-|User: show me an example (C31)
+Q22|Q22-P033|chat_assistant|2026-10-02T09:36|22|0.385|C|-|chat29:C29|0|-|Assistant: and sorting? (C29)
+Q22|Q22-P034|chat_user|2026-10-02T09:35|56|0.190|B|-|chat13:C13|0|-|User: and sorting? (C13)
+Q22|Q22-P035|chat_assistant|2026-10-02T09:52|20|0.224|C|-|chat38:C38|0|-|Assistant: can you explain heaps again (C38)
+Q22|Q22-P036|chat_assistant|2026-10-02T10:16|39|0.082|C|-|chat18:C18|0|-|Assistant: ok got it (C18)
+Q22|Q22-P037|chat_assistant|2026-10-02T09:36|24|0.087|C|-|chat27:C27|0|-|Assistant: can you explain heaps again (C27)
+Q22|Q22-P038|chat_user|2026-10-02T09:09|56|0.093|B|-|chat34:C34|0|-|User: and sorting? (C34)
+Q22|Q22-P039|chat_assistant|2026-10-02T10:28|34|0.315|C|-|chat15:C15|0|-|Assistant: is the lab open (C15)
+Q22|Q22-P040|chat_assistant|2026-10-02T10:16|19|0.287|C|-|chat23:C23|0|-|Assistant: what is a linked list (C23)
+Q22|Q22-P041|chat_assistant|2026-10-02T09:08|27|0.192|C|-|chat40:C40|0|-|Assistant: and sorting? (C40)
+Q23|Q23-P001|chat_user|2026-10-03T09:49|27|0.249|B|-|chat36:C36|0|-|User: that helps (C36)
+Q23|Q23-P002|chat_user|2026-10-03T09:06|33|0.574|B|-|lab_group:C3|0|-|User: I am in lab group C3.
+Q23|Q23-P003|chat_user|2026-10-03T10:19|22|0.335|B|-|chat20:C20|0|-|User: and sorting? (C20)
+Q23|Q23-P004|chat_user|2026-10-03T09:19|26|0.229|B|-|chat28:C28|0|-|User: that helps (C28)
+Q23|Q23-P005|chat_assistant|2026-10-03T09:16|58|0.159|C|-|chat37:C37|0|-|Assistant: thanks (C37)
+Q23|Q23-P006|chat_user|2026-10-03T09:43|63|0.263|B|-|chat13:C13|0|-|User: show me an example (C13)
+Q23|Q23-P007|chat_assistant|2026-10-03T09:28|28|0.204|C|-|chat18:C18|0|-|Assistant: what is a linked list (C18)
+Q23|Q23-P008|chat_user|2026-10-03T10:41|51|0.311|B|-|chat10:C10|0|-|User: what about lunch (C10)
+Q23|Q23-P009|chat_user|2026-10-03T09:47|16|0.281|B|-|chat14:C14|0|-|User: ok got it (C14)
+Q23|Q23-P010|chat_user|2026-10-03T09:09|29|0.389|B|-|chat22:C22|0|-|User: nice (C22)
+Q23|Q23-P011|chat_assistant|2026-10-03T09:40|60|0.277|C|-|chat27:C27|0|-|Assistant: is the lab open (C27)
+Q23|Q23-P012|chat_assistant|2026-10-03T10:16|41|0.332|C|-|chat34:C34|0|-|Assistant: what about lunch (C34)
+Q23|Q23-P013|chat_assistant|2026-10-03T10:28|41|0.114|C|-|chat40:C40|0|-|Assistant: that helps (C40)
+Q23|Q23-P014|chat_assistant|2026-10-03T10:10|23|0.078|C|-|chat31:C31|0|-|Assistant: nice (C31)
+Q23|Q23-P015|chat_user|2026-10-03T10:35|49|0.218|B|-|chat7:C7|0|-|User: and sorting? (C7)
+Q23|Q23-P016|chat_assistant|2026-10-03T09:28|21|0.124|C|-|chat15:C15|0|-|Assistant: can you explain heaps again (C15)
+Q23|Q23-P017|chat_user|2026-10-03T09:15|64|0.353|B|-|chat16:C16|0|-|User: and sorting? (C16)
+Q23|Q23-P018|chat_user|2026-10-03T10:43|52|0.253|B|-|chat11:C11|0|-|User: what about lunch (C11)
+Q23|Q23-P019|chat_assistant|2026-10-03T09:15|29|0.829|C|Q23-G0|project_language:C|0|-|Assistant: noted, your project language is C.
+Q23|Q23-P020|chat_user|2026-10-03T09:12|35|0.851|B|Q23-G0|project_language:C|0|-|User: my project will be written in C.
+Q23|Q23-P021|chat_user|2026-10-03T10:39|49|0.110|B|-|chat9:C9|0|-|User: what about lunch (C9)
+Q23|Q23-P022|chat_user|2026-10-03T10:45|35|0.299|B|-|chat12:C12|0|-|User: is the lab open (C12)
+Q23|Q23-P023|chat_user|2026-10-03T10:23|54|0.116|B|-|chat32:C32|0|-|User: and sorting? (C32)
+Q23|Q23-P024|chat_assistant|2026-10-03T09:22|56|0.356|C|-|chat30:C30|0|-|Assistant: nice (C30)
+Q23|Q23-P025|chat_user|2026-10-03T10:37|62|0.383|B|-|chat8:C8|0|-|User: that helps (C8)
+Q23|Q23-P026|chat_assistant|2026-10-03T10:20|34|0.285|C|-|chat21:C21|0|-|Assistant: show me an example (C21)
+Q23|Q23-P027|chat_user|2026-10-03T09:43|35|0.216|B|-|chat25:C25|0|-|User: show me an example (C25)
+Q23|Q23-P028|chat_assistant|2026-10-03T09:54|30|0.370|C|-|chat35:C35|0|-|Assistant: thanks (C35)
+Q23|Q23-P029|chat_user|2026-10-03T09:54|34|0.570|B|-|reminder_time:Tuesday 11am|0|-|User: remind me on Tuesday 11am.
+Q23|Q23-P030|chat_assistant|2026-10-03T09:48|19|0.140|C|-|chat38:C38|0|-|Assistant: thanks (C38)
+Q23|Q23-P031|chat_assistant|2026-10-03T10:00|50|0.287|C|-|chat39:C39|0|-|Assistant: ok got it (C39)
+Q23|Q23-P032|chat_assistant|2026-10-03T09:48|45|0.131|C|-|chat33:C33|0|-|Assistant: is the lab open (C33)
+Q23|Q23-P033|chat_assistant|2026-10-03T09:16|20|0.061|C|-|chat24:C24|0|-|Assistant: that helps (C24)
+Q23|Q23-P034|chat_assistant|2026-10-03T09:52|56|0.330|C|-|chat29:C29|0|-|Assistant: can you explain heaps again (C29)
+Q23|Q23-P035|chat_assistant|2026-10-03T10:33|23|0.618|C|Q23-G1|project_language:Rust|0|-|Assistant: updated, your project language is now Rust.
+Q23|Q23-P036|chat_user|2026-10-03T10:19|33|0.267|B|-|chat19:C19|0|-|User: ok got it (C19)
+Q23|Q23-P037|chat_assistant|2026-10-03T09:18|17|0.309|C|-|chat17:C17|0|-|Assistant: and sorting? (C17)
+Q23|Q23-P038|chat_assistant|2026-10-03T09:50|29|0.314|C|-|chat23:C23|0|-|Assistant: show me an example (C23)
+Q23|Q23-P039|profile_memory|2026-10-03T09:30|68|0.809|B|-|project_language:C;lab_group:C3|0|-|Profile summary: language C, lab group C3.
+Q23|Q23-P040|chat_user|2026-10-03T09:09|54|0.116|B|-|chat26:C26|0|-|User: show me an example (C26)
+Q23|Q23-P041|chat_user|2026-10-03T10:30|25|0.733|B|Q23-G1|project_language:Rust|0|Q23-P020|User: change of plan, I switched the project to Rust.
+Q24|Q24-P001|chat_user|2026-10-04T09:05|25|0.152|B|-|chat36:C36|0|-|User: can you explain heaps again (C36)
+Q24|Q24-P002|chat_user|2026-10-04T10:51|19|0.321|B|-|chat15:C15|0|-|User: thanks (C15)
+Q24|Q24-P003|chat_user|2026-10-04T10:35|45|0.393|B|-|chat7:C7|0|-|User: can you explain heaps again (C7)
+Q24|Q24-P004|chat_assistant|2026-10-04T09:50|41|0.350|C|-|chat37:C37|0|-|Assistant: what is a linked list (C37)
+Q24|Q24-P005|chat_user|2026-10-04T09:47|25|0.400|B|-|chat16:C16|0|-|User: and sorting? (C16)
+Q24|Q24-P006|chat_user|2026-10-04T10:45|29|0.360|B|-|chat12:C12|0|-|User: nice (C12)
+Q24|Q24-P007|chat_assistant|2026-10-04T10:33|38|0.617|C|Q24-G1|project_language:Python|0|-|Assistant: updated, your project language is now Python.
+Q24|Q24-P008|chat_user|2026-10-04T10:41|42|0.348|B|-|chat10:C10|0|-|User: is the lab open (C10)
+Q24|Q24-P009|chat_user|2026-10-04T09:49|33|0.362|B|-|chat39:C39|0|-|User: what about lunch (C39)
+Q24|Q24-P010|chat_assistant|2026-10-04T09:15|35|0.833|C|Q24-G0|project_language:MATLAB|0|-|Assistant: noted, your project language is MATLAB.
+Q24|Q24-P011|chat_user|2026-10-04T09:37|47|0.219|B|-|chat29:C29|0|-|User: show me an example (C29)
+Q24|Q24-P012|chat_user|2026-10-04T09:43|51|0.051|B|-|chat17:C17|0|-|User: show me an example (C17)
+Q24|Q24-P013|chat_user|2026-10-04T10:07|16|0.068|B|-|chat20:C20|0|-|User: that helps (C20)
+Q24|Q24-P014|chat_user|2026-10-04T09:54|33|0.554|B|-|reminder_time:Wednesday 2pm|0|-|User: remind me on Wednesday 2pm.
+Q24|Q24-P015|chat_user|2026-10-04T09:33|40|0.242|B|-|chat34:C34|0|-|User: thanks (C34)
+Q24|Q24-P016|chat_user|2026-10-04T09:51|42|0.352|B|-|chat32:C32|0|-|User: what is a linked list (C32)
+Q24|Q24-P017|chat_user|2026-10-04T10:49|23|0.240|B|-|chat14:C14|0|-|User: show me an example (C14)
+Q24|Q24-P018|chat_user|2026-10-04T10:43|64|0.175|B|-|chat11:C11|0|-|User: ok got it (C11)
+Q24|Q24-P019|chat_assistant|2026-10-04T09:46|46|0.112|C|-|chat31:C31|0|-|Assistant: what about lunch (C31)
+Q24|Q24-P020|chat_user|2026-10-04T09:12|22|0.877|B|Q24-G0|project_language:MATLAB|0|-|User: my project will be written in MATLAB.
+Q24|Q24-P021|chat_user|2026-10-04T09:51|59|0.057|B|-|chat19:C19|0|-|User: show me an example (C19)
+Q24|Q24-P022|profile_memory|2026-10-04T09:30|58|0.821|B|-|project_language:MATLAB;lab_group:B1|0|-|Profile summary: language MATLAB, lab group B1.
+Q24|Q24-P023|chat_user|2026-10-04T10:47|17|0.232|B|-|chat13:C13|0|-|User: show me an example (C13)
+Q24|Q24-P024|chat_assistant|2026-10-04T09:02|16|0.076|C|-|chat40:C40|0|-|Assistant: is the lab open (C40)
+Q24|Q24-P025|chat_user|2026-10-04T09:21|19|0.189|B|-|chat28:C28|0|-|User: is the lab open (C28)
+Q24|Q24-P026|chat_assistant|2026-10-04T09:38|56|0.193|C|-|chat30:C30|0|-|Assistant: what is a linked list (C30)
+Q24|Q24-P027|chat_assistant|2026-10-04T10:06|46|0.337|C|-|chat27:C27|0|-|Assistant: what is a linked list (C27)
+Q24|Q24-P028|chat_user|2026-10-04T10:39|29|0.095|B|-|chat9:C9|0|-|User: show me an example (C9)
+Q24|Q24-P029|chat_user|2026-10-04T10:37|21|0.125|B|-|chat8:C8|0|-|User: nice (C8)
+Q24|Q24-P030|chat_user|2026-10-04T10:30|36|0.755|B|Q24-G1|project_language:Python|0|Q24-P020|User: change of plan, I switched the project to Python.
+Q24|Q24-P031|chat_assistant|2026-10-04T09:44|16|0.164|C|-|chat23:C23|0|-|Assistant: that helps (C23)
+Q24|Q24-P032|chat_user|2026-10-04T09:23|59|0.144|B|-|chat35:C35|0|-|User: that helps (C35)
+Q24|Q24-P033|chat_assistant|2026-10-04T09:26|58|0.131|C|-|chat18:C18|0|-|Assistant: show me an example (C18)
+Q24|Q24-P034|chat_assistant|2026-10-04T09:58|49|0.397|C|-|chat24:C24|0|-|Assistant: what is a linked list (C24)
+Q24|Q24-P035|chat_user|2026-10-04T09:47|65|0.290|B|-|chat21:C21|0|-|User: is the lab open (C21)
+Q24|Q24-P036|chat_user|2026-10-04T10:15|38|0.289|B|-|chat33:C33|0|-|User: thanks (C33)
+Q24|Q24-P037|chat_assistant|2026-10-04T09:30|21|0.090|C|-|chat22:C22|0|-|Assistant: what about lunch (C22)
+Q24|Q24-P038|chat_assistant|2026-10-04T10:14|50|0.335|C|-|chat38:C38|0|-|Assistant: ok got it (C38)
+Q24|Q24-P039|chat_user|2026-10-04T09:21|37|0.264|B|-|chat26:C26|0|-|User: and sorting? (C26)
+Q24|Q24-P040|chat_assistant|2026-10-04T10:20|19|0.153|C|-|chat25:C25|0|-|Assistant: can you explain heaps again (C25)
+Q24|Q24-P041|chat_user|2026-10-04T09:06|35|0.586|B|-|lab_group:B1|0|-|User: I am in lab group B1.
+Q25|Q25-P001|chat_assistant|2026-10-05T10:28|33|0.067|C|-|chat39:C39|0|-|Assistant: ok got it (C39)
+Q25|Q25-P002|chat_assistant|2026-10-05T09:46|23|0.097|C|-|chat31:C31|0|-|Assistant: can you explain heaps again (C31)
+Q25|Q25-P003|chat_assistant|2026-10-05T09:50|30|0.102|C|-|chat28:C28|0|-|Assistant: nice (C28)
+Q25|Q25-P004|chat_user|2026-10-05T09:29|56|0.090|B|-|chat19:C19|0|-|User: what is a linked list (C19)
+Q25|Q25-P005|chat_user|2026-10-05T10:49|40|0.239|B|-|chat14:C14|0|-|User: what about lunch (C14)
+Q25|Q25-P006|chat_user|2026-10-05T09:33|25|0.385|B|-|chat33:C33|0|-|User: is the lab open (C33)
+Q25|Q25-P007|chat_user|2026-10-05T09:05|65|0.053|B|-|chat40:C40|0|-|User: what about lunch (C40)
+Q25|Q25-P008|chat_user|2026-10-05T09:54|26|0.582|B|-|reminder_time:Thursday 4pm|0|-|User: remind me on Thursday 4pm.
+Q25|Q25-P009|chat_user|2026-10-05T09:25|33|0.283|B|-|chat34:C34|0|-|User: what about lunch (C34)
+Q25|Q25-P010|chat_assistant|2026-10-05T09:48|32|0.331|C|-|chat30:C30|0|-|Assistant: what is a linked list (C30)
+Q25|Q25-P011|chat_assistant|2026-10-05T10:22|16|0.369|C|-|chat32:C32|0|-|Assistant: ok got it (C32)
+Q25|Q25-P012|chat_user|2026-10-05T09:12|25|0.842|B|Q25-G0|project_language:JavaScript|0|-|User: my project will be written in JavaScript.
+Q25|Q25-P013|chat_user|2026-10-05T10:51|65|0.204|B|-|chat15:C15|0|-|User: that helps (C15)
+Q25|Q25-P014|chat_user|2026-10-05T09:31|56|0.343|B|-|chat25:C25|0|-|User: that helps (C25)
+Q25|Q25-P015|chat_assistant|2026-10-05T09:15|32|0.818|C|Q25-G0|project_language:JavaScript|0|-|Assistant: noted, your project language is JavaScript.
+Q25|Q25-P016|chat_user|2026-10-05T10:37|41|0.281|B|-|chat8:C8|0|-|User: that helps (C8)
+Q25|Q25-P017|chat_assistant|2026-10-05T10:18|30|0.271|C|-|chat35:C35|0|-|Assistant: show me an example (C35)
+Q25|Q25-P018|chat_user|2026-10-05T10:47|44|0.348|B|-|chat13:C13|0|-|User: show me an example (C13)
+Q25|Q25-P019|chat_user|2026-10-05T10:53|18|0.363|B|-|chat16:C16|0|-|User: ok got it (C16)
+Q25|Q25-P020|profile_memory|2026-10-05T09:30|65|0.783|B|-|project_language:JavaScript;lab_group:A3|0|-|Profile summary: language JavaScript, lab group A3.
+Q25|Q25-P021|chat_user|2026-10-05T10:19|18|0.289|B|-|chat22:C22|0|-|User: what about lunch (C22)
+Q25|Q25-P022|chat_assistant|2026-10-05T09:40|66|0.267|C|-|chat21:C21|0|-|Assistant: nice (C21)
+Q25|Q25-P023|chat_user|2026-10-05T10:30|39|0.728|B|Q25-G1|project_language:TypeScript|0|Q25-P012|User: change of plan, I switched the project to TypeScript.
+Q25|Q25-P024|chat_user|2026-10-05T09:21|32|0.144|B|-|chat23:C23|0|-|User: and sorting? (C23)
+Q25|Q25-P025|chat_assistant|2026-10-05T10:33|37|0.626|C|Q25-G1|project_language:TypeScript|0|-|Assistant: updated, your project language is now TypeScript.
+Q25|Q25-P026|chat_assistant|2026-10-05T09:38|38|0.277|C|-|chat20:C20|0|-|Assistant: nice (C20)
+Q25|Q25-P027|chat_user|2026-10-05T10:55|64|0.071|B|-|chat17:C17|0|-|User: can you explain heaps again (C17)
+Q25|Q25-P028|chat_assistant|2026-10-05T09:44|23|0.068|C|-|chat38:C38|0|-|Assistant: and sorting? (C38)
+Q25|Q25-P029|chat_user|2026-10-05T09:47|62|0.340|B|-|chat24:C24|0|-|User: show me an example (C24)
+Q25|Q25-P030|chat_assistant|2026-10-05T09:22|35|0.237|C|-|chat27:C27|0|-|Assistant: that helps (C27)
+Q25|Q25-P031|chat_assistant|2026-10-05T10:22|34|0.141|C|-|chat36:C36|0|-|Assistant: what is a linked list (C36)
+Q25|Q25-P032|chat_assistant|2026-10-05T09:16|48|0.364|C|-|chat37:C37|0|-|Assistant: what is a linked list (C37)
+Q25|Q25-P033|chat_user|2026-10-05T10:35|63|0.126|B|-|chat7:C7|0|-|User: and sorting? (C7)
+Q25|Q25-P034|chat_user|2026-10-05T10:41|46|0.078|B|-|chat10:C10|0|-|User: what is a linked list (C10)
+Q25|Q25-P035|chat_user|2026-10-05T10:43|49|0.053|B|-|chat11:C11|0|-|User: that helps (C11)
+Q25|Q25-P036|chat_user|2026-10-05T09:09|23|0.308|B|-|chat26:C26|0|-|User: that helps (C26)
+Q25|Q25-P037|chat_user|2026-10-05T10:45|48|0.154|B|-|chat12:C12|0|-|User: ok got it (C12)
+Q25|Q25-P038|chat_user|2026-10-05T10:39|45|0.051|B|-|chat9:C9|0|-|User: ok got it (C9)
+Q25|Q25-P039|chat_assistant|2026-10-05T09:18|65|0.145|C|-|chat29:C29|0|-|Assistant: is the lab open (C29)
+Q25|Q25-P040|chat_user|2026-10-05T10:57|63|0.070|B|-|chat18:C18|0|-|User: nice (C18)
+Q25|Q25-P041|chat_user|2026-10-05T09:06|27|0.615|B|-|lab_group:A3|0|-|User: I am in lab group A3.
+Q26|Q26-P001|chat_user|2026-10-06T10:43|31|0.126|B|-|chat11:C11|0|-|User: what about lunch (C11)
+Q26|Q26-P002|chat_assistant|2026-10-06T09:15|30|0.849|C|Q26-G0|project_language:C++|0|-|Assistant: noted, your project language is C++.
+Q26|Q26-P003|chat_user|2026-10-06T10:45|36|0.268|B|-|chat12:C12|0|-|User: ok got it (C12)
+Q26|Q26-P004|chat_user|2026-10-06T10:30|25|0.757|B|Q26-G1|project_language:Go|0|Q26-P038|User: change of plan, I switched the project to Go.
+Q26|Q26-P005|chat_assistant|2026-10-06T10:33|35|0.676|C|Q26-G1|project_language:Go|0|-|Assistant: updated, your project language is now Go.
+Q26|Q26-P006|chat_user|2026-10-06T10:51|48|0.076|B|-|chat15:C15|0|-|User: can you explain heaps again (C15)
+Q26|Q26-P007|chat_user|2026-10-06T10:39|35|0.319|B|-|chat9:C9|0|-|User: what about lunch (C9)
+Q26|Q26-P008|chat_user|2026-10-06T10:27|39|0.320|B|-|chat38:C38|0|-|User: ok got it (C38)
+Q26|Q26-P009|chat_user|2026-10-06T11:01|23|0.185|B|-|chat20:C20|0|-|User: nice (C20)
+Q26|Q26-P010|chat_user|2026-10-06T09:54|35|0.618|B|-|reminder_time:Saturday 10am|0|-|User: remind me on Saturday 10am.
+Q26|Q26-P011|profile_memory|2026-10-06T09:30|69|0.823|B|-|project_language:C++;lab_group:C1|0|-|Profile summary: language C++, lab group C1.
+Q26|Q26-P012|chat_user|2026-10-06T10:53|56|0.178|B|-|chat16:C16|0|-|User: and sorting? (C16)
+Q26|Q26-P013|chat_assistant|2026-10-06T09:38|54|0.158|C|-|chat34:C34|0|-|Assistant: that helps (C34)
+Q26|Q26-P014|chat_user|2026-10-06T10:47|48|0.198|B|-|chat13:C13|0|-|User: is the lab open (C13)
+Q26|Q26-P015|chat_user|2026-10-06T09:01|60|0.313|B|-|chat35:C35|0|-|User: thanks (C35)
+Q26|Q26-P016|chat_user|2026-10-06T09:47|53|0.345|B|-|chat30:C30|0|-|User: can you explain heaps again (C30)
+Q26|Q26-P017|chat_user|2026-10-06T09:39|66|0.173|B|-|chat27:C27|0|-|User: nice (C27)
+Q26|Q26-P018|chat_user|2026-10-06T09:31|66|0.372|B|-|chat25:C25|0|-|User: that helps (C25)
+Q26|Q26-P019|chat_user|2026-10-06T10:27|27|0.075|B|-|chat32:C32|0|-|User: is the lab open (C32)
+Q26|Q26-P020|chat_user|2026-10-06T10:41|51|0.269|B|-|chat10:C10|0|-|User: and sorting? (C10)
+Q26|Q26-P021|chat_user|2026-10-06T10:57|46|0.288|B|-|chat18:C18|0|-|User: thanks (C18)
+Q26|Q26-P022|chat_user|2026-10-06T09:41|20|0.114|B|-|chat33:C33|0|-|User: that helps (C33)
+Q26|Q26-P023|chat_user|2026-10-06T09:07|31|0.200|B|-|chat37:C37|0|-|User: thanks (C37)
+Q26|Q26-P024|chat_user|2026-10-06T10:55|60|0.135|B|-|chat17:C17|0|-|User: show me an example (C17)
+Q26|Q26-P025|chat_assistant|2026-10-06T09:30|64|0.074|C|-|chat28:C28|0|-|Assistant: that helps (C28)
+Q26|Q26-P026|chat_user|2026-10-06T10:35|34|0.385|B|-|chat7:C7|0|-|User: what is a linked list (C7)
+Q26|Q26-P027|chat_user|2026-10-06T10:49|19|0.104|B|-|chat14:C14|0|-|User: nice (C14)
+Q26|Q26-P028|chat_user|2026-10-06T09:19|57|0.350|B|-|chat24:C24|0|-|User: and sorting? (C24)
+Q26|Q26-P029|chat_user|2026-10-06T09:45|53|0.207|B|-|chat29:C29|0|-|User: can you explain heaps again (C29)
+Q26|Q26-P030|chat_user|2026-10-06T09:01|25|0.090|B|-|chat23:C23|0|-|User: thanks (C23)
+Q26|Q26-P031|chat_user|2026-10-06T11:03|21|0.186|B|-|chat21:C21|0|-|User: and sorting? (C21)
+Q26|Q26-P032|chat_user|2026-10-06T09:06|32|0.569|B|-|lab_group:C1|0|-|User: I am in lab group C1.
+Q26|Q26-P033|chat_user|2026-10-06T09:05|53|0.213|B|-|chat26:C26|0|-|User: is the lab open (C26)
+Q26|Q26-P034|chat_user|2026-10-06T09:05|27|0.094|B|-|chat31:C31|0|-|User: ok got it (C31)
+Q26|Q26-P035|chat_assistant|2026-10-06T10:12|18|0.385|C|-|chat40:C40|0|-|Assistant: can you explain heaps again (C40)
+Q26|Q26-P036|chat_user|2026-10-06T10:37|32|0.252|B|-|chat8:C8|0|-|User: ok got it (C8)
+Q26|Q26-P037|chat_user|2026-10-06T09:03|55|0.331|B|-|chat36:C36|0|-|User: nice (C36)
+Q26|Q26-P038|chat_user|2026-10-06T09:12|27|0.890|B|Q26-G0|project_language:C++|0|-|User: my project will be written in C++.
+Q26|Q26-P039|chat_user|2026-10-06T10:17|47|0.077|B|-|chat22:C22|0|-|User: nice (C22)
+Q26|Q26-P040|chat_user|2026-10-06T10:59|22|0.143|B|-|chat19:C19|0|-|User: what about lunch (C19)
+Q26|Q26-P041|chat_assistant|2026-10-06T09:18|18|0.122|C|-|chat39:C39|0|-|Assistant: what about lunch (C39)
+Q27|Q27-P001|chat_user|2026-10-07T10:19|51|0.361|B|-|chat30:C30|0|-|User: can you explain heaps again (C30)
+Q27|Q27-P002|chat_user|2026-10-07T11:03|18|0.388|B|-|chat21:C21|0|-|User: show me an example (C21)
+Q27|Q27-P003|chat_user|2026-10-07T09:51|38|0.113|B|-|chat27:C27|0|-|User: thanks (C27)
+Q27|Q27-P004|chat_user|2026-10-07T10:47|40|0.150|B|-|chat13:C13|0|-|User: ok got it (C13)
+Q27|Q27-P005|chat_user|2026-10-07T11:01|45|0.376|B|-|chat20:C20|0|-|User: ok got it (C20)
+Q27|Q27-P006|chat_assistant|2026-10-07T09:15|28|0.785|C|Q27-G0|project_language:Python|0|-|Assistant: noted, your project language is Python.
+Q27|Q27-P007|chat_user|2026-10-07T10:53|55|0.186|B|-|chat16:C16|0|-|User: what about lunch (C16)
+Q27|Q27-P008|chat_user|2026-10-07T09:54|25|0.533|B|-|reminder_time:Sunday 6pm|0|-|User: remind me on Sunday 6pm.
+Q27|Q27-P009|chat_user|2026-10-07T09:35|62|0.360|B|-|chat35:C35|0|-|User: what is a linked list (C35)
+Q27|Q27-P010|chat_user|2026-10-07T09:12|23|0.827|B|Q27-G0|project_language:Python|0|-|User: my project will be written in Python.
+Q27|Q27-P011|chat_user|2026-10-07T09:03|66|0.248|B|-|chat39:C39|0|-|User: nice (C39)
+Q27|Q27-P012|chat_assistant|2026-10-07T09:02|45|0.169|C|-|chat31:C31|0|-|Assistant: nice (C31)
+Q27|Q27-P013|chat_user|2026-10-07T10:30|29|0.665|B|Q27-G1|project_language:Julia|0|Q27-P010|User: change of plan, I switched the project to Julia.
+Q27|Q27-P014|chat_user|2026-10-07T09:06|32|0.616|B|-|lab_group:B4|0|-|User: I am in lab group B4.
+Q27|Q27-P015|chat_user|2026-10-07T10:51|41|0.355|B|-|chat15:C15|0|-|User: thanks (C15)
+Q27|Q27-P016|chat_user|2026-10-07T10:59|20|0.223|B|-|chat19:C19|0|-|User: ok got it (C19)
+Q27|Q27-P017|chat_user|2026-10-07T11:07|61|0.299|B|-|chat23:C23|0|-|User: ok got it (C23)
+Q27|Q27-P018|chat_user|2026-10-07T09:37|50|0.199|B|-|chat25:C25|0|-|User: ok got it (C25)
+Q27|Q27-P019|chat_user|2026-10-07T10:49|36|0.323|B|-|chat14:C14|0|-|User: and sorting? (C14)
+Q27|Q27-P020|chat_user|2026-10-07T10:41|23|0.316|B|-|chat10:C10|0|-|User: show me an example (C10)
+Q27|Q27-P021|profile_memory|2026-10-07T09:30|52|0.788|B|-|project_language:Python;lab_group:B4|0|-|Profile summary: language Python, lab group B4.
+Q27|Q27-P022|chat_user|2026-10-07T09:21|55|0.303|B|-|chat28:C28|0|-|User: ok got it (C28)
+Q27|Q27-P023|chat_user|2026-10-07T10:35|27|0.202|B|-|chat7:C7|0|-|User: what about lunch (C7)
+Q27|Q27-P024|chat_user|2026-10-07T10:39|24|0.073|B|-|chat9:C9|0|-|User: is the lab open (C9)
+Q27|Q27-P025|chat_user|2026-10-07T10:07|25|0.246|B|-|chat40:C40|0|-|User: nice (C40)
+Q27|Q27-P026|chat_user|2026-10-07T10:43|58|0.347|B|-|chat11:C11|0|-|User: what about lunch (C11)
+Q27|Q27-P027|chat_user|2026-10-07T10:37|60|0.358|B|-|chat8:C8|0|-|User: what is a linked list (C8)
+Q27|Q27-P028|chat_user|2026-10-07T10:45|53|0.130|B|-|chat12:C12|0|-|User: thanks (C12)
+Q27|Q27-P029|chat_user|2026-10-07T10:57|39|0.081|B|-|chat18:C18|0|-|User: thanks (C18)
+Q27|Q27-P030|chat_user|2026-10-07T11:05|24|0.057|B|-|chat22:C22|0|-|User: what about lunch (C22)
+Q27|Q27-P031|chat_user|2026-10-07T10:05|58|0.266|B|-|chat38:C38|0|-|User: thanks (C38)
+Q27|Q27-P032|chat_assistant|2026-10-07T10:33|35|0.633|C|Q27-G1|project_language:Julia|0|-|Assistant: updated, your project language is now Julia.
+Q27|Q27-P033|chat_assistant|2026-10-07T10:10|36|0.142|C|-|chat37:C37|0|-|Assistant: that helps (C37)
+Q27|Q27-P034|chat_user|2026-10-07T10:55|30|0.320|B|-|chat17:C17|0|-|User: nice (C17)
+Q27|Q27-P035|chat_assistant|2026-10-07T09:58|31|0.287|C|-|chat36:C36|0|-|Assistant: what is a linked list (C36)
+Q27|Q27-P036|chat_user|2026-10-07T10:13|65|0.336|B|-|chat32:C32|0|-|User: is the lab open (C32)
+Q27|Q27-P037|chat_user|2026-10-07T09:19|46|0.330|B|-|chat29:C29|0|-|User: what is a linked list (C29)
+Q27|Q27-P038|chat_user|2026-10-07T10:07|34|0.326|B|-|chat26:C26|0|-|User: is the lab open (C26)
+Q27|Q27-P039|chat_user|2026-10-07T10:25|17|0.339|B|-|chat33:C33|0|-|User: show me an example (C33)
+Q27|Q27-P040|chat_user|2026-10-07T09:09|34|0.302|B|-|chat34:C34|0|-|User: that helps (C34)
+Q27|Q27-P041|chat_user|2026-10-07T11:09|56|0.056|B|-|chat24:C24|0|-|User: what is a linked list (C24)
+Q28|Q28-P001|chat_user|2026-10-08T11:07|41|0.383|B|-|chat23:C23|0|-|User: ok got it (C23)
+Q28|Q28-P002|chat_user|2026-10-08T10:39|46|0.365|B|-|chat9:C9|0|-|User: and sorting? (C9)
+Q28|Q28-P003|chat_user|2026-10-08T09:15|44|0.291|B|-|chat29:C29|0|-|User: ok got it (C29)
+Q28|Q28-P004|chat_user|2026-10-08T10:59|21|0.359|B|-|chat19:C19|0|-|User: nice (C19)
+Q28|Q28-P005|chat_user|2026-10-08T10:41|18|0.205|B|-|chat10:C10|0|-|User: is the lab open (C10)
+Q28|Q28-P006|chat_user|2026-10-08T09:54|35|0.506|B|-|reminder_time:Monday 1pm|0|-|User: remind me on Monday 1pm.
+Q28|Q28-P007|chat_user|2026-10-08T09:41|62|0.332|B|-|chat40:C40|0|-|User: that helps (C40)
+Q28|Q28-P008|chat_user|2026-10-08T10:47|61|0.106|B|-|chat13:C13|0|-|User: nice (C13)
+Q28|Q28-P009|chat_assistant|2026-10-08T10:33|28|0.635|C|Q28-G1|project_language:Python|0|-|Assistant: updated, your project language is now Python.
+Q28|Q28-P010|chat_user|2026-10-08T09:33|27|0.326|B|-|chat33:C33|0|-|User: what is a linked list (C33)
+Q28|Q28-P011|chat_user|2026-10-08T09:59|31|0.175|B|-|chat34:C34|0|-|User: is the lab open (C34)
+Q28|Q28-P012|chat_user|2026-10-08T10:43|60|0.215|B|-|chat11:C11|0|-|User: what about lunch (C11)
+Q28|Q28-P013|chat_user|2026-10-08T10:35|49|0.174|B|-|chat7:C7|0|-|User: and sorting? (C7)
+Q28|Q28-P014|chat_user|2026-10-08T09:47|37|0.098|B|-|chat30:C30|0|-|User: thanks (C30)
+Q28|Q28-P015|profile_memory|2026-10-08T09:30|50|0.812|B|-|project_language:R;lab_group:A2|0|-|Profile summary: language R, lab group A2.
+Q28|Q28-P016|chat_user|2026-10-08T10:45|28|0.138|B|-|chat12:C12|0|-|User: nice (C12)
+Q28|Q28-P017|chat_user|2026-10-08T10:30|38|0.712|B|Q28-G1|project_language:Python|0|Q28-P027|User: change of plan, I switched the project to Python.
+Q28|Q28-P018|chat_user|2026-10-08T10:55|51|0.071|B|-|chat17:C17|0|-|User: what is a linked list (C17)
+Q28|Q28-P019|chat_user|2026-10-08T10:49|30|0.228|B|-|chat14:C14|0|-|User: and sorting? (C14)
+Q28|Q28-P020|chat_user|2026-10-08T10:53|31|0.117|B|-|chat16:C16|0|-|User: that helps (C16)
+Q28|Q28-P021|chat_user|2026-10-08T09:51|48|0.293|B|-|chat31:C31|0|-|User: nice (C31)
+Q28|Q28-P022|chat_user|2026-10-08T11:15|52|0.375|B|-|chat27:C27|0|-|User: is the lab open (C27)
+Q28|Q28-P023|chat_user|2026-10-08T11:11|33|0.293|B|-|chat25:C25|0|-|User: nice (C25)
+Q28|Q28-P024|chat_user|2026-10-08T09:55|44|0.322|B|-|chat32:C32|0|-|User: show me an example (C32)
+Q28|Q28-P025|chat_user|2026-10-08T09:01|50|0.295|B|-|chat28:C28|0|-|User: what about lunch (C28)
+Q28|Q28-P026|chat_user|2026-10-08T10:57|35|0.255|B|-|chat18:C18|0|-|User: thanks (C18)
+Q28|Q28-P027|chat_user|2026-10-08T09:12|36|0.850|B|Q28-G0|project_language:R|0|-|User: my project will be written in R.
+Q28|Q28-P028|chat_user|2026-10-08T11:03|30|0.386|B|-|chat21:C21|0|-|User: what is a linked list (C21)
+Q28|Q28-P029|chat_user|2026-10-08T10:51|49|0.148|B|-|chat15:C15|0|-|User: nice (C15)
+Q28|Q28-P030|chat_assistant|2026-10-08T09:15|28|0.837|C|Q28-G0|project_language:R|0|-|Assistant: noted, your project language is R.
+Q28|Q28-P031|chat_user|2026-10-08T09:33|45|0.354|B|-|chat38:C38|0|-|User: ok got it (C38)
+Q28|Q28-P032|chat_user|2026-10-08T11:05|39|0.290|B|-|chat22:C22|0|-|User: is the lab open (C22)
+Q28|Q28-P033|chat_user|2026-10-08T11:01|36|0.057|B|-|chat20:C20|0|-|User: that helps (C20)
+Q28|Q28-P034|chat_user|2026-10-08T10:11|44|0.219|B|-|chat35:C35|0|-|User: ok got it (C35)
+Q28|Q28-P035|chat_user|2026-10-08T11:09|57|0.354|B|-|chat24:C24|0|-|User: what about lunch (C24)
+Q28|Q28-P036|chat_assistant|2026-10-08T10:18|22|0.162|C|-|chat37:C37|0|-|Assistant: can you explain heaps again (C37)
+Q28|Q28-P037|chat_user|2026-10-08T10:37|45|0.365|B|-|chat8:C8|0|-|User: that helps (C8)
+Q28|Q28-P038|chat_assistant|2026-10-08T09:38|27|0.361|C|-|chat36:C36|0|-|Assistant: can you explain heaps again (C36)
+Q28|Q28-P039|chat_user|2026-10-08T09:33|56|0.206|B|-|chat39:C39|0|-|User: nice (C39)
+Q28|Q28-P040|chat_user|2026-10-08T09:06|28|0.579|B|-|lab_group:A2|0|-|User: I am in lab group A2.
+Q28|Q28-P041|chat_user|2026-10-08T11:13|29|0.290|B|-|chat26:C26|0|-|User: ok got it (C26)
+Q29|Q29-P001|chat_user|2026-10-09T10:57|62|0.161|B|-|chat18:C18|0|-|User: that helps (C18)
+Q29|Q29-P002|chat_user|2026-10-09T10:39|34|0.336|B|-|chat9:C9|0|-|User: and sorting? (C9)
+Q29|Q29-P003|chat_user|2026-10-09T10:47|66|0.052|B|-|chat13:C13|0|-|User: show me an example (C13)
+Q29|Q29-P004|chat_user|2026-10-09T09:39|35|0.120|B|-|chat31:C31|0|-|User: what is a linked list (C31)
+Q29|Q29-P005|chat_user|2026-10-09T11:13|55|0.191|B|-|chat26:C26|0|-|User: thanks (C26)
+Q29|Q29-P006|chat_user|2026-10-09T10:35|58|0.153|B|-|chat7:C7|0|-|User: nice (C7)
+Q29|Q29-P007|chat_user|2026-10-09T10:49|31|0.306|B|-|chat14:C14|0|-|User: that helps (C14)
+Q29|Q29-P008|chat_user|2026-10-09T09:01|54|0.345|B|-|chat40:C40|0|-|User: can you explain heaps again (C40)
+Q29|Q29-P009|chat_user|2026-10-09T11:03|29|0.088|B|-|chat21:C21|0|-|User: is the lab open (C21)
+Q29|Q29-P010|chat_user|2026-10-09T10:51|30|0.097|B|-|chat15:C15|0|-|User: that helps (C15)
+Q29|Q29-P011|chat_user|2026-10-09T10:55|60|0.113|B|-|chat17:C17|0|-|User: thanks (C17)
+Q29|Q29-P012|chat_user|2026-10-09T11:11|32|0.081|B|-|chat25:C25|0|-|User: and sorting? (C25)
+Q29|Q29-P013|chat_assistant|2026-10-09T10:22|59|0.115|C|-|chat36:C36|0|-|Assistant: is the lab open (C36)
+Q29|Q29-P014|profile_memory|2026-10-09T09:30|55|0.820|B|-|project_language:Go;lab_group:C2|0|-|Profile summary: language Go, lab group C2.
+Q29|Q29-P015|chat_user|2026-10-09T10:30|22|0.662|B|Q29-G1|project_language:C++|0|Q29-P031|User: change of plan, I switched the project to C++.
+Q29|Q29-P016|chat_user|2026-10-09T11:17|25|0.115|B|-|chat28:C28|0|-|User: show me an example (C28)
+Q29|Q29-P017|chat_user|2026-10-09T09:43|64|0.093|B|-|chat32:C32|0|-|User: that helps (C32)
+Q29|Q29-P018|chat_user|2026-10-09T10:45|18|0.292|B|-|chat12:C12|0|-|User: and sorting? (C12)
+Q29|Q29-P019|chat_user|2026-10-09T10:59|20|0.293|B|-|chat19:C19|0|-|User: what is a linked list (C19)
+Q29|Q29-P020|chat_user|2026-10-09T09:57|31|0.107|B|-|chat33:C33|0|-|User: nice (C33)
+Q29|Q29-P021|chat_user|2026-10-09T11:09|62|0.155|B|-|chat24:C24|0|-|User: ok got it (C24)
+Q29|Q29-P022|chat_user|2026-10-09T09:17|25|0.333|B|-|chat39:C39|0|-|User: ok got it (C39)
+Q29|Q29-P023|chat_user|2026-10-09T09:06|27|0.607|B|-|lab_group:C2|0|-|User: I am in lab group C2.
+Q29|Q29-P024|chat_user|2026-10-09T09:54|27|0.591|B|-|reminder_time:Friday 9am|0|-|User: remind me on Friday 9am.
+Q29|Q29-P025|chat_assistant|2026-10-09T09:15|36|0.820|C|Q29-G0|project_language:Go|0|-|Assistant: noted, your project language is Go.
+Q29|Q29-P026|chat_assistant|2026-10-09T10:33|36|0.616|C|Q29-G1|project_language:C++|0|-|Assistant: updated, your project language is now C++.
+Q29|Q29-P027|chat_user|2026-10-09T11:19|29|0.151|B|-|chat29:C29|0|-|User: thanks (C29)
+Q29|Q29-P028|chat_user|2026-10-09T10:53|63|0.058|B|-|chat16:C16|0|-|User: nice (C16)
+Q29|Q29-P029|chat_user|2026-10-09T11:05|36|0.213|B|-|chat22:C22|0|-|User: nice (C22)
+Q29|Q29-P030|chat_user|2026-10-09T11:15|24|0.351|B|-|chat27:C27|0|-|User: and sorting? (C27)
+Q29|Q29-P031|chat_user|2026-10-09T09:12|21|0.852|B|Q29-G0|project_language:Go|0|-|User: my project will be written in Go.
+Q29|Q29-P032|chat_user|2026-10-09T10:07|27|0.289|B|-|chat35:C35|0|-|User: thanks (C35)
+Q29|Q29-P033|chat_user|2026-10-09T09:57|42|0.353|B|-|chat34:C34|0|-|User: is the lab open (C34)
+Q29|Q29-P034|chat_user|2026-10-09T10:43|38|0.230|B|-|chat11:C11|0|-|User: and sorting? (C11)
+Q29|Q29-P035|chat_user|2026-10-09T10:37|62|0.322|B|-|chat8:C8|0|-|User: what about lunch (C8)
+Q29|Q29-P036|chat_user|2026-10-09T11:21|17|0.138|B|-|chat30:C30|0|-|User: is the lab open (C30)
+Q29|Q29-P037|chat_user|2026-10-09T11:01|51|0.072|B|-|chat20:C20|0|-|User: that helps (C20)
+Q29|Q29-P038|chat_user|2026-10-09T10:41|48|0.368|B|-|chat10:C10|0|-|User: that helps (C10)
+Q29|Q29-P039|chat_user|2026-10-09T11:07|39|0.125|B|-|chat23:C23|0|-|User: what about lunch (C23)
+Q29|Q29-P040|chat_assistant|2026-10-09T09:48|31|0.100|C|-|chat37:C37|0|-|Assistant: what is a linked list (C37)
+Q29|Q29-P041|chat_assistant|2026-10-09T09:28|22|0.259|C|-|chat38:C38|0|-|Assistant: nice (C38)
+Q30|Q30-P001|chat_assistant|2026-10-10T10:08|52|0.185|C|-|chat40:C40|0|-|Assistant: thanks (C40)
+Q30|Q30-P002|chat_user|2026-10-10T09:54|36|0.530|B|-|reminder_time:Tuesday 5pm|0|-|User: remind me on Tuesday 5pm.
+Q30|Q30-P003|chat_user|2026-10-10T11:17|62|0.118|B|-|chat28:C28|0|-|User: show me an example (C28)
+Q30|Q30-P004|chat_user|2026-10-10T11:01|51|0.099|B|-|chat20:C20|0|-|User: can you explain heaps again (C20)
+Q30|Q30-P005|chat_user|2026-10-10T10:55|19|0.053|B|-|chat17:C17|0|-|User: nice (C17)
+Q30|Q30-P006|chat_user|2026-10-10T10:57|21|0.376|B|-|chat18:C18|0|-|User: thanks (C18)
+Q30|Q30-P007|chat_user|2026-10-10T10:37|24|0.075|B|-|chat8:C8|0|-|User: nice (C8)
+Q30|Q30-P008|chat_user|2026-10-10T10:39|52|0.176|B|-|chat9:C9|0|-|User: ok got it (C9)
+Q30|Q30-P009|chat_user|2026-10-10T11:05|55|0.169|B|-|chat22:C22|0|-|User: nice (C22)
+Q30|Q30-P010|chat_user|2026-10-10T10:43|66|0.327|B|-|chat11:C11|0|-|User: and sorting? (C11)
+Q30|Q30-P011|chat_user|2026-10-10T10:30|21|0.724|B|Q30-G1|project_language:Swift|0|Q30-P023|User: change of plan, I switched the project to Swift.
+Q30|Q30-P012|chat_user|2026-10-10T11:23|17|0.202|B|-|chat31:C31|0|-|User: show me an example (C31)
+Q30|Q30-P013|chat_user|2026-10-10T10:47|38|0.285|B|-|chat13:C13|0|-|User: can you explain heaps again (C13)
+Q30|Q30-P014|chat_user|2026-10-10T11:21|52|0.240|B|-|chat30:C30|0|-|User: what is a linked list (C30)
+Q30|Q30-P015|chat_user|2026-10-10T11:15|61|0.324|B|-|chat27:C27|0|-|User: what is a linked list (C27)
+Q30|Q30-P016|chat_assistant|2026-10-10T10:33|24|0.602|C|Q30-G1|project_language:Swift|0|-|Assistant: updated, your project language is now Swift.
+Q30|Q30-P017|chat_assistant|2026-10-10T09:15|38|0.807|C|Q30-G0|project_language:Kotlin|0|-|Assistant: noted, your project language is Kotlin.
+Q30|Q30-P018|chat_user|2026-10-10T10:51|27|0.348|B|-|chat15:C15|0|-|User: what about lunch (C15)
+Q30|Q30-P019|profile_memory|2026-10-10T09:30|52|0.836|B|-|project_language:Kotlin;lab_group:B3|0|-|Profile summary: language Kotlin, lab group B3.
+Q30|Q30-P020|chat_user|2026-10-10T10:35|57|0.095|B|-|chat7:C7|0|-|User: is the lab open (C7)
+Q30|Q30-P021|chat_user|2026-10-10T10:49|20|0.198|B|-|chat14:C14|0|-|User: and sorting? (C14)
+Q30|Q30-P022|chat_user|2026-10-10T11:19|51|0.344|B|-|chat29:C29|0|-|User: what is a linked list (C29)
+Q30|Q30-P023|chat_user|2026-10-10T09:12|23|0.878|B|Q30-G0|project_language:Kotlin|0|-|User: my project will be written in Kotlin.
+Q30|Q30-P024|chat_user|2026-10-10T11:07|50|0.381|B|-|chat23:C23|0|-|User: is the lab open (C23)
+Q30|Q30-P025|chat_user|2026-10-10T09:51|37|0.343|B|-|chat35:C35|0|-|User: show me an example (C35)
+Q30|Q30-P026|chat_user|2026-10-10T09:06|31|0.607|B|-|lab_group:B3|0|-|User: I am in lab group B3.
+Q30|Q30-P027|chat_user|2026-10-10T11:11|62|0.355|B|-|chat25:C25|0|-|User: that helps (C25)
+Q30|Q30-P028|chat_assistant|2026-10-10T09:10|23|0.177|C|-|chat39:C39|0|-|Assistant: is the lab open (C39)
+Q30|Q30-P029|chat_user|2026-10-10T11:13|19|0.198|B|-|chat26:C26|0|-|User: ok got it (C26)
+Q30|Q30-P030|chat_user|2026-10-10T11:25|58|0.114|B|-|chat32:C32|0|-|User: what is a linked list (C32)
+Q30|Q30-P031|chat_user|2026-10-10T10:45|42|0.298|B|-|chat12:C12|0|-|User: ok got it (C12)
+Q30|Q30-P032|chat_user|2026-10-10T11:03|36|0.094|B|-|chat21:C21|0|-|User: show me an example (C21)
+Q30|Q30-P033|chat_user|2026-10-10T10:21|35|0.132|B|-|chat36:C36|0|-|User: is the lab open (C36)
+Q30|Q30-P034|chat_user|2026-10-10T10:59|29|0.216|B|-|chat19:C19|0|-|User: is the lab open (C19)
+Q30|Q30-P035|chat_user|2026-10-10T10:41|59|0.059|B|-|chat10:C10|0|-|User: what is a linked list (C10)
+Q30|Q30-P036|chat_assistant|2026-10-10T09:06|33|0.275|C|-|chat34:C34|0|-|Assistant: can you explain heaps again (C34)
+Q30|Q30-P037|chat_user|2026-10-10T10:11|33|0.091|B|-|chat38:C38|0|-|User: that helps (C38)
+Q30|Q30-P038|chat_user|2026-10-10T10:53|58|0.329|B|-|chat16:C16|0|-|User: nice (C16)
+Q30|Q30-P039|chat_assistant|2026-10-10T10:00|61|0.251|C|-|chat37:C37|0|-|Assistant: thanks (C37)
+Q30|Q30-P040|chat_user|2026-10-10T11:09|29|0.193|B|-|chat24:C24|0|-|User: ok got it (C24)
+Q30|Q30-P041|chat_user|2026-10-10T11:27|35|0.342|B|-|chat33:C33|0|-|User: thanks (C33)
+Q31|Q31-P001|handbook|2025-08-05T17:17|199|0.384|C|Q31-G2|misc9:M9|0|-|Update on the coding contest (ref M9).
+Q31|Q31-P002|lms_portal|2025-12-01T14:58|86|0.377|C|Q31-G3|misc12:M12|0|-|Repost: Update on the road repairs (ref M12).
+Q31|Q31-P003|registrar|2025-08-16T15:55|56|0.384|C|-|misc21:M21|0|-|Update on the art exhibition (ref M21).
+Q31|Q31-P004|registrar|2025-06-08T17:57|63|0.281|C|Q31-G6|misc24:M24|0|-|Update on the alumni talk (ref M24).
+Q31|Q31-P005|faq_portal|2026-08-22T14:13|103|0.278|B|Q31-G4|misc14:M14|0|-|Update on the vaccination drive (ref M14).
+Q31|Q31-P006|registrar|2025-08-04T09:28|33|0.521|B|Q31-G0|misc0:M0|0|-|Update on the sports gala schedule (ref M0).
+Q31|Q31-P007|registrar|2025-08-04T09:28|32|0.470|B|Q31-G0|misc0:M0|0|-|Repost: Update on the sports gala schedule (ref M0).
+Q31|Q31-P008|faq_portal|2025-02-17T09:37|139|0.471|C|-|misc3:M3|0|-|Update on the library book fair (ref M3).
+Q31|Q31-P009|registrar|2026-08-22T14:13|101|0.291|B|Q31-G4|misc14:M14|0|-|Repost: Update on the vaccination drive (ref M14).
+Q31|Q31-P010|student_forum|2025-10-01T14:46|24|0.511|C|Q31-G7|misc26:M26|0|-|Repost: Update on the canteen menu (ref M26).
+Q31|Q31-P011|notices_office|2026-09-10T09:44|273|0.294|B|-|misc28:M28|0|-|Update on the alumni talk (ref M28).
+Q31|Q31-P012|notices_office|2026-07-25T09:56|87|0.568|B|-|misc18:M18|0|-|Update on the sports gala schedule (ref M18).
+Q31|Q31-P013|dept_email|2026-10-05T08:55|46|0.294|B|Q31-G5|misc22:M22|0|-|Update on the photography contest (ref M22).
+Q31|Q31-P014|lms_portal|2025-02-25T17:09|41|0.583|C|Q31-G1|misc7:M7|0|-|Update on the convocation dress code (ref M7).
+Q31|Q31-P015|handbook|2024-08-23T08:57|82|0.270|A|-|misc16:M16|0|-|Update on the library book fair (ref M16).
+Q31|Q31-P016|student_forum|2025-02-25T17:09|45|0.558|C|Q31-G1|misc7:M7|0|-|Repost: Update on the convocation dress code (ref M7).
+Q31|Q31-P017|lms_portal|2026-08-16T17:42|26|0.300|B|-|misc4:M4|0|-|Update on the bus route change (ref M4).
+Q31|Q31-P018|faq_portal|2025-02-24T15:14|41|0.427|A|-|misc6:M6|0|-|Update on the Wi-Fi outage (ref M6).
+Q31|Q31-P019|student_forum|2024-07-01T15:31|73|0.353|C|-|misc29:M29|0|-|Update on the bus route change (ref M29).
+Q31|Q31-P020|registrar|2026-09-23T15:34|54|0.368|C|-|misc17:M17|0|-|Update on the cricket trials (ref M17).
+Q31|Q31-P021|handbook|2025-10-01T14:46|25|0.208|C|Q31-G7|misc26:M26|0|-|Update on the canteen menu (ref M26).
+Q31|Q31-P022|lms_portal|2026-02-04T09:55|86|0.309|B|-|misc5:M5|0|-|Update on the Wi-Fi outage (ref M5).
+Q31|Q31-P023|registrar|2026-03-03T16:02|151|0.352|A|-|misc20:M20|0|-|Update on the alumni talk (ref M20).
+Q31|Q31-P024|registrar|2025-04-13T09:08|71|0.549|B|-|misc2:M2|0|-|Update on the Wi-Fi outage (ref M2).
+Q31|Q31-P025|registrar|2026-10-05T08:55|46|0.329|B|Q31-G5|misc22:M22|0|-|Repost: Update on the photography contest (ref M22).
+Q31|Q31-P026|notices_office|2025-12-01T14:58|84|0.265|C|Q31-G3|misc12:M12|0|-|Update on the road repairs (ref M12).
+Q31|Q31-P027|handbook|2024-09-10T15:09|90|0.230|C|-|misc19:M19|0|-|Update on the water supply schedule (ref M19).
+Q31|Q31-P028|registrar|2025-08-05T17:17|202|0.493|C|Q31-G2|misc9:M9|0|-|Repost: Update on the coding contest (ref M9).
+Q31|Q31-P029|dept_email|2025-03-26T15:58|73|0.341|B|-|misc11:M11|0|-|Update on the debate competition (ref M11).
+Q31|Q31-P030|faq_portal|2025-06-08T17:57|67|0.274|C|Q31-G6|misc24:M24|0|-|Repost: Update on the alumni talk (ref M24).
+Q32|Q32-P001|lms_portal|2025-06-26T17:08|184|0.497|B|-|misc12:M12|0|-|Update on the photography contest (ref M12).
+Q32|Q32-P002|dept_email|2024-11-08T10:43|29|0.360|C|Q32-G6|misc27:M27|0|-|Repost: Update on the convocation dress code (ref M27).
+Q32|Q32-P003|registrar|2025-06-14T17:55|85|0.583|B|-|misc29:M29|0|-|Update on the robotics club meeting (ref M29).
+Q32|Q32-P004|student_forum|2025-05-22T11:50|221|0.466|A|-|misc4:M4|0|-|Update on the hostel maintenance work (ref M4).
+Q32|Q32-P005|dept_email|2024-11-06T16:09|75|0.212|A|Q32-G3|misc17:M17|0|-|Update on the bus route change (ref M17).
+Q32|Q32-P006|student_forum|2025-06-26T10:06|81|0.401|C|Q32-G2|misc15:M15|0|-|Update on the convocation dress code (ref M15).
+Q32|Q32-P007|handbook|2024-07-13T14:01|86|0.247|A|-|misc25:M25|0|-|Update on the library book fair (ref M25).
+Q32|Q32-P008|notices_office|2024-10-10T10:34|186|0.585|A|-|misc5:M5|0|-|Update on the art exhibition (ref M5).
+Q32|Q32-P009|handbook|2025-06-01T17:46|161|0.482|C|Q32-G1|misc7:M7|0|-|Repost: Update on the bus route change (ref M7).
+Q32|Q32-P010|notices_office|2025-04-15T14:48|59|0.286|B|Q32-G0|misc1:M1|0|-|Repost: Update on the career fair (ref M1).
+Q32|Q32-P011|dept_email|2025-04-15T14:48|61|0.285|B|Q32-G0|misc1:M1|0|-|Update on the career fair (ref M1).
+Q32|Q32-P012|student_forum|2026-08-17T15:19|318|0.583|B|-|misc3:M3|0|-|Update on the seminar on AI ethics (ref M3).
+Q32|Q32-P013|faq_portal|2025-02-20T12:19|24|0.461|C|-|misc11:M11|0|-|Update on the sports gala schedule (ref M11).
+Q32|Q32-P014|student_forum|2024-11-06T16:09|78|0.504|A|Q32-G3|misc17:M17|0|-|Repost: Update on the bus route change (ref M17).
+Q32|Q32-P015|lms_portal|2025-06-26T10:06|85|0.538|C|Q32-G2|misc15:M15|0|-|Repost: Update on the convocation dress code (ref M15).
+Q32|Q32-P016|registrar|2025-06-01T16:03|42|0.295|B|-|misc23:M23|0|-|Update on the water supply schedule (ref M23).
+Q32|Q32-P017|registrar|2026-07-12T08:09|102|0.295|C|Q32-G4|misc19:M19|0|-|Repost: Update on the hostel maintenance work (ref M19).
+Q32|Q32-P018|handbook|2025-10-05T10:22|59|0.496|C|-|misc13:M13|0|-|Update on the canteen menu (ref M13).
+Q32|Q32-P019|student_forum|2025-06-01T17:46|162|0.509|C|Q32-G1|misc7:M7|0|-|Update on the bus route change (ref M7).
+Q32|Q32-P020|student_forum|2024-12-18T10:42|65|0.200|A|-|misc0:M0|0|-|Update on the alumni talk (ref M0).
+Q32|Q32-P021|notices_office|2024-08-08T10:07|116|0.324|B|-|misc24:M24|0|-|Update on the cricket trials (ref M24).
+Q32|Q32-P022|student_forum|2025-02-09T11:44|52|0.503|B|-|misc26:M26|0|-|Update on the convocation dress code (ref M26).
+Q32|Q32-P023|notices_office|2025-06-18T11:25|68|0.343|C|-|misc9:M9|0|-|Update on the photography contest (ref M9).
+Q32|Q32-P024|notices_office|2024-11-08T10:43|29|0.267|C|Q32-G6|misc27:M27|0|-|Update on the convocation dress code (ref M27).
+Q32|Q32-P025|handbook|2026-04-28T13:17|90|0.316|A|Q32-G5|misc21:M21|0|-|Update on the water supply schedule (ref M21).
+Q32|Q32-P026|notices_office|2026-04-28T13:17|93|0.442|A|Q32-G5|misc21:M21|0|-|Repost: Update on the water supply schedule (ref M21).
+Q32|Q32-P027|student_forum|2026-04-01T14:20|23|0.335|B|-|misc6:M6|0|-|Update on the alumni talk (ref M6).
+Q32|Q32-P028|faq_portal|2026-05-10T08:41|134|0.536|C|-|misc14:M14|0|-|Update on the career fair (ref M14).
+Q32|Q32-P029|faq_portal|2026-04-27T09:34|67|0.531|C|-|misc10:M10|0|-|Update on the canteen menu (ref M10).
+Q32|Q32-P030|handbook|2026-07-12T08:09|101|0.361|C|Q32-G4|misc19:M19|0|-|Update on the hostel maintenance work (ref M19).

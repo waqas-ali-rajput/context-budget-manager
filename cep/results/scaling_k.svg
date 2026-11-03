@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Segoe UI, Arial" font-size="11">
+<rect width="640" height="360" fill="#fff"/>
+<text x="70" y="20" font-size="13" font-weight="600" fill="#13233a">Selection time vs budget at n = 10,000 (larger budget = more items k)</text>
+<line x1="70" y1="310.0" x2="470" y2="310.0" stroke="#e1e7ec"/>
+<text x="64" y="314.0" text-anchor="end" fill="#334">100</text>
+<line x1="70" y1="172.0" x2="470" y2="172.0" stroke="#e1e7ec"/>
+<text x="64" y="176.0" text-anchor="end" fill="#334">1000</text>
+<line x1="70" y1="34.0" x2="470" y2="34.0" stroke="#e1e7ec"/>
+<text x="64" y="38.0" text-anchor="end" fill="#334">10000</text>
+<line x1="70.0" y1="34" x2="70.0" y2="310" stroke="#e1e7ec"/>
+<text x="70.0" y="326" text-anchor="middle" fill="#334">256</text>
+<line x1="170.0" y1="34" x2="170.0" y2="310" stroke="#e1e7ec"/>
+<text x="170.0" y="326" text-anchor="middle" fill="#334">1,024</text>
+<line x1="270.0" y1="34" x2="270.0" y2="310" stroke="#e1e7ec"/>
+<text x="270.0" y="326" text-anchor="middle" fill="#334">4,096</text>
+<line x1="370.0" y1="34" x2="370.0" y2="310" stroke="#e1e7ec"/>
+<text x="370.0" y="326" text-anchor="middle" fill="#334">16,384</text>
+<line x1="470.0" y1="34" x2="470.0" y2="310" stroke="#e1e7ec"/>
+<text x="470.0" y="326" text-anchor="middle" fill="#334">65,536</text>
+<line x1="70" y1="310" x2="470" y2="310" stroke="#13233a"/>
+<line x1="70" y1="34" x2="70" y2="310" stroke="#13233a"/>
+<text x="270.0" y="348" text-anchor="middle" fill="#13233a">B_CTX tokens (log)</text>
+<text transform="translate(18 172.0) rotate(-90)" text-anchor="middle" fill="#13233a">median time per selection (µs, log)</text>
+<polyline points="70.0,132.9 170.0,101.9 270.0,91.9 370.0,106.3 470.0,103.0" fill="none" stroke="#6b7f99" stroke-width="2" stroke-dasharray="5 3"/>
+<circle cx="70.0" cy="132.9" r="2.6" fill="#6b7f99"/>
+<circle cx="170.0" cy="101.9" r="2.6" fill="#6b7f99"/>
+<circle cx="270.0" cy="91.9" r="2.6" fill="#6b7f99"/>
+<circle cx="370.0" cy="106.3" r="2.6" fill="#6b7f99"/>
+<circle cx="470.0" cy="103.0" r="2.6" fill="#6b7f99"/>
+<line x1="482" y1="42" x2="506" y2="42" stroke="#6b7f99" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="512" y="46" fill="#13233a">recency / merge-sort</text>
+<polyline points="70.0,151.7 170.0,179.6 270.0,189.1 370.0,178.0 470.0,161.0" fill="none" stroke="#6b7f99" stroke-width="2"/>
+<circle cx="70.0" cy="151.7" r="2.6" fill="#6b7f99"/>
+<circle cx="170.0" cy="179.6" r="2.6" fill="#6b7f99"/>
+<circle cx="270.0" cy="189.1" r="2.6" fill="#6b7f99"/>
+<circle cx="370.0" cy="178.0" r="2.6" fill="#6b7f99"/>
+<circle cx="470.0" cy="161.0" r="2.6" fill="#6b7f99"/>
+<line x1="482" y1="60" x2="506" y2="60" stroke="#6b7f99" stroke-width="2"/>
+<text x="512" y="64" fill="#13233a">recency / heap</text>
+<polyline points="70.0,100.2 170.0,104.3 270.0,112.2 370.0,105.8 470.0,93.2" fill="none" stroke="#c47f12" stroke-width="2" stroke-dasharray="5 3"/>
+<circle cx="70.0" cy="100.2" r="2.6" fill="#c47f12"/>
+<circle cx="170.0" cy="104.3" r="2.6" fill="#c47f12"/>
+<circle cx="270.0" cy="112.2" r="2.6" fill="#c47f12"/>
+<circle cx="370.0" cy="105.8" r="2.6" fill="#c47f12"/>
+<circle cx="470.0" cy="93.2" r="2.6" fill="#c47f12"/>
+<line x1="482" y1="78" x2="506" y2="78" stroke="#c47f12" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="512" y="82" fill="#13233a">relevance / merge-sort</text>
+<polyline points="70.0,135.3 170.0,182.6 270.0,169.0 370.0,173.3 470.0,162.9" fill="none" stroke="#c47f12" stroke-width="2"/>
+<circle cx="70.0" cy="135.3" r="2.6" fill="#c47f12"/>
+<circle cx="170.0" cy="182.6" r="2.6" fill="#c47f12"/>
+<circle cx="270.0" cy="169.0" r="2.6" fill="#c47f12"/>
+<circle cx="370.0" cy="173.3" r="2.6" fill="#c47f12"/>
+<circle cx="470.0" cy="162.9" r="2.6" fill="#c47f12"/>
+<line x1="482" y1="96" x2="506" y2="96" stroke="#c47f12" stroke-width="2"/>
+<text x="512" y="100" fill="#13233a">relevance / heap</text>
+<polyline points="70.0,110.0 170.0,106.7 270.0,115.7 370.0,100.3 470.0,96.0" fill="none" stroke="#7b4fa0" stroke-width="2" stroke-dasharray="5 3"/>
+<circle cx="70.0" cy="110.0" r="2.6" fill="#7b4fa0"/>
+<circle cx="170.0" cy="106.7" r="2.6" fill="#7b4fa0"/>
+<circle cx="270.0" cy="115.7" r="2.6" fill="#7b4fa0"/>
+<circle cx="370.0" cy="100.3" r="2.6" fill="#7b4fa0"/>
+<circle cx="470.0" cy="96.0" r="2.6" fill="#7b4fa0"/>
+<line x1="482" y1="114" x2="506" y2="114" stroke="#7b4fa0" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="512" y="118" fill="#13233a">density / merge-sort</text>
+<polyline points="70.0,171.3 170.0,180.0 270.0,181.0 370.0,162.6 470.0,133.3" fill="none" stroke="#7b4fa0" stroke-width="2"/>
+<circle cx="70.0" cy="171.3" r="2.6" fill="#7b4fa0"/>
+<circle cx="170.0" cy="180.0" r="2.6" fill="#7b4fa0"/>
+<circle cx="270.0" cy="181.0" r="2.6" fill="#7b4fa0"/>
+<circle cx="370.0" cy="162.6" r="2.6" fill="#7b4fa0"/>
+<circle cx="470.0" cy="133.3" r="2.6" fill="#7b4fa0"/>
+<line x1="482" y1="132" x2="506" y2="132" stroke="#7b4fa0" stroke-width="2"/>
+<text x="512" y="136" fill="#13233a">density / heap</text>
+<polyline points="70.0,70.6 170.0,75.0 270.0,68.3 370.0,72.0 470.0,51.3" fill="none" stroke="#0f6b72" stroke-width="2"/>
+<circle cx="70.0" cy="70.6" r="2.6" fill="#0f6b72"/>
+<circle cx="170.0" cy="75.0" r="2.6" fill="#0f6b72"/>
+<circle cx="270.0" cy="68.3" r="2.6" fill="#0f6b72"/>
+<circle cx="370.0" cy="72.0" r="2.6" fill="#0f6b72"/>
+<circle cx="470.0" cy="51.3" r="2.6" fill="#0f6b72"/>
+<line x1="482" y1="150" x2="506" y2="150" stroke="#0f6b72" stroke-width="2"/>
+<text x="512" y="154" fill="#13233a">hybrid / heap</text>
+</svg>

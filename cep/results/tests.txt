@@ -1,0 +1,31 @@
+T01  PASS  empty candidate set -> OK, empty package, all policies
+T02  PASS  B_CTX = max(0, B_total - R_fixed - R_answer)
+T03  PASS  zero B_CTX without mandatory items -> OK, nothing selected, reasons given
+T04  PASS  zero B_CTX with a mandatory item -> INFEASIBLE with diagnostic
+T05  PASS  no item fits -> empty package, every item 'exceeds B_CTX'
+T06  PASS  one item larger than B_CTX is omitted, the rest still selected
+T07  PASS  two mandatory items over budget -> INFEASIBLE naming both and their total
+T08  PASS  feasible mandatory items are always selected and placed first
+T09  PASS  tied relevance and timestamps -> passage-id tie-break, independent of input order
+T10  PASS  loader rejects a duplicate id with its line number; valid records still load  [2 accepted, 15 rejected]
+T11  PASS  loader gives a specific reason for each malformed field (15 bad records)
+T12  PASS  near-duplicate group: hybrid keeps one copy and covers both facts; relevance-first fills with copies  [relevance redundancy=4 hybrid redundancy=0]
+T13  PASS  contradictory old/new policy: hybrid omits the old notice and its repost as superseded
+T14  PASS  budget safety: 3000 random instances x 4 policies x 2 engines never exceed B_CTX  [24000 runs, violations=0, wrong status=0, not partitioned=0, nondeterministic=0]
+T15  PASS  heap engine selects exactly what the merge-sort engine selects (baselines)  [3000 runs, mismatches=0]
+T16  PASS  lazy-heap hybrid == eager O(n^2) greedy on 1000 random instances  [mismatches=0, lazy re-insertions exercised=1442]
+T17  PASS  binary heap: 20000 random push/pop match a reference; Floyd build keeps heap order in O(n)  [build comparisons for n=5000: 9370]
+T18  PASS  merge sort: 300 random arrays sorted and stable (equal keys keep input order)
+T19  PASS  linked-list merge sort: sorted, stable, tail pointer valid afterwards
+T20  PASS  hash map: 20000 inserts with growth, all found, duplicates refused, load <= 0.6  [capacity 65536]
+T21  PASS  zero-cost passage is accepted without breaking the budget or the density key
+T22  PASS  packaging order rules: priority, oldest-first, newest-first
+T23  PASS  agents: first-mention repeats the stale value; authority picks the official one and flags the conflict
+T24  PASS  agent abstains ('insufficient evidence') when no context passage states the asked fact
+T25  PASS  evaluation set: >= 24 scenarios (>= 8 per category), >= 1000 passages, labels consistent  [32 scenarios, 1300 passages, 0 label problems]
+T26  PASS  zero budget violations on the evaluation set (32 queries x 3 budgets x 4 policies)  [384 runs]
+T27  PASS  dataset regenerates byte-for-byte from seed 2026
+T28  PASS  scaling workload is reproducible from its seed
+T29  PASS  MUET document set: 20 questions x 155 passages load, labels consistent, no violations, hybrid never stale  [3100 passages, 0 label problems, 320 runs, violations=0]
+
+29/29 tests passed

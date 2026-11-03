@@ -1,0 +1,5 @@
+DATASET VALIDATION (independent checks)
+scenarios 32 (policy 10, multisource 10, memory 10, unanswerable 2)
+candidate passages 1300, tagged passages 1300, gold tags 90, supersede links 20, mandatory passages 11
+problems found: 0
+  note: Q10: mandatory passages cost 620 tokens (infeasible when B_CTX < 620)

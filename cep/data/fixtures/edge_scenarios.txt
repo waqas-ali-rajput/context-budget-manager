@@ -1,0 +1,14 @@
+# query_id|category|question|ask_keys|gold_evidence_tags   (hand-written edge and stress fixtures)
+E01|policy|Empty candidate set: what is the drop deadline?|drop_deadline|drop_deadline:6 Mar
+E02|policy|Zero context budget (B_total 700 < R_fixed 300 + R_answer 500)|fact|fact:x
+E03|multisource|No candidate fits B_CTX = 256|fact|fact:x
+E04|multisource|One item larger than the whole B_CTX|a;b|a:1;b:2
+E05|policy|Two mandatory passages whose combined cost exceeds B_CTX|rule;form|rule:new;form:F1
+E06|multisource|Tied relevance scores and tied timestamps|t|t:x
+E07|multisource|Near-duplicate group dominating the candidates|a;b|a:1;b:2
+E08|policy|Contradictory old and new policy passages|deadline|deadline:6 Mar
+E09|multisource|Evidence split across three sources|a;b;c|a:1;b:2;c:3
+E10|multisource|One very long, highly relevant passage|a;b;c;e|a:1;b:2;c:3;e:5
+E11|multisource|Budget sensitivity on identical input|a;b;c;d|a:1;b:2;c:3;d:4
+E12|policy|Zero budget with a mandatory passage|rule|rule:new
+E13|multisource|Zero-cost passage|a;b|a:1;b:2

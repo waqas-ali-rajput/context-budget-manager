@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CEP Solved</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+  @page cover { margin: 0; }
+  :root { --ink:#13233a; --accent:#0f6b72; --line:#9fb0bf; --soft:#eef4f6; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 10pt; color: var(--ink); line-height: 1.3; margin: 0; background:#fff; }
+  .cover { page: cover; position: relative; width: 210mm; height: 297mm; page-break-after: always; overflow: hidden; }
+  .cover img { position: absolute; inset: 0; width: 210mm; height: 297mm; }
+  .cover .f { position: absolute; font-size: 8.6pt; font-weight: 600; color: #0b1f3a; white-space: nowrap; }
+  .cover .banner { position: absolute; left: 21.2%; top: 43.4%; width: 57.6%; height: 4.7%; background: #005b69;
+                   color: #fff; font-weight: 700; font-size: 15pt; letter-spacing: .4pt; display: flex; align-items: center; justify-content: center; }
+  h1 { font-size: 15pt; text-align: center; margin: 0 0 2mm; color: var(--ink); }
+  .sub { text-align: center; font-size: 9.5pt; margin-bottom: 4mm; color:#334; }
+  h2 { font-size: 12pt; color: #fff; background: var(--accent); padding: 1.2mm 3mm; margin: 4mm 0 2mm; page-break-after: avoid; }
+  h3 { font-size: 10.5pt; margin: 3mm 0 1.2mm; color: var(--accent); page-break-after: avoid; border-bottom: 1px solid var(--line); padding-bottom: .6mm; }
+  p { margin: .8mm 0 1.5mm; }
+  ul, ol { margin: 1mm 0 2mm; padding-left: 6mm; }
+  li { margin: .4mm 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1mm 0 2mm; font-size: 8.6pt; page-break-inside: auto; }
+  th, td { border: 1px solid var(--line); padding: .7mm 1.4mm; vertical-align: top; text-align: left; }
+  th { background: var(--soft); font-weight: 600; }
+  tr { page-break-inside: avoid; }
+  td.c, th.c { text-align: center; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  td.best { font-weight: 700; color: #11713a; }
+  code, pre { font-family: Consolas, "Courier New", monospace; font-size: 8.4pt; }
+  pre { background: #f6f8f9; border: 1px solid #d5dde3; padding: 1.5mm 2.5mm; margin: 1mm 0 2mm; white-space: pre-wrap; page-break-inside: avoid; line-height: 1.3; }
+  .pass { color: #11713a; font-weight: 600; }
+  .warn { color: #a0521a; font-weight: 600; }
+  .info { border: 1px solid var(--line); background: var(--soft); padding: 2mm 3mm; margin: 2mm 0 3mm; }
+  .tick { color:#11713a; font-weight:700; text-align:center; }
+  .small { font-size: 8.4pt; }
+  img.chart { width: 100%; border: 1px solid #d5dde3; margin: 1mm 0 2mm; }
+  svg text { font-family: "Segoe UI", Arial, sans-serif; }
+  .pb { page-break-before: always; }
+  figure.shot { margin: 1.5mm 0 3mm; page-break-inside: avoid; }
+  figure.shot img { display: block; max-width: 100%; max-height: 92mm; border: 1px solid #9fb0bf; }
+  figure.shot figcaption { font-size: 8.4pt; margin-top: 1mm; }
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<section class="cover">
+  <img src="lab16/cover.jpg" alt="">
+  <div class="banner">COMPLEX ENGINEERING PROBLEM</div>
+  <div class="f" style="left:28.6%; top:79.9%;">Waqas Ali</div>
+  <div class="f" style="left:24.2%; top:83.75%;">25CS061</div>
+  <div class="f" style="left:24.8%; top:87.5%;"></div>
+  <div class="f" style="left:25.8%; top:91.2%;">Third</div>
+  <div class="f" style="left:69.0%; top:79.9%; font-size:8pt;">Dr. Ali Asghar Manjotho</div>
+  <div class="f" style="left:70.0%; top:83.75%; font-size:7.6pt;">Computer Systems Engg.</div>
+  <div class="f" style="left:68.8%; top:87.5%; font-size:8pt;">MUET, Jamshoro</div>
+  <div class="f" style="left:72.4%; top:91.2%;">2026</div>
+</section>
+
+<!-- ================= HEADER ================= -->
+<h1>CEP: Design and Evaluation of an Efficient Context Budget Manager for LLM-Powered AI Agents</h1>
+<div class="sub">CS-251 Data Structures &amp; Algorithms · CLO-2 (C3, PLO-2) · CLO-3 (C4, PLO-3) · 10 marks sessional<br>
+Group: Waqas Ali (25CS061, lead), Mehran Ali (25CS009), Gaffar (25CS067), Basit Azam (25CS113), Batch 25CS · Instructor: Dr. Ali Asghar Manjotho</div>
+
+<table>
+  <tr><th style="width:24%">Solution</th><td><b>cbm</b>: a Context Budget Manager that takes a retriever's candidate passages and returns a budget-safe, ordered, traceable context package. Four policies: recency-first, relevance-first, relevance-per-token and the proposed <b>hybrid fresh-cover</b> policy.</td></tr>
+  <tr><th>Language / build</th><td>C++17, <code>g++ -std=c++17 -O2 -Wall -Wextra</code> (TDM-GCC 10.3.0), compiles with <b>0 warnings</b>. Optional plotting script in Python 3 (standard library only).</td></tr>
+  <tr><th>Student-written DSA</th><td>Binary heap / priority queue (Floyd build, sift-up/down) · Merge sort (array, stable) · Singly linked list with list merge sort · Open-addressing hash map (FNV-1a, linear probing) · Lazy greedy selection · SplitMix64 generator</td></tr>
+  <tr><th>Source</th><td><code>cep/src/</code>: binary_heap.h, merge_sort.h, linked_list.h, hash_map.h, passage.h, loader.*, selector.*, agent.*, dataset.*, experiments.*, tests.cpp, main.cpp · <code>cep/scripts/plot_scaling.py</code></td></tr>
+  <tr><th>Final state</th><td><code>cbm test</code>: <span class="pass">29/29 PASS</span> · <b>0 budget violations</b> in 384 evaluation runs, 320 MUET-document runs and 24,000 random runs · 32 labelled scenarios / 1,300 passages, plus the MUET document set (20 questions × 155 passages) · benchmark at n = 100 to 100,000 · all numbers below come from files in <code>cep/results/</code></td></tr>
+</table>
+
+<!-- ================= PART 1 ================= -->
+<h2>Part 1: Problem Formulation, Requirements and Trade-offs</h2>
+
+<h3>1.1 Problem and driving question</h3>
+<p>Before each answer, the university's academic-support agent receives candidate passages (policies, notices, FAQ entries, chat memory) whose total size is several times the context it may send. The <b>CBM</b> starts after retrieval and ends with an ordered, budget-safe package. It must keep the passages that carry the needed facts, prefer current and traceable sources, avoid wasting tokens on copies, never exceed the budget, and decide quickly.</p>
+<p><b>Answer to the driving question (short form):</b> represent each passage as an indivisible item with cost, relevance, freshness, reliability, duplicate group and evidence tags. Place mandatory items first or declare INFEASIBLE. Select the rest greedily by <i>marginal new evidence per √token</i> from a lazily updated max-heap, after excluding superseded passages. Order the package with mandatory items first, then by acceptance priority. Sections 6 and 7 justify this with measurements.</p>
+
+<h3>1.2 Token budgeting model (Section 5 of the brief)</h3>
+<table>
+  <tr><th style="width:24%">Quantity</th><th>Definition used in every policy</th><th style="width:28%">Values in the experiments</th></tr>
+  <tr><td>B<sub>CTX</sub></td><td>max(0, B<sub>total</sub> − R<sub>fixed</sub> − R<sub>answer</sub>) (<code>Budget::context()</code>, test T02)</td><td>R<sub>fixed</sub> = 300, R<sub>answer</sub> = 500, B<sub>total</sub> = 1056 / 1312 / 1824 → B<sub>CTX</sub> = 256 / 512 / 1024</td></tr>
+  <tr><td>c<sub>i</sub></td><td>Nonnegative integer from the fixture: body tokens + <b>6</b> tokens for the <code>[n] (id | source | date | rel)</code> label and separator. No character-count estimate is used anywhere.</td><td>16 to 375 tokens; mean 72.3, median 54, p90 151</td></tr>
+  <tr><td>Constraint</td><td>Σ<sub>i∈S</sub> c<sub>i</sub> ≤ B<sub>CTX</sub> for every accepted selection S; checked inside the selector and again independently by the evaluator</td><td>0 violations (T14, T26, Table 6.1)</td></tr>
+</table>
+
+<h3>1.3 Stakeholder requirements, conflicts and the decisions they drove (WP2, WP6)</h3>
+<table>
+  <tr><th style="width:15%">Stakeholder</th><th style="width:25%">Requirement</th><th style="width:27%">Conflicts with</th><th>Design decision and its cost (evidence)</th></tr>
+  <tr><td>Students</td><td>Useful, evidence-supported answers; short response time</td><td>Operators' token limit (more evidence needs more tokens); policy officers' freshness rule (a stale passage may score higher)</td><td>Maximise <i>new</i> gold evidence per token instead of raw relevance. Hybrid coverage 0.792 / 0.908 / 1.000 against the best baseline's 0.631 / 0.842 / 0.967 (6.1). Selection costs 16 µs against 6 to 7 µs at n ≈ 41.</td></tr>
+  <tr><td>Policy officers</td><td>Current, traceable policy evidence must take precedence over obsolete notices</td><td>Relevance: old notices and reposts score 0.78 to 0.95, the revision 0.62 to 0.80</td><td>Hard exclusion of passages superseded by a candidate (and of copies of them); mandatory notices first; every item keeps passage_id and source_id. Hybrid selected 0 stale passages against 56 for relevance-first at 512 (6.2).</td></tr>
+  <tr><td>System operators</td><td>Predictable memory, controlled token spend, robust behaviour under large workloads</td><td>The hybrid's extra state (hash maps) costs memory and time</td><td>O(n) memory for every policy; hard budget check; INFEASIBLE instead of silent dropping; deterministic tie-break; JSON run log. Measured cost: hybrid uses 1.76 MB against 0.23 MB for heap baselines and 5.0 ms against 0.84 ms at n = 10,000 (4.2).</td></tr>
+  <tr><td>All</td><td>Use the budget well</td><td>Filling every token against redundancy</td><td>The hybrid leaves tokens unspent rather than add copies with no new evidence: 97.8 % of B<sub>CTX</sub> used at 512 against 98.5 % for relevance-first, with 0 redundant items against 82 (6.1).</td></tr>
+</table>
+
+<h3>1.4 Assumptions and non-negotiable constraints</h3>
+<table>
+  <tr><th style="width:38%">Constraint from the brief</th><th>How this solution complies</th></tr>
+  <tr><td>At least two DSA structures/algorithms in own code</td><td>Heap, merge sort, linked list (+ list merge sort), hash map, lazy greedy: all in <code>cep/src/*.h</code>, no STL algorithm, container adaptor or hash table is used for assessed logic (Part 3.2)</td></tr>
+  <tr><td>Passages are indivisible</td><td>An item is accepted only if its whole c<sub>i</sub> fits (<code>Packer::tryAccept</code>); nothing is truncated</td></tr>
+  <tr><td>Keep IDs, cost, rationale, order</td><td><code>Chosen{index, priority, mandatory}</code> + candidate record; the package prints id, source, date, reliability, c<sub>i</sub>, key and tags (Part 9)</td></tr>
+  <tr><td>Never exceed B<sub>CTX</sub>; INFEASIBLE for mandatory overflow</td><td>Proof in 3.6; tests T04, T07, T14, T26; edge cases E05, E12; scenario Q10</td></tr>
+  <tr><td>Consistent tie-break, seed, determinism</td><td>Tie chain relevance ↓, timestamp ↓, passage_id ↑ for all policies (T09); dataset seed 2026, workload seed 20260000 + n (T27, T28)</td></tr>
+  <tr><td>No personal / confidential data to external APIs</td><td>All data is synthetic and generated locally; no network or model API is called</td></tr>
+</table>
+<p class="small"><b>Assumptions:</b> relevance scores come from an existing retriever (given, in [0,1]); freshness is an ISO timestamp; a newer passage declares what it replaces through a <code>supersedes</code> link (unlinked contradictions are a stated limitation, 8.4); evidence tags (<code>key:value</code>) are produced by the retriever/annotator and are trusted metadata.</p>
+
+<h3>1.5 Measurable targets and results</h3>
+<table>
+  <tr><th>Target (set for this solution)</th><th style="width:20%">Target value</th><th style="width:30%">Achieved (hybrid unless stated)</th></tr>
+  <tr><td>Budget violations, all policies, all runs</td><td>0</td><td class="pass">0 / 384 eval runs, 0 / 24,000 random runs</td></tr>
+  <tr><td>Mean gold-evidence coverage at B<sub>CTX</sub> = 512</td><td>≥ 0.85 and above every baseline</td><td class="pass">0.908 (best baseline 0.842)</td></tr>
+  <tr><td>Superseded passages selected when the newer one is a candidate</td><td>0</td><td class="pass">0 at all budgets</td></tr>
+  <tr><td>Redundant copies selected (beyond first per group)</td><td>≤ 5 % of selected</td><td class="pass">0</td></tr>
+  <tr><td>Median selection time, n = 1,000 / 10,000</td><td>≤ 1 ms / ≤ 10 ms</td><td class="pass">0.139 ms / 5.05 ms</td></tr>
+  <tr><td>Auxiliary memory at n = 10,000</td><td>O(n), ≤ 2 MB</td><td class="pass">1.76 MB</td></tr>
+  <tr><td>Infeasible mandatory sets reported, not dropped</td><td>100 %</td><td class="pass">Q10 at 256/512, E05, E12, T04, T07</td></tr>
+</table>
+
+<!-- ================= PART 2 ================= -->
+<h2>Part 2: Functional Requirements FR-1 to FR-10</h2>
+<table>
+  <tr><th style="width:21%">Requirement</th><th>Implementation</th><th style="width:17%">Evidence</th></tr>
+  <tr><td>FR-1 Representation</td><td><code>struct Passage</code> with all brief fields (data dictionary 2.1)</td><td>passage.h, 2.1</td></tr>
+  <tr><td>FR-2 Ingestion, validation</td><td><code>loadPassages</code>: 12-field parse, per-field checks, hash-map duplicate-id check, line-numbered errors; empty input and zero capacity handled</td><td>T01, T03, T10, T11, 8.3</td></tr>
+  <tr><td>FR-3 Baselines</td><td>Recency-first, relevance-first, relevance-per-token, each with a merge-sort engine and a heap engine; same feasibility check, tie chain and data</td><td>T15, 6.1</td></tr>
+  <tr><td>FR-4 Proposed policy</td><td>Hybrid fresh-cover (3.4) addresses freshness + evidence coverage + redundancy + latency</td><td>6.1 to 6.4</td></tr>
+  <tr><td>FR-5 Hard budget</td><td>Mandatory first or INFEASIBLE with diagnostic; remaining-capacity check before every optional item; B<sub>CTX</sub> passed in, data unchanged</td><td>T04, T07, T08, T14, E11</td></tr>
+  <tr><td>FR-6 Redundancy, coverage</td><td>dup_group and evidence tags tracked; hybrid discounts a chosen group ×0.3 and omits a copy that adds no new tag (reason "duplicate group already covered")</td><td>T12, E07, 6.2</td></tr>
+  <tr><td>FR-7 Source / freshness</td><td>Stale = superseded by a candidate, or a copy (same group) of a superseded passage; excluded by default, ×0.25 penalty as sensitivity; reliability weight A 1.0 / B 0.85 / C 0.7; provenance kept</td><td>T13, E08, 6.4</td></tr>
+  <tr><td>FR-8 Ordering, packaging</td><td>Linked-list package, list merge sort by rule: priority (default), oldest-first, newest-first. Output: tokens used, unspent, selected ids, every omitted id with a reason</td><td>T22, T23, Part 9</td></tr>
+  <tr><td>FR-9 Agent interface</td><td><code>buildPackage → ContextPackage → QaAgent::answer</code>; selector has no model code. Two offline agents (first-mention, authority)</td><td>T23, T24, 6.3</td></tr>
+  <tr><td>FR-10 Observability</td><td><code>results/run_log.jsonl</code>: policy, parameters, B<sub>total</sub>/reserves/B<sub>CTX</sub>, n, seed, reps, median µs, comparisons, heap pops, re-insertions, aux bytes, status, tokens, selected ids (384 lines)</td><td>run_log.jsonl</td></tr>
+</table>
+
+<h3>2.1 Data dictionary and missing / invalid-field handling (FR-1, FR-2)</h3>
+<table>
+  <tr><th style="width:17%">Field</th><th style="width:14%">Type</th><th>Rule</th><th style="width:26%">Missing / invalid</th></tr>
+  <tr><td>query_id, passage_id</td><td>string</td><td>passage_id unique within a query</td><td>Reject record; duplicate id → reject later copy, cite first line</td></tr>
+  <tr><td>source_id</td><td>string</td><td>Provenance, kept in the package</td><td>Reject (missing provenance)</td></tr>
+  <tr><td>timestamp</td><td>YYYY-MM-DDThh:mm</td><td>Freshness indicator; stored as int64 YYYYMMDDhhmm</td><td>Reject (bad format or range)</td></tr>
+  <tr><td>token_cost c<sub>i</sub></td><td>int ≥ 0</td><td>Includes 6-token label overhead; 0 allowed</td><td>Reject negative, non-integer, empty</td></tr>
+  <tr><td>relevance</td><td>real in [0,1]</td><td>Retriever score</td><td>Reject non-number / out of range</td></tr>
+  <tr><td>reliability</td><td>A / B / C</td><td>Weight 1.0 / 0.85 / 0.7</td><td>Reject other values</td></tr>
+  <tr><td>dup_group</td><td>string</td><td>Near-duplicate group</td><td><code>-</code> → own passage_id (no group)</td></tr>
+  <tr><td>evidence_tags</td><td>key:value list</td><td>Facts stated by the passage</td><td><code>-</code> → none; malformed tag → reject</td></tr>
+  <tr><td>mandatory</td><td>0 / 1</td><td>Must be included</td><td>Reject other values</td></tr>
+  <tr><td>supersedes</td><td>passage_id</td><td>Newer passage replaces the named one</td><td><code>-</code> → none; self-reference → reject</td></tr>
+  <tr><td>text</td><td>string</td><td>Passage text (key sentence)</td><td><code>-</code> → empty text</td></tr>
+</table>
+
+<!-- ================= PART 3 ================= -->
+<h2>Part 3: DSA Architecture and Design (CLO-2)</h2>
+
+<h3>3.1 Architecture and data flow (WP7)</h3>
+<svg viewBox="0 0 720 300" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#13233a"/></marker></defs>
+  <g font-size="11" fill="#13233a">
+    <rect x="8" y="14" width="140" height="58" rx="5" fill="#fff" stroke="#13233a"/><text x="78" y="34" text-anchor="middle" font-weight="600">Candidate Loader</text><text x="78" y="49" text-anchor="middle" font-size="9.5">12-field parser, validation</text><text x="78" y="62" text-anchor="middle" font-size="9.5">HashMap: duplicate ids</text>
+    <rect x="186" y="14" width="150" height="58" rx="5" fill="#eef4f6" stroke="#0f6b72"/><text x="261" y="34" text-anchor="middle" font-weight="600">Metadata store</text><text x="261" y="49" text-anchor="middle" font-size="9.5">array of Passage records</text><text x="261" y="62" text-anchor="middle" font-size="9.5">index = reference</text>
+    <rect x="374" y="8" width="338" height="104" rx="5" fill="#eef4f6" stroke="#0f6b72"/><text x="543" y="26" text-anchor="middle" font-weight="600">Policy Engine: select_context(q, cands, B_CTX, policy, params)</text>
+    <text x="384" y="44" font-size="9.5">1. mandatory first: Σc ≤ B_CTX ? accept : INFEASIBLE</text>
+    <text x="384" y="59" font-size="9.5">2a. baselines: key → merge sort + scan, or heapify + pop</text>
+    <text x="384" y="74" font-size="9.5">2b. hybrid: HashMap id→index (stale links), lazy max-heap,</text>
+    <text x="384" y="88" font-size="9.5">     HashMap covered tags / chosen groups</text>
+    <text x="384" y="103" font-size="9.5">3. shared feasibility check: whole c_i ≤ remaining</text>
+    <rect x="374" y="140" width="160" height="50" rx="5" fill="#fff" stroke="#13233a"/><text x="454" y="160" text-anchor="middle" font-weight="600">Budget Validator</text><text x="454" y="176" text-anchor="middle" font-size="9.5">recompute Σc from ids</text>
+    <rect x="552" y="140" width="160" height="50" rx="5" fill="#eef4f6" stroke="#0f6b72"/><text x="632" y="160" text-anchor="middle" font-weight="600">Ordering / Packaging</text><text x="632" y="176" text-anchor="middle" font-size="9.5">linked list + list merge sort</text>
+    <rect x="552" y="222" width="160" height="58" rx="5" fill="#fff" stroke="#13233a"/><text x="632" y="242" text-anchor="middle" font-weight="600">Agent Adapter</text><text x="632" y="257" text-anchor="middle" font-size="9.5">ContextPackage → QaAgent</text><text x="632" y="270" text-anchor="middle" font-size="9.5">(no model API in selector)</text>
+    <rect x="300" y="222" width="220" height="58" rx="5" fill="#fff" stroke="#13233a"/><text x="410" y="242" text-anchor="middle" font-weight="600">Experiment Logger / Evaluator</text><text x="410" y="257" text-anchor="middle" font-size="9.5">independent metrics, run_log.jsonl,</text><text x="410" y="270" text-anchor="middle" font-size="9.5">eval / bench / edge / test outputs</text>
+    <rect x="8" y="140" width="250" height="140" rx="5" fill="#fff" stroke="#9fb0bf" stroke-dasharray="4 3"/><text x="18" y="158" font-weight="600">Dataset generator (seed 2026)</text>
+    <text x="18" y="175" font-size="9.5">SplitMix64 → 32 labelled scenarios, 1,300 passages</text>
+    <text x="18" y="190" font-size="9.5">Fisher–Yates shuffle → ids carry no label</text>
+    <text x="18" y="205" font-size="9.5">validateDataset(): independent label checks</text>
+    <text x="18" y="225" font-weight="600">Scaling workloads</text>
+    <text x="18" y="241" font-size="9.5">n = 100 … 100,000, seed 20260000 + n</text>
+    <text x="18" y="256" font-size="9.5">same cost mix, 20 % duplicates, 5 % superseded</text>
+  </g>
+  <g stroke="#13233a" stroke-width="1.3" fill="none" marker-end="url(#ar)">
+    <line x1="148" y1="43" x2="184" y2="43"/>
+    <line x1="336" y1="43" x2="372" y2="43"/>
+    <line x1="454" y1="112" x2="454" y2="138"/>
+    <line x1="534" y1="165" x2="550" y2="165"/>
+    <line x1="632" y1="190" x2="632" y2="220"/>
+    <line x1="550" y1="251" x2="522" y2="251"/>
+    <path d="M258,200 C300,200 330,120 372,100"/>
+  </g>
+</svg>
+<p class="small"><b>Interdependence (WP7):</b> the loader's duplicate-id rule makes passage_id a safe hash key for stale detection. The supersede metadata decides what the policy may select. Packaging order changes what a position-biased agent answers (6.3). The evaluator recomputes every metric from ids, independently of the selector's own bookkeeping.</p>
+
+<h3>3.2 Student-written structures and declared library use</h3>
+<table>
+  <tr><th style="width:17%">Structure / algorithm</th><th style="width:30%">Operations written by us</th><th>Where it is used</th><th style="width:20%">Cost</th></tr>
+  <tr><td>Binary heap (priority queue), <code>binary_heap.h</code></td><td>Floyd bottom-up build, push (sift-up), pop (sift-down), top, isHeap, comparison counter</td><td>Heap engine of the baselines; lazy greedy of the hybrid</td><td>build O(n), push/pop O(log n)</td></tr>
+  <tr><td>Merge sort, <code>merge_sort.h</code></td><td>Top-down, stable, one buffer, skips merge when halves are ordered</td><td>Sort engine of the baselines; mandatory ordering; medians</td><td>Θ(n log n) worst/avg, Θ(n) best; O(n) space</td></tr>
+  <tr><td>Singly linked list, <code>linked_list.h</code></td><td>pushBack with tail pointer, in-place list merge sort (slow/fast split), forEach</td><td>Context package assembly and ordering</td><td>append O(1), sort O(k log k)</td></tr>
+  <tr><td>Hash map, <code>hash_map.h</code></td><td>Open addressing, linear probing, FNV-1a, growth at load 0.6, invariant check</td><td>Duplicate-id check, id → index for supersede links, stale groups, covered tags, chosen groups</td><td>expected O(1), worst O(n)</td></tr>
+  <tr><td>Lazy greedy selection, <code>selector.cpp</code></td><td>Upper-bound keys in a max-heap, re-evaluate on pop, re-insert if beaten</td><td>Hybrid policy</td><td>see 4.1</td></tr>
+  <tr><td>SplitMix64, Fisher–Yates</td><td>PRNG and shuffle</td><td>Reproducible dataset and workloads</td><td>O(1) per draw</td></tr>
+</table>
+<p class="small"><b>Library use (declared):</b> <code>std::vector</code> and <code>std::string</code> as storage only; <code>iostream/fstream/sstream</code> for I/O; <code>std::chrono::steady_clock</code> for timing; <code>std::pow</code>. No <code>std::sort</code>, <code>std::priority_queue</code>, <code>std::make_heap</code>, <code>std::unordered_map</code>, <code>std::map</code> or <code>std::list</code> is used. The plotting script uses only Python's <code>csv</code> and <code>math</code>.</p>
+
+<h3>3.3 The four policies (same inputs, same checks, same tie chain)</h3>
+<table>
+  <tr><th style="width:17%">Policy</th><th style="width:30%">Priority key (descending)</th><th>Selection procedure</th></tr>
+  <tr><td>(a) Recency-first</td><td>timestamp</td><td rowspan="3">Mandatory first (or INFEASIBLE). Then first-fit over optional items in key order: accept if c<sub>i</sub> ≤ remaining, else omit with reason. Sort engine: merge sort + one scan. Heap engine: Floyd build, pop until empty or remaining &lt; min c<sub>i</sub>. Both give identical packages (T15, and "same = yes" in every benchmark row).</td></tr>
+  <tr><td>(b) Relevance-first</td><td>relevance</td></tr>
+  <tr><td>(c) Relevance-per-token</td><td>relevance / c<sub>i</sub> (c<sub>i</sub> = 0 ranks as 0.5)</td></tr>
+  <tr><td>(d) Hybrid fresh-cover (proposed)</td><td>gain(i | S) / max(c<sub>i</sub>,1)<sup>α</sup>, α = 0.5</td><td>Mandatory first. Exclude stale passages. Lazy greedy over a max-heap with marginal gain (3.4).</td></tr>
+  <tr><td colspan="3" class="small"><b>Tie chain for every key:</b> relevance ↓, then timestamp ↓, then passage_id ↑ (ids are unique, so the order is total and output is deterministic for fixed input; T09 checks that it does not depend on input order).</td></tr>
+</table>
+
+<h3>3.4 Proposed policy: hybrid fresh-cover (FR-4)</h3>
+<p><b>Requirements it answers:</b> (1) freshness and traceability (policy officers); (2) evidence coverage, not raw relevance (students); (3) redundancy and token control (operators); (4) bounded latency (operators). These interact: removing stale items frees budget for coverage; discounting copies lets one long-relevance group stop crowding out other sources.</p>
+<pre>w(i)         = relevance(i) × relWeight(reliability(i))           // A 1.0, B 0.85, C 0.7
+gain(i | S)  = w(i) × (λ + (1−λ) × newTags(i,S)/|tags(i)|) × (dupPenalty if group(i) already in S)
+priority(i)  = gain(i | S) / max(c_i, 1)^α                       // λ = 0.2, dupPenalty = 0.3, α = 0.5
+
+HYBRID_SELECT(cands, B_CTX):
+  ids ← HashMap passage_id → index                                 // O(n) expected
+  for each j with supersedes(j) present in ids: stale[ids[supersedes(j)]] ← j
+  for each i in the duplicate group of a stale passage: stale[i] ← same newer passage
+  if Σ cost(mandatory) &gt; B_CTX: return INFEASIBLE(diagnostic)
+  accept every mandatory item; mark its tags covered and its group chosen
+  items ← { (priority(i), i) : optional, not stale (else omit "superseded by j"),
+                                c_i ≤ B_CTX (else omit "exceeds B_CTX") }
+  heap ← FLOYD_BUILD(items)                                         // O(n)
+  while heap not empty and remaining ≥ minCost:
+      (key, i) ← heap.pop()
+      if c_i &gt; remaining:                   omit i "insufficient capacity"; continue
+      if group chosen and no new tag:       omit i "duplicate, no new evidence"; continue
+      p ← priority(i)                                               // true value now
+      if p &lt; key and heap.top() beats (p, i): heap.push((p, i)); continue   // lazy re-insert
+      accept i; remaining −= c_i; mark tags covered, group chosen
+  omit everything left in the heap with its reason
+  package ← LINKED_LIST(accepted); LIST_MERGE_SORT(package, order rule)</pre>
+<table>
+  <tr><th style="width:30%">Invariant</th><th>Why it holds / how it is checked</th></tr>
+  <tr><td>Σ c(S) ≤ B<sub>CTX</sub> after every step</td><td>Every acceptance checks c<sub>i</sub> ≤ remaining first; remaining starts at B<sub>CTX</sub> (3.6). T14, T26.</td></tr>
+  <tr><td>Heap order</td><td>Sift-up/down maintain parent ≥ child; <code>isHeap()</code> checked under 20,000 random operations (T17).</td></tr>
+  <tr><td>Stored heap keys are upper bounds of true priorities</td><td>newTags can only fall and a group can only become chosen as S grows, so gain never increases. Hence the lazy result equals the eager O(n²) greedy (T16: 1,000 random instances, 1,442 re-insertions exercised, 0 mismatches).</td></tr>
+  <tr><td>Selected ∪ omitted = candidates, disjoint</td><td>Every candidate leaves through exactly one accept or omit (T14, partition check).</td></tr>
+  <tr><td>No stale passage selected unless mandatory</td><td>Excluded before the heap is built (T13, E08).</td></tr>
+</table>
+
+<h3>3.5 Alternatives considered and selection rationale</h3>
+<table>
+  <tr><th style="width:17%">Decision</th><th style="width:19%">Alternative A</th><th style="width:19%">Alternative B</th><th style="width:9%">Chosen</th><th>Reason / trade-off (measured where possible)</th></tr>
+  <tr><td>Order optional items</td><td>Merge sort all n, then scan</td><td>Heapify O(n), pop only what is needed</td><td><b>Both</b>, B default for speed</td><td>Same package (T15). At n = 10,000: 127,267 comparisons and 3.22 ms (sort) against 19,287 and 0.88 ms (heap). Sorting is kept because it is simple, stable and its cost does not depend on k.</td></tr>
+  <tr><td>Hybrid gain updates</td><td>Eager: recompute all gains each step, O(n·k)</td><td>Lazy heap re-evaluation</td><td><b>B</b></td><td>Identical output (T16); only 0 to 309 re-insertions at n = 10,000 (4.2).</td></tr>
+  <tr><td>Cost normalisation</td><td>α = 0 (gain only) or α = 1 (gain per token)</td><td>α = 0.5 (gain per √token)</td><td><b>B</b></td><td>α = 0 lost coverage at 256 (0.683); α = 1 lost at 256 (0.750); α = 0.5 gave 0.792. α = 0 was better on multi-source at 512 (0.875 against 0.825): a negative finding (6.4).</td></tr>
+  <tr><td>Stale handling</td><td>Penalty ×0.25</td><td>Exclusion</td><td><b>B</b></td><td>Same coverage; penalty let 2 stale passages in at 1024 (6.4); policy officers need hard precedence.</td></tr>
+  <tr><td>Package store</td><td>Array + insertion</td><td>Linked list + list merge sort</td><td><b>B</b></td><td>O(1) append while accepting, O(k log k) reorder with no second array; k is small, so the cost is negligible either way.</td></tr>
+  <tr><td>Id / tag lookup</td><td>Linear search O(n) per lookup</td><td>Hash map</td><td><b>B</b></td><td>Stale propagation would be O(n²) with search; with hashing it is O(n) expected. The cost is memory: the hybrid needs 1.76 MB of auxiliary memory at n = 10,000 against 0.23 MB for the heap baselines.</td></tr>
+  <tr><td>Exact optimisation</td><td>0/1-knapsack dynamic programming</td><td>Greedy</td><td><b>B</b></td><td>The brief excludes advanced DP, and the objective (coverage) is not additive. Greedy carries no optimality claim (3.7).</td></tr>
+</table>
+
+<h3>3.6 Budget-safety argument (proof)</h3>
+<p>Let r be the remaining capacity. Initially r = B<sub>CTX</sub> ≥ 0. (i) If Σ c(mandatory) &gt; B<sub>CTX</sub>, nothing is accepted and the status is INFEASIBLE, so Σ c(S) = 0 ≤ B<sub>CTX</sub>. (ii) Otherwise every acceptance, mandatory or optional, in every policy goes through <code>Packer::tryAccept</code>, which accepts i only if c<sub>i</sub> ≤ r and then sets r ← r − c<sub>i</sub>. By induction r ≥ 0 after every step, and Σ c(S) = B<sub>CTX</sub> − r ≤ B<sub>CTX</sub>. Since c<sub>i</sub> ≥ 0 is validated at load, r never increases. (iii) An independent validator recomputes Σ c from the final ids and would set BUDGET_VIOLATION; it never fired in 24,000 random runs (T14) or 384 evaluation runs (T26). ∎</p>
+
+<h3>3.7 Limits of the design</h3>
+<p class="small">The hybrid is a heuristic. Selecting passages to cover the most tags under a token budget is a budgeted maximum-coverage problem (NP-hard). Plain cost-scaled greedy has no constant-factor guarantee without the "best single item" comparison of Khuller et al. [5], which this solution does not implement. The hybrid also relies on the retriever's relevance to separate gold from non-gold facts, and fails when distractors look equally relevant (E09, 8.2).</p>
+
+<!-- ================= PART 4 ================= -->
+<h2>Part 4: Complexity Analysis (CLO-3)</h2>
+<h3>4.1 Theoretical time and auxiliary space</h3>
+<p class="small">n = candidates, m = mandatory, k = selected, p = heap pops (k ≤ p ≤ n), r = lazy re-insertions, T = tags per passage (≤ 4 here), L = id length. Auxiliary space excludes the input and the output lists.</p>
+<table>
+  <tr><th style="width:21%">Operation</th><th style="width:16%">Best</th><th style="width:19%">Average</th><th style="width:20%">Worst</th><th>Aux. space</th></tr>
+  <tr><td>Load + validate N records</td><td colspan="2">O(N·L) expected (hash duplicate check)</td><td>O(N²·L) (all ids collide)</td><td>O(N) hash slots</td></tr>
+  <tr><td>Mandatory check</td><td colspan="3">Θ(n) scan + O(m log m) merge sort</td><td>O(m)</td></tr>
+  <tr><td>Baseline, sort engine</td><td>Θ(n) (presorted input: merge skipped)</td><td>Θ(n log n)</td><td>Θ(n log n)</td><td>Θ(n): keys + index array + merge buffer</td></tr>
+  <tr><td>Baseline, heap engine</td><td>O(n + k log n): stops when r &lt; min c</td><td>O(n + p log n)</td><td>O(n log n) when most popped items do not fit</td><td>Θ(n): heap array (built in place)</td></tr>
+  <tr><td>Hybrid (lazy greedy)</td><td>O(n·L + k(log n + T))</td><td>O(n·L + (p + r)(log n + T)) expected</td><td>O(n·L + n·k(log n + T)) if every pop forces a re-insertion</td><td>Θ(n): 4 hash maps (≤ 5/3 n slots) + weights + heap</td></tr>
+  <tr><td>Packaging (list merge sort)</td><td colspan="3">Θ(k log k) comparisons; O(k) append</td><td>O(k) nodes + O(log k) recursion</td></tr>
+  <tr><td>Budget validation</td><td colspan="3">Θ(k)</td><td>O(1)</td></tr>
+</table>
+<p class="small"><b>Dependence on n and k:</b> sorting costs Θ(n log n) whatever k is, while heap-based selection costs O(n) to build plus a log n factor only for the items it actually pops. When k ≪ n (the normal case: k ≈ 10 to 50 at B<sub>CTX</sub> = 1024) the heap is close to linear. As the budget grows, k and p approach n and the heap cost approaches the sort cost. The hybrid adds an O(n) hashing pass with a large constant (string hashing and copying).</p>
+
+<h3>4.2 Empirical scaling (<code>cbm bench --reps 9</code>, results/bench_scaling.csv)</h3>
+<p class="small">Machine: Intel Core i7-8650U (4 cores / 8 threads, 1.9 GHz base), 15.8 GB RAM, Windows 11 Pro build 26300, TDM-GCC 10.3.0, <code>-O2</code>. Timing: <code>std::chrono::steady_clock</code>; per configuration one warm-up batch, then 9 timed batches. Each batch repeats the selection 200,000/n times (min 1), and the per-call time is batch time / repeats. Workloads are seeded synthetic sets (20260000 + n). The CPU was 43 % busy with other processes during the runs, so ranges are wide; medians are reported.</p>
+<table>
+  <tr><th>Median µs per selection (B<sub>CTX</sub> = 1024) [min–max]</th><th class="n">n = 100</th><th class="n">n = 1,000</th><th class="n">n = 10,000</th><th class="n">n = 100,000</th></tr>
+  <tr><td>recency / merge sort</td><td class="n">12.16</td><td class="n">107.85</td><td class="n">3,222 [2,107–4,136]</td><td class="n">47,231</td></tr>
+  <tr><td>recency / heap</td><td class="n">8.92</td><td class="n">27.93</td><td class="n">881 [795–984]</td><td class="n">16,600</td></tr>
+  <tr><td>relevance / merge sort</td><td class="n">8.48</td><td class="n">96.18</td><td class="n">3,094 [1,840–3,498]</td><td class="n">42,196</td></tr>
+  <tr><td>relevance / heap</td><td class="n">5.86</td><td class="n">30.10</td><td class="n">838 [711–1,167]</td><td class="n">16,354</td></tr>
+  <tr><td>density / merge sort</td><td class="n">10.19</td><td class="n">99.24</td><td class="n">2,973 [1,860–3,791]</td><td class="n">30,776</td></tr>
+  <tr><td>density / heap</td><td class="n">6.66</td><td class="n">38.20</td><td class="n">875 [648–1,167]</td><td class="n">13,718</td></tr>
+  <tr><td><b>hybrid / lazy heap</b></td><td class="n">20.89</td><td class="n">139.32</td><td class="n">5,046 [3,634–6,960]</td><td class="n">64,687</td></tr>
+</table>
+<img class="chart" src="../cep/results/scaling_n.svg" alt="Selection time against n">
+
+<table>
+  <tr><th>Operation counts and memory</th><th class="n">n = 10,000</th><th class="n">n = 100,000</th><th>Theory</th></tr>
+  <tr><td>Merge-sort comparisons (recency)</td><td class="n">127,267</td><td class="n">1,605,791</td><td>n log₂ n = 132,877 / 1,660,964</td></tr>
+  <tr><td>Heap comparisons incl. Floyd build (recency)</td><td class="n">19,287</td><td class="n">188,469</td><td>build ≤ 2n, + p log n for p = 19 / 14 pops</td></tr>
+  <tr><td>Hybrid: preparation time (hash index, weights) / total</td><td class="n">3,854 / 5,046 µs (76 %)</td><td class="n">48,495 / 64,687 µs (75 %)</td><td>O(n·L) dominates; heap part is small</td></tr>
+  <tr><td>Baseline sort: preparation / total</td><td class="n">245 / 3,222 µs (8 %)</td><td class="n">3,817 / 47,231 µs (8 %)</td><td>the n log n sort dominates</td></tr>
+  <tr><td>Aux. memory: sort / heap / hybrid</td><td class="n">391 / 235 / 1,763 KB</td><td class="n">3,907 / 2,345 / 14,870 KB</td><td>all Θ(n); ≈ 40 / 24 / 180 bytes per candidate</td></tr>
+</table>
+
+<p><b>Dependence on k</b> (n = 10,000, B<sub>CTX</sub> varied; larger budget → more items selected):</p>
+<table>
+  <tr><th>B<sub>CTX</sub></th><th class="n">256</th><th class="n">1,024</th><th class="n">4,096</th><th class="n">16,384</th><th class="n">65,536</th></tr>
+  <tr><td>k selected (density)</td><td class="n">12</td><td class="n">48</td><td class="n">179</td><td class="n">599</td><td class="n">1,748</td></tr>
+  <tr><td>density / merge sort: µs (comparisons)</td><td class="n">2,814 (127,266)</td><td class="n">2,973 (127,266)</td><td class="n">2,558 (127,266)</td><td class="n">3,310 (127,266)</td><td class="n">3,557 (127,266)</td></tr>
+  <tr><td>density / heap: µs (comparisons, pops)</td><td class="n">1,011 (19,225, 12)</td><td class="n">875 (20,101, 48)</td><td class="n">861 (23,309, 179)</td><td class="n">1,169 (33,679, 602)</td><td class="n">1,908 (63,586, 1,838)</td></tr>
+  <tr><td>hybrid: µs (pops, re-insertions)</td><td class="n">5,430 (11, 0)</td><td class="n">5,046 (50, 1)</td><td class="n">5,642 (161, 3)</td><td class="n">5,306 (542, 39)</td><td class="n">7,493 (1,746, 309)</td></tr>
+</table>
+<img class="chart" src="../cep/results/scaling_k.svg" alt="Selection time against budget">
+
+<h3>4.3 Are the measurements consistent with the theory?</h3>
+<ul>
+  <li><b>Comparisons match exactly:</b> merge sort used 0.96× n log₂ n at both sizes, and its count did not change with k (127,266 at every budget). Heap comparisons stayed near 2n and grew with pops only (19,225 → 63,586 as pops rose 12 → 1,838).</li>
+  <li><b>Time grows faster than the comparison count</b> between n = 1,000 and 10,000 (sort ×30 against n log n ×13). At 10,000 candidates the records no longer fit in the CPU caches, so each random access by index costs more; the machine was also under load. From 10,000 to 100,000 the sort grew ×14.7 against ×12.5 predicted.</li>
+  <li><b>Heap against sort:</b> 2.2× to 3.9× faster at n ≥ 1,000 (3.4× to 3.7× at n = 10,000) because k ≪ n, as predicted. The gap closes as k grows: at B<sub>CTX</sub> = 65,536 the heap took 1,908 µs against the sort's 3,557 µs.</li>
+  <li><b>Hybrid:</b> about 75 % of its time is the O(n) hashing pass, not the heap; its lazy re-insertions stayed small (≤ 309 at k = 1,399). At the real per-query size (n ≈ 41) it needs a median of 16 µs against 6 to 7 µs for the baselines (Table 6.1).</li>
+  <li><b>Repeatability:</b> three benchmark runs at n = 10,000, B<sub>CTX</sub> = 1024 gave recency/heap medians of 878, 868 and 881 µs and hybrid medians of 4,515, 4,657 and 5,046 µs (bench_run1/2 files kept).</li>
+</ul>
+
+<!-- ================= PART 5 ================= -->
+<h2>Part 5: Dataset and Evaluation Protocol</h2>
+<h3>5.1 Labelled evaluation set (<code>cbm gen</code>, seed 2026)</h3>
+<table>
+  <tr><th style="width:17%">Category</th><th class="n" style="width:9%">Queries</th><th class="n" style="width:9%">Passages</th><th>What each scenario contains</th><th style="width:16%">Gold tags</th></tr>
+  <tr><td>Time-sensitive policy</td><td class="n">10</td><td class="n">420</td><td>Revised official notice (mandatory, supersedes the old one), old notice + 3 forum reposts (same group, higher relevance), department e-mail restating the revision, FAQ with the second fact, 8 newest irrelevant notices, 27 distractors. Q10: two mandatory passages of 290 + 330 tokens.</td><td>2 per query (new value + FAQ fact)</td></tr>
+  <tr><td>Multi-source explanation</td><td class="n">10</td><td class="n">410</td><td>4 facts from 4 different sources; one long overview (260–380 tokens, relevance 0.93–0.98) with 3 (or all 4) facts; 5 near-duplicate copies of fact 1; one unverified forum post contradicting fact 3; 30 distractors</td><td>4 per query</td></tr>
+  <tr><td>Conversation memory / recency</td><td class="n">10</td><td class="n">410</td><td>Lab group (early), old language + assistant echo, profile summary (old language, no link), reminder, new language (supersedes old) + echo, 34 chit-chat turns; scenario i puts 3(i−1) of them after the key turns</td><td>3 per query</td></tr>
+  <tr><td>No gold facts</td><td class="n">2</td><td class="n">60</td><td>Only distractors; the asked fact is absent</td><td>none</td></tr>
+  <tr><td><b>Total</b></td><td class="n"><b>32</b></td><td class="n"><b>1,300</b></td><td>c<sub>i</sub>: 81.2 % ≤ 96 tokens, 5.0 % &gt; 186; mean 72.3; 20 supersede links; 11 mandatory passages</td><td>90 gold tags</td></tr>
+</table>
+<p class="small"><b>How labels were assigned:</b> the generator writes each evidence tag in the same step as the sentence that states it, so the tag value appears in the text. The gold list of a query is the set of values stated by its current (not superseded) official or FAQ passages. Copies carry the same tag, and coverage counts a gold tag once (set union), so repeated copies are never independent evidence. Passages are shuffled (Fisher–Yates) before ids are assigned, so ids reveal nothing.<br>
+<b>How they were checked independently</b> (<code>cbm validate</code>, different code path from the generator): every tag value appears in its passage text (1,300 passages); every gold tag is stated by at least one passage that nothing supersedes; every supersede link points to an existing, older passage; gold keys ⊆ asked keys; no-gold queries contain no passage stating the asked key; and the files regenerate byte-for-byte (T27). Result: <b>0 problems</b>. <b>Queries with no gold facts</b> are excluded from the coverage mean and scored only on whether the agent abstains.</p>
+
+<h3>5.2 Protocol</h3>
+<table>
+  <tr><th style="width:24%">Item</th><th>Setting</th></tr>
+  <tr><td>Configurations</td><td>32 queries × 3 budgets (256 / 512 / 1024) × 4 policies = 384 runs, same input for all (baselines use the merge-sort engine)</td></tr>
+  <tr><td>Timing</td><td>1 warm-up + 5 timed runs per configuration, <code>steady_clock</code> inside <code>selectContext</code>; median per configuration, then median and range over the 32 queries</td></tr>
+  <tr><td>Hybrid parameters</td><td>α = 0.5, λ = 0.2, dupPenalty = 0.3, excludeStale = true, dropRedundant = true, order = priority. Fixed before the evaluation; the alternatives appear only in the sensitivity table.</td></tr>
+  <tr><td>Metrics (independent of selector)</td><td>violations, tokens, % B<sub>CTX</sub>, unspent, gold coverage, redundancy (selected − distinct groups), distinct sources, stale selected, answer-quality proxy</td></tr>
+</table>
+
+<!-- ================= PART 6 ================= -->
+<h2>Part 6: Results</h2>
+<h3>6.1 Main comparison: all four policies (results/eval_summary.txt)</h3>
+<table>
+  <tr><th>B<sub>CTX</sub></th><th>Policy</th><th class="n">Infeas.</th><th class="n">Viol.</th><th class="n">Mean tokens</th><th class="n">% B<sub>CTX</sub></th><th class="n">Coverage</th><th class="n">Redund.</th><th class="n">Sources</th><th class="n">Stale sel. (queries)</th><th class="n">Median µs [range]</th><th class="n">Aux B</th></tr>
+  <tr><td rowspan="4">256</td><td>recency</td><td class="n">1</td><td class="n">0</td><td class="n">249.2</td><td class="n">97.3</td><td class="n">0.231</td><td class="n">11</td><td class="n">2.61</td><td class="n">0 (0)</td><td class="n">6.40 [3.5–12.7]</td><td class="n">1,904</td></tr>
+  <tr><td>relevance</td><td class="n">1</td><td class="n">0</td><td class="n">248.0</td><td class="n">96.9</td><td class="n">0.544</td><td class="n">76</td><td class="n">3.23</td><td class="n">42 (19)</td><td class="n">6.75 [3.9–14.7]</td><td class="n">1,939</td></tr>
+  <tr><td>density</td><td class="n">1</td><td class="n">0</td><td class="n">244.8</td><td class="n">95.6</td><td class="n">0.631</td><td class="n">67</td><td class="n">3.55</td><td class="n">42 (19)</td><td class="n">7.35 [3.3–16.4]</td><td class="n">2,061</td></tr>
+  <tr><td><b>hybrid</b></td><td class="n">1</td><td class="n">0</td><td class="n">244.7</td><td class="n">95.6</td><td class="n best">0.792</td><td class="n best">0</td><td class="n best">3.65</td><td class="n best">0 (0)</td><td class="n">16.30 [3.3–38.4]</td><td class="n">18,149</td></tr>
+  <tr><td rowspan="4">512</td><td>recency</td><td class="n">1</td><td class="n">0</td><td class="n">503.5</td><td class="n">98.3</td><td class="n">0.286</td><td class="n">34</td><td class="n">3.55</td><td class="n">0 (0)</td><td class="n">6.40 [2.8–14.2]</td><td class="n">2,180</td></tr>
+  <tr><td>relevance</td><td class="n">1</td><td class="n">0</td><td class="n">504.5</td><td class="n">98.5</td><td class="n">0.842</td><td class="n">82</td><td class="n">3.81</td><td class="n">56 (19)</td><td class="n">6.45 [2.7–15.6]</td><td class="n">2,166</td></tr>
+  <tr><td>density</td><td class="n">1</td><td class="n">0</td><td class="n">499.6</td><td class="n">97.6</td><td class="n">0.792</td><td class="n">109</td><td class="n">5.03</td><td class="n">48 (19)</td><td class="n">7.00 [2.2–12.2]</td><td class="n">2,538</td></tr>
+  <tr><td><b>hybrid</b></td><td class="n">1</td><td class="n">0</td><td class="n">500.8</td><td class="n">97.8</td><td class="n best">0.908</td><td class="n best">0</td><td class="n">4.97</td><td class="n best">0 (0)</td><td class="n">15.85 [2.7–18.8]</td><td class="n">18,530</td></tr>
+  <tr><td rowspan="4">1024</td><td>recency</td><td class="n">0</td><td class="n">0</td><td class="n">1014.4</td><td class="n">99.1</td><td class="n">0.603</td><td class="n">84</td><td class="n">5.06</td><td class="n">4 (2)</td><td class="n">6.80 [5.0–14.4]</td><td class="n">2,870</td></tr>
+  <tr><td>relevance</td><td class="n">0</td><td class="n">0</td><td class="n">1017.1</td><td class="n">99.3</td><td class="n">0.950</td><td class="n">119</td><td class="n">5.44</td><td class="n">60 (20)</td><td class="n">6.90 [4.5–13.0]</td><td class="n">2,820</td></tr>
+  <tr><td>density</td><td class="n">0</td><td class="n">0</td><td class="n">1006.8</td><td class="n">98.3</td><td class="n">0.967</td><td class="n">152</td><td class="n">5.91</td><td class="n">57 (20)</td><td class="n">7.40 [5.5–8.9]</td><td class="n">3,286</td></tr>
+  <tr><td><b>hybrid</b></td><td class="n">0</td><td class="n">0</td><td class="n">1011.6</td><td class="n">98.8</td><td class="n best">1.000</td><td class="n best">0</td><td class="n">5.84</td><td class="n best">0 (0)</td><td class="n">16.95 [11.3–20.4]</td><td class="n">19,688</td></tr>
+</table>
+<p class="small">Coverage = |gold tags in selected| / |gold tags|, averaged over the 30 answerable queries; the INFEASIBLE run (Q10 at 256 and 512: mandatory 620 tokens) counts as 0 for every policy. Stale = superseded passages (or copies of them) selected while the newer passage was a candidate. <b>Trade-off acknowledged:</b> the hybrid is about 2.5× slower and uses 7× to 10× more auxiliary memory than the baselines at this size. It also uses slightly fewer tokens, because it refuses copies that add nothing.</p>
+
+<h3>6.2 By category: coverage / stale selections / redundancy</h3>
+<table>
+  <tr><th>B<sub>CTX</sub></th><th>Category</th><th>Recency</th><th>Relevance</th><th>Density</th><th>Hybrid</th></tr>
+  <tr><td rowspan="3">256</td><td>policy</td><td>0.450 / 0 / 3</td><td>0.450 / 22 / 15</td><td>0.550 / 22 / 17</td><td class="best">0.800 / 0 / 0</td></tr>
+  <tr><td>multisource</td><td>0.175 / 0 / 4</td><td>0.250 / 0 / 40</td><td>0.375 / 0 / 27</td><td class="best">0.575 / 0 / 0</td></tr>
+  <tr><td>memory</td><td>0.067 / 0 / 2</td><td>0.933 / 20 / 20</td><td>0.967 / 20 / 20</td><td class="best">1.000 / 0 / 0</td></tr>
+  <tr><td rowspan="3">512</td><td>policy</td><td>0.450 / 0 / 14</td><td>0.700 / 36 / 33</td><td>0.850 / 28 / 32</td><td class="best">0.900 / 0 / 0</td></tr>
+  <tr><td>multisource</td><td>0.275 / 0 / 14</td><td>0.825 / 0 / 28</td><td>0.525 / 0 / 53</td><td>0.825 / 0 / 0</td></tr>
+  <tr><td>memory</td><td>0.133 / 0 / 4</td><td>1.000 / 20 / 20</td><td>1.000 / 20 / 20</td><td class="best">1.000 / 0 / 0</td></tr>
+  <tr><td rowspan="3">1024</td><td>policy</td><td>0.650 / 4 / 28</td><td>0.950 / 40 / 47</td><td>1.000 / 37 / 53</td><td class="best">1.000 / 0 / 0</td></tr>
+  <tr><td>multisource</td><td>0.625 / 0 / 43</td><td>0.900 / 0 / 49</td><td>0.900 / 0 / 71</td><td class="best">1.000 / 0 / 0</td></tr>
+  <tr><td>memory</td><td>0.533 / 0 / 8</td><td>1.000 / 20 / 20</td><td>1.000 / 20 / 20</td><td class="best">1.000 / 0 / 0</td></tr>
+</table>
+
+<h3>6.3 Answer quality (PROXY, not observed LLM accuracy)</h3>
+<p class="small">No model access was used. Two deterministic extractive agents read only the <code>ContextPackage</code>: <b>first-mention</b> (position-biased: uses the first passage stating each asked fact) and <b>authority</b> (order-independent: most reliable source, then newest). Scoring guide: for each asked fact, <i>correct</i> = the gold value, <i>contradictory</i> = a non-gold value (stale or wrong), <i>missing</i> = not answered. Unsupported claims are 0 by construction, because the agents only repeat values found in the context. Section 8 of the brief allows a proxy like this with the instructor's approval.</p>
+<table>
+  <tr><th>12 fixed questions, B<sub>CTX</sub> = 512</th><th class="n">Recency</th><th class="n">Relevance</th><th class="n">Density</th><th class="n">Hybrid</th></tr>
+  <tr><td>Policy Q01–Q04, facts correct (first-mention / authority)</td><td class="n">4/8 · 4/8</td><td class="n">6/8 · 6/8</td><td class="n">7/8 · 7/8</td><td class="n best">8/8 · 8/8</td></tr>
+  <tr><td>Multi-source Q11–Q14</td><td class="n">3/16 · 4/16</td><td class="n best">14/16 · 14/16</td><td class="n">6/16 · 9/16</td><td class="n">11/16 · 13/16</td></tr>
+  <tr><td>Memory Q21–Q24</td><td class="n">4/12 · 4/12</td><td class="n">8/12 · 12/12</td><td class="n">10/12 · 12/12</td><td class="n best">12/12 · 12/12</td></tr>
+  <tr><td><b>Total correct</b> (first-mention / authority)</td><td class="n">11/36 · 12/36</td><td class="n">28/36 · 32/36</td><td class="n">23/36 · 28/36</td><td class="n best">31/36 · 33/36</td></tr>
+  <tr><td>Contradictory claims (first-mention / authority)</td><td class="n">4 · 3</td><td class="n">4 · 0</td><td class="n">6 · 1</td><td class="n best">2 · 0</td></tr>
+</table>
+<table>
+  <tr><th>All 30 answerable questions (facts correct of 90, contradictory)</th><th class="n">Recency</th><th class="n">Relevance</th><th class="n">Density</th><th class="n">Hybrid</th></tr>
+  <tr><td>256, first-mention / authority</td><td class="n">18, 10 / 18, 10</td><td class="n">37, 12 / 47, 2</td><td class="n">46, 16 / 55, 7</td><td class="n best">68, 5 / 69, 4</td></tr>
+  <tr><td>512, first-mention / authority</td><td class="n">22, 10 / 24, 8</td><td class="n">67, 10 / 77, 0</td><td class="n">55, 17 / 68, 4</td><td class="n best">75, 6 / 81, 0</td></tr>
+  <tr><td>1024, first-mention / authority</td><td class="n">47, 10 / 54, 3</td><td class="n">75, 10 / 85, 0</td><td class="n">69, 17 / 86, 0</td><td class="n best">84, 6 / 90, 0</td></tr>
+  <tr><td>No-gold questions: agent abstained ("insufficient evidence")</td><td class="n">2/2</td><td class="n">2/2</td><td class="n">2/2</td><td class="n">2/2</td></tr>
+</table>
+<p class="small"><b>Negative finding:</b> on multi-source questions at 512, relevance-first answered more facts (14/16) than the hybrid (11 to 13/16), because the long overview passage it keeps states three facts at once (6.4, 7 Q1). The hybrid's remaining contradictory claims (5 to 6 with first-mention) come from passages with no supersede link: the unverified forum post that contradicts fact 3, and the memory profile summary that still holds the old language (8.4).</p>
+
+<h3>6.4 Sensitivity of the hybrid (results/sensitivity.txt)</h3>
+<table>
+  <tr><th>Variant</th><th class="n">Coverage 256 / 512 / 1024</th><th class="n">Multi-source 512</th><th class="n">Long passage taken (512)</th><th class="n">Stale (1024)</th><th class="n">Redund. (1024)</th><th class="n">First-mention correct 512</th></tr>
+  <tr><td><b>Default</b> α 0.5, exclude stale, drop copies</td><td class="n">0.792 / 0.908 / 1.000</td><td class="n">0.825</td><td class="n">0/10</td><td class="n">0</td><td class="n">0</td><td class="n">75/90</td></tr>
+  <tr><td>α = 0 (no cost normalisation)</td><td class="n">0.683 / 0.892 / 0.975</td><td class="n best">0.875</td><td class="n">10/10</td><td class="n">0</td><td class="n">0</td><td class="n">71/90</td></tr>
+  <tr><td>α = 1 (full per-token density)</td><td class="n">0.750 / 0.900 / 1.000</td><td class="n">0.800</td><td class="n">0/10</td><td class="n">0</td><td class="n">0</td><td class="n">74/90</td></tr>
+  <tr><td>Stale penalty ×0.25 instead of exclusion</td><td class="n">0.792 / 0.908 / 1.000</td><td class="n">0.825</td><td class="n">0/10</td><td class="n warn">2</td><td class="n">0</td><td class="n">75/90</td></tr>
+  <tr><td>Keep redundant copies</td><td class="n">0.792 / 0.908 / 1.000</td><td class="n">0.825</td><td class="n">0/10</td><td class="n">0</td><td class="n warn">5</td><td class="n">75/90</td></tr>
+  <tr><td>No coverage/redundancy terms (λ = 1, dup = 1)</td><td class="n">0.717 / 0.825 / 0.983</td><td class="n">0.575</td><td class="n">0/10</td><td class="n">0</td><td class="n warn">114</td><td class="n">70/90</td></tr>
+</table>
+<p class="small">The coverage/redundancy term matters most (+0.083 at 512). Stale exclusion matters only when budget is plentiful. α trades the long passage against several short ones; no single α wins every budget.</p>
+
+<h3>6.5 Mehran University document set (<code>cbm muet</code> → results/muet_summary.txt)</h3>
+<p class="small"><b>Data:</b> the MUET corpus of the PBL project (<code>data/passages.txt</code>): 31 documents of the Department of Computer Systems Engineering, MUET Jamshoro, 155 passages, with its 20 hand-labelled questions (<code>data/queries.txt</code>). As stated in <code>data/DATASET.md</code>, the rules were written by the team for testing; only D24 restates the real CS-251 PBL brief. <code>cep/scripts/muet_dataset.py</code> converts it: every question gets all 155 passages as candidates (3,100 records). Relevance = BM25 with the PBL synonym list, scaled to the best passage; cost = ceil(1.3 × words) + 6 (an estimate: no tokenizer was available); source = document id; reliability A, except the department repost D23 (B) and the forum text in D22-P3 (C). Revised notices supersede the original passage in the same position: D09 → D04 (attendance 70 % → 75 %), D20 → D19 (exam dates), D29 → D28 (registration 10 → 17 September). D02-P1..P3 and their reposts D23-P1..P3 form duplicate groups. Facts are key:value tags copied from the passage text; gold = the facts of the PBL gold passages. Categories: keyword and paraphrase → lookup (12), version → policy (3), ambiguous → multisource (2), unanswerable (3, no gold facts). <code>cbm muet</code> validates the labels (0 problems) before running.</p>
+<table>
+  <tr><th>B<sub>CTX</sub></th><th>Policy</th><th class="n">Viol.</th><th class="n">% B<sub>CTX</sub></th><th class="n">Coverage</th><th class="n">Redund.</th><th class="n">Stale sel. (queries)</th><th class="n">Median µs</th><th class="n">First-mention correct, contra</th><th class="n">Authority correct, contra</th></tr>
+  <tr><td rowspan="4">64</td><td>recency</td><td class="n">0</td><td class="n">96.5</td><td class="n">0.000</td><td class="n">0</td><td class="n">16 (16)</td><td class="n">12.00</td><td class="n">0/22, 0</td><td class="n">0/22, 0</td></tr>
+  <tr><td>relevance</td><td class="n">0</td><td class="n">90.5</td><td class="n best">0.824</td><td class="n">2</td><td class="n">7 (6)</td><td class="n">13.35</td><td class="n">16/22, 3</td><td class="n">17/22, 2</td></tr>
+  <tr><td>density</td><td class="n">0</td><td class="n">88.4</td><td class="n">0.735</td><td class="n">2</td><td class="n">11 (9)</td><td class="n">13.10</td><td class="n">15/22, 2</td><td class="n">15/22, 2</td></tr>
+  <tr><td><b>hybrid</b></td><td class="n">0</td><td class="n">90.0</td><td class="n best">0.824</td><td class="n best">0</td><td class="n best">0 (0)</td><td class="n">30.35</td><td class="n best">17/22, 0</td><td class="n best">17/22, 0</td></tr>
+  <tr><td rowspan="4">128</td><td>recency</td><td class="n">0</td><td class="n">92.9</td><td class="n">0.000</td><td class="n">0</td><td class="n">7 (7)</td><td class="n">12.40</td><td class="n">0/22, 0</td><td class="n">0/22, 0</td></tr>
+  <tr><td>relevance</td><td class="n">0</td><td class="n">95.4</td><td class="n best">0.941</td><td class="n">3</td><td class="n">10 (6)</td><td class="n">13.50</td><td class="n">18/22, 3</td><td class="n">20/22, 1</td></tr>
+  <tr><td>density</td><td class="n">0</td><td class="n">94.9</td><td class="n">0.853</td><td class="n">2</td><td class="n">17 (7)</td><td class="n">13.70</td><td class="n">18/22, 3</td><td class="n">18/22, 3</td></tr>
+  <tr><td><b>hybrid</b></td><td class="n">0</td><td class="n">94.3</td><td class="n">0.912</td><td class="n best">0</td><td class="n best">0 (0)</td><td class="n">31.60</td><td class="n best">19/22, 0</td><td class="n">19/22, 0</td></tr>
+  <tr><td rowspan="4">256</td><td>recency</td><td class="n">0</td><td class="n">97.6</td><td class="n">0.059</td><td class="n">0</td><td class="n">7 (7)</td><td class="n">13.90</td><td class="n">1/22, 0</td><td class="n">1/22, 0</td></tr>
+  <tr><td>relevance</td><td class="n">0</td><td class="n">97.7</td><td class="n best">0.941</td><td class="n">4</td><td class="n">22 (9)</td><td class="n">15.40</td><td class="n">18/22, 3</td><td class="n">20/22, 1</td></tr>
+  <tr><td>density</td><td class="n">0</td><td class="n">97.5</td><td class="n">0.912</td><td class="n">4</td><td class="n">28 (11)</td><td class="n">15.10</td><td class="n">18/22, 3</td><td class="n">19/22, 2</td></tr>
+  <tr><td><b>hybrid</b></td><td class="n">0</td><td class="n">97.9</td><td class="n best">0.941</td><td class="n best">0</td><td class="n best">0 (0)</td><td class="n">34.75</td><td class="n best">20/22, 0</td><td class="n best">20/22, 0</td></tr>
+  <tr><td rowspan="4">512</td><td>recency</td><td class="n">0</td><td class="n">98.2</td><td class="n">0.088</td><td class="n">0</td><td class="n">100 (20)</td><td class="n">14.90</td><td class="n">2/22, 0</td><td class="n">2/22, 0</td></tr>
+  <tr><td>relevance</td><td class="n">0</td><td class="n">99.0</td><td class="n">0.971</td><td class="n">6</td><td class="n">53 (15)</td><td class="n">16.30</td><td class="n">19/22, 3</td><td class="n">21/22, 1</td></tr>
+  <tr><td>density</td><td class="n">0</td><td class="n">98.7</td><td class="n">0.971</td><td class="n">7</td><td class="n">59 (15)</td><td class="n">13.60</td><td class="n">19/22, 3</td><td class="n">21/22, 1</td></tr>
+  <tr><td><b>hybrid</b></td><td class="n">0</td><td class="n">99.0</td><td class="n best">1.000</td><td class="n best">0</td><td class="n best">0 (0)</td><td class="n">33.10</td><td class="n best">22/22, 0</td><td class="n best">22/22, 0</td></tr>
+</table>
+<table>
+  <tr><th style="width:24%">Version question, B<sub>CTX</sub> = 128</th><th>What each policy's context lets the authority agent answer (gold in bold)</th></tr>
+  <tr><td>M09 minimum attendance (gold <b>75 percent</b>; <b>detained and must repeat the course</b>)</td><td>Recency and hybrid: insufficient evidence. Relevance-first: 75 percent, flagged "sources disagree", but the shortfall rule came from the 2025 notice (D04-P3). Density: <span class="warn">70 percent</span> and the 2025 shortfall rule, both from the superseded notice.</td></tr>
+  <tr><td>M10 CS-251 final exam date (gold <b>22 December 2026 at 10 am</b>)</td><td>Hybrid: correct with no conflict (the original date sheet is excluded). Relevance and density: correct but with the superseded 16 December sheet also in the context ("sources disagree"). Recency: insufficient evidence.</td></tr>
+  <tr><td>M18 registration deadline (gold <b>17 September 2026</b>)</td><td>Hybrid: correct with no conflict. Relevance-first: correct, with the old notice also present. Density: <span class="warn">10 September 2026</span> from the superseded notice. Recency: insufficient evidence.</td></tr>
+</table>
+<p class="small"><b>Findings on the MUET documents:</b> 0 budget violations in 320 runs. The hybrid was the only policy that never selected a superseded notice (relevance-first selected 7 to 53) and never gave a contradictory answer; it tied or beat every baseline in coverage except at 128 tokens (0.912 against 0.941), where it skipped the 45-token revised attendance notice for cheaper passages (8.4). Recency-first fails on this corpus because the newest documents (date sheets, viva guidelines, the PBL brief) rarely answer the question. The hybrid is about 2.5× slower (30–35 µs against 12–16 µs for 155 candidates). The untrusted forum passage D22-P3 was selected once in 320 runs (relevance-first, 512); it states no asked fact, so no answer used it. Per-question results are in results/muet_summary.txt.</p>
+
+<!-- ================= PART 7 ================= -->
+<h2>Part 7: Engineering Investigations (Section 7 of the brief)</h2>
+<table>
+  <tr><th style="width:21%">Question</th><th>Reasoned conclusion with evidence</th></tr>
+  <tr><td>1. When is a long, highly relevant passage better than several shorter ones?</td><td>When it fits with room to spare and states several needed facts that are not available more cheaply. The multi-source overview (260–380 tokens, three or four facts) never fits at 256 (omitted "exceeds B<sub>CTX</sub>", all policies). At 512, taking it (relevance-first, or the hybrid with α = 0) gave the best multi-source coverage, 0.825 and 0.875, against 0.825 for four short sources (default hybrid) and 0.525 for density. At 1024 the four short sources covered everything: hybrid 1.000 against 0.900 for relevance-first, which spent its budget on the overview plus copies. <b>Rule:</b> take the long passage if its new-evidence count divided by c<sub>i</sub><sup>α</sup> beats the alternatives; α = 0.5 under-weights it at mid budgets (E10 shows the reverse: relevance-first took only the 230-token overview, 3/4, while three policies covered 4/4 with short items).</td></tr>
+  <tr><td>2. When does newest-first sacrifice key evidence, and when does relevance-first include stale content?</td><td><b>Newest-first</b> fails whenever key facts are older than the chatter or notices around them. Memory coverage was 0.067 / 0.133 / 0.533 because the lab group and the reminder were stated early. Policy coverage stayed at 0.450 up to 512 because the 8 newest notices were irrelevant. It is fresh, though: 0 stale up to 512. <b>Relevance-first</b> includes stale content when old texts score higher than their revisions: old notices and reposts (0.78–0.95) against revisions (0.62–0.80). It selected 42 / 56 / 60 stale passages in 19–20 queries. Every policy and memory query was affected.</td></tr>
+  <tr><td>3. Can greedy relevance-per-token lose crucial evidence despite high total utility? Counterexample</td><td>Yes, in 36 query/budget cases. <b>Q01, B<sub>CTX</sub> = 256:</b> density selected 6 passages with total relevance 4.114 (mandatory notice, three cheap forum reposts of the <i>old</i> deadline, two short distractors) and missed <code>drop_form:Form AC-12</code> (coverage 1/2). The hybrid selected 5 passages with total relevance only 3.157 but covered 2/2 (mandatory notice + the FAQ with the form). Cheap copies have high relevance per token but add no new evidence.</td></tr>
+  <tr><td>4. What dominates the runtime of sorting, heap and hybrid approaches? How do bounds change with n and k?</td><td>Sort engine: the Θ(n log n) merge sort, which is 92 % of the time (preparation is 8 %) and independent of k (127,266 comparisons at every budget). Heap engine: O(n) Floyd build plus p log n; it rises only as k grows (63,586 comparisons at k = 1,748). Hybrid: the O(n) hash-index and stale pass, 75–76 % of its time; the lazy heap part grows with k + r (r ≤ 309). See 4.2 and 4.3.</td></tr>
+  <tr><td>5. Behaviour when crucial items do not fit, sources contradict, ties occur, or most passages are redundant</td><td><b>Do not fit:</b> INFEASIBLE with a diagnostic naming each mandatory id, its cost, the total and B<sub>CTX</sub>; nothing is silently dropped (Q10: 620 &gt; 256/512; E05: 330 &gt; 256; E12: B<sub>CTX</sub> = 0). A single optional item larger than B<sub>CTX</sub> is omitted, and the rest still selected (E04). <b>Contradict:</b> superseded versions are excluded (E08: 1 passage, 60 tokens, current value only, against 3 passages with 2 stale for the baselines). Unlinked contradictions are kept with their provenance; the authority agent prefers the more reliable source and flags "sources disagree" (T23). <b>Ties:</b> the deterministic tie chain (E06, T09). <b>Redundant:</b> one passage per group, plus copies only if they add a new tag (E07: hybrid 2 passages, 70 tokens, 2/2 coverage; baselines 5 copies, 150 tokens, 1/2).</td></tr>
+  <tr><td>6. Does context ordering change the agent's supported answers?</td><td>Only for an order-sensitive agent. With the same selections, the <b>authority</b> agent's results were identical under all three orders (for example, relevance-first at 512: 77/90 in every order). The <b>first-mention</b> agent changed: relevance-first at 512 got 58/90 with 19 contradictions oldest-first, 67/90 with priority order and 76/90 with 1 contradiction newest-first. The hybrid moved less (75 → 71) because its stale passages are already removed. So selection quality (what is in the package) and order effects (how a model reads it) must be measured separately. Order effects depend on the model and should be re-measured with a real LLM [6].</td></tr>
+</table>
+
+<!-- ================= PART 8 ================= -->
+<h2>Part 8: Verification Evidence</h2>
+<h3>8.1 Automated tests (<code>cbm test</code> → results/tests.txt): <span class="pass">29/29 PASS</span></h3>
+<table class="small">
+  <tr><th style="width:6%">ID</th><th>Test</th><th style="width:6%">ID</th><th>Test</th></tr>
+  <tr><td>T01</td><td>Empty candidate set → OK, empty package</td><td>T15</td><td>Heap engine = merge-sort engine (3,000 runs, 0 mismatches)</td></tr>
+  <tr><td>T02</td><td>B<sub>CTX</sub> formula incl. negative → 0</td><td>T16</td><td>Lazy hybrid = eager O(n²) greedy (1,000 instances, 1,442 re-insertions)</td></tr>
+  <tr><td>T03</td><td>Zero budget, no mandatory → OK, reasons</td><td>T17</td><td>Heap: 20,000 random ops vs reference; Floyd build 9,370 cmps for n = 5,000</td></tr>
+  <tr><td>T04</td><td>Zero budget + mandatory → INFEASIBLE</td><td>T18</td><td>Merge sort sorted and stable (300 arrays)</td></tr>
+  <tr><td>T05</td><td>No item fits → all "exceeds B<sub>CTX</sub>"</td><td>T19</td><td>Linked-list merge sort sorted, stable, tail valid</td></tr>
+  <tr><td>T06</td><td>One item larger than B<sub>CTX</sub> omitted, rest kept</td><td>T20</td><td>Hash map: 20,000 keys, growth, load ≤ 0.6</td></tr>
+  <tr><td>T07</td><td>Two mandatory over budget → INFEASIBLE naming both</td><td>T21</td><td>Zero-cost passage handled</td></tr>
+  <tr><td>T08</td><td>Mandatory selected and placed first</td><td>T22</td><td>Three ordering rules</td></tr>
+  <tr><td>T09</td><td>Ties → id order, invariant to input order</td><td>T23</td><td>Agents: stale value vs authority + conflict flag</td></tr>
+  <tr><td>T10</td><td>Duplicate id rejected with line number</td><td>T24</td><td>Agent abstains when the fact is absent</td></tr>
+  <tr><td>T11</td><td>15 malformed records, one reason each</td><td>T25</td><td>Dataset: 32 scenarios, 1,300 passages, 0 label problems</td></tr>
+  <tr><td>T12</td><td>Near-duplicate group: redundancy 0 vs 4</td><td>T26</td><td>0 violations in 384 evaluation runs</td></tr>
+  <tr><td>T13</td><td>Old/new policy: superseded + repost omitted</td><td>T27</td><td>Dataset regenerates byte-for-byte</td></tr>
+  <tr><td>T14</td><td>Budget safety: 24,000 random runs, 0 violations, partition, determinism</td><td>T28</td><td>Scaling workload reproducible</td></tr>
+  <tr><td></td><td></td><td>T29</td><td>MUET set: 3,100 records, 0 label problems, 0 violations in 320 runs, hybrid never stale</td></tr>
+</table>
+
+<h3>8.2 Required edge and stress cases (<code>cbm edge</code> → results/edge_cases.txt)</h3>
+<table>
+  <tr><th style="width:27%">Case (B<sub>CTX</sub>)</th><th>Recency</th><th>Relevance</th><th>Density</th><th>Hybrid</th></tr>
+  <tr><td>E01 no candidates (512)</td><td colspan="4">OK, 0 selected, 512 unspent, no violation (all policies)</td></tr>
+  <tr><td>E02 zero budget: 700 − 300 − 500 → 0</td><td colspan="4">OK, 0 selected, both items "exceeds B<sub>CTX</sub>"</td></tr>
+  <tr><td>E03 no item fits (256; costs 300–500)</td><td colspan="4">OK, 0 selected, all three omitted with reason</td></tr>
+  <tr><td>E04 one item of 900 tokens (256)</td><td colspan="4">900-token item omitted; the two others selected, 100 tokens, coverage 2/2</td></tr>
+  <tr><td>E05 two mandatory, 150 + 180 (256)</td><td colspan="4">INFEASIBLE: "mandatory passages E05-P1(150) + E05-P2(180) need 330 tokens but B_CTX = 256"</td></tr>
+  <tr><td>E06 tied relevance and timestamps (120)</td><td colspan="4">P1, P2 selected in every policy (id tie-break)</td></tr>
+  <tr><td>E07 near-duplicate group (160)</td><td>5 copies, 1/2, redund. 4</td><td>5 copies, 1/2, redund. 4</td><td>5 copies, 1/2, redund. 4</td><td class="best">2 items, 70 tok, 2/2, redund. 0</td></tr>
+  <tr><td>E08 contradictory old/new (200)</td><td>1/1, stale 2</td><td>1/1, stale 2</td><td>1/1, stale 2</td><td class="best">1/1, stale 0</td></tr>
+  <tr><td>E09 evidence split over 3 sources (200)</td><td>1/3</td><td>1/3</td><td>1/3</td><td class="warn">1/3 (fails too)</td></tr>
+  <tr><td>E10 long relevant passage (256)</td><td>4/4</td><td class="warn">3/4 (long only)</td><td>4/4</td><td>4/4</td></tr>
+  <tr><td>E11 budgets 256 / 512 / 1024, same input</td><td>0/4, 2/4, 4/4</td><td>1/4, 2/4, 4/4</td><td>1/4, 3/4, 3/4</td><td>1/4, 3/4, 4/4</td></tr>
+  <tr><td>E12 zero budget + mandatory</td><td colspan="4">INFEASIBLE (all policies)</td></tr>
+  <tr><td>E13 zero-cost passage (100)</td><td colspan="4">Both items selected, 100/100 tokens, coverage 2/2</td></tr>
+</table>
+
+<h3>8.3 Malformed metadata and duplicate ids (loader output)</h3>
+<pre>accepted 2 record(s): M01-P1 M01-P15
+rejected 15 record(s):
+  line  3: duplicate passage id M01-P1 in M01 (first seen on line 2)
+  line  4: negative token cost '-20'                line 11: mandatory flag 'yes' is not 0 or 1
+  line  5: token cost '12.5' is not a nonnegative integer   line 12: expected 12 fields, found 11
+  line  6: relevance '1.70' is not a number in [0,1]  line 13: missing passage_id
+  line  7: invalid timestamp '2026/03/01' (expected YYYY-MM-DDThh:mm)   line 14: missing source_id
+  line  8: invalid timestamp '2026-13-01T10:00' ...   line 15: relevance 'abc' is not a number in [0,1]
+  line  9: reliability 'X' is not A, B or C           line 16: passage supersedes itself
+  line 10: evidence tag 'rule' is not key:value       line 17: token cost '' is not a nonnegative integer</pre>
+
+<h3>8.4 Known limitations and unresolved issues</h3>
+<ul class="small">
+  <li><b>Freshness relies on explicit <code>supersedes</code> links.</b> An unlinked contradiction is not detected: the memory profile summary with the old language and the unverified forum post were selected by the hybrid. They cause its 5–6 first-mention contradictions. Possible fix: a per-key "newest wins" rule over evidence tags.</li>
+  <li><b>Coverage depends on the retriever's relevance.</b> The hybrid cannot tell gold from non-gold facts, so equally relevant distractors win (E09: 1/3 for every policy).</li>
+  <li>No optimality guarantee (3.7). α = 0.5 under-weights a long multi-fact passage at mid budgets (6.4).</li>
+  <li>Answer quality is a proxy with two simple agents, not observed LLM accuracy. A check with a real LLM is left for future work.</li>
+  <li>The main dataset is synthetic. Relevance scores and costs follow designed ranges, so absolute coverage numbers depend on these choices; the comparisons between policies are the result. The MUET document set (6.5) is mostly team-written as well (only D24 restates a real brief), and its token costs are word-count estimates.</li>
+  <li>On the MUET set at B<sub>CTX</sub> = 128, the hybrid skipped the 45-token revised attendance notice for cheaper passages and missed both attendance facts (M09); relevance-first found one of them. Cost normalisation (α = 0.5) can drop a needed but longer passage at small budgets.</li>
+  <li>Benchmark timings were taken on a loaded laptop (43 % CPU), so ranges are wide; medians and three repeated runs are reported. No known crashes or failing tests.</li>
+</ul>
+
+<!-- ================= PART 9 ================= -->
+<h2>Part 9: Demonstration: Budget-Constrained Query and Context Package (FR-8, FR-9)</h2>
+<p class="small"><code>cbm select --query Q01 --budget 512 --policy hybrid</code> (from results/sample_package.txt): the package as the agent receives it, the selector's trace and the omission reasons.</p>
+<pre>Question: What is the last date to drop a course this semester, and which form is needed?
+Context (485/512 tokens, hybrid-fresh-cover):
+[1] (Q01-P027 | notices_office | 2026-01-07T08:37 | A) Revised official notice (replaces the earlier one): the last date to drop a course is 6 Mar 2026.
+[2] (Q01-P040 | dept_email | 2024-04-01T09:53 | A) Update on the robotics club meeting (ref M22).
+[3] (Q01-P021 | faq_portal | 2026-07-13T10:59 | B) FAQ: course drops are submitted on Form AC-12.
+[4]–[9] six short distractor updates (P029, P025, P003, P022, P026, P033)
+Agent (first-mention): drop_deadline = 6 Mar 2026 [Q01-P027, notices_office]; drop_form = Form AC-12 [Q01-P021, faq_portal]
+
+[Q01] policy=hybrid-fresh-cover  status=OK  B_CTX=512  used=485 (94.7%)  unspent=27  candidates=42  selected=9
+   1. Q01-P027  notices_office  2026-01-07T08:37 rel=0.78 c= 62 key=0.7820 MANDATORY  drop_deadline:6 Mar 2026
+   2. Q01-P040  dept_email      2024-04-01T09:53 rel=0.52 c= 28 key=0.0973  misc22:M22
+   3. Q01-P021  faq_portal      2026-07-13T10:59 rel=0.60 c= 43 key=0.0780  drop_form:Form AC-12
+   ...
+  omitted Q01-P002  c= 39  superseded by a newer candidate (Q01-P027)
+  omitted Q01-P012  c= 46  superseded by a newer candidate (Q01-P027)
+  omitted Q01-P032  c=123  superseded by a newer candidate (Q01-P027)
+  ... (every one of the 33 omitted passages is listed with its reason)</pre>
+<p class="small">Under the same budget, relevance-first used all 512 tokens, put the old notice (27 Feb) and three reposts in positions 2–5 and lost the form (1/2). The demo script for the viva is: <code>cbm select</code> (budget-constrained query) → <code>cbm compare --query Q01 --budget 256</code> (policy comparison) → <code>cbm select --query Q10 --budget 512</code> (INFEASIBLE) → <code>cbm bench</code> (scale test).</p>
+
+<!-- ================= PART 10 ================= -->
+<h3>9.1 Running the program (interactive demo)</h3>
+<p class="small">Double-click <code>cep/run_demo.bat</code> (it builds <code>cbm.exe</code> with g++ if needed), or run <code>cbm</code> / <code>cbm menu</code> from the <code>cep/</code> folder. The menu shows the current question, budget (B<sub>total</sub> − R<sub>fixed</sub> − R<sub>answer</sub> = B<sub>CTX</sub>), policy and order, and repeats after every action. Invalid input is re-asked.</p>
+<table>
+  <tr><th style="width:9%" class="c">Menu</th><th style="width:30%">Action</th><th>What it shows (suggested screenshot)</th></tr>
+  <tr><td class="c">1</td><td>Run selection for this question</td><td>Context package as the agent receives it, the selector trace (key, cost, tags), every omitted passage with its reason, tokens/B<sub>CTX</sub>, coverage, time and operation counts, both agents' answers and the gold evidence. <i>Screenshot: Q01, hybrid, B<sub>CTX</sub> 512.</i></td></tr>
+  <tr><td class="c">2</td><td>Compare all four policies</td><td>One row per policy: status, tokens, coverage, stale, redundancy, sources, time, answer. <i>Screenshot: Q01 at B<sub>CTX</sub> 256 (only the hybrid covers 2/2).</i></td></tr>
+  <tr><td class="c">3 / 9</td><td>Choose / list questions</td><td>By number or id (Q01–Q32, or E01–E13 in the edge-case set).</td></tr>
+  <tr><td class="c">4</td><td>Set token budget</td><td>B<sub>CTX</sub> directly, or B<sub>total</sub>, R<sub>fixed</sub>, R<sub>answer</sub>.</td></tr>
+  <tr><td class="c">5 / 6</td><td>Choose policy / packaging order</td><td>Four policies (baselines: merge-sort or heap engine); priority, oldest-first or newest-first order.</td></tr>
+  <tr><td class="c">7</td><td>Switch dataset</td><td>Evaluation set, edge cases or MUET documents (M01–M20). <i>Screenshots: E05 with option 2 (INFEASIBLE with its diagnostic); MUET M09 or M18 at B<sub>CTX</sub> 128 with option 2 (old vs revised notice).</i></td></tr>
+  <tr><td class="c">8</td><td>Run the automated tests</td><td>T01–T29 with PASS/FAIL. <i>Screenshot: "29/29 tests passed".</i></td></tr>
+</table>
+
+<h3>9.2 Screenshots of the program</h3>
+<figure class="shot"><img src="cep_screenshots/01_menu_context_package.png" alt="Screenshot 1"><figcaption><b>Figure 1.</b> Option 1 on Q01 (hybrid, B<sub>CTX</sub> = 512): the settings header, the menu and the context package sent to the agent: 9 passages, 485/512 tokens, the revised notice first.</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/02_selector_trace.png" alt="Screenshot 2"><figcaption><b>Figure 2.</b> Selector trace for the same run: acceptance key, cost and tags of each selected passage, then every omitted passage with its reason (superseded by Q01-P027, duplicate group already covered, insufficient remaining capacity).</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/03_answers_and_policy_comparison.png" alt="Screenshot 3"><figcaption><b>Figure 3.</b> End of option 1 (485/512 tokens, coverage 2/2, stale 0, redundancy 0; both agents answer 6 Mar 2026 and Form AC-12), then option 2: only relevance-per-token and the hybrid cover 2/2, and only the hybrid does so with 0 stale and 0 redundant passages.</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/04_question_list.png" alt="Screenshot 4"><figcaption><b>Figure 4.</b> Option 3: the 32 labelled questions of the evaluation set with their category and number of candidate passages.</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/05_choose_policy_engine.png" alt="Screenshot 5"><figcaption><b>Figure 5.</b> Option 5: choosing recency-first with the binary-heap engine; the header shows the new policy and engine.</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/06_order_dataset_tests.png" alt="Screenshot 6"><figcaption><b>Figure 6.</b> Option 6 (newest-first packaging order), option 7 (switch to the MUET document set) and the start of option 8.</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/07_tests_29_of_29.png" alt="Screenshot 7"><figcaption><b>Figure 7.</b> Option 8: all automated tests, T01 to T29, pass (29/29), including the MUET document set test T29.</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/08_muet_questions.png" alt="Screenshot 8"><figcaption><b>Figure 8.</b> Option 9 on the MUET document set: questions M01 to M20, each with all 155 MUET passages as candidates.</figcaption></figure>
+<figure class="shot"><img src="cep_screenshots/09_exit.png" alt="Screenshot 9" style="width:40%"><figcaption><b>Figure 9.</b> Option 0 closes the program; <code>run_demo.bat</code> keeps the window open until a key is pressed.</figcaption></figure>
+
+<h2>Part 10: Project Management Evidence (PLO-11)</h2>
+<h3>10.1 Milestone plan (brief Section 10) and responsibility matrix</h3>
+<table>
+  <tr><th style="width:8%">Week</th><th>Work package</th><th style="width:24%">Deliverable / evidence here</th><th style="width:24%">Owner</th></tr>
+  <tr><td>1</td><td>Requirements, stakeholders, budget model, dataset schema, risk register</td><td>Part 1, 2.1, 10.3</td><td>Waqas Ali (lead), Mehran Ali</td></tr>
+  <tr><td>2</td><td>Loader + validation; three baselines (sort and heap engines); budget tests</td><td>loader.cpp, selector.cpp, T01–T15</td><td>Mehran Ali</td></tr>
+  <tr><td>3</td><td>Hybrid policy, hash map, lazy heap, packaging (linked list), invariants</td><td>3.4, T12–T16, T19–T22</td><td>Waqas Ali</td></tr>
+  <tr><td>4</td><td>Labelled dataset, edge cases, complexity analysis, scaling benchmark, agent proxy</td><td>Parts 4–6, 8</td><td>Gaffar (dataset, edge cases), Basit Azam (complexity, benchmark)</td></tr>
+  <tr><td>5</td><td>Comparison, investigations, document, demo, viva</td><td>Parts 7, 9, this document</td><td>All four; Waqas Ali leads the demo</td></tr>
+</table>
+<p class="small"><b>Team:</b> Waqas Ali (25CS061, lead), Mehran Ali (25CS009), Gaffar (25CS067), Basit Azam (25CS113). Each member presents the part they own and answers viva questions on it.</p>
+
+<h3>10.2 Change and decision log</h3>
+<table>
+  <tr><th style="width:4%">#</th><th style="width:28%">Observation</th><th>Decision / change</th><th style="width:23%">Effect (measured)</th></tr>
+  <tr><td>1</td><td>The hybrid filled leftover budget with copies of an already-covered group (T12 failed its design target)</td><td>Added <code>dropRedundant</code>: omit a copy that adds no new tag (still exact for lazy greedy because it stays true once true)</td><td>Redundancy 0; T12 and T16 pass</td></tr>
+  <tr><td>2</td><td>All memory scenarios had chatter only after the key turns, so recency-first scored 0.0, a dataset artefact</td><td>Generator now puts 0, 3, …, 27 trailing chatter turns in scenarios Q21–Q30</td><td>Recency memory coverage 0.067 / 0.133 / 0.533</td></tr>
+  <tr><td>3</td><td>Wide benchmark ranges on a loaded machine</td><td>Kept run 1, ran again with 9 repetitions; final run on the final binary</td><td>Medians within ~10 % (4.3)</td></tr>
+  <tr><td>4</td><td>Needed evidence for "what dominates runtime"</td><td>Added a preparation-phase timer (<code>prepMicros</code>) to the metrics and the benchmark CSV</td><td>Hybrid: 75–76 % is hashing (4.2)</td></tr>
+  <tr><td>5</td><td>A memory profile summary repeats a stale value without a link</td><td>Kept as a known limitation; not hidden by the generator</td><td>8.4</td></tr>
+</table>
+
+<h3>10.3 Risk log</h3>
+<table>
+  <tr><th style="width:20%">Risk</th><th style="width:22%">Effect</th><th>Mitigation</th><th style="width:16%">Status</th></tr>
+  <tr><td>Budget overflow</td><td>LLM request rejected / truncated</td><td>Single shared check + independent validator + randomized property test</td><td class="pass">0 violations</td></tr>
+  <tr><td>Silent loss of mandatory evidence</td><td>Policy officers mis-served</td><td>INFEASIBLE with diagnostic, nothing partial</td><td class="pass">T04, T07, Q10</td></tr>
+  <tr><td>Lazy greedy differs from intended greedy</td><td>Wrong selections</td><td>Eager O(n²) oracle on 1,000 random instances</td><td class="pass">T16, 0 mismatches</td></tr>
+  <tr><td>Label leakage / bad gold</td><td>Inflated coverage</td><td>Shuffle before ids; independent validator; text-vs-tag check</td><td class="pass">0 problems</td></tr>
+  <tr><td>Timing noise</td><td>Misleading speed claims</td><td>Warm-up, ≥ 5 (9) repetitions, medians + ranges, repeated runs, op counts</td><td class="warn">Ranges still wide</td></tr>
+  <tr><td>Non-reproducible data across compilers</td><td>Results cannot be checked</td><td>Own SplitMix64 instead of <code>std::</code> distributions</td><td class="pass">T27, T28</td></tr>
+</table>
+
+<h3>10.4 Retrospective</h3>
+<p class="small"><b>Went well:</b> property tests (T14–T16) caught design gaps early and give strong evidence of budget safety. <b>Went badly:</b> the first memory dataset was too uniform and produced a misleading 0.0 for recency, which had to be fixed in the generator. <b>Next time:</b> fix the evaluation parameters before generating data, run benchmarks on an idle machine, and plan a real-LLM check of the proxy.</p>
+
+<!-- ================= PART 11 ================= -->
+<h2>Part 11: CEP Attributes, Outcomes and Completion Checklist</h2>
+<table>
+  <tr><th style="width:24%">Attribute / outcome</th><th>Evidence in this solution</th></tr>
+  <tr><td>WP1 Depth of knowledge</td><td>Own heap, merge sort, linked-list sort, hash map; invariants; lazy greedy correctness argument; budget-safety proof (3.2–3.6)</td></tr>
+  <tr><td>WP2 Conflicting requirements</td><td>Freshness vs relevance, coverage vs tokens, quality vs latency/memory, quantified (1.3, 6.1)</td></tr>
+  <tr><td>WP3 Depth of analysis</td><td>No policy dominates: relevance-first beats the hybrid on multi-source answers at 512; α = 0 beats default at 512; E09 fails for all (6.3, 6.4, 8.2)</td></tr>
+  <tr><td>WP6 Stakeholder needs</td><td>Each stakeholder requirement mapped to a design decision and its measured cost (1.3)</td></tr>
+  <tr><td>WP7 Interdependence</td><td>Loader ↔ hashing, metadata ↔ selection, ordering ↔ agent answers (3.1, 7 Q6)</td></tr>
+  <tr><td>CLO-2 (C3, PLO-2)</td><td>Problem formulation, alternatives and justified selection/ordering algorithms (Parts 1, 3)</td></tr>
+  <tr><td>CLO-3 (C4, PLO-3)</td><td>Best/average/worst-case and auxiliary-space analysis compared with measurements (Part 4)</td></tr>
+</table>
+<table>
+  <tr><th style="width:7%" class="c">Check</th><th>Brief Section 12 checklist item</th><th style="width:22%">Where</th></tr>
+  <tr><td class="tick">✔</td><td>Always enforces B<sub>CTX</sub> and signals infeasible mandatory combinations</td><td>3.6, T14, T26, E05</td></tr>
+  <tr><td class="tick">✔</td><td>At least two core DSA structures/algorithms implemented and tested ourselves</td><td>3.2, T15–T20</td></tr>
+  <tr><td class="tick">✔</td><td>Compared recency-first, relevance-first, relevance-per-token and our strategy</td><td>Parts 6, 7</td></tr>
+  <tr><td class="tick">✔</td><td>24+ labelled queries and scalable workloads with reproducible seeds</td><td>5.1 (32 queries, seeds), 6.5 (20 MUET questions), 4.2</td></tr>
+  <tr><td class="tick">✔</td><td>Theoretical and empirical time/space plus failure cases</td><td>Part 4, 8.2, 8.4</td></tr>
+  <tr><td class="tick">✔</td><td>Coverage, budget use, redundancy, provenance/freshness and answer quality (proxy)</td><td>6.1–6.3</td></tr>
+  <tr><td class="tick">✔</td><td>Source/build files, logs, tests, raw results and a demonstration path</td><td><code>cep/</code>, Part 9</td></tr>
+  <tr><td class="tick">✔</td><td>Report evidence mapped to CEP attributes and CLO/PLOs</td><td>This part</td></tr>
+  <tr><td class="tick">✔</td><td>Milestones, responsibilities, risks, change decisions and individual contributions</td><td>Part 10</td></tr>
+  <tr><td class="tick">✔</td><td>Privacy, citation and academic-integrity rules</td><td>Synthetic data and the team-written MUET set; no student records; references and AI-use disclosure below</td></tr>
+</table>
+
+<h3>AI-use disclosure</h3>
+<p class="small">The C++ code, the synthetic dataset generator, the experiments and this document were produced with the help of an AI coding assistant (Claude, Anthropic) under the team's direction. Every number in this document was produced by running the submitted code (<code>cep/results/</code>). Each team member must be able to explain the code they present in the viva.</p>
+
+<h3>References</h3>
+<ol class="small">
+  <li>T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein, <i>Introduction to Algorithms</i>, 3rd ed., MIT Press, 2009 (heaps, merge sort, hashing).</li>
+  <li>R. W. Floyd, "Algorithm 245: Treesort 3," <i>Communications of the ACM</i>, 7(12), 1964 (bottom-up heap construction).</li>
+  <li>M. Minoux, "Accelerated greedy algorithms for maximizing submodular set functions," <i>Optimization Techniques</i>, LNCS 7, Springer, 1978 (lazy greedy).</li>
+  <li>G. L. Nemhauser, L. A. Wolsey, M. L. Fisher, "An analysis of approximations for maximizing submodular set functions I," <i>Mathematical Programming</i>, 14, 1978.</li>
+  <li>S. Khuller, A. Moss, J. Naor, "The budgeted maximum coverage problem," <i>Information Processing Letters</i>, 70(1), 1999.</li>
+  <li>N. F. Liu et al., "Lost in the Middle: How Language Models Use Long Contexts," <i>Transactions of the ACL</i>, 2024 (position effects).</li>
+  <li>G. L. Steele, D. Lea, C. H. Flood, "Fast splittable pseudorandom number generators," OOPSLA 2014 (SplitMix64).</li>
+</ol>
+
+<h3>Reproduce (from <code>cep/</code>)</h3>
+<pre>run_demo.bat                    interactive menu (or: cbm menu)
+build.bat                       (or: make)   g++ -std=c++17 -O2 -Wall -Wextra
+cbm gen        → data/scenarios.txt, data/passages.txt (seed 2026)
+cbm validate   → results/dataset_validation.txt
+cbm test       → results/tests.txt                      (29/29)
+cbm edge       → results/edge_cases.txt
+python scripts/muet_dataset.py → data/muet/ (from ../data/passages.txt, queries.txt, synonyms.txt)
+cbm muet       → results/muet_summary.txt
+cbm eval       → results/eval_summary.txt, eval_runs.csv, answer_quality.txt, order_experiment.txt,
+                 sensitivity.txt, sample_package.txt, run_log.jsonl
+cbm bench --reps 9 → results/bench_scaling.csv, bench_summary.txt
+python scripts/plot_scaling.py → results/scaling_n.svg, scaling_k.svg</pre>
+
+</body>
+</html>

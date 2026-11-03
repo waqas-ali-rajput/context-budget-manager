@@ -1,0 +1,45 @@
+ANSWER-QUALITY PROXY (deterministic extractive agents; NOT observed LLM accuracy)
+Score per question = checklist facts answered with the gold value / facts asked. contra = facts answered with a non-gold (stale or wrong) value.
+
+A. 12 fixed questions at B_CTX = 512, packaging order = priority
+query category     agent         | recency      | relevance    | density      | hybrid
+Q01   policy       first-mention | 1/2 contra=0  | 1/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  |
+Q01   policy       authority     | 1/2 contra=0  | 1/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  |
+Q02   policy       first-mention | 1/2 contra=0  | 2/2 contra=0  | 1/2 contra=0  | 2/2 contra=0  |
+Q02   policy       authority     | 1/2 contra=0  | 2/2 contra=0  | 1/2 contra=0  | 2/2 contra=0  |
+Q03   policy       first-mention | 1/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  |
+Q03   policy       authority     | 1/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  |
+Q04   policy       first-mention | 1/2 contra=0  | 1/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  |
+Q04   policy       authority     | 1/2 contra=0  | 1/2 contra=0  | 2/2 contra=0  | 2/2 contra=0  |
+Q11   multisource  first-mention | 0/4 contra=1  | 4/4 contra=0  | 1/4 contra=1  | 2/4 contra=1  |
+Q11   multisource  authority     | 0/4 contra=1  | 4/4 contra=0  | 2/4 contra=0  | 3/4 contra=0  |
+Q12   multisource  first-mention | 1/4 contra=1  | 3/4 contra=0  | 2/4 contra=1  | 2/4 contra=1  |
+Q12   multisource  authority     | 2/4 contra=0  | 3/4 contra=0  | 2/4 contra=1  | 3/4 contra=0  |
+Q13   multisource  first-mention | 1/4 contra=1  | 3/4 contra=0  | 1/4 contra=1  | 4/4 contra=0  |
+Q13   multisource  authority     | 1/4 contra=1  | 3/4 contra=0  | 2/4 contra=0  | 4/4 contra=0  |
+Q14   multisource  first-mention | 1/4 contra=1  | 4/4 contra=0  | 2/4 contra=1  | 3/4 contra=0  |
+Q14   multisource  authority     | 1/4 contra=1  | 4/4 contra=0  | 3/4 contra=0  | 3/4 contra=0  |
+Q21   memory       first-mention | 1/3 contra=0  | 2/3 contra=1  | 2/3 contra=1  | 3/3 contra=0  |
+Q21   memory       authority     | 1/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  |
+Q22   memory       first-mention | 1/3 contra=0  | 2/3 contra=1  | 3/3 contra=0  | 3/3 contra=0  |
+Q22   memory       authority     | 1/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  |
+Q23   memory       first-mention | 1/3 contra=0  | 2/3 contra=1  | 3/3 contra=0  | 3/3 contra=0  |
+Q23   memory       authority     | 1/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  |
+Q24   memory       first-mention | 1/3 contra=0  | 2/3 contra=1  | 2/3 contra=1  | 3/3 contra=0  |
+Q24   memory       authority     | 1/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  | 3/3 contra=0  |
+TOTAL first-mention              | 11/36 contra=4 | 28/36 contra=4 | 23/36 contra=6 | 31/36 contra=2 |
+TOTAL authority                  | 12/36 contra=3 | 32/36 contra=0 | 28/36 contra=1 | 33/36 contra=0 |
+
+B. All 30 answerable questions (facts correct / asked, contradictory claims, conflicts flagged) and abstention on the 2 no-gold questions
+B_CTX  256 first-mention | recency 18/90 contra=10 conflicts=0 weakC=4 abstain=2/2 | relevance 37/90 contra=12 conflicts=19 weakC=2 abstain=2/2 | density 46/90 contra=16 conflicts=20 weakC=4 abstain=2/2 | hybrid 68/90 contra=5 conflicts=13 weakC=0 abstain=2/2 |
+B_CTX  256 authority     | recency 18/90 contra=10 conflicts=0 weakC=2 abstain=2/2 | relevance 47/90 contra=2 conflicts=19 weakC=0 abstain=2/2 | density 55/90 contra=7 conflicts=20 weakC=0 abstain=2/2 | hybrid 69/90 contra=4 conflicts=13 weakC=0 abstain=2/2 |
+B_CTX  512 first-mention | recency 22/90 contra=10 conflicts=2 weakC=6 abstain=2/2 | relevance 67/90 contra=10 conflicts=20 weakC=0 abstain=2/2 | density 55/90 contra=17 conflicts=25 weakC=4 abstain=2/2 | hybrid 75/90 contra=6 conflicts=20 weakC=0 abstain=2/2 |
+B_CTX  512 authority     | recency 24/90 contra=8 conflicts=2 weakC=2 abstain=2/2 | relevance 77/90 contra=0 conflicts=20 weakC=0 abstain=2/2 | density 68/90 contra=4 conflicts=25 weakC=0 abstain=2/2 | hybrid 81/90 contra=0 conflicts=20 weakC=0 abstain=2/2 |
+B_CTX 1024 first-mention | recency 47/90 contra=10 conflicts=10 weakC=10 abstain=2/2 | relevance 75/90 contra=10 conflicts=30 weakC=0 abstain=2/2 | density 69/90 contra=17 conflicts=30 weakC=4 abstain=2/2 | hybrid 84/90 contra=6 conflicts=20 weakC=0 abstain=2/2 |
+B_CTX 1024 authority     | recency 54/90 contra=3 conflicts=10 weakC=0 abstain=2/2 | relevance 85/90 contra=0 conflicts=30 weakC=0 abstain=2/2 | density 86/90 contra=0 conflicts=30 weakC=0 abstain=2/2 | hybrid 90/90 contra=0 conflicts=20 weakC=0 abstain=2/2 |
+
+C. Example answers, Q01 at B_CTX = 512 (first-mention agent)
+recency   : drop_deadline = 6 Mar 2026 [Q01-P027, notices_office]; 
+relevance : drop_deadline = 6 Mar 2026 [Q01-P027, notices_office] (sources disagree); 
+density   : drop_deadline = 6 Mar 2026 [Q01-P027, notices_office] (sources disagree); drop_form = Form AC-12 [Q01-P021, faq_portal]; 
+hybrid    : drop_deadline = 6 Mar 2026 [Q01-P027, notices_office]; drop_form = Form AC-12 [Q01-P021, faq_portal]; 

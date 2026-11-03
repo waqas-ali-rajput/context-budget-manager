@@ -1,0 +1,17 @@
+# Small hand-written synonym list used for query expansion (both engines use it).
+# Format: query term: expansion terms
+# Each query term and its expansions count as ONE concept when computing coverage.
+# Honesty note: the list was written by looking at the corpus vocabulary, so it
+# favours this dataset. The evaluation also reports results with expansion OFF.
+eat: food
+lunch: food
+room: laboratory lab
+cheating: unfair cheat
+cheat: unfair cheating
+paper: examination
+exam: examination
+keep: borrow
+borrowed: borrow
+submission: submit submitted
+penalty: fine
+fine: penalty

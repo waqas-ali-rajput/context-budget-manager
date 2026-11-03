@@ -1,0 +1,33 @@
+# query_id|category|question|ask_keys|gold_evidence_tags   (generated, seed 2026)
+Q01|policy|What is the last date to drop a course this semester, and which form is needed?|drop_deadline;drop_form|drop_deadline:6 Mar 2026;drop_form:Form AC-12
+Q02|policy|What lab attendance is required to sit the final lab exam, and where are appeals made?|lab_attendance_min;attendance_appeal|lab_attendance_min:80 percent;attendance_appeal:the Lab Coordinator Office
+Q03|policy|When is the semester fee due and what is the late charge?|fee_deadline;fee_late_charge|fee_deadline:29 Aug 2026;fee_late_charge:PKR 500 per day
+Q04|policy|What is the re-sit examination fee and which form is used?|resit_fee;resit_form|resit_fee:PKR 3000;resit_form:Form EX-7
+Q05|policy|What are the library hours during exams and what is needed to enter?|library_hours;library_entry|library_hours:8am to 10pm;library_entry:a valid student ID card
+Q06|policy|What similarity limit applies to project reports and which report is accepted?|plagiarism_limit;plagiarism_tool|plagiarism_limit:15 percent;plagiarism_tool:a Turnitin report
+Q07|policy|Where are final-year project reports submitted and in what format?|project_portal;project_format|project_portal:the LMS v2 portal;project_format:a single PDF file
+Q08|policy|What is the hostel curfew and until when are guests allowed?|hostel_curfew;hostel_guests|hostel_curfew:11pm;hostel_guests:7pm
+Q09|policy|How long is the grade appeal window and what is the appeal fee?|appeal_window;appeal_fee|appeal_window:10 days;appeal_fee:PKR 1000
+Q10|policy|What CGPA is required for the merit scholarship and which documents are needed?|scholarship_cgpa;scholarship_docs|scholarship_cgpa:3.5 CGPA;scholarship_docs:an income certificate
+Q11|multisource|How do I register for the final-year project?|fyp_group_size;fyp_form;fyp_proposal_due;fyp_marks_split|fyp_group_size:3 to 4 students;fyp_form:Form FYP-1;fyp_proposal_due:week 4;fyp_marks_split:40 internal and 60 external
+Q12|multisource|What do I need for a lab equipment loan?|loan_form;loan_deposit;loan_period;loan_signoff|loan_form:Form LB-3;loan_deposit:PKR 1500;loan_period:14 days;loan_signoff:the lab engineer
+Q13|multisource|How does internship credit work?|intern_weeks;intern_letter;intern_credits;intern_report|intern_weeks:6 weeks;intern_letter:an offer letter;intern_credits:3 credit hours;intern_report:a 10-page report
+Q14|multisource|How do I apply for a transcript?|transcript_fee;transcript_days;transcript_form;transcript_pickup|transcript_fee:PKR 800;transcript_days:5 working days;transcript_form:Form RG-2;transcript_pickup:the Registrar counter
+Q15|multisource|What are the rules for using the HPC cluster?|hpc_quota;hpc_max_job;hpc_access;hpc_support|hpc_quota:500 GB;hpc_max_job:48 hours;hpc_access:a supervisor request;hpc_support:the HPC help desk
+Q16|multisource|How do I get an exam clash resolved?|clash_deadline;clash_form;clash_contact;clash_proof|clash_deadline:3 days before the exam;clash_form:Form EX-3;clash_contact:the batch advisor;clash_proof:a printed timetable
+Q17|multisource|How are elective courses allotted?|elective_basis;elective_cap;elective_window;elective_min|elective_basis:CGPA order;elective_cap:40 students;elective_window:the first week;elective_min:2 electives
+Q18|multisource|What is needed to start a student society?|society_members;society_advisor;society_form;society_budget|society_members:15 members;society_advisor:a faculty advisor;society_form:Form SA-1;society_budget:PKR 20000
+Q19|multisource|How do I book a seminar room?|room_lead;room_system;room_hours;room_projector|room_lead:2 days ahead;room_system:the room booking page;room_hours:9am to 5pm;room_projector:a separate projector request
+Q20|multisource|What is the procedure for medical leave?|medleave_cert;medleave_days;medleave_form;medleave_max|medleave_cert:a medical certificate;medleave_days:within 7 days;medleave_form:Form ML-1;medleave_max:15 days
+Q21|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:C++;lab_group:B2;reminder_time:Friday 3pm
+Q22|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:Kotlin;lab_group:A1;reminder_time:Monday 9am
+Q23|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:Rust;lab_group:C3;reminder_time:Tuesday 11am
+Q24|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:Python;lab_group:B1;reminder_time:Wednesday 2pm
+Q25|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:TypeScript;lab_group:A3;reminder_time:Thursday 4pm
+Q26|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:Go;lab_group:C1;reminder_time:Saturday 10am
+Q27|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:Julia;lab_group:B4;reminder_time:Sunday 6pm
+Q28|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:Python;lab_group:A2;reminder_time:Monday 1pm
+Q29|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:C++;lab_group:C2;reminder_time:Friday 9am
+Q30|memory|From our earlier chat: which language is my project in, which lab group am I in, and when is my reminder?|project_language;lab_group;reminder_time|project_language:Swift;lab_group:B3;reminder_time:Tuesday 5pm
+Q31|unanswerable|What is the parking permit fee for students?|parking_fee|-
+Q32|unanswerable|What time does the campus gym open on Sundays?|gym_sunday_hours|-

@@ -1,0 +1,315 @@
+EDGE AND STRESS CASES (fixtures in data/fixtures). Every case is run under all four policies.
+Fixture load: 46 passages accepted, 0 errors
+
+==== E01: Empty candidate set: what is the drop deadline?   (B_total=1312, R_fixed=300, R_answer=500 -> B_CTX=512)
+[E01] policy=recency-first  status=OK  B_CTX=512  used=0 (0.0%)  unspent=512  candidates=0  selected=0
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E01] policy=relevance-first  status=OK  B_CTX=512  used=0 (0.0%)  unspent=512  candidates=0  selected=0
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E01] policy=relevance-per-token  status=OK  B_CTX=512  used=0 (0.0%)  unspent=512  candidates=0  selected=0
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E01] policy=hybrid-fresh-cover  status=OK  B_CTX=512  used=0 (0.0%)  unspent=512  candidates=0  selected=0
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+
+==== E02: Zero context budget (B_total 700 < R_fixed 300 + R_answer 500)   (B_total=700, R_fixed=300, R_answer=500 -> B_CTX=0)
+[E02] policy=recency-first  status=OK  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=2  selected=0
+  omitted E02-P2    c= 30  cost exceeds B_CTX on its own
+  omitted E02-P1    c= 20  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E02] policy=relevance-first  status=OK  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=2  selected=0
+  omitted E02-P1    c= 20  cost exceeds B_CTX on its own
+  omitted E02-P2    c= 30  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E02] policy=relevance-per-token  status=OK  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=2  selected=0
+  omitted E02-P1    c= 20  cost exceeds B_CTX on its own
+  omitted E02-P2    c= 30  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E02] policy=hybrid-fresh-cover  status=OK  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=2  selected=0
+  omitted E02-P1    c= 20  cost exceeds B_CTX on its own
+  omitted E02-P2    c= 30  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+
+==== E03: No candidate fits B_CTX = 256   (B_total=1056, R_fixed=300, R_answer=500 -> B_CTX=256)
+[E03] policy=recency-first  status=OK  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  omitted E03-P3    c=500  cost exceeds B_CTX on its own
+  omitted E03-P2    c=400  cost exceeds B_CTX on its own
+  omitted E03-P1    c=300  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E03] policy=relevance-first  status=OK  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  omitted E03-P1    c=300  cost exceeds B_CTX on its own
+  omitted E03-P2    c=400  cost exceeds B_CTX on its own
+  omitted E03-P3    c=500  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E03] policy=relevance-per-token  status=OK  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  omitted E03-P1    c=300  cost exceeds B_CTX on its own
+  omitted E03-P2    c=400  cost exceeds B_CTX on its own
+  omitted E03-P3    c=500  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E03] policy=hybrid-fresh-cover  status=OK  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  omitted E03-P1    c=300  cost exceeds B_CTX on its own
+  omitted E03-P2    c=400  cost exceeds B_CTX on its own
+  omitted E03-P3    c=500  cost exceeds B_CTX on its own
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+
+==== E04: One item larger than the whole B_CTX   (B_total=1056, R_fixed=300, R_answer=500 -> B_CTX=256)
+[E04] policy=recency-first  status=OK  B_CTX=256  used=100 (39.1%)  unspent=156  candidates=3  selected=2
+   1. E04-P2    lab_wiki        2026-01-02T10:00 rel=0.60 c= 60 key=202601021000.0000  b:2
+   2. E04-P1    faq_portal      2026-01-01T10:00 rel=0.50 c= 40 key=202601011000.0000  a:1
+  omitted E04-P3    c=900  cost exceeds B_CTX on its own
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+[E04] policy=relevance-first  status=OK  B_CTX=256  used=100 (39.1%)  unspent=156  candidates=3  selected=2
+   1. E04-P2    lab_wiki        2026-01-02T10:00 rel=0.60 c= 60 key=0.6000  b:2
+   2. E04-P1    faq_portal      2026-01-01T10:00 rel=0.50 c= 40 key=0.5000  a:1
+  omitted E04-P3    c=900  cost exceeds B_CTX on its own
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+[E04] policy=relevance-per-token  status=OK  B_CTX=256  used=100 (39.1%)  unspent=156  candidates=3  selected=2
+   1. E04-P1    faq_portal      2026-01-01T10:00 rel=0.50 c= 40 key=0.0125  a:1
+   2. E04-P2    lab_wiki        2026-01-02T10:00 rel=0.60 c= 60 key=0.0100  b:2
+  omitted E04-P3    c=900  cost exceeds B_CTX on its own
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+[E04] policy=hybrid-fresh-cover  status=OK  B_CTX=256  used=100 (39.1%)  unspent=156  candidates=3  selected=2
+   1. E04-P1    faq_portal      2026-01-01T10:00 rel=0.50 c= 40 key=0.0672  a:1
+   2. E04-P2    lab_wiki        2026-01-02T10:00 rel=0.60 c= 60 key=0.0658  b:2
+  omitted E04-P3    c=900  cost exceeds B_CTX on its own
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+
+==== E05: Two mandatory passages whose combined cost exceeds B_CTX   (B_total=1056, R_fixed=300, R_answer=500 -> B_CTX=256)
+[E05] policy=recency-first  status=INFEASIBLE  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  INFEASIBLE: mandatory passages E05-P1(150) + E05-P2(180) need 330 tokens but B_CTX = 256; no context was selected.
+  omitted E05-P1    c=150  not selected: mandatory set infeasible
+  omitted E05-P2    c=180  not selected: mandatory set infeasible
+  omitted E05-P3    c= 30  not selected: mandatory set infeasible
+  -> coverage=0/2 stale=0 redundancy=0 violation=no
+[E05] policy=relevance-first  status=INFEASIBLE  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  INFEASIBLE: mandatory passages E05-P1(150) + E05-P2(180) need 330 tokens but B_CTX = 256; no context was selected.
+  omitted E05-P1    c=150  not selected: mandatory set infeasible
+  omitted E05-P2    c=180  not selected: mandatory set infeasible
+  omitted E05-P3    c= 30  not selected: mandatory set infeasible
+  -> coverage=0/2 stale=0 redundancy=0 violation=no
+[E05] policy=relevance-per-token  status=INFEASIBLE  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  INFEASIBLE: mandatory passages E05-P1(150) + E05-P2(180) need 330 tokens but B_CTX = 256; no context was selected.
+  omitted E05-P1    c=150  not selected: mandatory set infeasible
+  omitted E05-P2    c=180  not selected: mandatory set infeasible
+  omitted E05-P3    c= 30  not selected: mandatory set infeasible
+  -> coverage=0/2 stale=0 redundancy=0 violation=no
+[E05] policy=hybrid-fresh-cover  status=INFEASIBLE  B_CTX=256  used=0 (0.0%)  unspent=256  candidates=3  selected=0
+  INFEASIBLE: mandatory passages E05-P1(150) + E05-P2(180) need 330 tokens but B_CTX = 256; no context was selected.
+  omitted E05-P1    c=150  not selected: mandatory set infeasible
+  omitted E05-P2    c=180  not selected: mandatory set infeasible
+  omitted E05-P3    c= 30  not selected: mandatory set infeasible
+  -> coverage=0/2 stale=0 redundancy=0 violation=no
+
+==== E06: Tied relevance scores and tied timestamps   (B_total=920, R_fixed=300, R_answer=500 -> B_CTX=120)
+[E06] policy=recency-first  status=OK  B_CTX=120  used=100 (83.3%)  unspent=20  candidates=4  selected=2
+   1. E06-P1    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=202605011000.0000  t:x
+   2. E06-P2    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=202605011000.0000  
+  omitted E06-P3    c= 50  insufficient remaining capacity
+  omitted E06-P4    c= 50  insufficient remaining capacity
+  -> coverage=1/1 stale=0 redundancy=0 violation=no
+[E06] policy=relevance-first  status=OK  B_CTX=120  used=100 (83.3%)  unspent=20  candidates=4  selected=2
+   1. E06-P1    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=0.7000  t:x
+   2. E06-P2    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=0.7000  
+  omitted E06-P3    c= 50  insufficient remaining capacity
+  omitted E06-P4    c= 50  insufficient remaining capacity
+  -> coverage=1/1 stale=0 redundancy=0 violation=no
+[E06] policy=relevance-per-token  status=OK  B_CTX=120  used=100 (83.3%)  unspent=20  candidates=4  selected=2
+   1. E06-P1    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=0.0140  t:x
+   2. E06-P2    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=0.0140  
+  omitted E06-P3    c= 50  insufficient remaining capacity
+  omitted E06-P4    c= 50  insufficient remaining capacity
+  -> coverage=1/1 stale=0 redundancy=0 violation=no
+[E06] policy=hybrid-fresh-cover  status=OK  B_CTX=120  used=100 (83.3%)  unspent=20  candidates=4  selected=2
+   1. E06-P1    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=0.0841  t:x
+   2. E06-P2    faq_portal      2026-05-01T10:00 rel=0.70 c= 50 key=0.0168  
+  omitted E06-P3    c= 50  insufficient remaining capacity
+  omitted E06-P4    c= 50  insufficient remaining capacity
+  -> coverage=1/1 stale=0 redundancy=0 violation=no
+
+==== E07: Near-duplicate group dominating the candidates   (B_total=960, R_fixed=300, R_answer=500 -> B_CTX=160)
+[E07] policy=recency-first  status=OK  B_CTX=160  used=150 (93.8%)  unspent=10  candidates=6  selected=5
+   1. E07-P5    student_forum   2026-04-05T10:00 rel=0.86 c= 30 key=202604051000.0000  a:1
+   2. E07-P4    lms_portal      2026-04-04T10:00 rel=0.87 c= 30 key=202604041000.0000  a:1
+   3. E07-P3    dept_email      2026-04-03T10:00 rel=0.88 c= 30 key=202604031000.0000  a:1
+   4. E07-P2    student_forum   2026-04-02T10:00 rel=0.89 c= 30 key=202604021000.0000  a:1
+   5. E07-P1    faq_portal      2026-04-01T10:00 rel=0.90 c= 30 key=202604011000.0000  a:1
+  omitted E07-P6    c= 40  insufficient remaining capacity
+  -> coverage=1/2 stale=0 redundancy=4 violation=no
+[E07] policy=relevance-first  status=OK  B_CTX=160  used=150 (93.8%)  unspent=10  candidates=6  selected=5
+   1. E07-P1    faq_portal      2026-04-01T10:00 rel=0.90 c= 30 key=0.9000  a:1
+   2. E07-P2    student_forum   2026-04-02T10:00 rel=0.89 c= 30 key=0.8900  a:1
+   3. E07-P3    dept_email      2026-04-03T10:00 rel=0.88 c= 30 key=0.8800  a:1
+   4. E07-P4    lms_portal      2026-04-04T10:00 rel=0.87 c= 30 key=0.8700  a:1
+   5. E07-P5    student_forum   2026-04-05T10:00 rel=0.86 c= 30 key=0.8600  a:1
+  omitted E07-P6    c= 40  insufficient remaining capacity
+  -> coverage=1/2 stale=0 redundancy=4 violation=no
+[E07] policy=relevance-per-token  status=OK  B_CTX=160  used=150 (93.8%)  unspent=10  candidates=6  selected=5
+   1. E07-P1    faq_portal      2026-04-01T10:00 rel=0.90 c= 30 key=0.0300  a:1
+   2. E07-P2    student_forum   2026-04-02T10:00 rel=0.89 c= 30 key=0.0297  a:1
+   3. E07-P3    dept_email      2026-04-03T10:00 rel=0.88 c= 30 key=0.0293  a:1
+   4. E07-P4    lms_portal      2026-04-04T10:00 rel=0.87 c= 30 key=0.0290  a:1
+   5. E07-P5    student_forum   2026-04-05T10:00 rel=0.86 c= 30 key=0.0287  a:1
+  omitted E07-P6    c= 40  insufficient remaining capacity
+  -> coverage=1/2 stale=0 redundancy=4 violation=no
+[E07] policy=hybrid-fresh-cover  status=OK  B_CTX=160  used=70 (43.8%)  unspent=90  candidates=6  selected=2
+   1. E07-P1    faq_portal      2026-04-01T10:00 rel=0.90 c= 30 key=0.1397  a:1
+   2. E07-P6    handbook        2026-01-01T10:00 rel=0.50 c= 40 key=0.0791  b:2
+  omitted E07-P3    c= 30  duplicate group already covered, no new evidence
+  omitted E07-P4    c= 30  duplicate group already covered, no new evidence
+  omitted E07-P2    c= 30  duplicate group already covered, no new evidence
+  omitted E07-P5    c= 30  duplicate group already covered, no new evidence
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+
+==== E08: Contradictory old and new policy passages   (B_total=1000, R_fixed=300, R_answer=500 -> B_CTX=200)
+[E08] policy=recency-first  status=OK  B_CTX=200  used=180 (90.0%)  unspent=20  candidates=3  selected=3
+   1. E08-P2    notices_office  2026-02-01T10:00 rel=0.70 c= 60 key=202602011000.0000  deadline:6 Mar
+   2. E08-P3    student_forum   2025-04-01T10:00 rel=0.88 c= 40 key=202504011000.0000  deadline:27 Feb
+   3. E08-P1    notices_office  2025-03-01T10:00 rel=0.92 c= 80 key=202503011000.0000  deadline:27 Feb
+  -> coverage=1/1 stale=2 redundancy=1 violation=no
+[E08] policy=relevance-first  status=OK  B_CTX=200  used=180 (90.0%)  unspent=20  candidates=3  selected=3
+   1. E08-P1    notices_office  2025-03-01T10:00 rel=0.92 c= 80 key=0.9200  deadline:27 Feb
+   2. E08-P3    student_forum   2025-04-01T10:00 rel=0.88 c= 40 key=0.8800  deadline:27 Feb
+   3. E08-P2    notices_office  2026-02-01T10:00 rel=0.70 c= 60 key=0.7000  deadline:6 Mar
+  -> coverage=1/1 stale=2 redundancy=1 violation=no
+[E08] policy=relevance-per-token  status=OK  B_CTX=200  used=180 (90.0%)  unspent=20  candidates=3  selected=3
+   1. E08-P3    student_forum   2025-04-01T10:00 rel=0.88 c= 40 key=0.0220  deadline:27 Feb
+   2. E08-P2    notices_office  2026-02-01T10:00 rel=0.70 c= 60 key=0.0117  deadline:6 Mar
+   3. E08-P1    notices_office  2025-03-01T10:00 rel=0.92 c= 80 key=0.0115  deadline:27 Feb
+  -> coverage=1/1 stale=2 redundancy=1 violation=no
+[E08] policy=hybrid-fresh-cover  status=OK  B_CTX=200  used=60 (30.0%)  unspent=140  candidates=3  selected=1
+   1. E08-P2    notices_office  2026-02-01T10:00 rel=0.70 c= 60 key=0.0904  deadline:6 Mar
+  omitted E08-P1    c= 80  superseded by a newer candidate (E08-P2)
+  omitted E08-P3    c= 40  superseded by a newer candidate (E08-P2)
+  -> coverage=1/1 stale=0 redundancy=0 violation=no
+
+==== E09: Evidence split across three sources   (B_total=1000, R_fixed=300, R_answer=500 -> B_CTX=200)
+[E09] policy=recency-first  status=OK  B_CTX=200  used=160 (80.0%)  unspent=40  candidates=5  selected=3
+   1. E09-P5    dept_email      2026-09-02T10:00 rel=0.65 c= 50 key=202609021000.0000  n:2
+   2. E09-P4    notices_office  2026-09-01T10:00 rel=0.70 c= 60 key=202609011000.0000  n:1
+   3. E09-P3    faq_portal      2026-01-03T10:00 rel=0.50 c= 50 key=202601031000.0000  c:3
+  omitted E09-P2    c= 50  insufficient remaining capacity
+  omitted E09-P1    c= 50  insufficient remaining capacity
+  -> coverage=1/3 stale=0 redundancy=0 violation=no
+[E09] policy=relevance-first  status=OK  B_CTX=200  used=160 (80.0%)  unspent=40  candidates=5  selected=3
+   1. E09-P4    notices_office  2026-09-01T10:00 rel=0.70 c= 60 key=0.7000  n:1
+   2. E09-P5    dept_email      2026-09-02T10:00 rel=0.65 c= 50 key=0.6500  n:2
+   3. E09-P1    registrar       2026-01-01T10:00 rel=0.60 c= 50 key=0.6000  a:1
+  omitted E09-P2    c= 50  insufficient remaining capacity
+  omitted E09-P3    c= 50  insufficient remaining capacity
+  -> coverage=1/3 stale=0 redundancy=0 violation=no
+[E09] policy=relevance-per-token  status=OK  B_CTX=200  used=160 (80.0%)  unspent=40  candidates=5  selected=3
+   1. E09-P5    dept_email      2026-09-02T10:00 rel=0.65 c= 50 key=0.0130  n:2
+   2. E09-P1    registrar       2026-01-01T10:00 rel=0.60 c= 50 key=0.0120  a:1
+   3. E09-P4    notices_office  2026-09-01T10:00 rel=0.70 c= 60 key=0.0117  n:1
+  omitted E09-P2    c= 50  insufficient remaining capacity
+  omitted E09-P3    c= 50  insufficient remaining capacity
+  -> coverage=1/3 stale=0 redundancy=0 violation=no
+[E09] policy=hybrid-fresh-cover  status=OK  B_CTX=200  used=160 (80.0%)  unspent=40  candidates=5  selected=3
+   1. E09-P1    registrar       2026-01-01T10:00 rel=0.60 c= 50 key=0.0849  a:1
+   2. E09-P5    dept_email      2026-09-02T10:00 rel=0.65 c= 50 key=0.0781  n:2
+   3. E09-P4    notices_office  2026-09-01T10:00 rel=0.70 c= 60 key=0.0768  n:1
+  omitted E09-P2    c= 50  insufficient remaining capacity
+  omitted E09-P3    c= 50  insufficient remaining capacity
+  -> coverage=1/3 stale=0 redundancy=0 violation=no
+
+==== E10: One very long, highly relevant passage   (B_total=1056, R_fixed=300, R_answer=500 -> B_CTX=256)
+[E10] policy=recency-first  status=OK  B_CTX=256  used=250 (97.7%)  unspent=6  candidates=6  selected=5
+   1. E10-P6    notices_office  2026-09-01T10:00 rel=0.90 c= 40 key=202609011000.0000  d:4
+   2. E10-P5    dept_email      2026-01-04T10:00 rel=0.50 c= 30 key=202601041000.0000  e:5
+   3. E10-P4    faq_portal      2026-01-03T10:00 rel=0.60 c= 60 key=202601031000.0000  c:3
+   4. E10-P3    lab_wiki        2026-01-02T10:00 rel=0.60 c= 60 key=202601021000.0000  b:2
+   5. E10-P2    registrar       2026-01-01T10:00 rel=0.60 c= 60 key=202601011000.0000  a:1
+  omitted E10-P1    c=230  insufficient remaining capacity
+  -> coverage=4/4 stale=0 redundancy=0 violation=no
+[E10] policy=relevance-first  status=OK  B_CTX=256  used=230 (89.8%)  unspent=26  candidates=6  selected=1
+   1. E10-P1    student_guide   2025-06-01T10:00 rel=0.97 c=230 key=0.9700  a:1;b:2;c:3
+  omitted E10-P6    c= 40  insufficient remaining capacity
+  omitted E10-P4    c= 60  insufficient remaining capacity
+  omitted E10-P3    c= 60  insufficient remaining capacity
+  omitted E10-P2    c= 60  insufficient remaining capacity
+  omitted E10-P5    c= 30  insufficient remaining capacity
+  -> coverage=3/4 stale=0 redundancy=0 violation=no
+[E10] policy=relevance-per-token  status=OK  B_CTX=256  used=250 (97.7%)  unspent=6  candidates=6  selected=5
+   1. E10-P6    notices_office  2026-09-01T10:00 rel=0.90 c= 40 key=0.0225  d:4
+   2. E10-P5    dept_email      2026-01-04T10:00 rel=0.50 c= 30 key=0.0167  e:5
+   3. E10-P4    faq_portal      2026-01-03T10:00 rel=0.60 c= 60 key=0.0100  c:3
+   4. E10-P3    lab_wiki        2026-01-02T10:00 rel=0.60 c= 60 key=0.0100  b:2
+   5. E10-P2    registrar       2026-01-01T10:00 rel=0.60 c= 60 key=0.0100  a:1
+  omitted E10-P1    c=230  insufficient remaining capacity
+  -> coverage=4/4 stale=0 redundancy=0 violation=no
+[E10] policy=hybrid-fresh-cover  status=OK  B_CTX=256  used=250 (97.7%)  unspent=6  candidates=6  selected=5
+   1. E10-P6    notices_office  2026-09-01T10:00 rel=0.90 c= 40 key=0.1210  d:4
+   2. E10-P5    dept_email      2026-01-04T10:00 rel=0.50 c= 30 key=0.0776  e:5
+   3. E10-P2    registrar       2026-01-01T10:00 rel=0.60 c= 60 key=0.0775  a:1
+   4. E10-P4    faq_portal      2026-01-03T10:00 rel=0.60 c= 60 key=0.0658  c:3
+   5. E10-P3    lab_wiki        2026-01-02T10:00 rel=0.60 c= 60 key=0.0658  b:2
+  omitted E10-P1    c=230  insufficient remaining capacity
+  -> coverage=4/4 stale=0 redundancy=0 violation=no
+
+==== E12: Zero budget with a mandatory passage   (B_total=800, R_fixed=300, R_answer=500 -> B_CTX=0)
+[E12] policy=recency-first  status=INFEASIBLE  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=1  selected=0
+  INFEASIBLE: mandatory passages E12-P1(50) need 50 tokens but B_CTX = 0; no context was selected.
+  omitted E12-P1    c= 50  not selected: mandatory set infeasible
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E12] policy=relevance-first  status=INFEASIBLE  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=1  selected=0
+  INFEASIBLE: mandatory passages E12-P1(50) need 50 tokens but B_CTX = 0; no context was selected.
+  omitted E12-P1    c= 50  not selected: mandatory set infeasible
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E12] policy=relevance-per-token  status=INFEASIBLE  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=1  selected=0
+  INFEASIBLE: mandatory passages E12-P1(50) need 50 tokens but B_CTX = 0; no context was selected.
+  omitted E12-P1    c= 50  not selected: mandatory set infeasible
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+[E12] policy=hybrid-fresh-cover  status=INFEASIBLE  B_CTX=0  used=0 (0.0%)  unspent=0  candidates=1  selected=0
+  INFEASIBLE: mandatory passages E12-P1(50) need 50 tokens but B_CTX = 0; no context was selected.
+  omitted E12-P1    c= 50  not selected: mandatory set infeasible
+  -> coverage=0/1 stale=0 redundancy=0 violation=no
+
+==== E13: Zero-cost passage   (B_total=900, R_fixed=300, R_answer=500 -> B_CTX=100)
+[E13] policy=recency-first  status=OK  B_CTX=100  used=100 (100.0%)  unspent=0  candidates=2  selected=2
+   1. E13-P2    handbook        2026-02-01T10:00 rel=0.90 c=100 key=202602011000.0000  b:2
+   2. E13-P1    system          2026-01-01T10:00 rel=0.30 c=  0 key=202601011000.0000  a:1
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+[E13] policy=relevance-first  status=OK  B_CTX=100  used=100 (100.0%)  unspent=0  candidates=2  selected=2
+   1. E13-P2    handbook        2026-02-01T10:00 rel=0.90 c=100 key=0.9000  b:2
+   2. E13-P1    system          2026-01-01T10:00 rel=0.30 c=  0 key=0.3000  a:1
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+[E13] policy=relevance-per-token  status=OK  B_CTX=100  used=100 (100.0%)  unspent=0  candidates=2  selected=2
+   1. E13-P1    system          2026-01-01T10:00 rel=0.30 c=  0 key=0.6000  a:1
+   2. E13-P2    handbook        2026-02-01T10:00 rel=0.90 c=100 key=0.0090  b:2
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+[E13] policy=hybrid-fresh-cover  status=OK  B_CTX=100  used=100 (100.0%)  unspent=0  candidates=2  selected=2
+   1. E13-P1    system          2026-01-01T10:00 rel=0.30 c=  0 key=0.3000  a:1
+   2. E13-P2    handbook        2026-02-01T10:00 rel=0.90 c=100 key=0.0900  b:2
+  -> coverage=2/2 stale=0 redundancy=0 violation=no
+
+==== E11: Budget sensitivity on identical input (identical input at B_CTX = 256 / 512 / 1024)
+  B_CTX= 256 recency    selected=3 tokens=210 coverage=0/4 violation=no
+  B_CTX= 256 relevance  selected=3 tokens=250 coverage=1/4 violation=no
+  B_CTX= 256 density    selected=3 tokens=230 coverage=1/4 violation=no
+  B_CTX= 256 hybrid     selected=3 tokens=250 coverage=1/4 violation=no
+  B_CTX= 512 recency    selected=5 tokens=500 coverage=2/4 violation=no
+  B_CTX= 512 relevance  selected=3 tokens=480 coverage=2/4 violation=no
+  B_CTX= 512 density    selected=5 tokens=500 coverage=3/4 violation=no
+  B_CTX= 512 hybrid     selected=5 tokens=500 coverage=3/4 violation=no
+  B_CTX=1024 recency    selected=7 tokens=770 coverage=4/4 violation=no
+  B_CTX=1024 relevance  selected=7 tokens=1000 coverage=4/4 violation=no
+  B_CTX=1024 density    selected=7 tokens=870 coverage=3/4 violation=no
+  B_CTX=1024 hybrid     selected=7 tokens=770 coverage=4/4 violation=no
+
+==== Malformed metadata and duplicate ids (data/fixtures/malformed_passages.txt)
+accepted 2 record(s): M01-P1 M01-P15
+rejected 15 record(s):
+  line  3: duplicate passage id M01-P1 in M01 (first seen on line 2)
+  line  4: negative token cost '-20'
+  line  5: token cost '12.5' is not a nonnegative integer
+  line  6: relevance '1.70' is not a number in [0,1]
+  line  7: invalid timestamp '2026/03/01' (expected YYYY-MM-DDThh:mm)
+  line  8: invalid timestamp '2026-13-01T10:00' (expected YYYY-MM-DDThh:mm)
+  line  9: reliability 'X' is not A, B or C
+  line 10: evidence tag 'rule' is not key:value
+  line 11: mandatory flag 'yes' is not 0 or 1
+  line 12: expected 12 fields, found 11
+  line 13: missing passage_id
+  line 14: missing source_id
+  line 15: relevance 'abc' is not a number in [0,1]
+  line 16: passage supersedes itself
+  line 17: token cost '' is not a nonnegative integer

@@ -1,0 +1,8 @@
+cbm
+cbm.exe
+*.o
+__pycache__/
+docs/video/cep/build/
+docs/video/cep/voice.wav
+.env
+*.key

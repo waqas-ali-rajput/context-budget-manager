@@ -1,0 +1,79 @@
+MUET DOCUMENT SET - EVALUATION (cep/data/muet, from the PBL corpus data/passages.txt)
+20 questions, every question has all 155 MUET passages as candidates (3,100 records). Costs are estimates
+(ceil(1.3 x words) + 6). B_total = B_CTX + 800, R_fixed = 300, R_answer = 500. Timing: 1 warm-up + 5 runs.
+Coverage is averaged over the 17 answerable questions. FM / AU = first-mention / authority agent:
+facts correct of facts asked, contra = facts answered with a non-gold (stale or wrong) value.
+
+1. MAIN COMPARISON
+B_CTX policy     viol  mean_tok  %B_CTX  coverage  redund  stale(sel/q)  untrusted  median_us   FM correct  contra   AU correct  contra  abstain
+   64 recency       0      61.8    96.5     0.000       0         16/16          0      12.00         0/22      0         0/22      0  3/3
+   64 relevance     0      58.0    90.5     0.824       2           7/6          0      13.35        16/22      3        17/22      2  3/3
+   64 density       0      56.6    88.4     0.735       2          11/9          0      13.10        15/22      2        15/22      2  3/3
+   64 hybrid        0      57.6    90.0     0.824       0           0/0          0      30.35        17/22      0        17/22      0  3/3
+  128 recency       0     119.0    92.9     0.000       0           7/7          0      12.40         0/22      0         0/22      0  3/3
+  128 relevance     0     122.1    95.4     0.941       3          10/6          0      13.50        18/22      3        20/22      1  3/3
+  128 density       0     121.5    94.9     0.853       2          17/7          0      13.70        18/22      3        18/22      3  3/3
+  128 hybrid        0     120.7    94.3     0.912       0           0/0          0      31.60        19/22      0        19/22      0  3/3
+  256 recency       0     249.8    97.6     0.059       0           7/7          0      13.90         1/22      0         1/22      0  3/3
+  256 relevance     0     250.1    97.7     0.941       4          22/9          0      15.40        18/22      3        20/22      1  3/3
+  256 density       0     249.5    97.5     0.912       4         28/11          0      15.10        18/22      3        19/22      2  3/3
+  256 hybrid        0     250.6    97.9     0.941       0           0/0          0      34.75        20/22      0        20/22      0  3/3
+  512 recency       0     503.0    98.2     0.088       0        100/20          0      14.90         2/22      0         2/22      0  3/3
+  512 relevance     0     506.8    99.0     0.971       6         53/15          1      16.30        19/22      3        21/22      1  3/3
+  512 density       0     505.5    98.7     0.971       7         59/15          0      13.60        19/22      3        21/22      1  3/3
+  512 hybrid        0     506.6    99.0     1.000       0           0/0          0      33.10        22/22      0        22/22      0  3/3
+
+2. PER QUESTION AT B_CTX = 128: gold facts covered / stale passages selected
+query category      | recency  | relevance | density  | hybrid   | question
+M01   lookup       | 0/1  st=1 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | food and drinks in the computer laboratory
+M02   lookup       | 0/1  st=1 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | mobile phones in the examination hall
+M03   lookup       | 0/1  st=0 | 1/1  st=1 | 1/1  st=1 | 1/1  st=0 | late fee fine after due date
+M04   lookup       | 0/1  st=0 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | merit scholarship GPA requirement
+M05   lookup       | 0/1  st=0 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | CS-251 course contents hash tables heaps
+M06   lookup       | 0/1  st=1 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | can I eat lunch in the computer room
+M07   lookup       | 0/2  st=0 | 2/2  st=1 | 2/2  st=0 | 2/2  st=0 | what happens if I am caught cheating in a paper
+M08   lookup       | 0/1  st=0 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | how long can I keep a borrowed library book
+M09   policy       | 0/2  st=1 | 1/2  st=3 | 0/2  st=3 | 0/2  st=0 | minimum attendance required for the final examination
+M10   policy       | 0/1  st=1 | 1/1  st=2 | 1/1  st=3 | 1/1  st=0 | CS-251 final examination date
+M11   multisource  | 0/2  st=0 | 2/2  st=0 | 2/2  st=2 | 2/2  st=0 | final examination marks
+M12   multisource  | 0/2  st=0 | 1/2  st=1 | 1/2  st=1 | 1/2  st=0 | late submission penalty
+M13   unanswerable | NA   st=0 | NA   st=0 | NA   st=0 | NA   st=0 | parking permit for student cars
+M14   unanswerable | NA   st=0 | NA   st=0 | NA   st=0 | NA   st=0 | cafeteria menu prices
+M15   lookup       | 0/1  st=0 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | summer internship duration
+M16   lookup       | 0/1  st=1 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | DSA lab timings for batch 25CS
+M17   lookup       | 0/1  st=0 | 1/1  st=0 | 1/1  st=0 | 1/1  st=0 | how many students can work together on a final year project
+M18   policy       | 0/1  st=0 | 1/1  st=2 | 0/1  st=4 | 1/1  st=0 | last date for course registration fall 2026
+M19   lookup       | 0/2  st=1 | 2/2  st=0 | 2/2  st=0 | 2/2  st=0 | what is asked in the viva
+M20   unanswerable | NA   st=0 | NA   st=0 | NA   st=3 | NA   st=0 | MUET transport bus routes
+
+3. VERSION-SENSITIVE QUESTIONS AT B_CTX = 128 (authority agent's answer)
+M09 minimum attendance required for the final examination   gold: attendance_min:75 percent; attendance_shortfall:detained and must repeat the course;
+   recency    insufficient evidence
+   relevance  attendance_min = 75 percent [D09-P1, D09] (sources disagree); attendance_shortfall = not allowed to appear in the final examination [D04-P3, D04]; 
+   density    attendance_min = 70 percent [D04-P1, D04]; attendance_shortfall = not allowed to appear in the final examination [D04-P3, D04]; 
+   hybrid     insufficient evidence
+M10 CS-251 final examination date   gold: cs251_final_date:22 December 2026 at 10 am;
+   recency    insufficient evidence
+   relevance  cs251_final_date = 22 December 2026 at 10 am [D20-P2, D20] (sources disagree); 
+   density    cs251_final_date = 22 December 2026 at 10 am [D20-P2, D20] (sources disagree); 
+   hybrid     cs251_final_date = 22 December 2026 at 10 am [D20-P2, D20]; 
+M18 last date for course registration fall 2026   gold: registration_close:17 September 2026;
+   recency    insufficient evidence
+   relevance  registration_close = 17 September 2026 [D29-P1, D29] (sources disagree); 
+   density    registration_close = 10 September 2026 [D28-P1, D28]; 
+   hybrid     registration_close = 17 September 2026 [D29-P1, D29]; 
+
+4. SAMPLE: M09 at B_CTX = 128, relevance-first vs hybrid
+[M09] policy=relevance-first  status=OK  B_CTX=128  used=125 (97.7%)  unspent=3  candidates=155  selected=4
+   1. D04-P3    D04             2025-01-05T09:00 rel=1.00 c= 31 key=1.0000  attendance_shortfall:not allowed to appear in the final examination
+   2. D04-P1    D04             2025-01-05T09:00 rel=0.77 c= 30 key=0.7700  attendance_min:70 percent
+   3. D09-P1    D09             2026-01-08T09:00 rel=0.69 c= 45 key=0.6950  attendance_min:75 percent
+   4. D19-P1    D19             2026-10-01T09:00 rel=0.54 c= 19 key=0.5380  exam_start:14 December 2026
+[M09] policy=hybrid-fresh-cover  status=OK  B_CTX=128  used=113 (88.3%)  unspent=15  candidates=155  selected=5
+   1. D13-P3    D13             2026-02-15T09:00 rel=0.63 c= 23 key=0.1309  info_d13p3:Marks obtained in the
+   2. D13-P4    D13             2026-02-15T09:00 rel=0.60 c= 23 key=0.1259  info_d13p4:Students detained due to
+   3. D09-P2    D09             2026-01-08T09:00 rel=0.51 c= 22 key=0.1085  attendance_marking:biometric system
+   4. D18-P2    D18             2026-02-01T09:00 rel=0.47 c= 19 key=0.1074  info_d18p2:The minimum passing marks
+   5. D20-P3    D20             2026-10-15T09:00 rel=0.44 c= 26 key=0.0861  mt201_final_date:24 December 2026 at 10 am
+
+budget violations in all 320 runs: 0

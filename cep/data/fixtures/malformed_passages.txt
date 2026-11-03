@@ -1,0 +1,18 @@
+# Malformed-metadata fixture: 2 valid records, 15 invalid ones (one per error type).
+M01|M01-P1|notices_office|2026-03-01T10:00|50|0.70|A|-|rule:new|0|-|Valid record.
+M01|M01-P1|student_forum|2026-03-02T10:00|40|0.60|C|-|rule:new|0|-|Duplicate passage id.
+M01|M01-P2|notices_office|2026-03-01T10:00|-20|0.70|A|-|rule:new|0|-|Negative cost.
+M01|M01-P3|notices_office|2026-03-01T10:00|12.5|0.70|A|-|rule:new|0|-|Non-integer cost.
+M01|M01-P4|notices_office|2026-03-01T10:00|50|1.70|A|-|rule:new|0|-|Relevance out of range.
+M01|M01-P5|notices_office|2026/03/01|50|0.70|A|-|rule:new|0|-|Bad timestamp format.
+M01|M01-P6|notices_office|2026-13-01T10:00|50|0.70|A|-|rule:new|0|-|Month 13.
+M01|M01-P7|notices_office|2026-03-01T10:00|50|0.70|X|-|rule:new|0|-|Bad reliability class.
+M01|M01-P8|notices_office|2026-03-01T10:00|50|0.70|A|-|rule|0|-|Evidence tag without a value.
+M01|M01-P9|notices_office|2026-03-01T10:00|50|0.70|A|-|rule:new|yes|-|Bad mandatory flag.
+M01|M01-P10|notices_office|2026-03-01T10:00|50|0.70|A|-|rule:new|0|-
+M01||notices_office|2026-03-01T10:00|50|0.70|A|-|rule:new|0|-|Missing passage id.
+M01|M01-P11|-|2026-03-01T10:00|50|0.70|A|-|rule:new|0|-|Missing source id.
+M01|M01-P12|notices_office|2026-03-01T10:00|50|abc|A|-|rule:new|0|-|Relevance not a number.
+M01|M01-P13|notices_office|2026-03-01T10:00|50|0.70|A|-|rule:new|0|M01-P13|Supersedes itself.
+M01|M01-P14|notices_office|2026-03-01T10:00||0.70|A|-|rule:new|0|-|Missing token cost.
+M01|M01-P15|notices_office|2026-03-01T10:00|60|0.65|B|-|-|0|-|Valid record without evidence tags.
